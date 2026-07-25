@@ -19,6 +19,7 @@ export const BUSINESS = {
   addressLocality: "Houston",
   addressRegion: "TX",
   siteUrl: "https://houstonstructure.com",
+  gtmId: "GTM-W5HHXPXT",
 } as const;
 
 export type ServiceArea = {
