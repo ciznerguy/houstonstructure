@@ -32,46 +32,76 @@ export type ServiceArea = {
 
 export const SERVICE_AREAS: ServiceArea[] = [
   {
-    slug: "houston",
-    name: "Houston",
+    slug: "spring-valley-village",
+    name: "Spring Valley Village",
     blurb:
-      "Houston's expansive clay soils shrink and swell with the seasons, making foundation movement and structural distress some of the most common calls we take across the city's inner-loop and suburban neighborhoods alike.",
+      "One of the six Memorial Villages, Spring Valley Village is built almost entirely on mid-century construction from the 1950s and 60s. We're regularly asked to evaluate original foundations before a renovation or addition proceeds, since decades-old slabs weren't engineered for today's larger footprints.",
+  },
+  {
+    slug: "piney-point-village",
+    name: "Piney Point Village",
+    blurb:
+      "Piney Point Village's oversized wooded lots come with oversized tree root systems, and root intrusion into slab foundations is one of the most common calls we take here. We evaluate whether a tree needs to come out, whether a root barrier will do the job, or whether the foundation itself needs repair.",
+  },
+  {
+    slug: "bunker-hill-village",
+    name: "Bunker Hill Village",
+    blurb:
+      "Bunker Hill Village has seen a steady wave of teardown-and-rebuild construction alongside its original mid-century homes. We provide structural evaluations both for homeowners renovating an existing house and for builders needing a foundation plan for new construction on a cleared lot.",
+  },
+  {
+    slug: "hedwig-village",
+    name: "Hedwig Village",
+    blurb:
+      "Hedwig Village's tight lot spacing means drainage from one property routinely affects the next. When we're called out here, tracing how water moves across neighboring lots is often as important as the foundation inspection itself.",
+  },
+  {
+    slug: "hilshire-village",
+    name: "Hilshire Village",
+    blurb:
+      "Hilshire Village still has many homes on their original 1950s-60s foundations. We see a lot of second-opinion requests here — homeowners who already have one contractor's repair quote and want an independent engineering read before committing.",
+  },
+  {
+    slug: "hunters-creek-village",
+    name: "Hunters Creek Village",
+    blurb:
+      "Hunters Creek Village sits along the creek it's named for, and properties near the waterway tend to see more moisture-driven foundation movement than those set further back. We factor drainage and creek proximity into every evaluation here.",
   },
   {
     slug: "the-woodlands",
     name: "The Woodlands",
     blurb:
-      "Mature tree root systems and shifting clay subgrade around The Woodlands can pull on slab foundations over time, especially in homes built in the area's earlier developments.",
+      "The Woodlands' mature pine forest canopy is part of its appeal, but those same root systems compete aggressively for soil moisture, pulling water away from foundations during dry stretches and contributing to uneven settlement.",
   },
   {
-    slug: "spring",
-    name: "Spring",
+    slug: "katy",
+    name: "Katy",
     blurb:
-      "Spring's mix of older ranch homes and newer construction means we see everything from settling pier-and-beam foundations to slab cracking tied to drainage issues.",
+      "Katy's rapid growth means most of our calls here involve newer construction, not old age. We evaluate builder-grade foundation work, check compaction on graded lots, and catch settlement issues early before they become bigger structural problems.",
+  },
+  {
+    slug: "cypress",
+    name: "Cypress",
+    blurb:
+      "Cypress has grown as fast as almost anywhere in the Houston metro, and that pace means we're frequently called in to verify a builder's foundation work or investigate early settlement in homes that are only a few years old.",
+  },
+  {
+    slug: "pearland",
+    name: "Pearland",
+    blurb:
+      "Pearland's flat, low-lying terrain and high water table put steady pressure on foundations, especially after the heavy rain events common along this part of the Gulf Coast.",
+  },
+  {
+    slug: "missouri-city",
+    name: "Missouri City",
+    blurb:
+      "Missouri City spans a mix of established neighborhoods and newer master-planned developments, and the structural issues we see vary accordingly — older homes with decades of soil movement behind them, newer ones still settling into their first few years.",
   },
   {
     slug: "sugar-land",
     name: "Sugar Land",
     blurb:
-      "Sugar Land's flat, clay-heavy terrain and high water table put steady stress on foundations, particularly after Houston's wet-dry seasonal swings.",
-  },
-  {
-    slug: "pasadena",
-    name: "Pasadena",
-    blurb:
-      "Pasadena's proximity to the Ship Channel and industrial corridor brings unique soil and moisture conditions that require careful structural evaluation before repair.",
-  },
-  {
-    slug: "league-city",
-    name: "League City",
-    blurb:
-      "League City's coastal-adjacent soil conditions and higher humidity make moisture intrusion and foundation settlement a recurring concern for homeowners.",
-  },
-  {
-    slug: "new-caney",
-    name: "New Caney",
-    blurb:
-      "Newer growth in New Caney means many structural calls involve verifying builder-grade foundation work or addressing early settlement in recently built homes.",
+      "Sugar Land's high water table and clay-heavy soil make it one of the more foundation-sensitive suburbs in Fort Bend County, a pattern that shows up across both its established neighborhoods and its newer master-planned sections.",
   },
 ];
 
