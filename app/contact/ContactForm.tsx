@@ -50,6 +50,7 @@ export default function ContactForm() {
         <label className="text-sm font-medium text-slate-700">Name</label>
         <input
           required
+          name="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           className="mt-1 w-full rounded-sm border border-slate-300 px-3 py-2 text-sm outline-none focus:border-[#0B1F3A]"
@@ -59,6 +60,7 @@ export default function ContactForm() {
         <label className="text-sm font-medium text-slate-700">Phone</label>
         <input
           required
+          name="phone"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
           type="tel"
@@ -68,6 +70,7 @@ export default function ContactForm() {
       <div>
         <label className="text-sm font-medium text-slate-700">Property address</label>
         <input
+          name="address"
           value={address}
           onChange={(e) => setAddress(e.target.value)}
           className="mt-1 w-full rounded-sm border border-slate-300 px-3 py-2 text-sm outline-none focus:border-[#0B1F3A]"
@@ -78,6 +81,7 @@ export default function ContactForm() {
           What&rsquo;s going on?
         </label>
         <textarea
+          name="message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           rows={4}
