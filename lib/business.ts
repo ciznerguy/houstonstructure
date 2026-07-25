@@ -188,4 +188,23 @@ export const SERVICES: Service[] = [
       "You need an independent review of someone else's repair plan",
     ],
   },
+  {
+    slug: "load-bearing-wall-removal",
+    name: "Load-Bearing Wall Assessment & Removal",
+    shortName: "Load-Bearing Walls",
+    summary:
+      "Find out whether a wall is actually load-bearing, and get the engineer's letter and beam sizing you need before it comes out.",
+    description: [
+      "Opening up a floor plan almost always means asking one question first: is this wall holding anything up? Walls that run perpendicular to your floor joists, sit directly above a beam or foundation, or line up with a wall on the floor above are the ones most likely to be load-bearing — but guessing wrong means a sagging floor, cracked drywall, or worse, once the wall is gone.",
+      "We inspect the framing, trace the load path from the roof down to the foundation, and tell you plainly whether the wall can come out and what it takes to do it safely. Where it can, we size the replacement beam or header, specify the temporary shoring your contractor needs during demo, and provide the stamped engineering letter your permitting office or contractor will ask for.",
+      "This is typically the fastest, least expensive service we offer, since most load-bearing wall questions can be answered in a single visit — but it's also one of the most common ways a renovation goes wrong when it's skipped.",
+    ],
+    signs: [
+      "Planning to open up a floor plan by removing an interior wall",
+      "The wall runs perpendicular to your ceiling joists",
+      "The wall lines up with a wall on the floor above or below",
+      "Your contractor or permit office is asking for an engineer's letter",
+      "A previous renovation already removed a wall without documentation",
+    ],
+  },
 ];
