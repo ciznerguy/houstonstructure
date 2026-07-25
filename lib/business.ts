@@ -18,7 +18,7 @@ export const BUSINESS = {
   ],
   addressLocality: "Houston",
   addressRegion: "TX",
-  siteUrl: "https://www.levihoustonstructural.com",
+  siteUrl: "https://houstonstructure.com",
 } as const;
 
 export type ServiceArea = {
