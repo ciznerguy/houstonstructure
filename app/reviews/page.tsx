@@ -5,7 +5,7 @@ import { BUSINESS } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "Reviews",
-  description: `${BUSINESS.name} holds a ${BUSINESS.rating.toFixed(1)}-star rating from ${BUSINESS.reviewCount} Google reviews.`,
+  description: `${BUSINESS.name} holds a ${BUSINESS.rating.toFixed(1)}-star rating on Google.`,
 };
 
 export default function ReviewsPage() {
@@ -14,7 +14,7 @@ export default function ReviewsPage() {
       <PageHero
         eyebrow="Reviews"
         title="Rated 5.0 stars on Google"
-        subtitle={`${BUSINESS.reviewCount} verified Google reviews from Houston-area homeowners.`}
+        subtitle="Verified Google reviews from Houston-area homeowners."
       />
       <section className="mx-auto max-w-3xl px-5 py-14 text-center">
         <div className="text-5xl font-bold text-[#0B1F3A]">
@@ -24,7 +24,7 @@ export default function ReviewsPage() {
           {"★★★★★"}
         </div>
         <p className="mt-3 text-slate-600">
-          Based on {BUSINESS.reviewCount} reviews on Google Business Profile
+          Based on reviews on Google Business Profile
         </p>
         <a
           href={BUSINESS.googleReviewsUrl}

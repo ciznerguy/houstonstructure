@@ -47,7 +47,7 @@ export default function AboutPage() {
               <strong>Category:</strong> {BUSINESS.category}
             </li>
             <li>
-              <strong>Rating:</strong> {BUSINESS.rating.toFixed(1)} stars ({BUSINESS.reviewCount} Google reviews)
+              <strong>Rating:</strong> {BUSINESS.rating.toFixed(1)} stars (Google reviews)
             </li>
             <li>
               <strong>Service area:</strong> Houston, TX and the surrounding metro

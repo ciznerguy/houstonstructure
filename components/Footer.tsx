@@ -14,7 +14,7 @@ export default function Footer() {
           <div className="mt-4 flex items-center gap-1 text-amber-400">
             {"★★★★★"}
             <span className="ml-2 text-sm text-slate-300">
-              {BUSINESS.rating.toFixed(1)} ({BUSINESS.reviewCount} Google reviews)
+              {BUSINESS.rating.toFixed(1)} (Google reviews)
             </span>
           </div>
           <a

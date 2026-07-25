@@ -31,7 +31,7 @@ export default function Home() {
             <div className="mt-4 flex items-center gap-2 text-amber-400">
               {"★★★★★"}
               <span className="text-sm text-slate-300">
-                {BUSINESS.rating.toFixed(1)} rating · {BUSINESS.reviewCount} Google reviews
+                {BUSINESS.rating.toFixed(1)} rating · Google reviews
               </span>
             </div>
             <div className="mt-8 flex flex-wrap gap-4">

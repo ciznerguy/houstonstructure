@@ -69,8 +69,7 @@ export default async function LocationPage({ params }: Props) {
                 {"★★★★★"}
               </div>
               <div className="mt-1 text-sm text-slate-600">
-                {BUSINESS.rating.toFixed(1)} rating from {BUSINESS.reviewCount} Google
-                reviews
+                {BUSINESS.rating.toFixed(1)} rating · Google reviews
               </div>
               <a
                 href={BUSINESS.phoneHref}

@@ -17,11 +17,6 @@ export default function Schema() {
       "@type": "City",
       name: `${c.name}, TX`,
     })),
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: BUSINESS.rating,
-      reviewCount: BUSINESS.reviewCount,
-    },
     openingHoursSpecification: BUSINESS.hours
       .filter((h) => h.hours !== "Closed" && h.hours !== "By appointment")
       .map((h) => ({
