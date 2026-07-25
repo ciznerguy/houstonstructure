@@ -38,11 +38,10 @@ export const handler: Handler = async (event) => {
     .join("\n");
 
   const transporter = nodemailer.createTransport({
-    host: "smtp.sendgrid.net",
-    port: 587,
+    service: "gmail",
     auth: {
-      user: "apikey",
-      pass: process.env.SENDGRID_API_KEY,
+      user: "ciznerguy@gmail.com",
+      pass: process.env.GMAIL_APP_PASSWORD,
     },
   });
 
