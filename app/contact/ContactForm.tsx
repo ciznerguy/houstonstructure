@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { BUSINESS } from "@/lib/business";
 
 export default function ContactForm() {
   const [name, setName] = useState("");
@@ -8,8 +9,8 @@ export default function ContactForm() {
   const [address, setAddress] = useState("");
   const [message, setMessage] = useState("");
 
-  const mailtoHref = `mailto:?subject=${encodeURIComponent(
-    `Callback request from ${name || "website visitor"}`
+  const mailtoHref = `mailto:${BUSINESS.leadEmails.join(",")}?subject=${encodeURIComponent(
+    BUSINESS.leadEmailSubject
   )}&body=${encodeURIComponent(
     `Name: ${name}\nPhone: ${phone}\nProperty address: ${address}\n\nMessage:\n${message}`
   )}`;

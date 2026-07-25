@@ -9,8 +9,8 @@ export default function FloatingContactButton() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
 
-  const mailtoHref = `mailto:?subject=${encodeURIComponent(
-    `Contact request from ${name || "website visitor"}`
+  const mailtoHref = `mailto:${BUSINESS.leadEmails.join(",")}?subject=${encodeURIComponent(
+    BUSINESS.leadEmailSubject
   )}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}`)}`;
 
   function handleSubmit(e: React.FormEvent) {

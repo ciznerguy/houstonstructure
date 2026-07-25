@@ -20,6 +20,8 @@ export const BUSINESS = {
   addressRegion: "TX",
   siteUrl: "https://houstonstructure.com",
   gtmId: "GTM-W5HHXPXT",
+  leadEmails: ["levi@levihomes.com", "ciznerguy@gmail.com"],
+  leadEmailSubject: "New lead from Houston structure",
 } as const;
 
 export type ServiceArea = {
