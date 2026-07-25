@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     url: BUSINESS.siteUrl,
     siteName: BUSINESS.name,
   },
+  verification: {
+    google: "jrts4ESremhJhAG2XsO_3AvxFqcYaJ5JHj2bKYrpZZs",
+  },
 };
 
 export default function RootLayout({
