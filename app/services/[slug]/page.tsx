@@ -1,0 +1,111 @@
+import Link from "next/link";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import PageHero from "@/components/PageHero";
+import CTASection from "@/components/CTASection";
+import { BUSINESS, SERVICES, SERVICE_AREAS } from "@/lib/business";
+
+type Props = {
+  params: Promise<{ slug: string }>;
+};
+
+export async function generateStaticParams() {
+  return SERVICES.map((s) => ({ slug: s.slug }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const service = SERVICES.find((s) => s.slug === slug);
+  if (!service) return {};
+  return {
+    title: `${service.name} in Houston, TX`,
+    description: service.summary,
+  };
+}
+
+export default async function ServicePage({ params }: Props) {
+  const { slug } = await params;
+  const service = SERVICES.find((s) => s.slug === slug);
+  if (!service) notFound();
+
+  return (
+    <>
+      <PageHero
+        eyebrow="Service"
+        title={`${service.name} — Houston, TX`}
+        subtitle={service.summary}
+      />
+
+      <section className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-3">
+        <div className="md:col-span-2">
+          {service.description.map((p, i) => (
+            <p key={i} className="mb-5 text-slate-700 leading-relaxed">
+              {p}
+            </p>
+          ))}
+        </div>
+
+        <div>
+          <div className="rounded-sm border border-slate-200 p-5">
+            <div className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
+              Signs it&rsquo;s time to call
+            </div>
+            <ul className="mt-4 space-y-2.5 text-sm text-slate-700">
+              {service.signs.map((sign) => (
+                <li key={sign} className="flex items-start gap-2">
+                  <span className="mt-0.5 text-orange-600">▸</span>
+                  {sign}
+                </li>
+              ))}
+            </ul>
+            <a
+              href={BUSINESS.phoneHref}
+              className="mt-5 block rounded-sm bg-[#EA580C] px-4 py-2.5 text-center text-sm font-semibold text-white hover:bg-[#c94b0a]"
+            >
+              Call {BUSINESS.phone}
+            </a>
+          </div>
+
+          <div className="mt-6">
+            <div className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
+              Other services
+            </div>
+            <ul className="mt-3 space-y-2 text-sm">
+              {SERVICES.filter((s) => s.slug !== service.slug).map((s) => (
+                <li key={s.slug}>
+                  <Link href={`/services/${s.slug}`} className="text-slate-700 hover:text-[#0B1F3A] hover:underline">
+                    {s.shortName}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-slate-100 bg-slate-50 py-14">
+        <div className="mx-auto max-w-6xl px-5">
+          <div className="text-xs font-semibold uppercase tracking-[0.14em] text-orange-700">
+            Service Areas
+          </div>
+          <h2 className="mt-2 text-2xl font-bold text-[#0B1F3A]">
+            {service.shortName} across the Houston metro
+          </h2>
+          <div className="mt-6 flex flex-wrap gap-2">
+            {SERVICE_AREAS.map((c) => (
+              <Link
+                key={c.slug}
+                href={`/locations/${c.slug}`}
+                className="rounded-sm border border-slate-200 bg-white px-4 py-2 text-sm text-slate-700 hover:border-[#0B1F3A] hover:text-[#0B1F3A]"
+              >
+                {c.name}, TX
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <CTASection />
+    </>
+  );
+}
