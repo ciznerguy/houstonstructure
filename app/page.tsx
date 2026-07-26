@@ -4,9 +4,9 @@ import CTASection from "@/components/CTASection";
 import { BUSINESS, SERVICES, SERVICE_AREAS } from "@/lib/business";
 
 export const metadata: Metadata = {
-  title: "Structural Engineer & General Contractor in Houston, TX",
+  title: "Structural Engineer in Houston, TX | General Contractor",
   description:
-    "Levi's Houston Structural Repairs, Engineering & Consulting is a licensed and insured structural engineer and general contractor serving the Houston metro: foundation repair, structural repairs, additions, commercial buildouts, and inspection reports. 5.0 stars on Google.",
+    "Levi's Houston Structural Repairs, Engineering & Consulting is a licensed and insured structural engineer in Houston and general contractor serving the metro: foundation repair, structural repairs, additions, commercial buildouts, and inspection reports. 5.0 stars on Google.",
 };
 
 export default function Home() {
@@ -20,11 +20,11 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 sm:py-24 md:grid-cols-2 md:items-center">
           <div>
             <div className="inline-flex items-center gap-2 rounded-sm bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-orange-300">
-              Structural Engineer &amp; General Contractor · Houston, TX
+              Structural Engineer in Houston, TX · General Contractor
             </div>
             <h1 className="mt-4 text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
-              Straight answers on your foundation, from a licensed structural
-              engineer and general contractor.
+              Straight answers on your foundation, from a licensed Houston
+              structural engineer and general contractor.
             </h1>
             <p className="mt-5 max-w-lg text-slate-300">
               We diagnose foundation and structural issues first, then, as a
@@ -129,7 +129,9 @@ export default function Home() {
             <p className="mt-4 text-slate-600">
               That&rsquo;s why we start every job with an engineering
               evaluation, not a repair quote. The right fix depends on
-              what&rsquo;s actually causing the movement.
+              what&rsquo;s actually causing the movement, which is exactly
+              what a structural engineer in Houston should be checking
+              before anyone touches your foundation.
             </p>
           </div>
           <div className="rounded-sm border border-slate-200 bg-white p-6">
