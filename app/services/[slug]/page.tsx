@@ -28,8 +28,31 @@ export default async function ServicePage({ params }: Props) {
   const service = SERVICES.find((s) => s.slug === slug);
   if (!service) notFound();
 
+  const serviceJson = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: service.name,
+    name: service.name,
+    description: service.summary,
+    url: `${BUSINESS.siteUrl}/services/${service.slug}`,
+    provider: {
+      "@type": "ProfessionalService",
+      name: BUSINESS.name,
+      telephone: BUSINESS.phone,
+      url: BUSINESS.siteUrl,
+    },
+    areaServed: SERVICE_AREAS.map((c) => ({
+      "@type": "City",
+      name: `${c.name}, TX`,
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJson) }}
+      />
       <PageHero
         eyebrow="Service"
         title={`${service.name} in Houston, TX`}

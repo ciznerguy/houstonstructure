@@ -1,4 +1,4 @@
-import { BUSINESS, SERVICE_AREAS } from "@/lib/business";
+import { BUSINESS, SERVICE_AREAS, SERVICES } from "@/lib/business";
 
 export default function Schema() {
   const json = {
@@ -13,6 +13,11 @@ export default function Schema() {
       addressRegion: BUSINESS.addressRegion,
       addressCountry: "US",
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: BUSINESS.geo.latitude,
+      longitude: BUSINESS.geo.longitude,
+    },
     areaServed: SERVICE_AREAS.map((c) => ({
       "@type": "City",
       name: `${c.name}, TX`,
@@ -25,6 +30,19 @@ export default function Schema() {
         opens: "08:00",
         closes: "17:00",
       })),
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Services",
+      itemListElement: SERVICES.map((s) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: s.name,
+          description: s.summary,
+          url: `${BUSINESS.siteUrl}/services/${s.slug}`,
+        },
+      })),
+    },
   };
 
   return (

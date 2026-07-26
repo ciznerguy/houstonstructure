@@ -18,6 +18,7 @@ export const BUSINESS = {
   ],
   addressLocality: "Houston",
   addressRegion: "TX",
+  geo: { latitude: 29.7604, longitude: -95.3698 },
   siteUrl: "https://houstonstructure.com",
   gtmId: "GTM-W5HHXPXT",
   leadEmails: ["levi@levihomes.com", "ciznerguy@gmail.com"],
