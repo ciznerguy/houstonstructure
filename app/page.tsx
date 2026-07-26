@@ -6,7 +6,7 @@ import { BUSINESS, SERVICES, SERVICE_AREAS } from "@/lib/business";
 export const metadata: Metadata = {
   title: "Structural Engineer in Houston, TX",
   description:
-    "Levi's Houston Structural Repairs, Engineering & Consulting provides engineer-led foundation repair, structural repairs, inspection reports, and consulting across the Houston metro. 5.0 stars on Google.",
+    "Levi's Houston Structural Repairs, Engineering & Consulting is a licensed and insured structural engineering and general contracting firm serving the Houston metro: foundation repair, structural repairs, additions, commercial buildouts, and inspection reports. 5.0 stars on Google.",
 };
 
 export default function Home() {
@@ -25,14 +25,22 @@ export default function Home() {
             </h1>
             <p className="mt-5 max-w-lg text-slate-300">
               We diagnose foundation and structural issues before recommending
-              a fix — no repair-company sales pitch, just an engineer&rsquo;s
-              opinion you can act on.
+              a fix, and, licensed and insured, we can build the fix
+              ourselves. No repair-company sales pitch, just an
+              engineer&rsquo;s opinion you can act on.
             </p>
-            <div className="mt-4 flex items-center gap-2 text-amber-400">
-              {"★★★★★"}
-              <span className="text-sm text-slate-300">
-                {BUSINESS.rating.toFixed(1)} rating · Google reviews
-              </span>
+            <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2">
+              <div className="flex items-center gap-2 text-amber-400">
+                {"★★★★★"}
+                <span className="text-sm text-slate-300">
+                  {BUSINESS.rating.toFixed(1)} rating · Google reviews
+                </span>
+              </div>
+              {BUSINESS.licensedInsured && (
+                <span className="text-sm font-medium text-slate-300">
+                  Licensed &amp; Insured
+                </span>
+              )}
             </div>
             <div className="mt-8 flex flex-wrap gap-4">
               <a

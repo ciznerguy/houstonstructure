@@ -8,8 +8,9 @@ export default function Footer() {
         <div>
           <div className="text-[15px] font-bold text-white">{BUSINESS.name}</div>
           <p className="mt-3 text-sm leading-relaxed">
-            Licensed structural engineering, foundation repair, and consulting
-            serving {BUSINESS.addressLocality}, TX and the surrounding metro.
+            Licensed and insured structural engineering and general
+            contracting serving {BUSINESS.addressLocality}, TX and the
+            surrounding metro.
           </p>
           <div className="mt-4 flex items-center gap-1 text-amber-400">
             {"★★★★★"}
@@ -71,8 +72,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-slate-700/60 px-5 py-5 text-center text-xs text-slate-400">
-        © {new Date().getFullYear()} {BUSINESS.name}. Serving Houston, The Woodlands, Spring, Sugar
-        Land, Pasadena, League City, and New Caney, TX.
+        © {new Date().getFullYear()} {BUSINESS.name}. Serving {SERVICE_AREAS.map((c) => c.name).join(", ")}, TX.
       </div>
     </footer>
   );

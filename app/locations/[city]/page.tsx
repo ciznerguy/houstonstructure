@@ -45,7 +45,7 @@ export default async function LocationPage({ params }: Props) {
             <p className="mt-3 text-slate-700 leading-relaxed">
               {BUSINESS.name} provides engineer-led foundation and structural
               evaluations to homeowners in {area.name} and the surrounding
-              area. We inspect first and recommend second — every repair
+              area. We inspect first and recommend second. Every repair
               plan is sized to what your property&rsquo;s soil and structure
               actually need.
             </p>

@@ -32,7 +32,7 @@ export default async function ServicePage({ params }: Props) {
     <>
       <PageHero
         eyebrow="Service"
-        title={`${service.name} — Houston, TX`}
+        title={`${service.name} in Houston, TX`}
         subtitle={service.summary}
       />
 

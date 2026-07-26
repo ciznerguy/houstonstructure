@@ -1,7 +1,7 @@
 import { BUSINESS } from "@/lib/business";
 
 export default function CTASection({
-  heading = "Get a straight answer from a structural engineer — not a sales pitch.",
+  heading = "Get a straight answer from a structural engineer, not a sales pitch.",
   subheading = "Call now or send a few details and we'll get back to you the same business day.",
 }: {
   heading?: string;
