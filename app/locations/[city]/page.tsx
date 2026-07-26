@@ -43,11 +43,7 @@ export default async function LocationPage({ params }: Props) {
               Structural services in {area.name}
             </h2>
             <p className="mt-3 text-slate-700 leading-relaxed">
-              {BUSINESS.name} provides engineer-led foundation and structural
-              evaluations to homeowners in {area.name} and the surrounding
-              area. We inspect first and recommend second. Every repair
-              plan is sized to what your property&rsquo;s soil and structure
-              actually need.
+              {`${BUSINESS.name} provides engineer-led foundation and structural evaluations to homeowners in ${area.name} and the surrounding area. We inspect first and recommend second. Every repair plan is sized to what your property's soil and structure actually need.`}
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {SERVICES.map((s) => (
