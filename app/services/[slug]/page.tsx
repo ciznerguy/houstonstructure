@@ -59,6 +59,16 @@ export default async function ServicePage({ params }: Props) {
         subtitle={service.summary}
       />
 
+      {service.image && (
+        <div className="mx-auto max-w-6xl px-5 pt-10">
+          <img
+            src={service.image}
+            alt={`${service.name} in Houston, TX`}
+            className="h-[320px] w-full rounded-sm object-cover sm:h-[420px]"
+          />
+        </div>
+      )}
+
       <section className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-3">
         <div className="md:col-span-2">
           {service.description.map((p, i) => (

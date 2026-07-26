@@ -284,6 +284,7 @@ export type Service = {
   summary: string;
   description: string[];
   signs: string[];
+  image?: string;
 };
 
 export const SERVICES: Service[] = [
@@ -383,6 +384,7 @@ export const SERVICES: Service[] = [
     slug: "general-contracting",
     name: "General Contracting",
     shortName: "General Contracting",
+    image: "/images/general-contracting.jpg",
     summary:
       "Licensed and insured general contracting from the same firm that engineers the fix, so the plan and the build stay in sync.",
     description: [
