@@ -13,7 +13,10 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#0B1F3A] text-white">
+      <section
+        className="relative bg-[#0B1F3A] bg-cover bg-center text-white"
+        style={{ backgroundImage: "linear-gradient(rgba(11,31,58,0.88), rgba(11,31,58,0.93)), url(/images/hero-framing.jpg)" }}
+      >
         <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 sm:py-24 md:grid-cols-2 md:items-center">
           <div>
             <div className="inline-flex items-center gap-2 rounded-sm bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-orange-300">
