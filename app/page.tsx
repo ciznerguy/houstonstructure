@@ -4,9 +4,9 @@ import CTASection from "@/components/CTASection";
 import { BUSINESS, SERVICES, SERVICE_AREAS } from "@/lib/business";
 
 export const metadata: Metadata = {
-  title: "Structural Engineer in Houston, TX",
+  title: "Structural Engineer & General Contractor in Houston, TX",
   description:
-    "Levi's Houston Structural Repairs, Engineering & Consulting is a licensed and insured structural engineering and general contracting firm serving the Houston metro: foundation repair, structural repairs, additions, commercial buildouts, and inspection reports. 5.0 stars on Google.",
+    "Levi's Houston Structural Repairs, Engineering & Consulting is a licensed and insured structural engineer and general contractor serving the Houston metro: foundation repair, structural repairs, additions, commercial buildouts, and inspection reports. 5.0 stars on Google.",
 };
 
 export default function Home() {
@@ -17,17 +17,17 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 sm:py-24 md:grid-cols-2 md:items-center">
           <div>
             <div className="inline-flex items-center gap-2 rounded-sm bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-orange-300">
-              {BUSINESS.category} · Houston, TX
+              Structural Engineer &amp; General Contractor · Houston, TX
             </div>
             <h1 className="mt-4 text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
               Straight answers on your foundation, from a licensed structural
-              engineer.
+              engineer and general contractor.
             </h1>
             <p className="mt-5 max-w-lg text-slate-300">
-              We diagnose foundation and structural issues before recommending
-              a fix, and, licensed and insured, we can build the fix
-              ourselves. No repair-company sales pitch, just an
-              engineer&rsquo;s opinion you can act on.
+              We diagnose foundation and structural issues first, then, as a
+              licensed general contractor, build the fix ourselves. No
+              repair-company sales pitch, no second company to coordinate
+              with, just one licensed team from diagnosis to completion.
             </p>
             <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2">
               <div className="flex items-center gap-2 text-amber-400">
@@ -86,7 +86,7 @@ export default function Home() {
           What we do
         </div>
         <h2 className="mt-2 max-w-2xl text-2xl font-bold text-[#0B1F3A] sm:text-3xl">
-          Engineering-first foundation and structural services
+          Structural engineering and general contracting services
         </h2>
         <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {SERVICES.map((s) => (
