@@ -1,3 +1,9 @@
+declare global {
+  interface Window {
+    dataLayer?: Record<string, unknown>[];
+  }
+}
+
 export async function submitNetlifyForm(formName: string, fields: Record<string, string>) {
   // Fire-and-forget: store a copy in Netlify Forms for a dashboard record (non-critical if it fails).
   fetch("/", {
@@ -13,4 +19,8 @@ export async function submitNetlifyForm(formName: string, fields: Record<string,
     body: JSON.stringify({ formName, fields }),
   });
   if (!res.ok) throw new Error(`Email send failed: ${res.status}`);
+
+  // Only fires on a confirmed successful send, not on every submit attempt.
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: "form_submit_success", form_name: formName });
 }
