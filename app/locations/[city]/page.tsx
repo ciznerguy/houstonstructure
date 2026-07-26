@@ -28,8 +28,25 @@ export default async function LocationPage({ params }: Props) {
   const area = SERVICE_AREAS.find((c) => c.slug === city);
   if (!area) notFound();
 
+  const faqJson = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: area.faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: f.a,
+      },
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJson) }}
+      />
       <PageHero
         eyebrow="Service Area"
         title={`Structural Engineer in ${area.name}, TX`}
@@ -39,13 +56,16 @@ export default async function LocationPage({ params }: Props) {
       <section className="mx-auto max-w-6xl px-5 py-14">
         <div className="grid gap-10 md:grid-cols-3">
           <div className="md:col-span-2">
-            <h2 className="text-xl font-bold text-[#0B1F3A]">
+            {area.intro.map((p, i) => (
+              <p key={i} className="mb-5 text-slate-700 leading-relaxed">
+                {p}
+              </p>
+            ))}
+
+            <h2 className="mt-4 text-xl font-bold text-[#0B1F3A]">
               Structural services in {area.name}
             </h2>
-            <p className="mt-3 text-slate-700 leading-relaxed">
-              {`${BUSINESS.name} provides engineer-led foundation and structural evaluations to homeowners in ${area.name} and the surrounding area. We inspect first and recommend second. Every repair plan is sized to what your property's soil and structure actually need.`}
-            </p>
-            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
               {SERVICES.map((s) => (
                 <Link
                   key={s.slug}
@@ -55,6 +75,18 @@ export default async function LocationPage({ params }: Props) {
                   <div className="font-semibold text-[#0B1F3A]">{s.shortName}</div>
                   <div className="mt-1 text-slate-600">{s.summary}</div>
                 </Link>
+              ))}
+            </div>
+
+            <h2 className="mt-10 text-xl font-bold text-[#0B1F3A]">
+              {area.name} FAQ
+            </h2>
+            <div className="mt-4 space-y-5">
+              {area.faqs.map((f) => (
+                <div key={f.q}>
+                  <div className="font-semibold text-slate-800">{f.q}</div>
+                  <p className="mt-1.5 text-slate-600 leading-relaxed">{f.a}</p>
+                </div>
               ))}
             </div>
           </div>
