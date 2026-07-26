@@ -17,6 +17,11 @@ export default function AboutPage() {
         subtitle={`${BUSINESS.name} serves homeowners across the Houston metro.`}
       />
       <section className="mx-auto max-w-3xl px-5 py-14 text-slate-700 leading-relaxed">
+        <img
+          src="/images/about-renovation.jpg"
+          alt="Renovation work in progress on a Houston-area home"
+          className="mb-8 h-[280px] w-full rounded-sm object-cover sm:h-[360px]"
+        />
         <p className="mb-5">
           Most homeowners find a structural engineer after a foundation repair
           company has already given them a quote, and a reason to be

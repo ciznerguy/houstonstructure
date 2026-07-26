@@ -365,6 +365,7 @@ export const SERVICES: Service[] = [
     slug: "load-bearing-wall-removal",
     name: "Load-Bearing Wall Assessment & Removal",
     shortName: "Load-Bearing Walls",
+    image: "/images/load-bearing-wall-removal.jpg",
     summary:
       "Find out whether a wall is actually load-bearing, and get the engineer's letter and beam sizing you need before it comes out.",
     description: [
@@ -403,6 +404,7 @@ export const SERVICES: Service[] = [
     slug: "home-additions",
     name: "Home Additions & Second-Story Additions",
     shortName: "Home Additions",
+    image: "/images/home-additions.jpg",
     summary:
       "Engineering and licensed construction for room additions and second-story additions, sized to what your existing foundation and framing can actually support.",
     description: [
@@ -421,6 +423,7 @@ export const SERVICES: Service[] = [
     slug: "commercial-buildouts",
     name: "Commercial Buildouts & Tenant Improvements",
     shortName: "Commercial & TI",
+    image: "/images/commercial-buildouts.jpg",
     summary:
       "Structural engineering and licensed construction for tenant improvements and commercial buildouts across the Houston metro.",
     description: [
