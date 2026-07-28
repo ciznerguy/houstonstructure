@@ -292,6 +292,7 @@ export const SERVICES: Service[] = [
     slug: "foundation-repair",
     name: "Foundation Repair",
     shortName: "Foundation Repair",
+    image: "/images/foundation-repair.jpg",
     summary:
       "Engineer-directed foundation repair for slab, pier-and-beam, and post-tension foundations affected by Houston's shifting clay soils.",
     description: [
@@ -311,6 +312,7 @@ export const SERVICES: Service[] = [
     slug: "structural-repairs",
     name: "Structural Repairs",
     shortName: "Structural Repairs",
+    image: "/images/structural-repairs.jpg",
     summary:
       "Repair and reinforcement for load-bearing walls, framing, beams, and other structural elements beyond the foundation.",
     description: [
@@ -330,6 +332,7 @@ export const SERVICES: Service[] = [
     slug: "inspections-reports",
     name: "Structural Inspections & Engineering Reports",
     shortName: "Inspections & Reports",
+    image: "/images/inspections-reports.jpg",
     summary:
       "Sealed structural inspection reports for real estate transactions, insurance claims, permitting, and pre-purchase due diligence.",
     description: [
@@ -348,6 +351,7 @@ export const SERVICES: Service[] = [
     slug: "consulting",
     name: "Structural Engineering Consulting",
     shortName: "Consulting",
+    image: "/images/consulting.jpg",
     summary:
       "Design and forensic consulting for additions, renovations, new construction, and disputes involving structural work.",
     description: [
@@ -442,6 +446,7 @@ export const SERVICES: Service[] = [
     slug: "steel-beam-installation",
     name: "Steel Beam Installation",
     shortName: "Steel Beam Installation",
+    image: "/images/steel-beam-installation.jpg",
     summary:
       "Engineered and installed steel beams for load-bearing wall removals, additions, and structural upgrades.",
     description: [
