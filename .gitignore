@@ -45,3 +45,6 @@ dev.log
 
 # secrets
 .secrets/
+
+# local Claude Code permissions (machine/session-specific)
+.claude/settings.local.json
