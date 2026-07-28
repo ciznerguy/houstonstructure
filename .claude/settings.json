@@ -1,17 +1,16 @@
 {
   "permissions": {
     "allow": [
-      "Bash(mv *)",
-      "Bash(rm *)",
-      "Bash(git add *)",
+      "Bash(git add public/images/*)",
       "Bash(git commit -m *)",
       "Bash(git push)",
-      "Bash(node node_modules/next/dist/bin/next dev *)",
+      "Bash(mv -f *)",
+      "Bash(rm public/images/*)",
+      "Bash(node node_modules/next/dist/bin/next dev --port *)",
       "Bash(node node_modules/next/dist/bin/next build *)",
-      "Bash(curl -s -o /dev/null -w *)",
       "Bash(curl -s http://localhost:*)",
       "Bash(taskkill *)",
-      "PowerShell(*)"
+      "PowerShell(Add-Type -AssemblyName System.Drawing*)"
     ]
   }
 }

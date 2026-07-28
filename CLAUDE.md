@@ -14,10 +14,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 - Reply in Hebrew, in simple language. The user understands technology but always wants the simplest framing, not jargon.
 - Whenever proposing what needs to be done, also propose how (concrete steps/commands) — never just the "what."
-- If something becomes a recurring type of decision ("yes, always do X"), ask once — from then on, just do it without asking again.
+- If something becomes a recurring type of decision ("yes, always do X"), it goes through the **Pre-approved Actions** list below — never a blanket tool-level permission grant.
 - End every task with a short summary of what was actually done.
 - Before any big or significant action, present it first in planning mode: lay out benefits and risks before doing it, not after.
-- Standing pre-approval: when asked to add an image to the site, do it end-to-end without asking permission first — rename the file appropriately, optimize/resize it, wire it into `lib/business.ts`/the relevant page, and commit + push to `master` (Netlify auto-deploys from there). No need to pause and confirm each of these steps.
+
+## Pre-approved Actions
+
+This is a closed list of specific, named actions that can be done end-to-end without pausing to ask each time. **A new item is only added here after the user explicitly approves it in conversation — never add one unilaterally.** Everything not on this list defaults to asking first.
+
+1. **Adding an image to a site page** (approved 2026-07-28): rename the file appropriately, optimize/resize it, wire it into `lib/business.ts`/the relevant page, and commit + push to `master` (Netlify auto-deploys from there).
 
 ## Commands
 
