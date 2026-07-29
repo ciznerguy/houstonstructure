@@ -99,6 +99,20 @@ export default async function ServicePage({ params }: Props) {
             </a>
           </div>
 
+          {service.slug === "load-bearing-wall-removal" && (
+            <div className="mt-6 rounded-sm border border-slate-200 p-5">
+              <div className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
+                Guide
+              </div>
+              <Link
+                href="/guides/load-bearing-wall-removal"
+                className="mt-3 block font-semibold text-[#0B1F3A] hover:underline"
+              >
+                Can You Remove a Load-Bearing Wall? Here&rsquo;s How to Tell
+              </Link>
+            </div>
+          )}
+
           <div className="mt-6">
             <div className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
               Other services

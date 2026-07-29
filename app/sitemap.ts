@@ -30,5 +30,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...servicePages, ...locationPages];
+  const guidePages: MetadataRoute.Sitemap = [
+    { url: `${base}/guides/load-bearing-wall-removal`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
+  ];
+
+  return [...staticPages, ...servicePages, ...locationPages, ...guidePages];
 }
