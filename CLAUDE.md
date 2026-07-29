@@ -24,6 +24,11 @@ This is a closed list of specific, named actions that can be done end-to-end wit
 
 1. **Adding an image to a site page** (approved 2026-07-28): rename the file appropriately, optimize/resize it, wire it into `lib/business.ts`/the relevant page, and commit + push to `master` (Netlify auto-deploys from there).
 
+   To actually get the no-prompt benefit from `.claude/settings.json`, execute this as **separate, atomic commands** — the permission matcher checks the literal command string, so chaining breaks it:
+   - Run each step as its own Bash call: resize (PowerShell), `mv -f <old> <new>`, `rm <original>`, dev server start (use the Bash tool's own `run_in_background` param instead of manual `&`/log redirection), `sleep` + `curl` as separate calls, `taskkill` once you have the PID, then `git add public/images/<file>`, `git commit -m "<one line, no heredoc>"`, `git push` — each as its own call, never joined with `&&`/`;`/`$(...)`.
+   - Two prompts can't be removed no matter how this is written: `mv` with flags (e.g. `-f`) always requires manual approval as a hard rule, and any command containing `$(...)`/heredocs/`if` is always flagged as "cannot be statically analyzed." A multi-line git commit message needs a heredoc, so keep those commit messages to a single `-m` line for this workflow specifically.
+   - `.claude/settings.json` permission changes may only take effect in a fresh session, not retroactively mid-session.
+
 ## Commands
 
 ```bash
