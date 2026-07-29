@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import CTASection from "@/components/CTASection";
 import { BUSINESS, SERVICES, SERVICE_AREAS } from "@/lib/business";
+import { GUIDES } from "@/lib/guides";
 
 export const metadata: Metadata = {
   title: "Structural Engineer in Houston, TX | General Contractor",
@@ -150,6 +151,31 @@ export default function Home() {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Guides */}
+      <section className="mx-auto max-w-6xl px-5 py-16">
+        <div className="text-xs font-semibold uppercase tracking-[0.14em] text-orange-700">
+          Guides
+        </div>
+        <h2 className="mt-2 max-w-2xl text-2xl font-bold text-[#0B1F3A] sm:text-3xl">
+          Straight answers, before you start a project
+        </h2>
+        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {GUIDES.map((g) => (
+            <Link
+              key={g.slug}
+              href={`/guides/${g.slug}`}
+              className="group flex flex-col rounded-sm border border-slate-200 p-5 transition-colors hover:border-[#0B1F3A]"
+            >
+              <div className="text-base font-semibold text-[#0B1F3A]">{g.title}</div>
+              <p className="mt-2 flex-1 text-sm text-slate-600">{g.summary}</p>
+              <span className="mt-4 text-sm font-semibold text-orange-700 group-hover:underline">
+                Read the guide →
+              </span>
+            </Link>
+          ))}
         </div>
       </section>
 

@@ -4,6 +4,7 @@ import { BUSINESS } from "@/lib/business";
 const NAV = [
   { href: "/services", label: "Services" },
   { href: "/locations", label: "Service Areas" },
+  { href: "/guides", label: "Guides" },
   { href: "/reviews", label: "Reviews" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },

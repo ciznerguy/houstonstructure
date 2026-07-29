@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { BUSINESS, SERVICES, SERVICE_AREAS } from "@/lib/business";
+import { GUIDES } from "@/lib/guides";
 
 export const dynamic = "force-static";
 
@@ -11,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/`, lastModified: now, changeFrequency: "monthly", priority: 1 },
     { url: `${base}/services`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/locations`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/guides`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/about`, lastModified: now, changeFrequency: "yearly", priority: 0.5 },
     { url: `${base}/reviews`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${base}/contact`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
@@ -30,9 +32,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const guidePages: MetadataRoute.Sitemap = [
-    { url: `${base}/guides/load-bearing-wall-removal`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
-  ];
+  const guidePages: MetadataRoute.Sitemap = GUIDES.map((g) => ({
+    url: `${base}/guides/${g.slug}`,
+    lastModified: now,
+    changeFrequency: "yearly",
+    priority: 0.6,
+  }));
 
   return [...staticPages, ...servicePages, ...locationPages, ...guidePages];
 }
