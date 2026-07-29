@@ -207,6 +207,53 @@ export default function LoadBearingWallGuidePage() {
             </ol>
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
+              What it looks like on an actual job
+            </h2>
+            <p className="mb-5">
+              A recent Houston job, start to finish: inspecting the opening
+              from below, marking the wall against the structural drawing,
+              setting temporary shoring, opening the wall, and setting the
+              new beam.
+            </p>
+            <div className="mb-5 grid gap-4 sm:grid-cols-2">
+              {[
+                {
+                  src: "/images/load-bearing-wall-removal-1-inspection.jpg",
+                  caption: "Inspecting the framing above the wall before anything comes out.",
+                },
+                {
+                  src: "/images/load-bearing-wall-removal-2-measurement.jpg",
+                  caption: "Marking the wall against the structural drawing.",
+                },
+                {
+                  src: "/images/load-bearing-wall-removal-3-shoring.jpg",
+                  caption: "Setting temporary shoring to carry the load during demolition.",
+                },
+                {
+                  src: "/images/load-bearing-wall-removal-4-demolition.jpg",
+                  caption: "Opening the wall once the load has somewhere else to go.",
+                },
+              ].map((photo) => (
+                <div key={photo.src}>
+                  <img
+                    src={photo.src}
+                    alt={photo.caption}
+                    className="h-[220px] w-full rounded-sm object-cover"
+                  />
+                  <p className="mt-2 text-sm text-slate-600">{photo.caption}</p>
+                </div>
+              ))}
+            </div>
+            <img
+              src="/images/load-bearing-wall-removal-5-beam-install.jpg"
+              alt="Setting the new engineered beam in place of the wall"
+              className="h-[280px] w-full rounded-sm object-cover sm:h-[360px]"
+            />
+            <p className="mt-2 mb-5 text-sm text-slate-600">
+              Setting the new engineered beam in place of the wall.
+            </p>
+
+            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
               How long it takes
             </h2>
             <p className="mb-5">
