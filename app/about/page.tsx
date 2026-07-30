@@ -19,6 +19,8 @@ export default function AboutPage() {
       <section className="mx-auto max-w-3xl px-5 py-14 text-slate-700 leading-relaxed">
         <img
           src="/images/about-renovation.jpg"
+          srcSet="/images/about-renovation-800.jpg 800w, /images/about-renovation.jpg 1600w"
+          sizes="100vw"
           alt="Renovation work in progress on a Houston-area home"
           className="mb-8 h-[280px] w-full rounded-sm object-cover sm:h-[360px]"
         />

@@ -63,6 +63,8 @@ export default async function ServicePage({ params }: Props) {
         <div className="mx-auto max-w-6xl px-5 pt-10">
           <img
             src={service.image}
+            srcSet={`${service.image.replace(".jpg", "-800.jpg")} 800w, ${service.image} 1600w`}
+            sizes="100vw"
             alt={`${service.name} in Houston, TX`}
             className="h-[320px] w-full rounded-sm object-cover sm:h-[420px]"
           />

@@ -237,6 +237,8 @@ export default function LoadBearingWallGuidePage() {
                 <div key={photo.src}>
                   <img
                     src={photo.src}
+                    srcSet={`${photo.src.replace(".jpg", "-800.jpg")} 800w, ${photo.src} 1200w`}
+                    sizes="(min-width: 640px) 50vw, 100vw"
                     alt={photo.caption}
                     className="h-[220px] w-full rounded-sm object-cover"
                   />
@@ -246,6 +248,8 @@ export default function LoadBearingWallGuidePage() {
             </div>
             <img
               src="/images/load-bearing-wall-removal-5-beam-install.jpg"
+              srcSet="/images/load-bearing-wall-removal-5-beam-install-800.jpg 800w, /images/load-bearing-wall-removal-5-beam-install.jpg 1200w"
+              sizes="100vw"
               alt="Setting the new engineered beam in place of the wall"
               className="h-[280px] w-full rounded-sm object-cover sm:h-[360px]"
             />
