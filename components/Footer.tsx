@@ -33,7 +33,7 @@ export default function Footer() {
           <ul className="mt-3 space-y-2 text-sm">
             {SERVICES.map((s) => (
               <li key={s.slug}>
-                <Link href={`/services/${s.slug}`} className="hover:text-white">
+                <Link href={`/services/${s.slug}`} prefetch={false} className="hover:text-white">
                   {s.shortName}
                 </Link>
               </li>
@@ -48,7 +48,7 @@ export default function Footer() {
           <ul className="mt-3 space-y-2 text-sm">
             {SERVICE_AREAS.map((c) => (
               <li key={c.slug}>
-                <Link href={`/locations/${c.slug}`} className="hover:text-white">
+                <Link href={`/locations/${c.slug}`} prefetch={false} className="hover:text-white">
                   {c.name}, TX
                 </Link>
               </li>

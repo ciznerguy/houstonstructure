@@ -40,6 +40,7 @@ export default function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
+                  prefetch={false}
                   className="text-sm font-medium text-slate-200 transition-colors hover:text-white"
                 >
                   {item.label}
@@ -50,6 +51,7 @@ export default function Header() {
               <div key={item.href} className="group/drop relative">
                 <Link
                   href={item.href}
+                  prefetch={false}
                   className="text-sm font-medium text-slate-200 transition-colors hover:text-white"
                 >
                   {item.label}
@@ -60,6 +62,7 @@ export default function Header() {
                       <Link
                         key={d.href}
                         href={d.href}
+                        prefetch={false}
                         className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#0B1F3A]"
                       >
                         {d.label}
@@ -95,6 +98,7 @@ export default function Header() {
           <Link
             key={item.href}
             href={item.href}
+            prefetch={false}
             className="py-2 text-sm font-medium text-slate-200 hover:text-white"
           >
             {item.label}
