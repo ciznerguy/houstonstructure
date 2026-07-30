@@ -20,6 +20,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${service.name} in Houston, TX`,
     description: service.summary,
+    ...(service.image && {
+      openGraph: { images: [{ url: service.image, width: 1600, height: 900 }] },
+    }),
   };
 }
 
@@ -35,6 +38,7 @@ export default async function ServicePage({ params }: Props) {
     name: service.name,
     description: service.summary,
     url: `${BUSINESS.siteUrl}/services/${service.slug}`,
+    ...(service.image && { image: `${BUSINESS.siteUrl}${service.image}` }),
     provider: {
       "@type": "ProfessionalService",
       name: BUSINESS.name,
@@ -65,7 +69,7 @@ export default async function ServicePage({ params }: Props) {
             src={service.image}
             srcSet={`${service.image.replace(".jpg", "-800.jpg")} 800w, ${service.image} 1600w`}
             sizes="100vw"
-            alt={`${service.name} in Houston, TX`}
+            alt={service.imageAlt ?? `${service.name} in Houston, TX`}
             fetchPriority="high"
             className="h-[320px] w-full rounded-sm object-cover sm:h-[420px]"
           />

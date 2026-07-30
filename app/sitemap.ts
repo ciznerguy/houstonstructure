@@ -9,11 +9,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
   const staticPages: MetadataRoute.Sitemap = [
-    { url: `${base}/`, lastModified: now, changeFrequency: "monthly", priority: 1 },
+    { url: `${base}/`, lastModified: now, changeFrequency: "monthly", priority: 1, images: [`${base}/images/hero-framing.jpg`] },
     { url: `${base}/services`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/locations`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/guides`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/about`, lastModified: now, changeFrequency: "yearly", priority: 0.5 },
+    { url: `${base}/about`, lastModified: now, changeFrequency: "yearly", priority: 0.5, images: [`${base}/images/about-renovation.jpg`] },
     { url: `${base}/reviews`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${base}/contact`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
   ];
@@ -23,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: now,
     changeFrequency: "monthly",
     priority: 0.8,
+    ...(s.image && { images: [`${base}${s.image}`] }),
   }));
 
   const locationPages: MetadataRoute.Sitemap = SERVICE_AREAS.map((c) => ({
@@ -37,6 +38,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: now,
     changeFrequency: "yearly",
     priority: 0.6,
+    images: [
+      `${base}/images/load-bearing-wall-removal-1-inspection.jpg`,
+      `${base}/images/load-bearing-wall-removal-2-measurement.jpg`,
+      `${base}/images/load-bearing-wall-removal-3-shoring.jpg`,
+      `${base}/images/load-bearing-wall-removal-4-demolition.jpg`,
+      `${base}/images/load-bearing-wall-removal-5-beam-install.jpg`,
+    ],
   }));
 
   return [...staticPages, ...servicePages, ...locationPages, ...guidePages];

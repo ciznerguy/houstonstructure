@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   title: "Can You Remove a Load-Bearing Wall? Here's How to Tell",
   description:
     "How to tell if a wall is load-bearing, what the engineering process actually involves, and answers to the questions Houston homeowners ask most before opening up a floor plan.",
+  openGraph: {
+    images: [
+      { url: "/images/load-bearing-wall-removal-5-beam-install.jpg", width: 1200, height: 655 },
+    ],
+  },
 };
 
 const faqs = [

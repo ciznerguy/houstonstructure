@@ -7,6 +7,7 @@ export default function Schema() {
     name: BUSINESS.name,
     telephone: BUSINESS.phone,
     url: BUSINESS.siteUrl,
+    image: `${BUSINESS.siteUrl}/images/hero-framing.jpg`,
     address: {
       "@type": "PostalAddress",
       addressLocality: BUSINESS.addressLocality,
@@ -40,6 +41,7 @@ export default function Schema() {
           name: s.name,
           description: s.summary,
           url: `${BUSINESS.siteUrl}/services/${s.slug}`,
+          ...(s.image && { image: `${BUSINESS.siteUrl}${s.image}` }),
         },
       })),
     },

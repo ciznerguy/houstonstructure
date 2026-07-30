@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: BUSINESS.siteUrl,
     siteName: BUSINESS.name,
+    images: [{ url: "/images/hero-framing.jpg", width: 1600, height: 900 }],
   },
   verification: {
     google: "jrts4ESremhJhAG2XsO_3AvxFqcYaJ5JHj2bKYrpZZs",
