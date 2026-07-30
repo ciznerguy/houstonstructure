@@ -17,6 +17,8 @@ export default function Home() {
       <section className="relative overflow-hidden bg-[#0B1F3A] text-white">
         <img
           src="/images/hero-framing.jpg"
+          srcSet="/images/hero-framing-800.jpg 800w, /images/hero-framing.jpg 1600w"
+          sizes="100vw"
           alt=""
           fetchPriority="high"
           className="absolute inset-0 h-full w-full object-cover"
