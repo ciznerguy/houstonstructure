@@ -65,12 +65,13 @@ app/
 
 components/
   Schema.tsx                  → site-wide JSON-LD (ProfessionalService/GeneralContractor, geo, OfferCatalog of all SERVICES)
-  Header.tsx                  → mobile nav toggle is pure CSS (`group-has-checked:`), no client component/JS needed
+  Header.tsx                  → mobile nav toggle is pure CSS (`group-has-checked/mobile:`); desktop Services/Service Areas/Guides also get pure-CSS hover dropdowns (`group/drop` + `group-hover/drop:block`) listing every item from SERVICES/SERVICE_AREAS/GUIDES — no client component/JS for any of it
   FloatingContactButton.tsx   → site-wide quick-contact modal
   PageHero.tsx, CTASection.tsx, Footer.tsx
 
 lib/
   business.ts                 → BUSINESS / SERVICES / SERVICE_AREAS — single source of truth
+  guides.ts                   → GUIDES array (slug, title, summary) driving /guides index, nav dropdown, homepage section, and sitemap
   netlify-forms.ts            → submitNetlifyForm(), the shared lead-submission path
 
 netlify/functions/
@@ -95,3 +96,25 @@ Only on confirmed success does it push `{ event: "form_submit_success" }` to `wi
 - GTM container ID is `BUSINESS.gtmId`, loaded via the standard snippet hardcoded in `app/layout.tsx`.
 - `components/Schema.tsx` renders one global JSON-LD block; individual service/location pages add their own additional JSON-LD (`Service`, `FAQPage`) on top of it.
 - `scripts/google-auth.mjs` exports `getAccessToken(scopes[])` for calling GTM/GA4/Search Console APIs directly from Node (no external deps, signs its own JWT), reading the service-account key from `.secrets/gcp-service-account.json` (gitignored).
+
+### Images & performance
+
+- **Every image needs a mobile variant + `srcset`.** Convention: `<name>.jpg` (desktop, ~1600w) plus `<name>-800.jpg` (mobile, 800w, JPEG quality ~75), wired as `srcSet={"<name>-800.jpg 800w, <name>.jpg 1600w"} sizes="100vw"`. Skipping this measurably tanks mobile PageSpeed — confirmed 2026-07-30: adding it took the homepage and the load-bearing-wall guide from ~73-80 to ~98 on mobile (Slow 4G Lighthouse), LCP from 5-7s down to ~2s.
+- **Never use a CSS `background-image` for a large hero visual.** The Largest Contentful Paint spec explicitly excludes CSS background images from LCP candidacy, AND the browser can't discover/fetch them via the preload scanner until CSS is parsed — both bad. Use a real `<img>` (absolutely positioned behind an overlay `<div>`, content `relative` on top) with `fetchPriority="high"`.
+- **Any image visible above the fold on initial load should get `fetchPriority="high"`** (homepage hero, the service-page hero image, the about-page image). Images below the fold (e.g. a photo gallery lower on a guide page) don't need it — Lighthouse won't pick them as the LCP candidate if text/content above them paints first.
+- **Known open issue** (as of 2026-07-30): service pages (e.g. `/services/foundation-repair`) still score ~78 mobile / LCP ~5.5s even after srcset + fetchPriority were added — improved from 74 but nowhere near the ~98 achieved on the homepage/guide page with the identical pattern. The real LCP element/blocker on the service-page template hasn't been identified yet (needs the actual "LCP breakdown" insight expanded on a live PageSpeed Insights report, not more guessing). Check for an open task/investigate before assuming this is fixed.
+- To check real PageSpeed Insights scores (not guesses): the public `pagespeedonline.googleapis.com` REST API is unreliable here — anonymous calls hit a shared, already-exhausted daily quota (429), and calling it with this project's own OAuth token 403s (`insufficientPermissions` — the API is API-key-only, no key is provisioned). The working method is driving `https://pagespeed.web.dev/analysis?url=<encoded-url>&form_factor=mobile|desktop` in a real browser (this triggers a live run, unlike the plain form which is awkward to automate) and reading the rendered report.
+
+### Content: Guides
+
+- One-off informational articles (not a running blog) live at `app/guides/<slug>/page.tsx`, each a self-contained static page (no `[slug]` dynamic route — add a new folder per guide). Register every guide's `{slug, title, summary}` in `lib/guides.ts`'s `GUIDES` array; that alone wires it into the `/guides` index, the header dropdown, the homepage section, and `sitemap.ts`.
+- A guide can cross-link to/from its related service page (see the `service.slug === "load-bearing-wall-removal"` conditional block in `app/services/[slug]/page.tsx`).
+- Writing rule: no em-dashes or other AI-detectable phrasing patterns in any published content — the user explicitly checks for this.
+
+### Analytics & Search integrations (current state, verify before trusting)
+
+- **GA4**: property `Main` (399185368 / 543144214), stream `Main Website` (`G-DZZRLE7LND`). An Internal Traffic rule ("Guy's IP", `72.14.201.83/32`) plus an Active Data Filter excludes the user's own traffic going forward (not retroactive) — set up 2026-07-28, since there's no public API for this (`internalTrafficRules` isn't in the Admin API v1alpha discovery doc).
+- **GTM**: container `GTM-W5HHXPXT` (account 6367968934, container 259368693). `phone_call` fires from a `linkClick` trigger on `tel:` hrefs; `generate_lead` fires from the custom `form_submit_success` event.
+- **Search Console**: property `https://houstonstructure.com`, verified via HTML meta tag. A GA4 Free-form Exploration "Calls & Forms by Source" exists under Explore (Event name × Session source/medium, filtered to `phone_call`/`generate_lead`) — it defaults to **private** on creation, must be explicitly shared (Explore gallery → row menu → Share) or its creator is the only one who can see it.
+- **Google Business Profile API: still not working.** Hard-blocked behind a manual Google review, tracked as case `5-6797000041158` (submitted 2026-07-26, stated 7-10 business days, last checked 2026-07-28 still pending/quota 0). Three earlier attempts (case IDs 8-8141000041253, 4-7018000041535, 1-7940000041911) are dead ends — they used the wrong request-type ("Quota Increase" instead of "Application For Basic API Access") and were auto-denied; don't repeat that path. Without this API, Google Local/Map Pack visibility cannot be checked programmatically — only via the (currently pending) GBP Performance API or a manual Google Maps check.
+- **Declined, don't re-suggest**: adding `aggregateRating` schema back (would require exposing a review count, which the user explicitly wants hidden everywhere — declined twice, 2026-07-28 and 2026-07-29, when the daily SEO-scan routine proposed it).
