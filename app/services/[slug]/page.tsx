@@ -4,9 +4,15 @@ import { notFound } from "next/navigation";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
 import { BUSINESS, SERVICES, SERVICE_AREAS } from "@/lib/business";
+import { GUIDES } from "@/lib/guides";
 
 type Props = {
   params: Promise<{ slug: string }>;
+};
+
+const SERVICE_TO_GUIDE_SLUG: Record<string, string> = {
+  "load-bearing-wall-removal": "load-bearing-wall-removal",
+  "home-additions": "planning-a-home-addition",
 };
 
 export async function generateStaticParams() {
@@ -106,19 +112,23 @@ export default async function ServicePage({ params }: Props) {
             </a>
           </div>
 
-          {service.slug === "load-bearing-wall-removal" && (
-            <div className="mt-6 rounded-sm border border-slate-200 p-5">
-              <div className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
-                Guide
+          {SERVICE_TO_GUIDE_SLUG[service.slug] && (() => {
+            const guide = GUIDES.find((g) => g.slug === SERVICE_TO_GUIDE_SLUG[service.slug]);
+            if (!guide) return null;
+            return (
+              <div className="mt-6 rounded-sm border border-slate-200 p-5">
+                <div className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
+                  Guide
+                </div>
+                <Link
+                  href={`/guides/${guide.slug}`}
+                  className="mt-3 block font-semibold text-[#0B1F3A] hover:underline"
+                >
+                  {guide.title}
+                </Link>
               </div>
-              <Link
-                href="/guides/load-bearing-wall-removal"
-                className="mt-3 block font-semibold text-[#0B1F3A] hover:underline"
-              >
-                Can You Remove a Load-Bearing Wall? Here&rsquo;s How to Tell
-              </Link>
-            </div>
-          )}
+            );
+          })()}
 
           <div className="mt-6">
             <div className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">

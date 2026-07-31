@@ -33,18 +33,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  const guideImages: Record<string, string[]> = {
+    "load-bearing-wall-removal": [
+      "/images/load-bearing-wall-removal-1-inspection.jpg",
+      "/images/load-bearing-wall-removal-2-measurement.jpg",
+      "/images/load-bearing-wall-removal-3-shoring.jpg",
+      "/images/load-bearing-wall-removal-4-demolition.jpg",
+      "/images/load-bearing-wall-removal-5-beam-install.jpg",
+    ],
+    "planning-a-home-addition": ["/images/home-additions.jpg"],
+  };
+
   const guidePages: MetadataRoute.Sitemap = GUIDES.map((g) => ({
     url: `${base}/guides/${g.slug}`,
     lastModified: now,
     changeFrequency: "yearly",
     priority: 0.6,
-    images: [
-      `${base}/images/load-bearing-wall-removal-1-inspection.jpg`,
-      `${base}/images/load-bearing-wall-removal-2-measurement.jpg`,
-      `${base}/images/load-bearing-wall-removal-3-shoring.jpg`,
-      `${base}/images/load-bearing-wall-removal-4-demolition.jpg`,
-      `${base}/images/load-bearing-wall-removal-5-beam-install.jpg`,
-    ],
+    ...(guideImages[g.slug] && { images: guideImages[g.slug].map((img) => `${base}${img}`) }),
   }));
 
   return [...staticPages, ...servicePages, ...locationPages, ...guidePages];
