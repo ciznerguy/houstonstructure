@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
+import FloatingCostEstimatorButton from "@/components/FloatingCostEstimatorButton";
 import { BUSINESS } from "@/lib/business";
 
 export const metadata: Metadata = {
@@ -49,6 +50,7 @@ export default function HomeAdditionGuidePage() {
 
   return (
     <>
+      <FloatingCostEstimatorButton />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJson) }}

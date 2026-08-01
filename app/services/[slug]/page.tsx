@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
+import FloatingCostEstimatorButton from "@/components/FloatingCostEstimatorButton";
 import { BUSINESS, SERVICES, SERVICE_AREAS } from "@/lib/business";
 import { GUIDES } from "@/lib/guides";
 
@@ -59,6 +60,7 @@ export default async function ServicePage({ params }: Props) {
 
   return (
     <>
+      {service.slug === "home-additions" && <FloatingCostEstimatorButton />}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJson) }}
