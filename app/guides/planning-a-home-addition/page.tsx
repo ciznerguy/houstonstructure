@@ -305,6 +305,18 @@ export default function HomeAdditionGuidePage() {
                 Call {BUSINESS.phone}
               </a>
             </div>
+
+            <div className="mt-6 rounded-sm border border-slate-200 p-5">
+              <div className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
+                Free Tool
+              </div>
+              <Link
+                href="/cost-estimator"
+                className="mt-3 block font-semibold text-[#0B1F3A] hover:underline"
+              >
+                Get a Home Addition Cost Estimate
+              </Link>
+            </div>
           </div>
         </div>
       </section>

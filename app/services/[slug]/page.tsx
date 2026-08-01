@@ -112,6 +112,20 @@ export default async function ServicePage({ params }: Props) {
             </a>
           </div>
 
+          {service.slug === "home-additions" && (
+            <div className="mt-6 rounded-sm border border-slate-200 p-5">
+              <div className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
+                Free Tool
+              </div>
+              <Link
+                href="/cost-estimator"
+                className="mt-3 block font-semibold text-[#0B1F3A] hover:underline"
+              >
+                Get a Home Addition Cost Estimate
+              </Link>
+            </div>
+          )}
+
           {SERVICE_TO_GUIDE_SLUG[service.slug] && (() => {
             const guide = GUIDES.find((g) => g.slug === SERVICE_TO_GUIDE_SLUG[service.slug]);
             if (!guide) return null;
