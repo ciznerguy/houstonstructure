@@ -122,10 +122,6 @@ export default function HowToChooseAStructuralEngineerPage() {
             </h2>
             <ol className="mb-5 list-decimal space-y-3 pl-5">
               <li>
-                <strong>What's your PE license number, and can I look it up?</strong>{" "}
-                A direct, immediate answer is what you want here.
-              </li>
-              <li>
                 <strong>Will you give me a written, stamped report, or just a verbal opinion?</strong>{" "}
                 A verbal opinion doesn&rsquo;t help you at resale, with an
                 insurance claim, or with a permitting office.
