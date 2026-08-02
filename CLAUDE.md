@@ -32,6 +32,8 @@ This is a closed list of specific, named actions that can be done end-to-end wit
 2. **Starting/stopping the local dev server for verification** (approved 2026-07-30): run `node node_modules/next/dist/bin/next dev --port <port>` in the background and `taskkill` it when done, without asking each time — this is just for checking a change works before pushing, not a site change itself.
    - `.claude/settings.json` permission changes may only take effect in a fresh session, not retroactively mid-session.
 
+3. **Read-only analytics/Search Console queries** (approved 2026-08-02): running Node scripts against the GA4 Data API and/or Search Console API via `scripts/google-auth.mjs` to check traffic, impressions, clicks, etc. — GET-only, no writes, no side effects. Write the query script to a fixed path under `scratchpad/` (e.g. `scratchpad/ga4-check.mjs`) and invoke via `node "C:\Users\User\Desktop\levi-structural-site\scratchpad\<name>.mjs"` — matches the fixed-script-path permission workaround from item 1. When checking traffic/leads numbers, filter to United States only unless told otherwise — non-US sessions in this data are noise (bots, the user's own/team's out-of-country access), not real prospects.
+
 ## Commands
 
 ```bash
