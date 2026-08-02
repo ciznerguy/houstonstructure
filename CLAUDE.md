@@ -96,6 +96,7 @@ Only on confirmed success does it push `{ event: "form_submit_success" }` to `wi
 - GTM container ID is `BUSINESS.gtmId`, loaded via the standard snippet hardcoded in `app/layout.tsx`.
 - `components/Schema.tsx` renders one global JSON-LD block; individual service/location pages add their own additional JSON-LD (`Service`, `FAQPage`) on top of it.
 - `scripts/google-auth.mjs` exports `getAccessToken(scopes[])` for calling GTM/GA4/Search Console APIs directly from Node (no external deps, signs its own JWT), reading the service-account key from `.secrets/gcp-service-account.json` (gitignored).
+- **Standing rule for any new page** (added 2026-08-02): if the page has FAQ-style content, give it `FAQPage` JSON-LD (see `app/guides/*/page.tsx` or `app/locations/[city]/page.tsx` for the pattern); if it's a service/offering page, give it `Service` JSON-LD with an `image` field when one exists (see `app/services/[slug]/page.tsx`). Before publishing, paste the live page URL into Google's [Rich Results Test](https://search.google.com/test/rich-results) to confirm it's error-free. **Never add `aggregateRating`/review-count schema** to any page, new or existing — see the declined-decision note below; this still applies no matter which page it's suggested for.
 
 ### Images & performance
 
