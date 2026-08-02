@@ -159,11 +159,14 @@ export default function LoadBearingWallGuidePage() {
               complicate a claim later.
             </p>
             <p className="mb-5">
-              A single visit from an engineer, before any wall comes out, is
-              the cheapest insurance in the whole project. It&rsquo;s also
-              usually far cheaper than most homeowners expect, since this is
-              typically the shortest and most straightforward service we
-              provide.
+              A single visit from a{" "}
+              <Link href="/" className="text-[#0B1F3A] underline hover:no-underline">
+                structural engineer houston
+              </Link>{" "}
+              homeowners trust, before any wall comes out, is the cheapest
+              insurance in the whole project. It&rsquo;s also usually far
+              cheaper than most homeowners expect, since this is typically
+              the shortest and most straightforward service we provide.
             </p>
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">

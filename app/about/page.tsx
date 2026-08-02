@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
@@ -29,11 +30,15 @@ export default function AboutPage() {
           className="mb-8 h-[280px] w-full rounded-sm object-cover sm:h-[360px]"
         />
         <p className="mb-5">
-          Most homeowners find a structural engineer after a foundation repair
-          company has already given them a quote, and a reason to be
-          skeptical of it. Our approach starts one step earlier: an
-          independent engineering evaluation of what&rsquo;s actually
-          happening to your home, before anyone proposes a fix.
+          Most homeowners find a{" "}
+          <Link href="/" className="text-[#0B1F3A] underline hover:no-underline">
+            structural engineer houston
+          </Link>{" "}
+          trusts only after a foundation repair company has already given
+          them a quote, and a reason to be skeptical of it. Our approach
+          starts one step earlier: an independent engineering evaluation of
+          what&rsquo;s actually happening to your home, before anyone
+          proposes a fix.
         </p>
         <p className="mb-5">
           That distinction matters in Houston more than most places. The

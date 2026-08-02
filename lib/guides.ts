@@ -17,4 +17,10 @@ export const GUIDES: Guide[] = [
     summary:
       "Why the engineering question should come before the floor plan, building out versus building up, Houston-specific permit issues, and answers to the questions homeowners ask most before adding onto their home.",
   },
+  {
+    slug: "how-to-choose-a-structural-engineer",
+    title: "How to Choose a Structural Engineer",
+    summary:
+      "What to check before hiring a structural engineer in Houston: licensing, independence from repair sales, local soil experience, and the questions worth asking before you sign anything.",
+  },
 ];
