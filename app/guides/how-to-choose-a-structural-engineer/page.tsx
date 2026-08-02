@@ -12,10 +12,6 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    q: "How do I verify a structural engineer's license in Texas?",
-    a: "The Texas Board of Professional Engineers and Land Surveyors keeps a free, searchable license lookup on its website. Any licensed engineer should be able to give you their license number without hesitation, and it should match what you find in that lookup.",
-  },
-  {
     q: "Should I use the same company for the engineering evaluation and the repair?",
     a: "It depends on what you're optimizing for. Separate companies give you a built-in second opinion, since the evaluator has no financial stake in the repair. A single licensed firm that does both can mean fewer handoffs and less chance of miscommunication between the plan and the crew. Neither approach is automatically wrong, but you should know which one you're getting and ask how the company keeps the evaluation independent of the sales side.",
   },
