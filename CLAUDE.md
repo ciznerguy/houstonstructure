@@ -113,6 +113,7 @@ Only on confirmed success does it push `{ event: "form_submit_success" }` to `wi
 - One-off informational articles (not a running blog) live at `app/guides/<slug>/page.tsx`, each a self-contained static page (no `[slug]` dynamic route — add a new folder per guide). Register every guide's `{slug, title, summary}` in `lib/guides.ts`'s `GUIDES` array; that alone wires it into the `/guides` index, the header dropdown, the homepage section, and `sitemap.ts`.
 - A guide can cross-link to/from its related service page (see the `service.slug === "load-bearing-wall-removal"` conditional block in `app/services/[slug]/page.tsx`).
 - Writing rule: no em-dashes or other AI-detectable phrasing patterns in any published content — the user explicitly checks for this.
+- **Standing rule (added 2026-08-02): natural, human-sounding copy always wins over exact-match SEO anchor text.** Never force an awkward keyword phrase into a sentence just to match a target search query verbatim (e.g. don't write "structural engineer houston" mid-sentence without "in" just because that's the literal query string in Search Console data — write "structural engineer in Houston" and link that instead). If a keyword or internal link can't be worked in without the sentence reading unnaturally, stop and ask the user rather than publish it. Unnatural copy is worse for lead generation than a slightly less exact-match anchor, since it undermines trust with the actual reader.
 
 ### Analytics & Search integrations (current state, verify before trusting)
 

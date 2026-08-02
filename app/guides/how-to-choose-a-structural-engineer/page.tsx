@@ -62,10 +62,10 @@ export default function HowToChooseAStructuralEngineerPage() {
             <p className="mb-5">
               Finding a{" "}
               <Link href="/" className="text-[#0B1F3A] underline hover:no-underline">
-                structural engineer houston
+                structural engineer in Houston
               </Link>{" "}
-              homeowners can actually rely on takes more than a search and a
-              phone call. The title isn&rsquo;t protected the way you might
+              you can actually rely on takes more than a search and a phone
+              call. The title isn&rsquo;t protected the way you might
               expect, and the range of people who advertise structural
               services, from licensed engineers to repair salespeople with an
               engineer on retainer, is wider than most homeowners realize

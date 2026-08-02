@@ -141,10 +141,7 @@ export default function Home() {
               evaluation, not a repair quote. The right fix depends on
               what&rsquo;s actually causing the movement, which is exactly
               what a structural engineer in Houston should be checking
-              before anyone touches your foundation. If you&rsquo;re
-              comparing options, a structural engineer houston homeowners can
-              verify by license comes before any repair conversation, not
-              after.
+              before anyone touches your foundation.
             </p>
           </div>
           <div className="rounded-sm border border-slate-200 bg-white p-6">

@@ -161,7 +161,7 @@ export default function LoadBearingWallGuidePage() {
             <p className="mb-5">
               A single visit from a{" "}
               <Link href="/" className="text-[#0B1F3A] underline hover:no-underline">
-                structural engineer houston
+                structural engineer in Houston
               </Link>{" "}
               homeowners trust, before any wall comes out, is the cheapest
               insurance in the whole project. It&rsquo;s also usually far

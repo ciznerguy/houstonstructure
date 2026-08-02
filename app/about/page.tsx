@@ -32,11 +32,11 @@ export default function AboutPage() {
         <p className="mb-5">
           Most homeowners find a{" "}
           <Link href="/" className="text-[#0B1F3A] underline hover:no-underline">
-            structural engineer houston
+            structural engineer in Houston
           </Link>{" "}
-          trusts only after a foundation repair company has already given
-          them a quote, and a reason to be skeptical of it. Our approach
-          starts one step earlier: an independent engineering evaluation of
+          only after a foundation repair company has already given them a
+          quote, and a reason to be skeptical of it. Our approach starts one
+          step earlier: an independent engineering evaluation of
           what&rsquo;s actually happening to your home, before anyone
           proposes a fix.
         </p>
