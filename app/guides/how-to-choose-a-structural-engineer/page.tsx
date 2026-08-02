@@ -7,7 +7,7 @@ import { BUSINESS } from "@/lib/business";
 export const metadata: Metadata = {
   title: "How to Choose a Structural Engineer in Houston",
   description:
-    "What to check before hiring a structural engineer in Houston: licensing, independence from repair sales, local soil experience, and the questions worth asking before you sign anything.",
+    "What to check before hiring a structural engineer in Houston: independence from repair sales, local soil experience, and the questions worth asking before you sign anything.",
 };
 
 const faqs = [
@@ -70,23 +70,9 @@ export default function HowToChooseAStructuralEngineerPage() {
             </p>
             <p className="mb-5">
               None of this is complicated once you know what to check. It
-              mostly comes down to a license, a bit of independence from the
-              repair itself, and a few direct questions before you sign
+              mostly comes down to independence from the repair itself, local
+              experience, and a few direct questions before you sign
               anything.
-            </p>
-
-            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
-              Confirm an actual Texas PE license
-            </h2>
-            <p className="mb-5">
-              A Professional Engineer, or PE, license is issued by the Texas
-              Board of Professional Engineers and Land Surveyors, and it&rsquo;s
-              the credential that lets someone legally stamp structural
-              calculations and letters. It&rsquo;s free to look up, and any
-              legitimate engineer will give you their license number without
-              being asked twice. If a company is vague about who exactly is
-              licensed, or the license belongs to someone who never actually
-              visits the property, that&rsquo;s worth asking about directly.
             </p>
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
@@ -151,10 +137,6 @@ export default function HowToChooseAStructuralEngineerPage() {
                 with pressure to sign before you leave the room.
               </li>
               <li>
-                No willingness to provide a license number, or vague answers
-                about who's actually licensed.
-              </li>
-              <li>
                 A diagnosis with no specific evidence behind it, just a
                 general impression that something needs fixing.
               </li>
@@ -182,10 +164,9 @@ export default function HowToChooseAStructuralEngineerPage() {
               The short version
             </h2>
             <p className="mb-5">
-              Check the license, ask who benefits from the diagnosis, and
-              confirm the person you're hiring actually knows Houston soil.
-              Those three things filter out most of the risk before you ever
-              sign anything.
+              Ask who benefits from the diagnosis, and confirm the person
+              you're hiring actually knows Houston soil. Those two things
+              filter out most of the risk before you ever sign anything.
             </p>
           </div>
 
