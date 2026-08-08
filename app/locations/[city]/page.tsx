@@ -62,7 +62,20 @@ export default async function LocationPage({ params }: Props) {
               </p>
             ))}
 
-            <h2 className="mt-4 text-xl font-bold text-[#0B1F3A]">
+            {area.sections?.map((section, i) => (
+              <div key={i}>
+                <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
+                  {section.heading}
+                </h2>
+                {section.paragraphs.map((p, j) => (
+                  <p key={j} className="mb-5 text-slate-700 leading-relaxed">
+                    {p}
+                  </p>
+                ))}
+              </div>
+            ))}
+
+            <h2 className="mt-10 text-xl font-bold text-[#0B1F3A]">
               Structural services in {area.name}
             </h2>
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
