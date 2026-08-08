@@ -315,7 +315,7 @@ export const SERVICES: Service[] = [
     name: "Structural Repairs",
     shortName: "Structural Repairs",
     image: "/images/structural-repairs.jpg",
-    imageAlt: "Contractor reinforcing a sagging ceiling beam with temporary shoring during a structural repair",
+    imageAlt: "Contractor reinforcing a sagging ceiling beam with temporary shoring during a structural repair in Houston",
     summary:
       "Repair and reinforcement for load-bearing walls, framing, beams, and other structural elements beyond the foundation.",
     description: [
@@ -336,7 +336,7 @@ export const SERVICES: Service[] = [
     name: "Structural Inspections & Engineering Reports",
     shortName: "Inspections & Reports",
     image: "/images/inspections-reports.jpg",
-    imageAlt: "Inspector in a home attic documenting roof framing conditions with a moisture meter and clipboard",
+    imageAlt: "Inspector in a Houston home's attic documenting roof framing conditions with a moisture meter and clipboard",
     summary:
       "Sealed structural inspection reports for real estate transactions, insurance claims, permitting, and pre-purchase due diligence.",
     description: [
@@ -356,7 +356,7 @@ export const SERVICES: Service[] = [
     name: "Structural Engineering Consulting",
     shortName: "Consulting",
     image: "/images/consulting.jpg",
-    imageAlt: "Structural engineer reviewing a structural drawing on-site while a foundation repair is underway in the background",
+    imageAlt: "Structural engineer reviewing a structural drawing on a Houston job site while a foundation repair is underway in the background",
     summary:
       "Design and forensic consulting for additions, renovations, new construction, and disputes involving structural work.",
     description: [
@@ -375,7 +375,7 @@ export const SERVICES: Service[] = [
     name: "Load-Bearing Wall Assessment & Removal",
     shortName: "Load-Bearing Walls",
     image: "/images/load-bearing-wall-removal.jpg",
-    imageAlt: "Interior room with adjustable steel shoring props supporting the ceiling during a load-bearing wall removal",
+    imageAlt: "Interior room in a Houston home with adjustable steel shoring props supporting the ceiling during a load-bearing wall removal",
     summary:
       "Find out whether a wall is actually load-bearing, and get the engineer's letter and beam sizing you need before it comes out.",
     description: [
@@ -396,7 +396,7 @@ export const SERVICES: Service[] = [
     name: "General Contracting",
     shortName: "General Contracting",
     image: "/images/general-contracting.jpg",
-    imageAlt: "Construction worker in a hard hat drilling into a wood beam on a home under construction",
+    imageAlt: "Construction worker in a hard hat drilling into a wood beam on a Houston home under construction",
     summary:
       "Licensed and insured general contracting from the same firm that engineers the fix, so the plan and the build stay in sync.",
     description: [
@@ -416,7 +416,7 @@ export const SERVICES: Service[] = [
     name: "Home Additions & Second-Story Additions",
     shortName: "Home Additions",
     image: "/images/home-additions.jpg",
-    imageAlt: "Kitchen mid-renovation with cabinets installed and surfaces protected in plastic sheeting during a home addition project",
+    imageAlt: "Kitchen mid-renovation during a Houston home addition project, with cabinets installed and surfaces protected in plastic sheeting",
     summary:
       "Engineering and licensed construction for room additions and second-story additions, sized to what your existing foundation and framing can actually support.",
     description: [
@@ -436,7 +436,7 @@ export const SERVICES: Service[] = [
     name: "Commercial Buildouts & Tenant Improvements",
     shortName: "Commercial & TI",
     image: "/images/commercial-buildouts.jpg",
-    imageAlt: "Contractor drilling into a structural beam on a commercial buildout job site",
+    imageAlt: "Contractor drilling into a structural beam on a commercial buildout job site in Houston",
     summary:
       "Structural engineering and licensed construction for tenant improvements and commercial buildouts across the Houston metro.",
     description: [
@@ -456,7 +456,7 @@ export const SERVICES: Service[] = [
     name: "Steel Beam Installation",
     shortName: "Steel Beam Installation",
     image: "/images/steel-beam-installation.jpg",
-    imageAlt: "Worker installing rebar reinforcement in an exposed ceiling opening with steel props during a steel beam installation",
+    imageAlt: "Worker installing rebar reinforcement in an exposed ceiling opening with steel props during a steel beam installation in Houston",
     summary:
       "Engineered and installed steel beams for load-bearing wall removals, additions, and structural upgrades.",
     description: [

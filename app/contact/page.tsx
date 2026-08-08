@@ -48,6 +48,18 @@ export default function ContactPage() {
               Houston, TX and the surrounding metro
             </p>
           </div>
+
+          <div className="mt-6 overflow-hidden rounded-sm border border-slate-200">
+            <iframe
+              title={`${BUSINESS.name} service area map`}
+              src={`https://www.google.com/maps?q=${BUSINESS.geo.latitude},${BUSINESS.geo.longitude}&z=10&output=embed`}
+              width="100%"
+              height="280"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="block"
+            />
+          </div>
         </div>
 
         <div className="rounded-sm border border-slate-200 p-6">
