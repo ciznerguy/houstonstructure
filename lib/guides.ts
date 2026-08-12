@@ -23,4 +23,10 @@ export const GUIDES: Guide[] = [
     summary:
       "What to check before hiring a structural engineer in Houston: licensing, independence from repair sales, local soil experience, and the questions worth asking before you sign anything.",
   },
+  {
+    slug: "room-addition-case-study",
+    title: "Case Study: Adding a 380-Square-Foot Room to a 1970s Houston Home",
+    summary:
+      "A start-to-finish look at how we evaluate an existing foundation, design the tie-in for a new room addition, and carry the project through permitting and construction.",
+  },
 ];
