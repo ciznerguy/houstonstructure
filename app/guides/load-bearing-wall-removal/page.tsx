@@ -247,7 +247,7 @@ export default function LoadBearingWallGuidePage() {
                     src={photo.src}
                     srcSet={`${photo.src.replace(".jpg", "-800.jpg")} 800w, ${photo.src} 1200w`}
                     sizes="(min-width: 640px) 50vw, 100vw"
-                    alt={photo.caption}
+                    alt={`${photo.caption} (illustrative photo, not an actual job site)`}
                     className="h-[220px] w-full rounded-sm object-cover"
                   />
                   <p className="mt-2 text-sm text-slate-600">{photo.caption}</p>
@@ -270,7 +270,7 @@ export default function LoadBearingWallGuidePage() {
                     src={photo.src}
                     srcSet={`${photo.src.replace(".jpg", "-800.jpg")} 800w, ${photo.src} 1200w`}
                     sizes="(min-width: 640px) 50vw, 100vw"
-                    alt={photo.caption}
+                    alt={`${photo.caption} (illustrative photo, not an actual job site)`}
                     className="h-[280px] w-full rounded-sm object-cover"
                   />
                   <p className="mt-2 text-sm text-slate-600">{photo.caption}</p>

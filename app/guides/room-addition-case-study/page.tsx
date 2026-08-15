@@ -77,7 +77,7 @@ export default function RoomAdditionCaseStudyPage() {
               src="/images/room-addition-case-study-1-site-evaluation.jpg"
               srcSet="/images/room-addition-case-study-1-site-evaluation-800.jpg 800w, /images/room-addition-case-study-1-site-evaluation.jpg 1600w"
               sizes="(min-width: 768px) 66vw, 100vw"
-              alt="Structural engineer kneeling at the edge of a Houston home's foundation, checking soil conditions with a probe before a room addition"
+              alt="Structural engineer kneeling at the edge of a Houston home's foundation, checking soil conditions with a probe before a room addition (illustrative photo, not an actual job site)"
               fetchPriority="high"
               className="mb-2 h-[320px] w-full rounded-sm object-cover sm:h-[420px]"
             />
@@ -126,7 +126,7 @@ export default function RoomAdditionCaseStudyPage() {
                   src="/images/room-addition-case-study-2-foundation-forms.jpg"
                   srcSet="/images/room-addition-case-study-2-foundation-forms-800.jpg 800w, /images/room-addition-case-study-2-foundation-forms.jpg 1600w"
                   sizes="(min-width: 640px) 50vw, 100vw"
-                  alt="Wooden concrete forms and a rebar grid staked out for a new room addition foundation, tied into the existing house"
+                  alt="Wooden concrete forms and a rebar grid staked out for a new room addition foundation, tied into the existing house (illustrative photo, not an actual job site)"
                   className="h-[240px] w-full rounded-sm object-cover"
                 />
                 <p className="mt-2 text-sm text-slate-600">
@@ -138,7 +138,7 @@ export default function RoomAdditionCaseStudyPage() {
                   src="/images/room-addition-case-study-3-tie-in-detail.jpg"
                   srcSet="/images/room-addition-case-study-3-tie-in-detail-800.jpg 800w, /images/room-addition-case-study-3-tie-in-detail.jpg 1600w"
                   sizes="(min-width: 640px) 50vw, 100vw"
-                  alt="Close-up of steel dowel rods being installed to connect the existing concrete foundation to the new addition's foundation"
+                  alt="Close-up of steel dowel rods being installed to connect the existing concrete foundation to the new addition's foundation (illustrative photo, not an actual job site)"
                   className="h-[240px] w-full rounded-sm object-cover"
                 />
                 <p className="mt-2 text-sm text-slate-600">
@@ -168,7 +168,7 @@ export default function RoomAdditionCaseStudyPage() {
               src="/images/room-addition-case-study-4-framing.jpg"
               srcSet="/images/room-addition-case-study-4-framing-800.jpg 800w, /images/room-addition-case-study-4-framing.jpg 1600w"
               sizes="(min-width: 768px) 66vw, 100vw"
-              alt="New wood roof trusses and wall framing for a room addition tied into the roofline of an existing brick Houston home"
+              alt="New wood roof trusses and wall framing for a room addition tied into the roofline of an existing brick Houston home (illustrative photo, not an actual job site)"
               className="mb-2 h-[320px] w-full rounded-sm object-cover sm:h-[420px]"
             />
             <p className="mb-8 text-sm text-slate-500">
@@ -197,7 +197,7 @@ export default function RoomAdditionCaseStudyPage() {
               src="/images/room-addition-case-study-5-completed-exterior.jpg"
               srcSet="/images/room-addition-case-study-5-completed-exterior-800.jpg 800w, /images/room-addition-case-study-5-completed-exterior.jpg 1600w"
               sizes="(min-width: 768px) 66vw, 100vw"
-              alt="Finished exterior of a Houston home addition with brick veneer matched to the original house"
+              alt="Finished exterior of a Houston home addition with brick veneer matched to the original house (illustrative photo, not an actual job site)"
               className="mb-2 h-[320px] w-full rounded-sm object-cover sm:h-[420px]"
             />
             <p className="mb-8 text-sm text-slate-500">
@@ -217,7 +217,7 @@ export default function RoomAdditionCaseStudyPage() {
               src="/images/room-addition-case-study-6-engineering-letter.jpg"
               srcSet="/images/room-addition-case-study-6-engineering-letter-800.jpg 800w, /images/room-addition-case-study-6-engineering-letter.jpg 1600w"
               sizes="(min-width: 768px) 66vw, 100vw"
-              alt="Stamped structural engineering letter and rolled construction drawings next to a hard hat"
+              alt="Stamped structural engineering letter and rolled construction drawings next to a hard hat (illustrative photo, not an actual job site)"
               className="mb-2 h-[320px] w-full rounded-sm object-cover sm:h-[420px]"
             />
             <p className="mb-8 text-sm text-slate-500">

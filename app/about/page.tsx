@@ -26,7 +26,7 @@ export default function AboutPage() {
           srcSet="/images/about-renovation-800.jpg 800w, /images/about-renovation.jpg 1600w"
           sizes="100vw"
           fetchPriority="high"
-          alt="Renovation work in progress on a Houston-area home"
+          alt="Renovation work in progress on a Houston-area home (illustrative photo, not an actual job site)"
           className="mb-8 h-[280px] w-full rounded-sm object-cover sm:h-[360px]"
         />
         <p className="mb-5">
