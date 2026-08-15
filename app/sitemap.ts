@@ -41,6 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "/images/load-bearing-wall-removal-3-shoring.jpg",
       "/images/load-bearing-wall-removal-4-demolition.jpg",
       "/images/load-bearing-wall-removal-5-beam-install.jpg",
+      "/images/load-bearing-wall-removal-6-engineer-consultation.jpg",
     ],
     "planning-a-home-addition": ["/images/home-additions.jpg"],
     "room-addition-case-study": [

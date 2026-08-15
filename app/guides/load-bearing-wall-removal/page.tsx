@@ -254,16 +254,29 @@ export default function LoadBearingWallGuidePage() {
                 </div>
               ))}
             </div>
-            <img
-              src="/images/load-bearing-wall-removal-5-beam-install.jpg"
-              srcSet="/images/load-bearing-wall-removal-5-beam-install-800.jpg 800w, /images/load-bearing-wall-removal-5-beam-install.jpg 1200w"
-              sizes="100vw"
-              alt="Setting the new engineered beam in place of the wall"
-              className="h-[280px] w-full rounded-sm object-cover sm:h-[360px]"
-            />
-            <p className="mt-2 mb-5 text-sm text-slate-600">
-              Setting the new engineered beam in place of the wall.
-            </p>
+            <div className="mb-5 grid gap-4 sm:grid-cols-2">
+              {[
+                {
+                  src: "/images/load-bearing-wall-removal-5-beam-install.jpg",
+                  caption: "Setting the new engineered beam in place of the wall.",
+                },
+                {
+                  src: "/images/load-bearing-wall-removal-6-engineer-consultation.jpg",
+                  caption: "Confirming the load path against the ceiling framing before finalizing the beam size.",
+                },
+              ].map((photo) => (
+                <div key={photo.src}>
+                  <img
+                    src={photo.src}
+                    srcSet={`${photo.src.replace(".jpg", "-800.jpg")} 800w, ${photo.src} 1200w`}
+                    sizes="(min-width: 640px) 50vw, 100vw"
+                    alt={photo.caption}
+                    className="h-[280px] w-full rounded-sm object-cover"
+                  />
+                  <p className="mt-2 text-sm text-slate-600">{photo.caption}</p>
+                </div>
+              ))}
+            </div>
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
               How long it takes
