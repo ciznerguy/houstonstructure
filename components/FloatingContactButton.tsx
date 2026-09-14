@@ -9,13 +9,14 @@ export default function FloatingContactButton() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setStatus("sending");
     try {
-      await submitNetlifyForm("quick-contact", { name, email, phone });
+      await submitNetlifyForm("quick-contact", { name, email, phone, message });
       setStatus("sent");
     } catch {
       setStatus("error");
@@ -28,6 +29,7 @@ export default function FloatingContactButton() {
     setName("");
     setEmail("");
     setPhone("");
+    setMessage("");
   }
 
   return (
@@ -124,6 +126,18 @@ export default function FloatingContactButton() {
                   name="phone"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
+                  className="mt-1 w-full rounded-sm border border-slate-300 px-3 py-2 text-sm outline-none focus:border-[#0B1F3A]"
+                />
+              </div>
+              <div>
+                <label className="text-sm font-medium text-slate-700">
+                  Anything else we should know? (optional)
+                </label>
+                <textarea
+                  name="message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  rows={3}
                   className="mt-1 w-full rounded-sm border border-slate-300 px-3 py-2 text-sm outline-none focus:border-[#0B1F3A]"
                 />
               </div>
