@@ -24,6 +24,12 @@ export const GUIDES: Guide[] = [
       "What to check before hiring a structural engineer in Houston: licensing, independence from repair sales, local soil experience, and the questions worth asking before you sign anything.",
   },
   {
+    slug: "second-story-addition-cost",
+    title: "How Much Does a Second-Story Addition Cost in Houston?",
+    summary:
+      "Typical cost ranges for second-story additions in the Houston area, what actually drives the price beyond square footage, and why the number depends on your existing foundation more than your floor plan.",
+  },
+  {
     slug: "room-addition-case-study",
     title: "Case Study: Adding a 380-Square-Foot Room to a 1970s Houston Home",
     summary:
