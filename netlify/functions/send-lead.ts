@@ -32,6 +32,14 @@ export const handler: Handler = async (event) => {
     return { statusCode: 200, body: JSON.stringify({ ok: true }) };
   }
 
+  // Silently accept but do nothing if every real field is blank (bots that skip the honeypot)
+  const hasContent = Object.entries(fields).some(
+    ([key, value]) => key !== "bot-field" && value?.trim()
+  );
+  if (!hasContent) {
+    return { statusCode: 200, body: JSON.stringify({ ok: true }) };
+  }
+
   const bodyText = Object.entries(fields)
     .filter(([key]) => key !== "bot-field")
     .map(([key, value]) => `${FIELD_LABELS[key] ?? key}: ${value}`)
