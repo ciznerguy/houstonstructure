@@ -173,6 +173,47 @@ export default function SecondStoryAdditionCostGuidePage() {
             </ul>
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
+              What this looks like on an actual project
+            </h2>
+            <p className="mb-5">
+              A second-story addition, start to finish: the original
+              single-story home, the new floor framed in, wrapped and
+              roughed in for windows and roofing, and the finished result
+              with the addition brick-matched to the original house.
+            </p>
+            <div className="mb-5 grid gap-4 sm:grid-cols-2">
+              {[
+                {
+                  src: "/images/second-story-addition-cost-1-before.jpg",
+                  caption: "The existing single-story home before any work begins.",
+                },
+                {
+                  src: "/images/second-story-addition-cost-2-framing.jpg",
+                  caption: "The new second story framed in, tied into the original roofline.",
+                },
+                {
+                  src: "/images/second-story-addition-cost-3-sheathing.jpg",
+                  caption: "Wrapped and roughed in, ready for windows and roofing.",
+                },
+                {
+                  src: "/images/second-story-addition-cost-4-completed.jpg",
+                  caption: "The finished second story, brick-matched to the original house.",
+                },
+              ].map((photo) => (
+                <div key={photo.src}>
+                  <img
+                    src={photo.src}
+                    srcSet={`${photo.src.replace(".jpg", "-800.jpg")} 800w, ${photo.src} 1600w`}
+                    sizes="(min-width: 640px) 50vw, 100vw"
+                    alt={`${photo.caption} (illustrative photo, not an actual job site)`}
+                    className="h-[220px] w-full rounded-sm object-cover"
+                  />
+                  <p className="mt-2 text-sm text-slate-600">{photo.caption}</p>
+                </div>
+              ))}
+            </div>
+
+            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
               Why we check the foundation before we give you a real number
             </h2>
             <p className="mb-5">

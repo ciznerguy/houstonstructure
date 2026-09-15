@@ -44,7 +44,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "/images/load-bearing-wall-removal-6-engineer-consultation.jpg",
     ],
     "planning-a-home-addition": ["/images/home-additions.jpg"],
-    "second-story-addition-cost": ["/images/home-additions.jpg"],
+    "second-story-addition-cost": [
+      "/images/second-story-addition-cost-1-before.jpg",
+      "/images/second-story-addition-cost-2-framing.jpg",
+      "/images/second-story-addition-cost-3-sheathing.jpg",
+      "/images/second-story-addition-cost-4-completed.jpg",
+    ],
     "room-addition-case-study": [
       "/images/room-addition-case-study-1-site-evaluation.jpg",
       "/images/room-addition-case-study-2-foundation-forms.jpg",
