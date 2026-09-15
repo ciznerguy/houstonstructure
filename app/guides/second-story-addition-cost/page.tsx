@@ -150,6 +150,13 @@ export default function SecondStoryAdditionCostGuidePage() {
               level.
             </p>
 
+            <Link
+              href="/cost-estimator"
+              className="mb-8 flex items-center justify-center gap-2 rounded-sm bg-[#EA580C] px-6 py-4 text-center text-base font-semibold text-white hover:bg-[#c94b0a]"
+            >
+              Calculate Your Second-Story Addition Cost
+            </Link>
+
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
               What actually goes into the number
             </h2>
