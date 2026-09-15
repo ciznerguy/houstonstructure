@@ -105,6 +105,17 @@ export default function SecondStoryAdditionCostGuidePage() {
               and how much of that capacity is already used up.
             </p>
 
+            <img
+              src="/images/second-story-addition-cost-1-before.jpg"
+              srcSet="/images/second-story-addition-cost-1-before-800.jpg 800w, /images/second-story-addition-cost-1-before.jpg 1600w"
+              sizes="(min-width: 768px) 66vw, 100vw"
+              alt="The existing single-story home before any work begins (illustrative photo, not an actual job site)"
+              className="mb-2 h-[320px] w-full rounded-sm object-cover sm:h-[420px]"
+            />
+            <p className="mt-2 mb-8 text-sm text-slate-500">
+              The existing single-story home before any work begins.
+            </p>
+
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
               What a second-story addition typically costs
             </h2>
@@ -172,21 +183,8 @@ export default function SecondStoryAdditionCostGuidePage() {
               </li>
             </ul>
 
-            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
-              What this looks like on an actual project
-            </h2>
-            <p className="mb-5">
-              A second-story addition, start to finish: the original
-              single-story home, the new floor framed in, wrapped and
-              roughed in for windows and roofing, and the finished result
-              with the addition brick-matched to the original house.
-            </p>
             <div className="mb-5 grid gap-4 sm:grid-cols-2">
               {[
-                {
-                  src: "/images/second-story-addition-cost-1-before.jpg",
-                  caption: "The existing single-story home before any work begins.",
-                },
                 {
                   src: "/images/second-story-addition-cost-2-framing.jpg",
                   caption: "The new second story framed in, tied into the original roofline.",
@@ -194,10 +192,6 @@ export default function SecondStoryAdditionCostGuidePage() {
                 {
                   src: "/images/second-story-addition-cost-3-sheathing.jpg",
                   caption: "Wrapped and roughed in, ready for windows and roofing.",
-                },
-                {
-                  src: "/images/second-story-addition-cost-4-completed.jpg",
-                  caption: "The finished second story, brick-matched to the original house.",
                 },
               ].map((photo) => (
                 <div key={photo.src}>
@@ -229,6 +223,17 @@ export default function SecondStoryAdditionCostGuidePage() {
               next to the size of the project, and it&rsquo;s what keeps
               the number you&rsquo;re quoted from changing once
               construction starts.
+            </p>
+
+            <img
+              src="/images/second-story-addition-cost-4-completed.jpg"
+              srcSet="/images/second-story-addition-cost-4-completed-800.jpg 800w, /images/second-story-addition-cost-4-completed.jpg 1600w"
+              sizes="(min-width: 768px) 66vw, 100vw"
+              alt="The finished second story, brick-matched to the original house (illustrative photo, not an actual job site)"
+              className="mb-2 h-[320px] w-full rounded-sm object-cover sm:h-[420px]"
+            />
+            <p className="mt-2 mb-8 text-sm text-slate-500">
+              The finished second story, brick-matched to the original house.
             </p>
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
