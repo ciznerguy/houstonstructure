@@ -152,7 +152,7 @@ export default function SecondStoryAdditionCostGuidePage() {
 
             <Link
               href="/cost-estimator"
-              className="mb-8 flex items-center justify-center gap-2 rounded-sm bg-[#EA580C] px-6 py-4 text-center text-base font-semibold text-white hover:bg-[#c94b0a]"
+              className="cta-shimmer mb-8 flex items-center justify-center gap-2 rounded-sm px-6 py-4 text-center text-base font-semibold text-white"
             >
               Calculate Your Second-Story Addition Cost
             </Link>

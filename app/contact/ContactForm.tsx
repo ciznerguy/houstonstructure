@@ -6,6 +6,7 @@ import { submitNetlifyForm } from "@/lib/netlify-forms";
 
 export default function ContactForm() {
   const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
   const [message, setMessage] = useState("");
@@ -15,7 +16,7 @@ export default function ContactForm() {
     e.preventDefault();
     setStatus("sending");
     try {
-      await submitNetlifyForm("contact-page", { name, phone, address, message });
+      await submitNetlifyForm("contact-page", { name, email, phone, address, message });
       setStatus("sent");
     } catch {
       setStatus("error");
@@ -57,12 +58,27 @@ export default function ContactForm() {
         />
       </div>
       <div>
+        <label className="text-sm font-medium text-slate-700">Email</label>
+        <input
+          required
+          type="email"
+          name="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className="mt-1 w-full rounded-sm border border-slate-300 px-3 py-2 text-sm outline-none focus:border-[#0B1F3A]"
+        />
+      </div>
+      <div>
         <label className="text-sm font-medium text-slate-700">Phone</label>
         <input
           required
           name="phone"
+          inputMode="numeric"
+          maxLength={10}
+          pattern="[0-9]{10}"
+          title="Enter a 10-digit US phone number"
           value={phone}
-          onChange={(e) => setPhone(e.target.value)}
+          onChange={(e) => setPhone(e.target.value.replace(/[^0-9]/g, "").slice(0, 10))}
           type="tel"
           className="mt-1 w-full rounded-sm border border-slate-300 px-3 py-2 text-sm outline-none focus:border-[#0B1F3A]"
         />
