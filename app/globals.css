@@ -27,9 +27,9 @@ body {
 }
 
 .cta-shimmer {
-  background-image: linear-gradient(90deg, #ea580c 0%, #f57a3d 50%, #ea580c 100%);
-  background-size: 220% 100%;
-  animation: cta-shimmer 6s ease-in-out infinite;
+  background-image: linear-gradient(100deg, #ea580c 30%, #ffb583 50%, #ea580c 70%);
+  background-size: 300% 100%;
+  animation: cta-shimmer 3s ease-in-out infinite;
 }
 
 .cta-shimmer:hover {
