@@ -27,17 +27,11 @@ body {
 }
 
 .cta-shimmer {
-  background-image: linear-gradient(90deg, #ea580c 0%, #ff8a4c 50%, #ea580c 100%);
-  background-size: 200% 100%;
-  animation: cta-shimmer 4s ease-in-out infinite;
+  background-image: linear-gradient(90deg, #ea580c 0%, #f57a3d 50%, #ea580c 100%);
+  background-size: 220% 100%;
+  animation: cta-shimmer 6s ease-in-out infinite;
 }
 
 .cta-shimmer:hover {
   background-image: linear-gradient(90deg, #c94b0a 0%, #ea580c 50%, #c94b0a 100%);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .cta-shimmer {
-    animation: none;
-  }
 }
