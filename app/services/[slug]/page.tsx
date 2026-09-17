@@ -14,6 +14,7 @@ type Props = {
 const SERVICE_TO_GUIDE_SLUG: Record<string, string> = {
   "load-bearing-wall-removal": "load-bearing-wall-removal",
   "home-additions": "planning-a-home-addition",
+  "commercial-buildouts": "commercial-wall-removal",
 };
 
 export async function generateStaticParams() {

@@ -30,6 +30,12 @@ export const GUIDES: Guide[] = [
       "Typical cost ranges for second-story additions in the Houston area, what actually drives the price beyond square footage, and why the number depends on your existing foundation more than your floor plan.",
   },
   {
+    slug: "commercial-wall-removal",
+    title: "Commercial Wall Removal in Houston: What Tenants and Landlords Should Know",
+    summary:
+      "How wall removal works in a Houston office, retail, or restaurant space: which walls can come out, what the landlord and the city will ask for, how the engineering and permitting run, and what it typically costs.",
+  },
+  {
     slug: "room-addition-case-study",
     title: "Case Study: Adding a 380-Square-Foot Room to a 1970s Houston Home",
     summary:

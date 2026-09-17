@@ -40,6 +40,14 @@ const faqs = [
     q: "Will you also install the replacement beam, or just tell me what size I need?",
     a: "Both are available. Since we're licensed and insured to build as well as design, we can size the beam and handle the installation ourselves, or provide the engineering letter and beam specification for your own contractor to install.",
   },
+  {
+    q: "Should I call a wall removal contractor or an engineer first?",
+    a: "The engineer, ideally. A contractor can give you a price to take the wall out, but they can't tell you what the beam needs to be until someone has evaluated the load, and quoting before that step is what leads to the number changing mid-project. Once the engineering is done, any qualified contractor can build from it, including us.",
+  },
+  {
+    q: "Is it harder to remove a load-bearing wall in a two-story house?",
+    a: "Usually, yes. A first-floor wall in a two-story home is often carrying the floor above, and sometimes a wall or point load from upstairs as well, so the beam has to be sized for considerably more weight. It's still routinely done, but the evaluation takes longer and the beam is more likely to be steel or a deeper LVL.",
+  },
 ];
 
 export default function LoadBearingWallGuidePage() {
@@ -133,6 +141,82 @@ export default function LoadBearingWallGuidePage() {
               what&rsquo;s happening on the floor above, since a wall that
               looks non-structural downstairs can still be carrying a wall or
               point load from upstairs.
+            </p>
+
+            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
+              If the wall turns out not to be load-bearing
+            </h2>
+            <p className="mb-5">
+              A good share of the walls we get called about aren&rsquo;t
+              carrying anything. Interior partition walls that run parallel
+              to the joists, closet walls, and the short walls that split an
+              old kitchen from a dining room are often just framing and
+              drywall. When that&rsquo;s the case, the wall removal in your
+              Houston home turns into a much simpler job: no beam, no
+              temporary shoring, and usually no structural permit.
+            </p>
+            <p className="mb-5">
+              That doesn&rsquo;t mean it&rsquo;s nothing. Even a non-bearing
+              wall can have electrical, plumbing, or HVAC runs inside it,
+              and the ceiling and floor will need patching where the wall
+              track comes out. But the risk profile is completely different,
+              and knowing which kind of wall you have is what lets you plan
+              the budget and timeline honestly instead of assuming the worst
+              or, more dangerously, assuming the best.
+            </p>
+            <p className="mb-5">
+              We&rsquo;ll tell you plainly which one you have. There&rsquo;s
+              no advantage to us in calling a partition wall load-bearing,
+              and we&rsquo;d rather you spend the money on the renovation
+              itself.
+            </p>
+
+            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
+              Wood, LVL, or steel: choosing the replacement beam
+            </h2>
+            <p className="mb-5">
+              Once a wall is confirmed load-bearing, the next real decision
+              is what carries the load after it&rsquo;s gone. Three options
+              come up on nearly every job, and the right one depends on the
+              span, the load, and how much ceiling height you want to keep.
+            </p>
+            <ul className="mb-5 list-disc space-y-2 pl-5">
+              <li>
+                <strong>Dimensional lumber.</strong> Doubled or tripled
+                2x10s or 2x12s work for shorter openings carrying modest
+                loads. It&rsquo;s the least expensive option and easy for
+                any framing crew to install, but it runs out of capacity
+                quickly as the span grows.
+              </li>
+              <li>
+                <strong>LVL (laminated veneer lumber).</strong> Engineered
+                wood beams handle longer spans and heavier loads than solid
+                lumber in the same depth. This is the most common choice for
+                residential wall removals in the Houston area, since it
+                covers the typical 10 to 16 foot kitchen or living room
+                opening without going to steel.
+              </li>
+              <li>
+                <strong>Steel.</strong> A steel I-beam carries the most load
+                in the shallowest depth, which matters when you want the
+                beam tucked up flush with the ceiling instead of dropping
+                below it. It costs more and needs a crew that can handle the
+                weight, but for wide openings or second-story loads it&rsquo;s
+                often the only option that keeps the ceiling flat. Our{" "}
+                <Link href="/services/steel-beam-installation" className="text-[#0B1F3A] underline hover:no-underline">
+                  steel beam installation
+                </Link>{" "}
+                page covers that side of the work in more detail.
+              </li>
+            </ul>
+            <p className="mb-5">
+              Part of the sizing work is also deciding whether the beam sits
+              below the ceiling as a visible header or gets recessed into
+              the ceiling framing so the finished ceiling stays flush. A
+              flush beam looks cleaner but takes more work to install, since
+              the joists have to hang from the beam instead of resting on
+              it. That choice affects both the cost and how the room feels
+              afterward, so it&rsquo;s worth settling early.
             </p>
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
@@ -295,6 +379,88 @@ export default function LoadBearingWallGuidePage() {
               inspect properly, or when the load turns out to be more complex
               than expected, for example a wall carrying a second-story
               addition that wasn&rsquo;t part of the original design.
+            </p>
+
+            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
+              What it costs
+            </h2>
+            <p className="mb-5">
+              Two separate numbers get mixed together when people ask about
+              cost, so it helps to split them.
+            </p>
+            <p className="mb-5">
+              The first is the engineering: the site visit, the load
+              evaluation, the beam sizing, and the stamped letter. For a
+              typical single-family home this is a few hundred dollars up to
+              roughly a thousand, depending on how much of the framing has
+              to be traced and whether calculations need to be submitted
+              with a permit. This is the part that&rsquo;s almost always
+              cheaper than people expect.
+            </p>
+            <p className="mb-5">
+              The second is the construction: shoring, demolition, the beam
+              and posts, and patching the ceiling, floor, and walls where
+              the old wall was. In the Houston area a straightforward
+              residential opening with an LVL beam commonly lands somewhere
+              in the low to mid thousands. Longer spans, steel beams, flush
+              installs, rerouting ductwork or plumbing, and finish work like
+              matching hardwood floors all push that number up, and a wide
+              opening with a steel beam can reach well into five figures.
+            </p>
+            <p className="mb-5">
+              These are planning ranges rather than a quote. The honest
+              answer for your house depends on what the inspection finds,
+              which is exactly why the inspection comes first. If it helps
+              to see the numbers side by side, our{" "}
+              <Link href="/cost-estimator" className="text-[#0B1F3A] underline hover:no-underline">
+                cost estimator
+              </Link>{" "}
+              walks through the factors that move the price for renovation
+              work of this kind.
+            </p>
+
+            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
+              Permits in Houston and the surrounding cities
+            </h2>
+            <p className="mb-5">
+              Inside the City of Houston, removing a load-bearing wall is a
+              structural alteration and needs a building permit. The
+              permitting office will want to see that a licensed engineer
+              evaluated the load and sized the replacement, which is the
+              stamped letter we produce. The contractor typically pulls the
+              permit and attaches our documents to the application.
+            </p>
+            <p className="mb-5">
+              The suburbs each run their own permitting: Sugar Land, Katy,
+              Pearland, The Woodlands, and the Memorial villages all have
+              their own offices and their own submission requirements. Some
+              want full calculations, some accept a letter, and a few
+              require an inspection of the beam and bearing points before
+              the drywall goes back up. We confirm what your specific
+              jurisdiction wants as part of the evaluation, so nothing gets
+              submitted twice or bounced back.
+            </p>
+            <p className="mb-5">
+              Skipping the permit to save time is a false economy. It&rsquo;s
+              the unpermitted work that shows up at resale, and it&rsquo;s
+              the missing paperwork that turns a simple insurance question
+              into a dispute.
+            </p>
+
+            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
+              Removing a wall in a commercial space
+            </h2>
+            <p className="mb-5">
+              The same structural questions come up when a tenant wants to
+              open up an office suite or a retail bay, but the building type,
+              the permitting path, and the timeline are different enough
+              that we wrote a separate guide on{" "}
+              <Link href="/guides/commercial-wall-removal" className="text-[#0B1F3A] underline hover:no-underline">
+                commercial wall removal in Houston
+              </Link>
+              . If you&rsquo;re a business owner, landlord, or property
+              manager planning a buildout, that&rsquo;s the better starting
+              point.
             </p>
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
