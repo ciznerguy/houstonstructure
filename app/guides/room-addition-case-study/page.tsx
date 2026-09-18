@@ -51,6 +51,7 @@ export default function RoomAdditionCaseStudyPage() {
         eyebrow="Case Study"
         title="Adding a 380-Square-Foot Room to a 1970s Houston Home"
         subtitle="A start-to-finish look at how we evaluate an existing foundation, design the tie-in for a new addition, and carry the project through permitting and construction."
+        ctaLabel="Estimate the Cost of Your Own Room Addition"
       />
 
       <section className="mx-auto max-w-6xl px-5 py-14">

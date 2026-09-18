@@ -15,6 +15,7 @@ export default function ContactPage() {
         eyebrow="Contact"
         title="Talk to a structural engineer"
         subtitle="Call for the fastest response, or send a few details below and we'll get back to you the same business day."
+        ctaLabel="Or Get an Instant Addition Cost Estimate"
       />
       <section className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-2">
         <div>

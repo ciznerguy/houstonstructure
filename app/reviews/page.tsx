@@ -15,6 +15,7 @@ export default function ReviewsPage() {
         eyebrow="Reviews"
         title="Rated 5.0 stars on Google"
         subtitle="Verified Google reviews from Houston-area homeowners."
+        ctaLabel="Get a Free Home Addition Cost Estimate"
       />
       <section className="mx-auto max-w-3xl px-5 py-14 text-center">
         <div className="text-5xl font-bold text-[#0B1F3A]">

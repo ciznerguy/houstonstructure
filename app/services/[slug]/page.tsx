@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
-import FloatingCostEstimatorButton from "@/components/FloatingCostEstimatorButton";
 import { BUSINESS, SERVICES, SERVICE_AREAS } from "@/lib/business";
 import { GUIDES } from "@/lib/guides";
 
@@ -16,6 +15,14 @@ const SERVICE_TO_GUIDE_SLUG: Record<string, string> = {
   "home-additions": "planning-a-home-addition",
   "commercial-buildouts": "commercial-wall-removal",
 };
+
+const SERVICE_CTA_LABEL: Record<string, string> = {
+  "home-additions": "Calculate Your Addition Cost in 2 Minutes",
+  "general-contracting": "Planning an Addition? Get a Free Cost Estimate",
+  "load-bearing-wall-removal": "Opening Up the Floor Plan? Estimate Your Addition Cost",
+  "steel-beam-installation": "Planning an Addition? Get a Free Cost Estimate",
+};
+const DEFAULT_SERVICE_CTA = "Get a Free Home Addition Cost Estimate";
 
 export async function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));
@@ -61,7 +68,6 @@ export default async function ServicePage({ params }: Props) {
 
   return (
     <>
-      {service.slug === "home-additions" && <FloatingCostEstimatorButton />}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJson) }}
@@ -70,6 +76,7 @@ export default async function ServicePage({ params }: Props) {
         eyebrow="Service"
         title={`${service.name} in Houston, TX`}
         subtitle={service.summary}
+        ctaLabel={SERVICE_CTA_LABEL[service.slug] ?? DEFAULT_SERVICE_CTA}
       />
 
       {service.image && (

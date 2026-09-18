@@ -51,6 +51,7 @@ export default async function LocationPage({ params }: Props) {
         eyebrow="Service Area"
         title={`Structural Engineer in ${area.name}, TX`}
         subtitle={area.blurb}
+        ctaLabel={`Estimate a Home Addition Cost in ${area.name}`}
       />
 
       <section className="mx-auto max-w-6xl px-5 py-14">

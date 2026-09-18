@@ -17,6 +17,7 @@ export default function GuidesPage() {
         eyebrow="Guides"
         title="Straight answers, before you start a project"
         subtitle="Plain-language guides to the questions we hear most from Houston homeowners, written by the engineer who answers them."
+        ctaLabel="Get a Free Home Addition Cost Estimate"
       />
       <section className="mx-auto max-w-6xl px-5 py-14">
         <div className="grid gap-6 sm:grid-cols-2">

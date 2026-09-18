@@ -1,11 +1,15 @@
+import CostEstimatorCTA from "./CostEstimatorCTA";
+
 export default function PageHero({
   eyebrow,
   title,
   subtitle,
+  ctaLabel,
 }: {
   eyebrow?: string;
   title: string;
   subtitle?: string;
+  ctaLabel?: string;
 }) {
   return (
     <section className="border-b border-slate-200 bg-slate-50">
@@ -20,6 +24,11 @@ export default function PageHero({
         </h1>
         {subtitle && (
           <p className="mt-4 max-w-2xl text-slate-600">{subtitle}</p>
+        )}
+        {ctaLabel && (
+          <div className="mt-7">
+            <CostEstimatorCTA label={ctaLabel} />
+          </div>
         )}
       </div>
     </section>

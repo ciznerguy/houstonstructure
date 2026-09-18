@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
-import FloatingCostEstimatorButton from "@/components/FloatingCostEstimatorButton";
+import CostEstimatorCTA from "@/components/CostEstimatorCTA";
 import { BUSINESS } from "@/lib/business";
 
 export const metadata: Metadata = {
@@ -50,7 +50,6 @@ export default function HomeAdditionGuidePage() {
 
   return (
     <>
-      <FloatingCostEstimatorButton />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJson) }}
@@ -59,6 +58,7 @@ export default function HomeAdditionGuidePage() {
         eyebrow="Guide"
         title="Planning a Home Addition in Houston? Start With the Foundation, Not the Floor Plan"
         subtitle="Most addition projects start with a floor plan and a contractor's quote. The engineering question, whether the existing house can carry the new weight, usually comes up last, if at all. That order is backwards."
+        ctaLabel="Calculate Your Addition Cost in 2 Minutes"
       />
 
       <section className="mx-auto max-w-6xl px-5 py-14">
@@ -170,6 +170,11 @@ export default function HomeAdditionGuidePage() {
               lot, the existing foundation&rsquo;s condition and original
               design, and what the homeowner actually needs.
             </p>
+
+            <CostEstimatorCTA
+              label="Compare Building Out vs. Up: Get a Cost Estimate"
+              className="mb-8 flex w-full py-4"
+            />
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
               Permits and Houston-specific rules

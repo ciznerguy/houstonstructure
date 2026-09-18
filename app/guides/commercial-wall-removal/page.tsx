@@ -63,6 +63,7 @@ export default function CommercialWallRemovalGuidePage() {
         eyebrow="Guide"
         title="Commercial Wall Removal in Houston: What Tenants and Landlords Should Know"
         subtitle="Opening up an office suite, a retail bay, or a restaurant floor is one of the most common buildout requests we see. The structural question is only part of it."
+        ctaLabel="Planning a Home Addition Too? Get a Free Estimate"
       />
 
       <section className="mx-auto max-w-6xl px-5 py-14">

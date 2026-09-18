@@ -1,6 +1,12 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function FloatingCostEstimatorButton() {
+  const pathname = usePathname();
+  if (pathname?.startsWith("/cost-estimator")) return null;
+
   return (
     <Link
       href="/cost-estimator"

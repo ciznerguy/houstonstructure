@@ -19,6 +19,7 @@ export default function AboutPage() {
         eyebrow="About"
         title="An engineer's opinion, before a repair quote"
         subtitle={`${BUSINESS.name} serves homeowners across the Houston metro.`}
+        ctaLabel="Get a Free Home Addition Cost Estimate"
       />
       <section className="mx-auto max-w-3xl px-5 py-14 text-slate-700 leading-relaxed">
         <img

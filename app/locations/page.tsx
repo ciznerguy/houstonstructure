@@ -17,6 +17,7 @@ export default function LocationsPage() {
         eyebrow="Service Areas"
         title="Serving Houston and the surrounding metro"
         subtitle="Soil, drainage, and construction conditions vary block to block across Houston. Pick your area below for what we typically see there."
+        ctaLabel="Estimate a Home Addition Cost in Your Area"
       />
       <section className="mx-auto max-w-6xl px-5 py-14">
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

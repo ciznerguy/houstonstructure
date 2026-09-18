@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Schema from "@/components/Schema";
 import FloatingContactButton from "@/components/FloatingContactButton";
+import FloatingCostEstimatorButton from "@/components/FloatingCostEstimatorButton";
 import { BUSINESS } from "@/lib/business";
 
 const geistSans = Geist({
@@ -65,6 +66,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <Schema />
         <Header />
         <FloatingContactButton />
+        <FloatingCostEstimatorButton />
         <main className="flex-1">{children}</main>
         <Footer />
       </body>

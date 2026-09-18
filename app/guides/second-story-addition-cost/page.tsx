@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
-import FloatingCostEstimatorButton from "@/components/FloatingCostEstimatorButton";
+import CostEstimatorCTA from "@/components/CostEstimatorCTA";
 import { BUSINESS } from "@/lib/business";
 
 export const metadata: Metadata = {
@@ -54,7 +54,6 @@ export default function SecondStoryAdditionCostGuidePage() {
 
   return (
     <>
-      <FloatingCostEstimatorButton />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJson) }}
@@ -63,6 +62,7 @@ export default function SecondStoryAdditionCostGuidePage() {
         eyebrow="Guide"
         title="How Much Does a Second-Story Addition Cost in Houston?"
         subtitle="The honest answer is that it depends more on your existing foundation than on the floor plan you have in mind. Here's what actually drives the number."
+        ctaLabel="Calculate Your Second-Story Addition Cost"
       />
 
       <section className="mx-auto max-w-6xl px-5 py-14">
@@ -150,12 +150,10 @@ export default function SecondStoryAdditionCostGuidePage() {
               level.
             </p>
 
-            <Link
-              href="/cost-estimator"
-              className="cta-shimmer mb-8 flex items-center justify-center gap-2 rounded-sm px-6 py-4 text-center text-base font-semibold text-white"
-            >
-              Calculate Your Second-Story Addition Cost
-            </Link>
+            <CostEstimatorCTA
+              label="Calculate Your Second-Story Addition Cost"
+              className="mb-8 flex w-full py-4"
+            />
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
               What actually goes into the number

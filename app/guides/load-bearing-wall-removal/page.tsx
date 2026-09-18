@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
+import CostEstimatorCTA from "@/components/CostEstimatorCTA";
 import { BUSINESS } from "@/lib/business";
 
 export const metadata: Metadata = {
@@ -71,6 +72,7 @@ export default function LoadBearingWallGuidePage() {
         eyebrow="Guide"
         title="Can You Remove a Load-Bearing Wall? Here's How to Tell (and What It Takes)"
         subtitle="Opening up a floor plan is one of the most requested renovations in Houston right now, and it almost always runs into the same question first."
+        ctaLabel="Opening Up the Floor Plan? Estimate Your Addition Cost"
       />
 
       <section className="mx-auto max-w-6xl px-5 py-14">
@@ -418,6 +420,11 @@ export default function LoadBearingWallGuidePage() {
               walks through the factors that move the price for renovation
               work of this kind.
             </p>
+
+            <CostEstimatorCTA
+              label="Planning an Addition Along With the Wall? Get a Cost Estimate"
+              className="mb-8 flex w-full py-4"
+            />
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
               Permits in Houston and the surrounding cities

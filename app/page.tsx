@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import CTASection from "@/components/CTASection";
+import CostEstimatorCTA from "@/components/CostEstimatorCTA";
 import { BUSINESS, SERVICES, SERVICE_AREAS } from "@/lib/business";
 import { GUIDES } from "@/lib/guides";
 
@@ -69,6 +70,12 @@ export default function Home() {
                 Request a Callback
               </Link>
             </div>
+            <div className="mt-4">
+              <CostEstimatorCTA
+                label="Get a Free Addition Cost Estimate in 2 Minutes"
+                className="w-full sm:w-auto"
+              />
+            </div>
           </div>
 
           <div className="rounded-sm border border-slate-700 bg-white/5 p-6">
@@ -90,6 +97,29 @@ export default function Home() {
               ))}
             </ul>
           </div>
+        </div>
+      </section>
+
+      {/* Cost estimator */}
+      <section className="border-b border-slate-200 bg-slate-50">
+        <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 px-5 py-10 md:flex-row md:items-center">
+          <div>
+            <div className="text-xs font-semibold uppercase tracking-[0.14em] text-orange-700">
+              Free Tool
+            </div>
+            <h2 className="mt-2 text-2xl font-bold text-[#0B1F3A]">
+              Get a ballpark for your addition in 2 minutes
+            </h2>
+            <p className="mt-2 max-w-xl text-slate-600">
+              Answer a few questions about the addition you have in mind and
+              get a Houston-specific cost range, before you talk to a single
+              contractor.
+            </p>
+          </div>
+          <CostEstimatorCTA
+            label="Calculate My Addition Cost"
+            className="w-full shrink-0 py-4 md:w-auto md:px-8"
+          />
         </div>
       </section>
 
