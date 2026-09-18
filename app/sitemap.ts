@@ -24,7 +24,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: now,
     changeFrequency: "monthly",
     priority: 0.8,
-    ...(s.image && { images: [`${base}${s.image}`] }),
+    images: [
+      ...(s.image ? [`${base}${s.image}`] : []),
+      ...(s.sections ?? []).flatMap((sec) => (sec.image ? [`${base}${sec.image.src}`] : [])),
+    ],
   }));
 
   const locationPages: MetadataRoute.Sitemap = SERVICE_AREAS.map((c) => ({

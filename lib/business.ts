@@ -373,7 +373,11 @@ export type Service = {
   signs: string[];
   image?: string;
   imageAlt?: string;
-  sections?: { heading: string; paragraphs: string[] }[];
+  sections?: {
+    heading: string;
+    paragraphs: string[];
+    image?: { src: string; alt: string; caption: string };
+  }[];
   faqs?: { q: string; a: string }[];
 };
 
@@ -527,6 +531,11 @@ export const SERVICES: Service[] = [
           "The reason the distinction matters is that each one loads the existing structure in a different place. A bump-out mostly asks a question of the soil and the edge of the existing slab, because you're pouring a new foundation next to an old one and hoping they move together. A second story asks a question of every wall, every footing, and every stud line in the house below it. A garage conversion asks whether a four-inch slab with no vapor barrier and a slope toward the door can be made into a floor you'd want to live on. A casita mostly asks about setbacks, utilities, and drainage.",
           "We do all four. The engineering approach is the same in spirit, trace the load from the new roof down to the dirt and make sure nothing along that path is being asked to do more than it can, but the practical work is different enough that we don't quote one like the other.",
         ],
+        image: {
+          src: "/images/home-additions-3-garage-conversion.jpg",
+          alt: "Attached garage in a Houston home mid-conversion to a bedroom, with the garage door opening framed in and a leveling layer poured over the sloped slab",
+          caption: "A garage conversion underway: the door opening framed in, and the sloped slab being leveled before it becomes a bedroom floor.",
+        },
       },
       {
         heading: "Start with the foundation you already have",
@@ -544,6 +553,11 @@ export const SERVICES: Service[] = [
           "The cause is almost always the same. Houston sits on expansive clay. The clay swells when it's wet and shrinks when it's dry, and the movement is measured in inches, not fractions of an inch. An existing slab has spent decades finding its equilibrium with that soil. A new slab poured next to it hasn't. If the new footings don't bear at the same depth as the old ones, or if the two sections aren't tied together so they move as one, they move separately. The seam opens up. Doors near the addition start to stick, tile cracks along a straight line, and the homeowner is back to square one with a much more expensive problem.",
           "The fix is not complicated, but it has to be designed rather than guessed at. We check the bearing depth of the existing foundation, match it, and detail the connection between old and new, usually with doweled rebar epoxied into the existing slab, so the two sections behave as one structure. On lots with particularly active clay we sometimes recommend deeper footings or a different foundation approach for the addition entirely, and we'll tell you that up front rather than after the concrete is poured.",
         ],
+        image: {
+          src: "/images/home-additions-1-foundation-tie-in.jpg",
+          alt: "Rebar dowels epoxied into the edge of an existing Houston slab, extending into the formwork for a new room addition foundation",
+          caption: "The tie-in detail that keeps the seam from opening: dowels set into the existing slab before the new section is poured.",
+        },
       },
       {
         heading: "Second stories: the honest conversation about what a single-story house can carry",
@@ -553,6 +567,11 @@ export const SERVICES: Service[] = [
           "What we actually do is measure. We look at the footing widths and depths, the stud spacing and species in the bearing walls, the headers over the windows and doors, and the condition of everything after however many decades it's been standing. Then we calculate what the new floor and roof will weigh and where that weight will land. The result is one of three answers: the house can take it as-is, the house can take it with specific reinforcement, or the house can't reasonably take it and building out would be the better path. All three are useful. The third one, delivered before you've spent money on drawings, is the most useful of all.",
           "When reinforcement is needed, it usually means widening footings under the bearing walls, adding posts and beams to shorten spans, or sistering new studs onto the old ones. None of it is exotic. It just has to be sized to the actual gap between what's there and what's needed, and it has to happen before the second floor goes on, not after the cracks appear.",
         ],
+        image: {
+          src: "/images/home-additions-2-wall-reinforcement.jpg",
+          alt: "Interior bearing wall in a Houston home with drywall removed, new studs sistered to the originals and a new beam on top, being prepared for a second-story addition",
+          caption: "Reinforcing a bearing wall before the second floor goes on: sistered studs and a new beam sized for the added load.",
+        },
       },
       {
         heading: "Permits, deed restrictions, and the floodplain",
