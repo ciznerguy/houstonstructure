@@ -373,6 +373,8 @@ export type Service = {
   signs: string[];
   image?: string;
   imageAlt?: string;
+  sections?: { heading: string; paragraphs: string[] }[];
+  faqs?: { q: string; a: string }[];
 };
 
 export const SERVICES: Service[] = [
@@ -516,6 +518,113 @@ export const SERVICES: Service[] = [
       "Adding a room or expanding your home's footprint",
       "Your existing foundation's original design is unknown or unclear",
       "You want one licensed team handling both engineering and construction",
+    ],
+    sections: [
+      {
+        heading: "The four kinds of additions we build, and what each one asks of the house",
+        paragraphs: [
+          "People say \"addition\" and mean four fairly different projects. A ground-floor bump-out pushes a kitchen or a family room out into the yard. A second story stacks new bedrooms on top of a house that was never meant to hold them. A garage conversion turns a slab poured for a car into a slab that has to carry a bedroom, a bathroom, and the plumbing that goes with it. And a detached casita or in-law suite is really a small new house that happens to share a lot with the old one.",
+          "The reason the distinction matters is that each one loads the existing structure in a different place. A bump-out mostly asks a question of the soil and the edge of the existing slab, because you're pouring a new foundation next to an old one and hoping they move together. A second story asks a question of every wall, every footing, and every stud line in the house below it. A garage conversion asks whether a four-inch slab with no vapor barrier and a slope toward the door can be made into a floor you'd want to live on. A casita mostly asks about setbacks, utilities, and drainage.",
+          "We do all four. The engineering approach is the same in spirit, trace the load from the new roof down to the dirt and make sure nothing along that path is being asked to do more than it can, but the practical work is different enough that we don't quote one like the other.",
+        ],
+      },
+      {
+        heading: "Start with the foundation you already have",
+        paragraphs: [
+          "Almost every Houston house sits on one of three foundation types, and which one you have shapes the whole project before anyone draws a floor plan.",
+          "Slab-on-grade is the most common in the suburbs built from the 1960s onward. It's a single concrete pad with thickened edges and, in most cases, a grid of interior beams underneath. Additions tie into the edge of it. The questions are how deep the existing beams go, whether the slab was post-tensioned, and how much the slab has already moved. Post-tension slabs, which became standard in a lot of Houston subdivisions from the 1980s on, have steel cables under tension running through the concrete. You don't cut into one casually, and tying a new foundation into it takes a specific detail.",
+          "Pier and beam is what you'll find under older homes inside the Loop, in the Heights, in Bellaire, in parts of Meyerland. The house sits on wood beams over concrete or brick piers with a crawlspace beneath. These are often easier to add onto because you can see the structure, but the piers have usually been settling for sixty or seventy years and the new addition can't be allowed to settle at a different rate.",
+          "Then there are the houses that have been repaired. A lot of Houston foundations have had piers pushed under them at some point, and the repair changes how the slab behaves. A slab on twelve steel piers doesn't move like the slab next door. If your house has a foundation repair history, we want to see the paperwork, or if there isn't any, we want to find out what's under there before we put more weight on it.",
+        ],
+      },
+      {
+        heading: "Houston soil, and why additions crack at the seam",
+        paragraphs: [
+          "The single most common failure we see on additions built without engineering is a crack that runs right along the line where the new foundation meets the old one. It shows up a year or two after the work is done, usually after a wet winter followed by a dry summer, and it keeps growing.",
+          "The cause is almost always the same. Houston sits on expansive clay. The clay swells when it's wet and shrinks when it's dry, and the movement is measured in inches, not fractions of an inch. An existing slab has spent decades finding its equilibrium with that soil. A new slab poured next to it hasn't. If the new footings don't bear at the same depth as the old ones, or if the two sections aren't tied together so they move as one, they move separately. The seam opens up. Doors near the addition start to stick, tile cracks along a straight line, and the homeowner is back to square one with a much more expensive problem.",
+          "The fix is not complicated, but it has to be designed rather than guessed at. We check the bearing depth of the existing foundation, match it, and detail the connection between old and new, usually with doweled rebar epoxied into the existing slab, so the two sections behave as one structure. On lots with particularly active clay we sometimes recommend deeper footings or a different foundation approach for the addition entirely, and we'll tell you that up front rather than after the concrete is poured.",
+        ],
+      },
+      {
+        heading: "Second stories: the honest conversation about what a single-story house can carry",
+        paragraphs: [
+          "Second-story additions are the projects where the engineering question is most often skipped and where skipping it costs the most.",
+          "A house built as a single story was engineered, or more often just built to habit, to carry one roof and nothing else. The exterior walls, the interior bearing walls, and the footings under them were all sized for that. Put a second floor on top and you've roughly doubled the load on every one of those elements. Sometimes the existing structure has enough margin to take it. Often it doesn't, and the difference isn't something you can see from the driveway.",
+          "What we actually do is measure. We look at the footing widths and depths, the stud spacing and species in the bearing walls, the headers over the windows and doors, and the condition of everything after however many decades it's been standing. Then we calculate what the new floor and roof will weigh and where that weight will land. The result is one of three answers: the house can take it as-is, the house can take it with specific reinforcement, or the house can't reasonably take it and building out would be the better path. All three are useful. The third one, delivered before you've spent money on drawings, is the most useful of all.",
+          "When reinforcement is needed, it usually means widening footings under the bearing walls, adding posts and beams to shorten spans, or sistering new studs onto the old ones. None of it is exotic. It just has to be sized to the actual gap between what's there and what's needed, and it has to happen before the second floor goes on, not after the cracks appear.",
+        ],
+      },
+      {
+        heading: "Permits, deed restrictions, and the floodplain",
+        paragraphs: [
+          "Houston famously has no zoning, and people sometimes take that to mean you can build what you want. In practice three separate sets of rules apply to an addition, and any one of them can stop a project that's already been designed.",
+          "The city's development ordinance sets building lines and setbacks, how close to the property line you can build and how much of the lot you can cover. A bump-out that looks fine on paper can land two feet inside a setback, and the fix at that point is redesigning the addition smaller. We check this before the floor plan is final, not after.",
+          "Deed restrictions are private rules enforced by the neighborhood, separate from the city entirely, and they're where a lot of Houston additions get tripped up. Many subdivisions restrict height, second stories, exterior materials, or the total square footage of the house. Some require architectural review before any exterior change. The city will issue you a permit for an addition your deed restrictions prohibit, and the neighborhood association can still make you take it down. If your subdivision has an active association, we want to know what they require before we design anything.",
+          "Floodplain rules changed substantially after Harvey. Inside the city, construction in the mapped floodplain now has to be elevated above the 500-year flood level, and if an addition is large enough relative to the value of the existing house, the whole structure can be pulled into that requirement. That's a very different project from a simple bump-out. Harris County and the surrounding cities each have their own version. We pull the flood map for the property early, because a floodplain designation changes the foundation design, the cost, and sometimes whether the addition makes sense at all.",
+          "All of this is why the permit is the last thing we do, not the first. By the time we submit, the setback, the restrictions, and the floodplain have already shaped the design, and the review goes through without surprises.",
+        ],
+      },
+      {
+        heading: "What we actually do, step by step",
+        paragraphs: [
+          "The first visit is an evaluation, and it's worth doing before you've committed to a floor plan. We look at the existing foundation and framing, pull whatever records exist for the house, and check the lot for the rules above. If you already have a design in mind, we'll tell you whether the house can support it. If you don't, we'll tell you what the house can support, which is a better starting point for a design than a wish list.",
+          "From there we produce the structural design: foundation details for the new section and its connection to the old, framing sizes and spans, beam and header schedules, and any reinforcement the existing structure needs. For a second story this includes a full load analysis of the house below. The drawings and calculations are stamped, which is what the permit office requires and what protects you later if a question ever comes up about how the addition was built.",
+          "Then the permit. We prepare the structural portion of the submission and coordinate with the architect or designer if there is one. Because the design already accounts for setbacks, restrictions, and floodplain, this step is usually uneventful.",
+          "Construction is where being a licensed general contractor as well as an engineering firm matters. We excavate and form the new foundation, pour it to the detail we designed, frame the addition, tie the roof into the existing roofline, and carry it through inspections and finish. The crew building the addition is working from calculations written by the people supervising them. There's no gap between what was specified and what gets built, and no second company to call when a detail on site doesn't match the drawing.",
+          "Inspections happen at the points the city requires, typically foundation, framing, and final, and we're on site for each of them.",
+        ],
+      },
+      {
+        heading: "How long it takes",
+        paragraphs: [
+          "The evaluation and structural design for a ground-floor addition usually take a week or two once we've been out to the house. Second stories take longer because there's more to analyze, closer to three or four weeks for design.",
+          "Permitting is the variable nobody controls. Inside the City of Houston, a residential addition permit can move quickly or sit for weeks depending on the queue and whether anything in the submission draws a comment. The suburbs vary. We tell people to budget a month for permitting and to be pleasantly surprised if it's faster.",
+          "Construction time depends on the size of the addition and the weather, which in Houston is a real factor for foundation work. A modest bump-out might be six to ten weeks from excavation to finished drywall. A second story that requires reinforcing the house below is a multi-month project, and the family usually needs to plan to be out of the house for part of it.",
+        ],
+      },
+      {
+        heading: "What it costs, and what moves the number",
+        paragraphs: [
+          "Additions are priced per square foot as a starting point, but the per-square-foot number moves a lot depending on what's inside the square footage and what the existing house needs before the addition can go on.",
+          "In the Houston area, a straightforward ground-floor addition at a builder-grade finish tends to land in the range of 150 to 200 dollars per square foot for the construction. Mid-range finishes push that toward 200 to 250. High-end finishes go beyond that. Second stories run higher per square foot than ground-floor additions, typically a quarter more, because of the reinforcement work and the complexity of tying into an occupied house. Bathrooms and kitchens add a fixed chunk on top for plumbing regardless of size. HVAC almost always needs to be extended or upgraded, and older homes often need an electrical panel upgrade to carry the new load.",
+          "The engineering is a small fraction of all this, and it's the part that keeps the rest of the number from changing once construction starts. Our cost estimator on this site walks through the factors above for your specific project and gives you a planning range before you talk to anyone. It's a ballpark, not a quote, but it's a ballpark built from the same logic we use when we price the real thing.",
+        ],
+      },
+      {
+        heading: "The mistakes we get called in to fix",
+        paragraphs: [
+          "A fair amount of our addition work is on additions someone else already built. The patterns repeat.",
+          "The most common is the seam crack described above, a new foundation poured next to an old one with no tie-in and no attention to bearing depth. The second most common is a second story on a house that couldn't carry it, which shows up as sagging floors upstairs, doors that won't close downstairs, and cracks radiating from the corners of windows in the bearing walls. Third is the garage conversion where nobody thought about the slab, so the new bedroom floor slopes toward the old garage door and the bathroom drains run uphill.",
+          "Then there are the paperwork problems. An addition built without a permit, or with a permit but without stamped engineering, is a liability that surfaces at the worst possible time, usually during a sale when the buyer's inspector asks for documentation that doesn't exist. We can often produce an engineering evaluation of existing work after the fact, but it's more expensive and less certain than doing it right the first time, and sometimes the honest answer is that the work needs to be redone.",
+          "None of these are exotic failures. They're all the predictable result of building first and asking the structural question later, or never. Asking it first is cheaper in every case we've seen.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Can any house take a second story?",
+        a: "No. Some single-story houses have enough margin in the foundation and framing to carry a second floor with modest reinforcement, and some don't have a reasonable path to it at all. The only way to know which one you have is an evaluation of the existing structure. We'd rather tell you building out is the better option before you've paid for drawings than after.",
+      },
+      {
+        q: "Do I need an architect and an engineer, or just one of you?",
+        a: "It depends on the project. Many additions can be designed and built with our structural drawings alone. Larger or more complex additions, especially second stories that change the look of the house, often benefit from an architect for the layout and elevations, with us handling the structure and the construction. We work alongside architects regularly and can tell you which path fits your project.",
+      },
+      {
+        q: "How do you tie a new foundation into an old one?",
+        a: "We match the bearing depth of the existing foundation so both sections sit on the same soil condition, then connect them with steel dowels epoxied into the existing slab or beam. That lets the two sections move together with the clay rather than separately. On post-tension slabs the detail is different and has to account for the cables in the existing concrete.",
+      },
+      {
+        q: "Will my deed restrictions allow an addition?",
+        a: "Often yes, sometimes with conditions, occasionally no. Height limits, second-story prohibitions, and square footage caps are the restrictions that most often affect additions in Houston subdivisions. We check the restrictions early, and if your neighborhood has an architectural review process, we'll help you prepare what they need to see.",
+      },
+      {
+        q: "What if my house is in the floodplain?",
+        a: "It changes the design and sometimes the scope. Inside the city, work in the mapped floodplain has to meet elevation requirements, and a large enough addition can bring the whole house under those rules. We pull the flood map before we design anything so you know what you're dealing with, and we'll tell you honestly if the floodplain makes the addition impractical.",
+      },
+      {
+        q: "Do you handle the construction, or only the engineering?",
+        a: "Both. We're a licensed and insured general contractor as well as an engineering firm, so we can design the addition and build it. We can also provide the engineering alone if you already have a contractor you want to use. Either way the structural drawings are stamped and the permit office gets what it needs.",
+      },
     ],
   },
   {

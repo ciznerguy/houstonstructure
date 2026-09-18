@@ -66,12 +66,30 @@ export default async function ServicePage({ params }: Props) {
     })),
   };
 
+  const faqJson = service.faqs?.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: service.faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      }
+    : null;
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJson) }}
       />
+      {faqJson && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJson) }}
+        />
+      )}
       <PageHero
         eyebrow="Service"
         title={`${service.name} in Houston, TX`}
@@ -93,12 +111,41 @@ export default async function ServicePage({ params }: Props) {
       )}
 
       <section className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-3">
-        <div className="md:col-span-2">
+        <div className="md:col-span-2 text-slate-700 leading-relaxed">
           {service.description.map((p, i) => (
-            <p key={i} className="mb-5 text-slate-700 leading-relaxed">
+            <p key={i} className="mb-5">
               {p}
             </p>
           ))}
+
+          {service.sections?.map((s) => (
+            <div key={s.heading}>
+              <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
+                {s.heading}
+              </h2>
+              {s.paragraphs.map((p, i) => (
+                <p key={i} className="mb-5">
+                  {p}
+                </p>
+              ))}
+            </div>
+          ))}
+
+          {service.faqs?.length ? (
+            <>
+              <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
+                Questions we hear often
+              </h2>
+              <div className="space-y-5">
+                {service.faqs.map((f) => (
+                  <div key={f.q}>
+                    <div className="font-semibold text-slate-800">{f.q}</div>
+                    <p className="mt-1.5 text-slate-600 leading-relaxed">{f.a}</p>
+                  </div>
+                ))}
+              </div>
+            </>
+          ) : null}
         </div>
 
         <div>
