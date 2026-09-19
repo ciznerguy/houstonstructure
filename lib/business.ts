@@ -734,6 +734,147 @@ export const SERVICES: Service[] = [
       "A permitting office is requesting a structural letter",
       "You want a second opinion on a repair company's diagnosis",
     ],
+    atAGlance: [
+      "Sealed structural inspection reports for home purchases, sales, insurance claims, permits, and second opinions.",
+      "A licensed engineer inspects the structure, not a general home inspector reading a checklist.",
+      "Report delivered within a few business days; expedited turnaround available for closings.",
+      "Written to be used: by lenders, adjusters, attorneys, permit reviewers, and contractors bidding a defined scope.",
+      "Priced in the low hundreds for most houses. Often the least expensive part of the transaction it protects.",
+    ],
+    sections: [
+      {
+        heading: "The difference between a home inspection and an engineering report",
+        paragraphs: [
+          "A general home inspector looks at the whole house in a few hours and tells you what they saw: roof, plumbing, electrical, appliances, and a line or two about the foundation. When they see a crack they don't like, their report says \"recommend evaluation by a licensed structural engineer.\" That sentence is where most of our inspection work begins.",
+          "An engineering report is narrower and deeper. We're looking at one thing, the structure, and we're qualified to say what it means. We measure rather than describe. The report carries a professional engineer's seal, which is what makes it usable by a lender, an insurance adjuster, a permitting office, or a court. A home inspector's note that the foundation \"shows signs of movement\" is an observation. An engineer's report that says the slab is out of level by 1.8 inches across 40 feet, that the movement pattern is consistent with seasonal moisture variation rather than active failure, and that no repair is currently warranted, is a finding someone can act on.",
+          "The two aren't in competition. A good home inspector is the reason you find out you need us. We just pick up where their expertise ends.",
+        ],
+      },
+      {
+        heading: "Who asks for these reports, and what each one needs",
+        paragraphs: [
+          "The same inspection can produce a very different report depending on who's going to read it. Before we come out, we want to know which of these situations you're in:",
+        ],
+        bullets: [
+          "Buying a house: the inspector flagged the foundation or framing and you need to know whether it's a real problem before the option period ends. You need a clear finding, a repair scope if one is warranted, and a rough cost so you can negotiate or walk.",
+          "Selling a house: a buyer's inspector raised a concern and the deal is stalling. You need an independent report that either settles the question or defines exactly what needs fixing, so the negotiation is about a number rather than a fear.",
+          "Insurance claim: something happened, a plumbing leak, a storm, a vehicle into the garage, and the adjuster needs an engineer's opinion on cause and extent. The report has to distinguish the event from pre-existing conditions and be written in the terms adjusters work with.",
+          "Permit application: the city or a suburb is asking for a structural letter before they'll issue a permit for a repair, a wall removal, an addition, or a change of use. The letter has to say specific things in a specific form, and we know what each jurisdiction expects.",
+          "Second opinion: a foundation or repair company gave you a diagnosis and a price, and you'd like someone who isn't selling the repair to look before you sign. This is a large share of what we do, and the report frequently comes back with a smaller scope than the quote.",
+          "Due diligence on a commercial property: a buyer, lender, or tenant needs a structural condition assessment before a purchase or a lease. Larger scope, same idea.",
+        ],
+      },
+      {
+        heading: "What the inspection covers",
+        paragraphs: [
+          "For a residential structural inspection we look at the foundation, the framing, and the connections between them, plus the things that act on the structure from outside: drainage, grading, trees, and any evidence of water or pest intrusion.",
+          "On the foundation, that means an elevation survey plotted onto a floor plan; a walk of the exterior perimeter for cracks, separations, and evidence of prior repair; and a check of the visible foundation type and condition. Inside, we map cracks in drywall, tile, and brick and note which way they run. We check doors and windows for racking. Where there's a crawlspace, we get into it.",
+          "On the framing, we go into the attic and look at the roof structure, ceiling joists, and any bearing walls or beams we can see from above. We look for sagging, cracked or cut members, undersized headers, water staining, and signs of termite activity. If the concern is a specific area, a sagging floor or a removed wall, we open up what we need to in order to see the framing directly rather than infer it.",
+          "Then we photograph everything that matters, because the report has to stand on its own for someone who wasn't there.",
+        ],
+        image: {
+          src: "/images/inspections-reports-2-crack-gauge.jpg",
+          alt: "Engineer crouched at the brick wall of a Houston home holding a transparent crack-width gauge against a stair-step mortar crack and photographing it",
+          caption: "Every crack gets a width, a direction, and a photograph, so the report says what was measured rather than what was noticed.",
+        },
+      },
+      {
+        heading: "What's in the report",
+        paragraphs: [
+          "The report is written for the person who has to make a decision from it. It opens with a plain-language summary that says what we found and what we recommend, in a paragraph. Someone in a hurry can stop there.",
+          "Behind the summary: the elevation survey as a plotted diagram, the crack map, photographs with annotations, a description of the foundation type and framing system, our assessment of what the observed conditions mean and whether they indicate active movement or historic settlement, and specific recommendations. If repair is warranted, the recommendation is a scope a contractor can bid: what type of repair, roughly where, and what result it should achieve. If repair is not warranted, the report says that in so many words, because \"no action needed\" is a finding people pay for and deserve to have in writing.",
+          "Every report is sealed by a Texas licensed professional engineer. That seal is what makes it evidence rather than opinion.",
+        ],
+        image: {
+          src: "/images/inspections-reports-3-attic-survey.jpg",
+          alt: "Engineer balanced on ceiling joists in a Houston attic photographing the rafters and a beam with a phone, headlamp on, a water stain visible on the roof decking",
+          caption: "The attic is where the framing tells the truth: rafters, ceiling joists, and the water stains that explain them.",
+        },
+      },
+      {
+        heading: "Real estate transactions, and the option period clock",
+        paragraphs: [
+          "Most of our inspection calls come during a Texas option period, which means there's a deadline and it's usually close. We schedule around it. Tell us the option expiration date when you call and we'll tell you honestly whether we can get out and get the report to you in time. Usually we can.",
+          "For buyers, the report does two jobs. It tells you whether the house has a structural problem or a Houston-normal amount of movement, which is most of them. And if there is a problem, it gives you a defined repair scope and cost range to bring to the negotiation, which is a much stronger position than a home inspector's \"recommend further evaluation.\"",
+          "For sellers, an engineering report obtained before listing can prevent the whole scenario. A report on file that documents the foundation condition takes the question off the table before a buyer's inspector raises it, and it costs far less than a price renegotiation in week three of a contract.",
+          "Realtors on both sides generally welcome the report, because it turns an emotional sticking point into a fact both parties can work from.",
+        ],
+        image: {
+          src: "/images/inspections-reports-1-report-review.jpg",
+          alt: "Engineer at a kitchen table walking a young couple through a printed structural inspection report with a plotted elevation diagram, moving boxes in the background",
+          caption: "Walking buyers through the elevation plot and the photos, so the report is understood and not just filed.",
+        },
+      },
+      {
+        heading: "Insurance claims: cause matters more than damage",
+        paragraphs: [
+          "Insurance disputes over structural damage almost always come down to cause. Most Texas homeowner policies exclude damage from soil movement and settlement, but cover damage from sudden events like a plumbing leak, a windstorm, or a vehicle impact. The same crack in the same wall can be covered or excluded depending on what caused it, and the adjuster is going to want an engineer's opinion on that question.",
+          "Our claim reports focus on causation. We document the damage, look for the physical evidence that points to one cause over another, and write a finding the adjuster can rely on. Where the cause is genuinely a covered event, that report is what gets the claim paid. Where it isn't, we'll tell you that too, because a report that overreaches doesn't survive the insurer's own engineer and does you no good.",
+          "If your claim has already been denied, an independent engineering report is often the basis for a successful appeal, provided the facts support it.",
+        ],
+      },
+      {
+        heading: "Structural letters for permits",
+        paragraphs: [
+          "Houston and the surrounding cities require a structural letter from a licensed engineer for a range of residential and commercial permits: load-bearing wall removals, additions, foundation repairs, certain change-of-use conversions, and repairs to storm damage. The letter has to state that an engineer has evaluated the existing structure and either finds it adequate for the proposed work or specifies what's required to make it so.",
+          "Each permitting office has its own format preferences and its own sticking points. We've submitted enough of these to know what the City of Houston wants versus what Sugar Land or Pearland wants, and we write the letter so it goes through the first time. If the permit is for work we're also designing, the letter is part of that package. If a contractor just needs the letter, that's a quick site visit and a short turnaround.",
+        ],
+      },
+      {
+        heading: "When you already have a report from someone else",
+        paragraphs: [
+          "A fair number of people come to us holding a report they don't trust. A foundation company's evaluation that recommends 22 piers. A prior engineer's letter that the buyer's lender won't accept. An insurance company's engineer who concluded the damage was pre-existing. Reviewing someone else's findings is a legitimate and common request.",
+          "We do it two ways. If the underlying data is sound and the question is interpretation, we can review the report and give a written second opinion on whether the conclusions follow from the measurements. If the data is missing, thin, or suspicious, we go out and take our own. A pier diagram with no elevation survey behind it, for example, is a sales document, not an engineering finding, and we'd want to measure the floor before agreeing with any part of it.",
+          "What we won't do is rubber-stamp a report because you'd prefer its conclusion. If the other engineer got it right, we'll say so. The value of an independent opinion is that it's independent in both directions.",
+        ],
+      },
+      {
+        heading: "Old houses, new houses, and what we expect to find",
+        paragraphs: [
+          "A 1940s bungalow in the Heights and a 2015 build in Cypress are inspected the same way and read very differently. In the older house we expect to see pier-and-beam movement, a floor that's been relevelled at least once, framing that's been altered by decades of renovation, and often no record of any of it. The question is rarely whether the house has moved. It's whether the movement is done, and whether anyone has cut something they shouldn't have along the way.",
+          "In the newer house the foundation is usually a post-tension slab, and the concerns shift: was the slab poured on properly prepared soil, has the builder's warranty period exposed any early movement, and has anyone cored through the slab for a plumbing repair without locating the cables first. Newer framing tends to be engineered lumber, which is strong until somebody notches it.",
+          "Knowing what's normal for the age and construction of the house is most of what separates a useful report from an alarming one. A crack that would concern us in a five-year-old slab is background noise in a seventy-year-old pier-and-beam, and the report says which is which.",
+        ],
+      },
+      {
+        heading: "Cost and turnaround",
+        paragraphs: [
+          "A standard residential structural inspection with a sealed report runs in the low hundreds of dollars. Larger houses, houses with crawlspaces that take time to survey, and commercial properties cost more. Permit letters for a defined scope are at the lower end. We'll quote the number before we schedule, and it doesn't change based on what we find.",
+          "The report typically arrives within two to three business days of the site visit. For a closing or an option deadline, expedited turnaround is available, and we'll tell you up front what's realistic for your date.",
+          "One thing to be clear about: we don't discount the inspection in exchange for the repair work. The report costs what it costs, and the finding is the same whether or not you ever hire us for anything else. That separation is the point of getting an engineer's opinion in the first place.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "My home inspector said to get a structural engineer. Is that a bad sign?",
+        a: "Not necessarily. Home inspectors are trained to flag anything outside their expertise, and in Houston nearly every house shows some foundation movement, so the referral is routine. Most of the houses we inspect on that referral turn out to be within normal range. The report either confirms that or gives you a defined problem to deal with. Either way, you'll know.",
+      },
+      {
+        q: "Can you get the report done before my option period ends?",
+        a: "Usually, yes. Tell us the date when you call. We schedule inspections around option deadlines regularly and can expedite the report when a closing depends on it.",
+      },
+      {
+        q: "Will the report tell me what the repair will cost?",
+        a: "It will tell you what the repair should be and give a realistic cost range for that scope. It won't be a contractor's quote, but it's what a contractor should be quoting against, and it lets you compare bids on an equal footing.",
+      },
+      {
+        q: "Does the report include a warranty on the foundation?",
+        a: "No. An inspection report documents the condition of the structure on the day we saw it and gives our professional opinion about what it means. It isn't a guarantee of future performance, and no honest engineer's report is.",
+      },
+      {
+        q: "Can I use the report to dispute a foundation company's quote?",
+        a: "Yes, and people do. The report defines what the structure actually needs, which may be less than what was quoted, or different, or nothing at all. It's also useful in the other direction: if the quote is reasonable, the report tells you that and you can proceed with confidence.",
+      },
+      {
+        q: "Do you inspect commercial buildings?",
+        a: "Yes. Structural condition assessments for commercial purchases, leases, and lender requirements are a larger scope than a residential inspection, but the approach is the same: measure, document, assess, and put it in a sealed report the parties can rely on.",
+      },
+      {
+        q: "What should I have ready when you come out?",
+        a: "Any prior reports, repair invoices, or warranty paperwork on the foundation or framing, and access to the attic and crawlspace if there is one. Move what you can off the floor so we can take elevation readings across the whole slab. If it's a purchase, have the home inspector's report handy so we can go straight to what they flagged.",
+      },
+    ],
   },
   {
     slug: "consulting",
