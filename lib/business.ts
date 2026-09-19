@@ -1293,15 +1293,190 @@ export const SERVICES: Service[] = [
     summary:
       "Engineered and installed steel beams for load-bearing wall removals, additions, and structural upgrades.",
     description: [
-      "Replacing a load-bearing wall with a steel beam, or upgrading an undersized wood beam, means getting two things right: the beam has to be sized correctly for the actual load, and it has to be installed with proper bearing and temporary support during the swap.",
-      "We size the beam, engineer the connections and bearing points, and, licensed and insured, install it ourselves. That means the same firm that ran the calculations is also responsible for the work matching them.",
-      "This is common alongside load-bearing wall removals, second-story additions, and any renovation that opens up a wider span than the existing framing allows.",
+      "Most of the beams that go into Houston homes are wood or engineered lumber, and that's the right call for most openings. Steel is for the jobs wood can't do: a span too long for lumber at any reasonable depth, a floor and a roof both landing on one line, a beam that has to disappear into a shallow ceiling, or an existing beam that's already sagging and needs to be replaced with something stiffer in the same space.",
+      "We engineer the beam, the columns under it, the footings under those, and every connection in between, and then we fabricate and install it ourselves as a licensed contractor. One firm owns the calculation and the result, which matters more with steel than with wood, because a steel beam that's set wrong is expensive to fix and hard to spot once it's covered.",
+      "This page walks through when steel is the right answer, what goes into sizing and installing one, what it costs in the Houston area, and what to look for if you're comparing bids.",
     ],
     signs: [
       "Removing a load-bearing wall and replacing it with a beam",
       "An existing beam is undersized or deflecting",
       "Widening an opening beyond what current framing supports",
       "You want the engineer and the installer to be the same company",
+    ],
+    atAGlance: [
+      "Steel goes where wood runs out: long spans, floor plus roof loads, shallow ceilings, and beams that are already sagging.",
+      "We engineer, fabricate, and install. Beam, columns, footings, and connections are designed together, by the same people who set them.",
+      "Typical residential steel openings run from the high single digits into the low tens of thousands installed, with the beam itself a smaller share than most people expect.",
+      "Fabrication takes one to three weeks after the design is final. Installation is usually one to three days.",
+      "Inside Houston and in the suburbs, structural steel needs a permit and a framing inspection. Bolted or welded connections may need a special inspection on top of that.",
+    ],
+    sections: [
+      {
+        heading: "When the beam has to be steel",
+        paragraphs: [
+          "Wood and LVL beams get deeper as the span gets longer or the load gets heavier. At some point the beam that would work is deeper than the ceiling can hide, or it can't be found at all. That point comes sooner than people think when a second floor is involved, because a beam carrying a bedroom floor and a roof is doing several times the work of one carrying a roof alone.",
+          "Steel is roughly ten times stiffer than lumber for the same depth, so it solves problems that are really about depth. A twenty-foot opening under a two-story house that would need a sixteen-inch LVL can often be done in a ten-inch steel section. When the ceiling joists are only ten inches deep and the homeowner wants a flat ceiling, that difference is the whole project.",
+          "The other trigger is a concentrated load. A post from a beam above, a stair stringer, or the end of a girder truss landing partway along the span puts a point load on the beam that wood handles poorly. Steel takes it with a web stiffener and a few calculations.",
+        ],
+        bullets: [
+          "Spans past sixteen to eighteen feet with a floor above, or past twenty-two feet with roof load only.",
+          "A flush beam where the joists are 2x10 or shallower and a deeper lumber beam won't fit inside the ceiling.",
+          "A point load partway along the span, from a post, a stair, or a girder above.",
+          "An existing wood beam or header that has sagged and needs to be replaced without deepening the soffit.",
+          "Openings in brick veneer walls or under masonry, where deflection has to stay very small to keep the brick from cracking.",
+        ],
+      },
+      {
+        heading: "The sections we use, and what each one is for",
+        paragraphs: [
+          "Most residential steel is one of four shapes, and the choice is about the ceiling and the connections as much as the load.",
+        ],
+        bullets: [
+          "Wide-flange beams (W-shapes, sometimes called I-beams): the default for spans and heavy loads. A W8 or W10 covers most single-family openings; a W12 shows up under two stories or past twenty-four feet.",
+          "Rectangular tube (HSS): the same depth carries a bit less than a W-shape, but the flat sides make it easy to bolt lumber to and it resists twisting on its own, which simplifies the bracing. Common for flush beams and for beams with joists framing in from both sides.",
+          "Flitch beams: a steel plate sandwiched and bolted between two pieces of lumber. Lighter and easier to nail into than a bare steel beam, and a practical way to add capacity to an existing wood beam without pulling it out.",
+          "Channels and angles: for reinforcing an existing beam in place, for lintels over openings in brick, and for the odd corner where a full W-shape won't fit.",
+        ],
+      },
+      {
+        heading: "Sizing is mostly about stiffness, not strength",
+        paragraphs: [
+          "A steel beam almost never fails by breaking. It fails, in the sense that matters to a homeowner, by bending more than the finishes above it can tolerate. Drywall ceilings crack at a deflection around one three-hundred-sixtieth of the span. Tile floors, plaster, and brick veneer crack sooner. So the design question is rarely \"can this beam carry the load\" and almost always \"how much does it move under the load, and what's sitting on it that will notice.\"",
+          "That's why two engineers can look at the same opening and specify different beams. One is designing to the code minimum for strength; the other is designing so the tile floor upstairs doesn't crack in three years. We design to the second standard, and we'll tell you when a slightly heavier section buys a lot of margin for very little money, because with steel it usually does.",
+          "The top flange of a steel beam also has to be held straight along its length or the beam can roll sideways under load. In a house, the joists or a bolted wood nailer usually do that job, but it has to be detailed, not assumed. A beam that's carrying load with nothing bracing its top flange is a real thing we've been called to look at.",
+        ],
+      },
+      {
+        heading: "The load doesn't stop at the beam",
+        paragraphs: [
+          "Every pound the beam picks up goes to its two ends, and then has to keep going down to the ground. On a wood beam the posts are often a few 2x4s nailed together and the load spreads out enough that the existing slab or sill can take it. Steel beams carry more, concentrate it into two points, and the ends of the beam are where projects go wrong.",
+          "Under each end there's a column, usually a steel pipe or square tube in a house, sometimes a built-up wood post when the load allows. Under the column there has to be something that can take a load that may be several tons. On a slab foundation that often means cutting the slab, digging a pad footing, and pouring it with rebar before the column goes in. On a pier-and-beam house it means a new pier or a spread footing under the floor. On a two-story home the column may need to continue through the first floor to reach the foundation, which means a post inside a wall below.",
+          "We check all of this on the site visit and design it as part of the beam, not as an afterthought. When another contractor's bid is much lower than ours for the same beam, the footings are very often what's missing.",
+        ],
+        image: {
+          src: "/images/steel-beam-installation-1-carrying-beam-in.jpg",
+          alt: "Two workers guiding a long steel wide-flange beam on a rolling lift through the front doorway of a Houston home, blankets protecting the door frame and the floor covered with plywood",
+          caption: "Getting the steel into the house is its own task: a twenty-foot W10 weighs over four hundred pounds and has to make it through the door, around the corners, and up onto the shoring.",
+        },
+      },
+      {
+        heading: "Getting four hundred pounds of steel into a finished house",
+        paragraphs: [
+          "A W10x22 weighs twenty-two pounds per foot. A twenty-foot beam is four hundred and forty pounds of rigid steel that has to come through a door, turn a corner, and go up. That's the part of the job homeowners don't picture, and it drives more of the schedule and the cost than the beam itself.",
+          "For most single-story homes the beam comes in on rollers or a beam lift through the widest opening, often a patio door or the garage, with the path cleared and floors protected. When the geometry doesn't allow it, the beam is fabricated in two pieces with a bolted splice plate designed for the moment at that point, and the pieces are joined in place. Where neither works, a small crane sets the beam through a temporarily opened section of roof or wall, which sounds dramatic and is a routine half-day for a crew that does it.",
+          "We plan the route before we order the steel, and we'll tell you at the design stage whether your beam is a carry-in, a splice, or a crane pick, because each one changes the price.",
+        ],
+      },
+      {
+        heading: "Setting the beam",
+        paragraphs: [
+          "The ceiling load is picked up on temporary shoring on both sides of the line before anything comes out. The old wall or the old beam is removed. The columns go in first, on their footings or bearing plates, and get plumbed. The beam is lifted onto the columns with jacks or a lift, its elevation is set, and it's connected at each end. Only then does the load come off the shoring and onto the steel, slowly, while someone watches the joists above.",
+          "For a flush beam the joists have to be cut back and hung from the beam. That means each joist gets a hanger onto a wood nailer bolted to the beam, or a hanger welded to the steel, and the cuts have to be square and the hangers tight or the ceiling will show a line where the joists meet the beam. It's slower than a dropped beam, and it's where a careful crew earns its fee.",
+        ],
+        image: {
+          src: "/images/steel-beam-installation-2-setting-beam.jpg",
+          alt: "Crew setting a steel beam onto a square tube column between two rows of adjustable shoring posts in a Houston home, one worker checking the beam with a level while another tightens the bearing plate bolts",
+          caption: "The beam goes onto its columns while the shoring still carries the ceiling. The load transfers to the steel only after every connection is tight and the elevation is checked.",
+        },
+      },
+      {
+        heading: "Connections are where bad steel jobs fail",
+        paragraphs: [
+          "A correctly sized beam sitting on a badly detailed connection is an unsafe beam. The pieces that matter:",
+        ],
+        bullets: [
+          "Bearing plates at each end so the beam's load is spread over the column cap or the masonry, not concentrated on a flange edge.",
+          "Column caps and bases: welded plates with bolt holes, so the beam is bolted to the column and the column is bolted to its footing. Steel that's just resting on steel is not a connection.",
+          "Anchor bolts into the footing, set in the concrete or epoxied in, not concrete screws.",
+          "A pressure-treated or kiln-dried wood nailer bolted to the top flange on a regular spacing, which is what the joists, hangers, and eventually the drywall attach to.",
+          "Web stiffeners under any point load and at the bearings on deeper beams, to keep the web from buckling.",
+          "Field welds, where used, done by a certified welder with the finish and fireproofing around them addressed. We prefer bolted connections in occupied homes because welding inside a wood-framed house is a fire risk and a smell the homeowner lives with for a week.",
+        ],
+      },
+      {
+        heading: "Flush or dropped, and what each one asks of you",
+        paragraphs: [
+          "A dropped beam hangs below the ceiling and gets wrapped in drywall or wood. It's the simpler install: the joists stay where they are and rest on top of the beam. A flush beam sits up inside the joist space so the ceiling runs flat across the opening. It's the look most people want in a kitchen, and it costs more, because the joists are cut and hung, the beam depth is limited to the joist depth, and the coordination with electrical and ducts running through the ceiling is tighter.",
+          "There's a middle option that comes up often in older Houston homes with low ceilings: a partially recessed beam, where the steel sits a few inches into the joist space and drops a few inches below. It keeps the soffit shallow enough to wrap into a low bulkhead that reads as a design line rather than a beam. We'll draw all three for you when the ceiling depth makes it a real choice.",
+        ],
+        image: {
+          src: "/images/steel-beam-installation-3-finished-wrapped-beam.jpg",
+          alt: "Finished living space in a Houston home with a wide opening between the kitchen and dining area, a shallow drywall-wrapped dropped beam across the span and a slim wrapped column at one end",
+          caption: "A dropped steel beam wrapped in drywall with a matching wrapped column. Shallower than the lumber beam that would have carried the same span, which is usually why steel was chosen.",
+        },
+      },
+      {
+        heading: "Replacing a beam that's already failing",
+        paragraphs: [
+          "A steady share of our steel work is not new openings but old ones: a wood beam or a doubled 2x12 header that someone installed years ago, now sagging an inch or more at midspan, with the drywall cracked above it and doors sticking on either side. Sometimes the original work was permitted and simply undersized for the load. Often it wasn't permitted at all.",
+          "The fix starts with measuring the sag and looking at what's above. If the deflection is recent and the framing above is sound, we can usually jack the ceiling back toward level slowly over a day or two, then set a steel beam in the space and let the load down onto it. If the framing above has taken a set over years, forcing it fully level can crack more than it fixes, and the honest plan is to stop the movement and accept some of what's there. We'll tell you which case you're in before we start.",
+          "Where the existing beam can stay but needs help, a flitch plate bolted to its side, or a steel channel bolted beneath it, can add the missing capacity without the full removal. That's a cheaper repair, and it's the right one when the numbers work.",
+        ],
+      },
+      {
+        heading: "Steel in additions and second stories",
+        paragraphs: [
+          "Additions bring their own steel. A second-story addition often needs a transfer beam where the new walls above don't line up with the walls below. Wide garage door openings that now have a bedroom over them need a beam that most lumber can't provide at a header depth. A covered patio with a cantilevered roof or a room over a carport is a steel job almost every time.",
+          "In these projects the beam is part of a larger structural design, and we coordinate it with the foundation work, the framing plan, and the addition's permit set so it's engineered once rather than patched in later. If you're at the planning stage of an addition, that conversation belongs in the addition design, and our home additions page covers how that process runs.",
+        ],
+      },
+      {
+        heading: "Corrosion, fire, and the questions nobody asks",
+        paragraphs: [
+          "Steel inside a conditioned house doesn't rust in any meaningful way, but it comes from the fabricator primed anyway, and any steel exposed to weather, in a carport or a covered porch, gets a proper exterior coating or galvanizing. Steel in a garage ceiling that separates the garage from living space has to be protected for fire rating like everything else on that line, usually with the same drywall that covers it. Steel loses strength quickly in a fire, sooner than heavy timber, so the wrap is not decorative.",
+          "One more that comes up: a steel beam does not make a house \"stiffer\" in an earthquake or a hurricane in any general sense. It carries the gravity load on its line. Lateral bracing for wind is a separate design question, and we'll raise it if opening a wall removes shear capacity the house was counting on.",
+        ],
+      },
+      {
+        heading: "What it costs in Houston",
+        paragraphs: [
+          "The steel itself is the smaller share. Fabricated structural steel in the Houston market runs a few dollars per pound delivered, so a twenty-foot W10 with plates and columns is typically a low-four-figure material cost. The rest is the engineering, the footings, the shoring and demolition, the labor to move and set it, a crane if one is needed, and the finish work afterward.",
+          "As planning ranges, not quotes: a short steel header replacement in a single-story house with existing bearing is often in the mid four figures installed. A typical twenty-foot flush or dropped beam under a single story with new columns and pad footings usually lands in the high single-digit thousands to the low teens. A two-story load, a splice, a crane, or a long flush install with dozens of joist hangers can push a residential job into the twenties. Engineering alone, when someone else is building, is generally under fifteen hundred dollars for a single beam and its supports.",
+          "We give a fixed price after the site visit, when we know the span, the load, the route in, and what's under the ends. Prices quoted before anyone has looked at the footings are guesses.",
+        ],
+      },
+      {
+        heading: "How long it takes",
+        paragraphs: [
+          "Plan on about a week from the site visit to a final drawing. Fabrication is the part people don't budget time for: one to three weeks from a final drawing, depending on the shop's backlog, and longer if the section is unusual. Footings, if needed, go in before the beam arrives and need a few days to cure. The install itself is one to three days. Finish work follows on its own schedule.",
+          "End to end, plan on four to six weeks from the first call to a wrapped beam for a straightforward job, and allow for the permit review on top of that inside the City of Houston.",
+        ],
+      },
+      {
+        heading: "What the inspector looks at",
+        paragraphs: [
+          "Structural steel is permitted like any other structural change, and the framing inspection covers the beam, the columns, and the connections before they're closed in. Where the design calls for field welding or high-strength bolting, the code can require a special inspection by a third party, separate from the city's, to verify the welds or the bolt tension. We tell you up front whether your job needs one and we schedule it. It's a modest cost and it's the only independent check that the connections match the drawing.",
+          "Keep the stamped drawing, the permit, and the inspection record. A steel beam is a selling point when a buyer's inspector sees the paperwork and an open question when they don't.",
+        ],
+      },
+      {
+        heading: "One firm for the numbers and the install",
+        paragraphs: [
+          "The engineering and the construction can be bought separately, and if you have a contractor you trust, we'll design the beam and hand off the drawing. Where we think it pays to keep both under one roof is exactly where steel gets hard: the beam that has to be spliced, the column that has to reach a footing through a finished floor, the flush install with a tight ceiling. In those jobs a question from the crew gets answered by the engineer who drew it, on the same day, and nothing gets covered up while waiting for a callback.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Is a steel beam always better than an LVL?",
+        a: "No. For most single-story openings under about eighteen feet, an LVL is lighter, cheaper, easier to nail into, and does the job. Steel earns its cost when the span, the load, or the ceiling depth push past what lumber can do, or when an existing wood beam has already sagged and the replacement has to be stiffer in the same space.",
+      },
+      {
+        q: "Can a steel beam be installed without a crane?",
+        a: "Usually. Most residential beams under about five hundred pounds come in through a door or the garage on rollers or a beam lift and are jacked into position. When the route doesn't allow it, the beam is fabricated in two pieces with a bolted splice. A crane is the last option, and when it's needed it's typically a few hours of work rather than a full day.",
+      },
+      {
+        q: "Will a steel beam make my ceiling flat?",
+        a: "It can, if the beam is installed flush inside the joist space and the joists are hung from it. That's the more expensive install, and the beam depth is limited to the depth of your joists. A dropped beam below the ceiling is simpler and cheaper, and it's wrapped to look finished. We'll show you both options for your ceiling depth before you decide.",
+      },
+      {
+        q: "Do I need new footings for a steel beam?",
+        a: "Often, yes. A steel beam concentrates the load into two points, and the ends usually carry more than an ordinary slab or sill was built for. On a slab that means cutting a small area and pouring a reinforced pad footing under each column. On a pier-and-beam house it means a new pier or footing under the floor. We determine this at the site visit, and a bid that doesn't mention footings is worth asking about.",
+      },
+      {
+        q: "My existing beam is sagging. Does it have to come out?",
+        a: "Not always. If the beam can stay and just needs more capacity, a steel flitch plate bolted to its side or a channel bolted beneath it can add what's missing without removing it. When the sag is large, the beam is badly undersized, or the ceiling has to be recovered to level, replacing it with a steel section is the cleaner fix. We measure the deflection and look at what's above before recommending either.",
+      },
     ],
   },
 ];
