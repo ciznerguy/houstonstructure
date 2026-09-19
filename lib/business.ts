@@ -565,6 +565,13 @@ export const SERVICES: Service[] = [
       "Water or termite damage to framing members",
       "Cracking at interior corners after storm events",
     ],
+    atAGlance: [
+      "Sagging beams and joists, walls removed without engineering, rot, termite damage, and storm damage to framing.",
+      "We trace the load path, find where it's broken, and design the fix: sistering, replacement, or reinforcement.",
+      "Assessment and written report first; localized repairs typically land in the low thousands, larger framing work higher.",
+      "Design in about a week; small repairs are a day or two on site plus finish work.",
+      "Licensed to design and build the repair, or to hand your contractor a stamped scope.",
+    ],
     sections: [
       {
         heading: "Structural repair is everything above the foundation",
@@ -583,6 +590,11 @@ export const SERVICES: Service[] = [
           "Fourth is termite damage, which in Houston is not a question of if. Subterranean termites eat the framing from the inside out, so a stud or a sill plate can look fine and be hollow. Once the pest company has treated the house, someone has to figure out which members are still structural and which need to be sistered or replaced.",
           "Fifth is storm damage. Wind uplift on the roof, a tree limb through the rafters, or racking from a hard gust that leaves the framing out of plumb. Hurricane season produces a wave of these, and insurance adjusters want an engineer's assessment of what was damaged and what it takes to repair it.",
         ],
+        image: {
+          src: "/images/structural-repairs-1-sagging-beam.jpg",
+          alt: "Engineer in a Houston attic holding a string line along the top of a wood beam that has sagged over the years, with the ceiling joists dipping with it",
+          caption: "A string line along the beam shows the sag that a level ceiling used to hide.",
+        },
       },
       {
         heading: "How we figure out what's actually wrong",
@@ -595,7 +607,22 @@ export const SERVICES: Service[] = [
       {
         heading: "Designing the repair",
         paragraphs: [
-          "Once the problem is understood, the design is usually one of a few things. Sistering means fastening a new member alongside a damaged one so the two act together. It's the standard fix for a cracked or rotted joist or stud where the original is still mostly intact. Replacement means taking the damaged member out entirely and putting in a new one, which is what's needed when rot or termites have gone too far. Reinforcement means adding capacity to a member that's sound but undersized: a steel flitch plate bolted to the side of a wood beam, a new post under a long span, an additional beam to shorten the distance the joists have to cover.",
+          "Once the problem is understood, the design is usually one of three things:",
+        ],
+        bullets: [
+          "Sistering: a new member fastened alongside a damaged one so the two act together. The standard fix for a cracked or rotted joist or stud where the original is still mostly intact.",
+          "Replacement: the damaged member comes out entirely and a new one goes in. Needed when rot or termites have gone too far.",
+          "Reinforcement: added capacity for a member that's sound but undersized. A steel flitch plate bolted to a wood beam, a new post under a long span, an extra beam to shorten what the joists have to cover.",
+        ],
+        image: {
+          src: "/images/structural-repairs-2-sistering-joist.jpg",
+          alt: "Engineer in the crawlspace of a pier-and-beam Houston home fastening a new pressure-treated joist alongside a rot-damaged one, with a jack post holding the beam above",
+          caption: "Sistering a rotted floor joist from the crawlspace, with the beam above carried on a jack post while the fasteners go in.",
+        },
+      },
+      {
+        heading: "What the design has to say, and why shoring comes first",
+        paragraphs: [
           "The design specifies the size and grade of the new material, how it connects to the existing structure, and what has to be temporarily supported while the work happens. That last part matters more than people expect. Cutting into a bearing wall or pulling a damaged beam without shoring the load first is how a repair turns into a much bigger repair.",
           "For most residential work the design is a stamped letter with a sketch. Bigger jobs, or anything going through permitting, get full drawings. Either way the contractor has something concrete to build from, and you have documentation that the repair was engineered.",
         ],
@@ -603,9 +630,16 @@ export const SERVICES: Service[] = [
       {
         heading: "Doing the work",
         paragraphs: [
-          "Because we hold a general contractor's license along with the engineering, we can perform the repair ourselves. Our crew works from our own design, we're on site for the parts that matter, and when a hidden condition turns up mid-job, and one usually does, the engineer who has to make the call is already there rather than on the phone.",
-          "If you'd rather use your own contractor, that works too. The design becomes their scope, and we can inspect the completed repair and sign off on it, which is what most permitting offices and insurance companies want anyway.",
-          "Typical sequence on a repair job: shore the load, open up the finishes to expose the framing, confirm the design against what's actually there, make the repair, inspect, close up. The opening and closing of finishes is often the biggest part of the job by hours, and it's worth knowing that going in.",
+          "We hold a general contractor's license alongside the engineering, so we can perform the repair ourselves. Our crew works from our own design, we're on site for the parts that matter, and when a hidden condition turns up mid-job, and one usually does, the engineer who has to make the call is already there rather than on the phone. If you'd rather use your own contractor, the design becomes their scope, and we can inspect the completed repair and sign off on it, which is what most permitting offices and insurance companies want anyway.",
+          "A repair job runs in this order:",
+        ],
+        bullets: [
+          "Shore the load.",
+          "Open the finishes to expose the framing.",
+          "Confirm the design against what's actually there.",
+          "Make the repair.",
+          "Inspect.",
+          "Close up. Opening and closing finishes is often the biggest part of the job by hours, so it's worth knowing that going in.",
         ],
       },
       {
@@ -615,6 +649,11 @@ export const SERVICES: Service[] = [
           "We document the damage, distinguish storm damage from pre-existing conditions, and write the report in the form adjusters are used to reading. If temporary shoring or bracing is needed to make the house safe while the claim works through, we design that too. Then the repair itself follows the same process as any other structural job.",
           "The Houston area also has a steady stream of roof framing repairs from lesser storms, downed limbs, and wind uplift that lifted a section of decking and cracked a few rafters. These are usually quick to assess and repair, but they still need to be done right or the roof will leak at the repair for years.",
         ],
+        image: {
+          src: "/images/structural-repairs-3-storm-damage.jpg",
+          alt: "Engineer on an extension ladder photographing rafters cracked by a fallen oak limb through the roof of a Houston home, a blue tarp over the damaged section",
+          caption: "Documenting storm damage to the roof framing the morning after, before the tarp comes off and the repair is designed.",
+        },
       },
       {
         heading: "Repairs that were done wrong the first time",
@@ -635,7 +674,7 @@ export const SERVICES: Service[] = [
       {
         heading: "What it costs",
         paragraphs: [
-          "The assessment is a few hundred dollars for a typical house, which includes the site visit and the written report. Where the report says what the repair should be, that's the document your contractor bids from.",
+          "The assessment, site visit and written report included, costs a few hundred dollars on a typical house. Where the report specifies the repair, that's the document your contractor bids from.",
           "Repair costs vary more here than in almost any other kind of work we do, because the range runs from sistering a single joist to reframing a section of roof. A small localized repair, one or two members plus the finish work around them, is typically in the low thousands. A beam replacement with shoring, or a rotted floor system under a bathroom, runs higher. Extensive termite or water damage across multiple rooms can be a significant project. The assessment is what tells you which of these you're facing, and it's a small cost next to the uncertainty of not knowing.",
           "One thing that reliably makes repairs more expensive is waiting. Deflection gets worse, rot spreads, and a member that could have been sistered ends up needing replacement along with the ones next to it.",
         ],
