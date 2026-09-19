@@ -1247,15 +1247,189 @@ export const SERVICES: Service[] = [
     summary:
       "Licensed and insured general contracting from the same firm that engineers the fix, so the plan and the build stay in sync.",
     description: [
-      "Most structural problems don't end at the engineering report. Once a repair or addition is designed, someone still has to build it, and that's where a lot of projects lose the thread between what the engineer specified and what actually gets built.",
-      "We carry projects through from assessment to construction ourselves. Licensed and insured, we build to the calculations we write, which means no gap between the plan and the framing crew, and no second company to coordinate with.",
-      "This applies to structural repairs, additions, and renovations where the engineering and the construction naturally belong under one roof.",
+      "Most structural problems don't end at the engineering report. Once a repair or addition is designed, someone still has to build it, and that's where a lot of projects lose the thread between what the engineer specified and what actually gets built. A drawing says one thing, the framer reads it another way, a question comes up on a Tuesday afternoon and the engineer calls back Friday, and by then the drywall is up.",
+      "We carry projects through from assessment to construction ourselves. Licensed and insured, we build to the calculations we write, which means no gap between the plan and the crew, and no second company to coordinate with.",
+      "This page is about the construction side: which projects belong under one roof, how a structural job runs from estimate to final inspection, how to read an estimate and a payment schedule, what it's like to live in the house while it happens, and what to check before hiring any contractor in Texas.",
     ],
     signs: [
       "You want one company responsible for both the engineering and the build",
       "A previous project stalled because the engineer and contractor weren't coordinated",
       "You're comparing design-build against hiring separately",
       "Your project needs both a stamped plan and a construction crew",
+    ],
+    atAGlance: [
+      "Design-build for projects where the structure is part of the job: additions, wall removals, foundation and framing repairs, storm rebuilds, and the renovations that follow them.",
+      "One contract and one company responsible for both the drawing and the build, so a field question goes to the engineer who drew it.",
+      "A written scope and price before work starts, with changes documented as they come up rather than discovered on the final invoice.",
+      "Permitted and inspected structural work, with the drawings, permits, and inspection records handed over at the end.",
+      "Texas has no statewide license for general contractors. This page includes what to check before hiring anyone, including us.",
+    ],
+    sections: [
+      {
+        heading: "What design-build means when we say it",
+        paragraphs: [
+          "Design-build is a phrase a lot of companies use for a lot of arrangements. Here it means one specific thing: the engineer who evaluates your house and stamps the plan works for the same company as the crew that builds it, under one contract with you. There's no handoff where responsibility gets fuzzy. If the beam in the drawing doesn't fit the beam pocket in the wall, that's our problem to solve, not a dispute between your engineer and your contractor about whose fault it is.",
+          "In practice the difference shows up in small moments. A framer finds a joist that isn't where the plan assumed. Instead of stopping work and waiting on a callback, he sends a photo to the engineer who drew it and gets a revised detail without a second company in the loop. A permit reviewer wants a clarification on a footing. It goes to the person who designed the footing, not through two intermediaries. None of this is dramatic. It's the accumulation of small delays and misreadings that we're removing.",
+        ],
+      },
+      {
+        heading: "The projects that belong under one roof",
+        paragraphs: [
+          "We're not a remodeler that happens to know an engineer. We're an engineering firm that builds, and the projects that fit best are the ones where the structure drives the schedule and the risk.",
+        ],
+        bullets: [
+          "Room additions and second stories, where the foundation, the tie-in to the existing framing, and the roof connection are the whole job.",
+          "Load-bearing wall removals and steel beam installs, from the shoring plan to the patched ceiling.",
+          "Foundation repair followed by the interior work that comes after leveling: cracked drywall, doors that need rehanging, tile and flooring that opened up.",
+          "Structural repairs to framing, floors, and roofs, including the finish work that closes them back up.",
+          "Rebuilds after storm damage, fire, or a vehicle strike, where the insurer needs a scope from an engineer and a contractor's estimate that matches it.",
+          "Garage conversions, attic build-outs, and other changes of use where the framing was never designed for what it's about to hold.",
+          "Larger renovations where an opened-up floor plan, new windows in bearing walls, and a kitchen or bath happen together.",
+        ],
+      },
+      {
+        heading: "When you should hire someone else",
+        paragraphs: [
+          "If your project has no structural component, we're probably not the right fit. A kitchen refresh with new cabinets on the same walls, a bathroom re-tile, a paint and flooring job, a roof replacement: there are good contractors in Houston who do those all day, and a firm whose overhead includes an engineering practice is rarely the most economical choice for work that doesn't need one. The thing we're good at should actually be required for the job to make sense.",
+          "Very large custom builds are a different business too. Additions and structural renovations are our territory. A whole house from the ground up wants a builder who does that every week.",
+        ],
+      },
+      {
+        heading: "How a structural project runs",
+        paragraphs: [
+          "The sequence below is the same for a small repair and a large addition. The steps just take longer.",
+        ],
+        bullets: [
+          "Site visit and engineering: the structural evaluation and design come first, and they're priced separately, so you own the plan even if you take it elsewhere.",
+          "Estimate: a written scope, line by line, with the price and stated allowances for the finish selections you haven't made yet.",
+          "Contract: scope, price, payment terms, schedule of work, and how changes are handled, read and understood before it's signed.",
+          "Permit: submittal, the reviewer's comments, and the permit posted on site. Inside Houston this is a few days to several weeks depending on the project and the queue.",
+          "Construction: a start date, a projected finish date, and a person you can reach when you have a question.",
+          "Inspections: framing, foundation, and whatever else the permit requires, passed before the work is covered.",
+          "Close-out: final inspection, permit closed, a walk-through with a written punch list, and the file of drawings, permits, and inspection records handed to you.",
+        ],
+        image: {
+          src: "/images/general-contracting-1-site-meeting.jpg",
+          alt: "Contractor with a tablet, a structural engineer with rolled drawings, and a homeowner meeting on the driveway of a Houston brick home with a dumpster and a posted permit board visible behind them",
+          caption: "The weekly site meeting: the project lead, the engineer, and the homeowner looking at the same drawing, which is most of what design-build changes.",
+        },
+      },
+      {
+        heading: "How to read a construction estimate",
+        paragraphs: [
+          "A structural estimate has three kinds of numbers in it, and knowing which is which tells you how firm the total really is. The first is the fixed scope: the work that can be seen and measured before anything starts. \"Remove wall, install beam and posts, patch ceiling and floor to match\" is a fixed scope, and its price shouldn't move whether the beam takes one day or three.",
+          "The second is allowances. These cover finish items you haven't chosen yet: flooring, tile, fixtures, cabinets. An estimate puts a dollar figure against each one, and your actual selection comes in above or below it. A low allowance makes a bid look cheaper than it will be, so when two estimates differ, compare the allowances before comparing the totals.",
+          "The third is hidden conditions: rot behind a wall, an undocumented past repair, a plumbing line where the plan says there isn't one. No estimate can price what nobody has seen. What matters is how they're handled when they turn up: work on that item should stop, you should get a photo and a written change order with a price, and nothing should proceed until you've approved it. Change orders that first appear on the final invoice are a sign the process wasn't run that way.",
+        ],
+      },
+      {
+        heading: "How payment schedules work",
+        paragraphs: [
+          "Construction is paid in stages, and the schedule of those stages belongs in the contract. A deposit at signing typically covers materials that have to be ordered before the crew arrives. Progress payments follow milestones you can see for yourself: foundation poured, framing inspected, drywall complete. The final payment follows the final inspection and the punch list.",
+          "The size of the deposit is worth attention. A large payment before any work has started often means a contractor is using your money to finish someone else's job. Milestones tied to inspections are the homeowner's protection, because each payment follows a point where a city inspector has looked at the work.",
+        ],
+      },
+      {
+        heading: "Who's actually in your house",
+        paragraphs: [
+          "On a structural project, framing and concrete are usually done by the contractor's own people, and the licensed trades, electrical, plumbing, and HVAC, are done by subcontractors under the general contractor's supervision and contract. That arrangement is normal; what matters is that you have one agreement and one person to call, not a separate relationship with every trade. Before signing with anyone, ask who will be on site day to day, which trades are subcontracted, and who you call when something looks wrong.",
+          "A well-run job also tells you in advance which days involve which trades, when the noisy or dusty work is scheduled, and when the water or power will be off. Surprises on a job site are sometimes unavoidable. Surprises about the schedule shouldn't be.",
+        ],
+      },
+      {
+        heading: "Living in the house while the work happens",
+        paragraphs: [
+          "Most homeowners stay in the house during construction, and most structural work can be planned around that. On a properly managed job the work zone is sealed off with plastic barriers and zippered doorways, floors along the path from the door to the work are protected, and HVAC returns in the work area are covered so dust doesn't circulate through the whole house. Work hours should be agreed in advance.",
+          "Some phases are harder to live through than others. A kitchen wall removal means no kitchen for a stretch. Foundation work under a bedroom means that bedroom is off limits. Re-leveling a pier-and-beam house is loud and involves people under your floor. Ask which phases those are, how long they last, and whether it's worth planning a few nights elsewhere. Families with young children or pets should raise it early so the plan accounts for it.",
+        ],
+        image: {
+          src: "/images/general-contracting-2-dust-barrier.jpg",
+          alt: "Interior of a Houston home during a structural renovation with a floor-to-ceiling plastic dust barrier and zippered door separating a furnished living room from a framing work zone beyond it",
+          caption: "Living through the work: the work zone sealed off from the rest of the house, floors protected along the path, HVAC returns covered.",
+        },
+      },
+      {
+        heading: "Permits and inspections, from the builder's side",
+        paragraphs: [
+          "Structural work is permitted work. That's not a selling point so much as a baseline, but it's worth stating because a lot of the repair work we're called to fix was done without one. The permit costs money and time, and it also puts a city inspector on site at the moments that matter: before the concrete is poured, before the framing is covered, at the end. That's a second set of eyes on the contractor's work that you don't pay extra for.",
+          "The submittal, the reviewer comments, the inspection scheduling, and the close-out are the contractor's job, not yours. Where a permit was never closed on a previous project in your house, which turns up more often than you'd expect during a sale, it can often be resolved as part of the new work.",
+        ],
+      },
+      {
+        heading: "What Texas doesn't check for you",
+        paragraphs: [
+          "Texas has no statewide license for residential general contractors. Anyone can call themselves one. Individual cities have registration requirements, and trades like electrical and plumbing are licensed by the state, but the person running your project as a whole may have nothing behind the title. That's the main reason to ask questions before you sign with anyone, including us.",
+        ],
+        bullets: [
+          "A current certificate of general liability insurance, sent to you directly from the insurer, with your project's dates inside the policy period.",
+          "Workers' compensation or an occupational accident policy covering the people on site, since an injured worker without coverage can become your problem.",
+          "Registration with the city where the work is happening, where the city requires one.",
+          "A written contract with a scope, a price, a schedule, a payment plan tied to milestones, and warranty terms in plain language.",
+          "Addresses of recent projects similar to yours, and permission to call the owners.",
+          "For structural work specifically: who the engineer of record is, and whether the contractor will build to that engineer's drawings without substitutions.",
+        ],
+      },
+      {
+        heading: "Storm damage and insurance rebuilds",
+        paragraphs: [
+          "After a hurricane, a tornado, a tree through the roof, or a car through the garage, the rebuild runs on two documents: the engineer's scope of what has to be repaired, and the contractor's estimate of what that costs. When those come from different companies and don't line up, the claim stalls while the adjuster asks each side to explain the other. When they come from the same company, the estimate is built from the scope and the numbers match by construction.",
+          "The first work after a storm is usually temporary: tarping, shoring, board-up, whatever keeps the damage from getting worse while the claim is processed. The permanent scope follows the engineering. What the policy covers is between you and your insurer, and no contractor or engineer can promise an outcome there, but a complete file with sound engineering behind it is the strongest position to be in.",
+        ],
+      },
+      {
+        heading: "The finish work is where you'll judge the job",
+        paragraphs: [
+          "Nobody sees the beam once the drywall is up. What you see, every day, is whether the ceiling texture blends where the wall used to be, whether the new oak floor planks are woven into the old ones or butt up against them in a visible line, whether the brick on the addition matches the brick on the house, and whether the trim profile in the new room is the same as in the old one. This deserves as much attention as the structure, and it has to be planned early: matching flooring sourced before demo starts, brick from an opening saved to reuse on a patch, the ceiling texture photographed so it can be reproduced.",
+          "Where a perfect match isn't possible, and with some discontinued materials it isn't, that conversation belongs before the work rather than after, with the options laid out.",
+        ],
+        image: {
+          src: "/images/general-contracting-3-final-walkthrough.jpg",
+          alt: "Contractor and homeowner doing a final walkthrough in a newly finished open-plan room in a Houston home, the contractor holding a clipboard punch list while the homeowner looks at the blended hardwood floor",
+          caption: "The final walk-through: a written punch list, the permit closed, and the drawings and inspection records handed over.",
+        },
+      },
+      {
+        heading: "What it costs",
+        paragraphs: [
+          "A contractor's price is labor and materials plus overhead and margin. For structural work in the Houston market, the overhead of a legitimate operation includes insurance, permitted work, and engineering, and a bid well below the others is usually leaving out one of those things. It's rarely the labor that's cheaper. The cheapest bid on a beam is the one that skipped the engineer, the permit, or the shoring.",
+          "As rough planning figures for the Houston area: a beam installation with finish work runs from the mid four figures to the low five figures depending on span and material. Interior repairs after foundation leveling are typically a few thousand dollars per room affected. Additions are priced per square foot with the structure, the foundation type, and the finish level driving the range; our home additions page has planning numbers. A real number comes after a site visit and an engineering evaluation, and it should come with a line-by-line scope you can compare against other bids.",
+        ],
+      },
+      {
+        heading: "How long it takes",
+        paragraphs: [
+          "Engineering and estimating take one to three weeks depending on the project. Permitting adds a few days to a couple of months depending on the city and the scope; a wall removal is quick, an addition in a floodplain is not. Construction ranges from a few days for a single beam to three or four months for a large addition. Weather affects concrete and roofing; Houston rain can push a foundation pour by a week without warning.",
+          "The most common cause of delay on structural renovations is not the structure. It's finish materials arriving late, which is why selections are worth making early, before the demo starts rather than after.",
+        ],
+      },
+      {
+        heading: "Questions that come up later",
+        paragraphs: [
+          "Structural work generates questions long after the job is done: a future buyer's inspector asks what's behind the wrapped beam, an insurer wants to know when the foundation was repaired, a new project needs to know what the last one changed. When the engineer who designed the work and the company that built it are the same, those questions go to someone who remembers the house and has the file. That continuity is one of the quieter advantages of keeping the engineering and the construction together.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Do I have to use your construction crew if you do the engineering?",
+        a: "No. The engineering is priced and delivered on its own, and plenty of clients take the stamped drawings to a contractor they already know. The design-build option is there for people who'd rather have one company responsible for the whole thing.",
+      },
+      {
+        q: "How should payment be structured on a structural project?",
+        a: "In stages tied to milestones you can verify: a deposit for materials that must be ordered ahead, progress payments as phases are completed and inspected, and a final payment after the final inspection and the punch list. Be cautious of a large payment demanded before any work has started. The exact schedule should be written into the contract.",
+      },
+      {
+        q: "Does Texas license general contractors?",
+        a: "Not at the state level for residential work. Electricians and plumbers are state-licensed, and professional engineers are state-licensed with continuing education and a disciplinary board behind them, but anyone can call themselves a general contractor. Some cities require registration. That's why the questions on this page, about insurance, contracts, references, and who the engineer of record is, matter more in Texas than in states with a contractor license.",
+      },
+      {
+        q: "Can we stay in the house during the work?",
+        a: "Usually, yes, if the work zone is sealed off, the floors are protected, and the HVAC returns in the work area are covered. Some phases, like a kitchen wall removal or foundation work under a bedroom, are disruptive enough that some families choose to be away for a few nights. Ask in advance which days those are.",
+      },
+      {
+        q: "What happens if something unexpected turns up once the walls are open?",
+        a: "Work on that item should stop, you should get photos and a written change order with a price, and nothing should proceed until you approve it. When the engineer is in the same company as the crew, the fix can be designed the same day rather than after a week of waiting. Hidden conditions are the one thing a fixed scope can't cover, and the right way to handle them is in the open.",
+      },
     ],
   },
   {
