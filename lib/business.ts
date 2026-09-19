@@ -915,6 +915,166 @@ export const SERVICES: Service[] = [
       "Your contractor or permit office is asking for an engineer's letter",
       "A previous renovation already removed a wall without documentation",
     ],
+    atAGlance: [
+      "One visit answers the question: is the wall load-bearing, and what does it take to remove it.",
+      "You get a stamped engineer's letter with the beam size, bearing points, and shoring plan your permit office and contractor need.",
+      "Engineering runs a few hundred dollars up to about a thousand; construction from the low thousands for a typical residential opening.",
+      "Letter within days of the visit. A straightforward opening is a few days of construction once the permit is issued.",
+      "We can install the beam ourselves, or your contractor can build from our letter.",
+    ],
+    sections: [
+      {
+        heading: "What you're actually buying",
+        paragraphs: [
+          "This service has two parts, and you can buy either or both. The first is the engineering: a site visit, a determination of whether the wall carries load, and if it does, a stamped letter that sizes the replacement beam and its supports and specifies the temporary shoring. That letter is what the City of Houston, Sugar Land, Katy, and the rest of the metro want to see before they issue a permit, and it's what a good contractor wants before they touch the wall.",
+          "The second part is the construction: shoring the load, taking the wall out, setting the beam and posts, and patching the ceiling, floor, and walls where the old wall was. Because we're also a licensed general contractor, we can do this part too. Plenty of homeowners already have a contractor lined up for the larger remodel, and in that case our letter becomes part of that contractor's scope and we step back.",
+          "If you want the background on how to tell whether a wall is bearing, what beam options exist, and why guessing goes wrong, our load-bearing wall removal guide covers it at length. This page is about what happens when you hire us to do it.",
+        ],
+      },
+      {
+        heading: "Before we come out",
+        paragraphs: [
+          "A few things make the visit faster and the letter better. None of them are required, but they help:",
+        ],
+        bullets: [
+          "A couple of phone photos of the wall from both sides, and one of the ceiling above it.",
+          "A rough sketch of the floor plan showing which wall you mean and what's on either side.",
+          "Clear access to the attic hatch, and to the crawlspace if the house has one.",
+          "What you're planning for the space. An island, a wider opening, a full removal, and a future addition on the other side each change what the beam has to do.",
+          "Any drawings or permits from previous work on the house, especially if a wall has already been moved.",
+        ],
+      },
+      {
+        heading: "The visit",
+        paragraphs: [
+          "We come out, look at the wall, and then look everywhere but the wall. The answer lives in the attic above it and the foundation or crawlspace below it, in which direction the joists run, whether anything above bears on this line, and whether a previous renovation already changed the load path. On a single-story home with attic access this often takes well under an hour. Two-story homes take longer because the floor above has to be understood too.",
+          "We'll tell you on the spot which way it's leaning, and we'll confirm it in writing within a few days. Sometimes the answer is that the wall isn't bearing, and your project just got simpler. We charge the same either way, which is the point: our fee doesn't depend on finding a beam to sell you. If it helps, bring your contractor to the visit. Having everyone look at the same framing at the same time saves a round of phone calls later.",
+        ],
+      },
+      {
+        heading: "The letter",
+        paragraphs: [
+          "If the wall is bearing, the letter specifies everything a contractor and a permit reviewer need:",
+        ],
+        bullets: [
+          "The replacement beam: material (dimensional lumber, LVL, or steel), size, and whether it sits below the ceiling or flush within the framing.",
+          "The bearing points: what the beam rests on at each end, and whether new posts, footings, or a widened header are needed to carry the load down.",
+          "Temporary shoring: where the load is carried while the wall is out, and how it's supported until the beam is in place.",
+          "Connection details: hangers, straps, and fasteners at the beam ends and where joists meet the new beam.",
+          "Anything unusual: ductwork or plumbing in the wall that changes the approach, a second-story load, or a foundation condition under the new posts.",
+        ],
+        image: {
+          src: "/images/load-bearing-wall-removal-1-letter-review.jpg",
+          alt: "Structural engineer in a hard hat and a contractor with a tool belt reviewing a stamped beam drawing and engineering letter in front of an opened kitchen wall in a 1970s Houston ranch home",
+          caption: "The letter in use: engineer and contractor at the wall, checking the beam size, bearing points, and shoring plan against the actual framing before the first cut.",
+        },
+      },
+      {
+        heading: "The construction",
+        paragraphs: [
+          "When we build it, the sequence is set before the first cut. Shoring goes up on both sides of the wall. Electrical, plumbing, and HVAC in the wall are disconnected and rerouted. The wall comes out down to the plate. The beam and posts go in and get connected to our detail. The city inspects the framing before it's covered. Then the drywall, flooring, and paint are patched where the wall used to be, and the shoring comes down.",
+          "On a typical residential opening, the structural work is a few days. The finish work afterward, matching hardwood floors across the gap or blending a textured ceiling, is often what takes the time, and it's worth planning for. We'll tell you what to expect for your specific house before we start.",
+        ],
+        image: {
+          src: "/images/load-bearing-wall-removal-3-finished-flush-beam.jpg",
+          alt: "Finished open kitchen and family room in a Houston home after a bearing wall was removed, with a flat continuous ceiling over a flush beam, new oak flooring, and a kitchen island where the wall used to stand",
+          caption: "The finished result with a flush beam: the ceiling runs flat from kitchen to family room with no header or soffit, and the island sits where the wall was.",
+        },
+      },
+      {
+        heading: "What it costs",
+        paragraphs: [
+          "The engineering, meaning the visit and the stamped letter, is a few hundred dollars for most homes and can approach a thousand when full calculations have to accompany a permit submission or the framing takes longer to trace. This is the cheapest step in the project by a wide margin.",
+          "Construction depends on the span, the beam type, whether the beam is flush or dropped, and what's inside the wall. A short opening with an LVL beam, a couple of posts, and modest patching is typically in the low thousands in the Houston area. Longer spans, steel beams, flush installs that require hanging the joists, and rerouting mechanicals all push the number up, and a wide opening in steel can reach well into five figures. We quote the construction after the visit, when the scope is known, not before.",
+        ],
+      },
+      {
+        heading: "Working with your own contractor",
+        paragraphs: [
+          "When a contractor is building from our letter, a few things make the handoff clean. We're happy to talk to them directly, before the bid or during the work, and we'd rather answer a question than have someone guess. When the framing is open and something doesn't match the drawing, a call to us is a five-minute fix instead of a problem that gets covered up.",
+          "If you're collecting bids on the letter, they should all be pricing the same beam, the same posts, and the same shoring. A bid that's dramatically lower than the others is usually leaving something out, most often the shoring or the finish work. A bid that proposes a different beam than the one specified needs to come back to us before it's accepted, because the letter is only valid for what it says.",
+          "One more thing worth knowing: some contractors will offer to skip the engineer and \"just put in a header.\" That's the sentence that produces most of the sagging-ceiling repairs we do a few years later. A contractor who wants the letter before starting is the one to hire.",
+        ],
+      },
+      {
+        heading: "From the first call to an open floor plan",
+        paragraphs: [
+          "A typical residential job runs on roughly this schedule. Permitting is the step that varies most:",
+        ],
+        bullets: [
+          "Day 1: call, a few questions, and a scheduled visit, usually within the week.",
+          "Visit: an hour or so on site. You'll usually know which way the answer is going before we leave.",
+          "Within a few days: the stamped letter, with the beam, bearing, and shoring specified.",
+          "Permit: the contractor submits with our letter attached. Inside Houston this can take from a few days to a few weeks depending on the queue.",
+          "Construction: two to four days of structural work for a typical opening, then the finish work, which depends on flooring and ceiling.",
+          "Inspection: framing is inspected before it's covered. We're available for that visit whether or not we did the construction.",
+        ],
+      },
+      {
+        heading: "The houses we see this in most",
+        paragraphs: [
+          "The 1960s and 70s ranch homes across Memorial, Spring Branch, Meyerland, and the older parts of the suburbs were built with a kitchen walled off from everything, and opening that wall to the den is the single most common request we get. In most of these houses the wall in question is bearing, because it sits under the ridge line of a simple gable roof, and the span across the new opening is manageable with an LVL beam.",
+          "The 1980s and 90s two-story homes in Katy, Sugar Land, Pearland, and Cypress are a different job. The first-floor wall between the kitchen and family room is often carrying a bedroom above it, sometimes a bathroom, and the beam has to be sized for that floor load as well as the roof. These openings are more likely to need steel, and the posts at each end are more likely to need attention at the foundation.",
+          "Newer construction, from the 2000s on, tends to have been built with the open plan already in place, so the requests there are usually about widening an existing opening or removing a short wall between a breakfast area and a living room. These are often simpler, but engineered-lumber framing has its own rules and we check before assuming.",
+        ],
+        image: {
+          src: "/images/load-bearing-wall-removal-2-two-story-wall.jpg",
+          alt: "Structural engineer pointing up at exposed floor joists resting on the top plate of a first-floor wall between the kitchen and family room of a 1990s two-story Houston home, explaining the load to a homeowner couple",
+          caption: "A two-story home: the first-floor wall is carrying the bedroom floor above it, so the beam has to be sized for that load as well as the roof.",
+        },
+      },
+      {
+        heading: "Permits, and why we don't skip them",
+        paragraphs: [
+          "Removing a bearing wall is a structural alteration, and it needs a permit inside the City of Houston and in every suburb we work in. The permit office wants the engineer's letter. The contractor pulls the permit, or we do when we're building.",
+          "The permit is also your record. When you sell, the buyer's inspector is going to see a new beam and ask what's behind it. A permitted, engineered opening with paperwork is a non-event. An unpermitted one is a negotiation that goes against you. It's a small amount of friction now for a lot less later.",
+        ],
+      },
+      {
+        heading: "Two situations that come up often",
+        paragraphs: [
+          "The first is the wall that's already gone. You bought the house with an open floor plan and there's no record of how it got that way, or your own contractor took a wall out years ago and the ceiling has started to sag. We evaluate the existing opening the same way we'd evaluate a wall: what's there, what it's carrying, and whether it's adequate. Often it needs a proper beam retrofitted. Sometimes it's fine and just needs to be documented.",
+          "The second is the wall that's part of a bigger project. Opening the kitchen is rarely the whole plan; there's usually an island, new lighting, sometimes an addition on the other side of it. We coordinate the wall removal with the rest of the structural work so it's designed once, permitted once, and built in the right order.",
+          "A third worth mentioning: the wall between the house and an attached garage. That wall is a required fire separation as well as, often, a bearing wall, and opening it for a garage conversion or a mudroom has code rules beyond the structure. It can be done, but the opening has to be designed with the fire rating in mind, and the permit reviewer will look for it.",
+        ],
+      },
+      {
+        heading: "Commercial spaces",
+        paragraphs: [
+          "Wall removals in office suites, retail bays, and restaurants follow the same structural logic with a different permitting path, landlord approvals, and fire-rating questions on top. We handle those too. Our commercial wall removal guide walks through what changes when the building isn't a house.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "How fast can you tell me if the wall is load-bearing?",
+        a: "Usually during the visit, with the written confirmation and letter following within a few days. If your contractor is waiting on the answer to schedule, tell us and we'll prioritize the letter.",
+      },
+      {
+        q: "Do I need you to build it, or can my contractor use your letter?",
+        a: "Either. The letter is written so any qualified contractor can build from it, and many do. If you'd rather have one company responsible for both the design and the work, we can do that too.",
+      },
+      {
+        q: "What if the wall turns out not to be load-bearing?",
+        a: "Then you don't need a beam, shoring, or a structural permit, and the wall can come out as part of ordinary remodeling. We'll put that in writing too, because a letter saying a wall is non-bearing is useful to have when you sell.",
+      },
+      {
+        q: "Can the beam be hidden in the ceiling?",
+        a: "Often, yes. A flush beam sits within the ceiling framing with the joists hung from it, so the finished ceiling stays flat. It costs more than a dropped beam because of the extra framing work, and it depends on the depth available. The letter will say whether it's feasible for your span.",
+      },
+      {
+        q: "Will there be a visible seam where the wall was?",
+        a: "The structural work leaves a gap in the flooring and ceiling where the wall track was. Blending it is finish work: matching the flooring, feathering the ceiling texture, and painting. It's the part of the project that most affects how the finished room looks, and it's worth budgeting for properly.",
+      },
+      {
+        q: "Does removing a load-bearing wall affect my foundation?",
+        a: "It can. The load that used to spread along the whole wall now comes down at two points, and the foundation under those posts has to be able to take it. Usually it can. Sometimes it needs a footing added, and the letter will say so.",
+      },
+      {
+        q: "Can we stay in the house while the wall comes out?",
+        a: "Usually, yes. The structural work is a few days and confined to the area around the wall, with shoring in place the whole time. Expect dust, noise, and a kitchen that's out of commission if that's the wall involved. Families with small children sometimes choose to be out for the demolition day itself, but it isn't required.",
+      },
+    ],
   },
   {
     slug: "general-contracting",
