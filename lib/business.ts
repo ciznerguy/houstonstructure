@@ -885,14 +885,176 @@ export const SERVICES: Service[] = [
     summary:
       "Design and forensic consulting for additions, renovations, new construction, and disputes involving structural work.",
     description: [
-      "Not every project needs a full inspection. Some need a licensed engineer's stamp on a design. We provide structural calculations and drawings for additions, beam removals, deck and patio covers, and other renovations that require permitting.",
-      "We also take on forensic consulting: reviewing a contractor's completed repair, evaluating construction defect disputes, or providing an independent opinion when two parties disagree about the cause or extent of structural damage.",
+      "Consulting is the part of our work where you're hiring judgment rather than a crew. Sometimes that judgment comes out as a stamped drawing for a patio cover the city won't permit without one. Sometimes it's an hour on the phone before you sign a foundation contract. Sometimes it's a forensic opinion on who caused the crack, written for a lawyer. What these have in common is that you need a licensed structural engineer to look at a specific question and give you an answer you can rely on, and nobody is selling you a repair at the end of it.",
+      "We take on design consulting for the small and medium projects that still need an engineer's seal, plan review and calculations for architects and builders, second opinions on repair proposals, floor load checks for the unusual things people want to put in their houses, and forensic work when something has gone wrong and the cause is in dispute.",
+      "This page explains the kinds of questions we get, how an engagement is scoped and priced, and what you should expect to walk away with.",
     ],
     signs: [
       "Planning an addition or major renovation",
       "A contractor needs stamped calculations for a permit",
       "You're in a dispute over construction defects",
       "You need an independent review of someone else's repair plan",
+    ],
+    atAGlance: [
+      "Advice, design, and expert opinion from a licensed Texas structural engineer, with no repair attached to the answer.",
+      "Stamped drawings and calculations for patio covers, decks, carports, attic conversions, and other projects that need a seal for a permit.",
+      "Second opinions on foundation and repair bids, floor load checks, and plan review for architects and builders.",
+      "Forensic evaluations and written opinions for construction disputes, insurance disagreements, and litigation.",
+      "Most engagements are quoted as a fixed fee after a short scoping call. Phone consults from a few hundred dollars; stamped designs for small structures usually under two thousand.",
+    ],
+    sections: [
+      {
+        heading: "What consulting is, and what it isn't",
+        paragraphs: [
+          "Our other services each end in a specific thing: a report, a beam, a repaired foundation. Consulting ends in whatever the question needs. That might be a sealed drawing, a two-page letter, a marked-up set of someone else's plans, a phone call with notes afterward, or a formal expert report. The scope is set at the start, in writing, so you know what you're buying and what it costs before we begin.",
+          "It's not a substitute for a structural inspection when you need a full written condition report on a house, and it's not the path when you already know the wall has to come out and just need the beam sized. Those have their own pages and their own fixed prices. Consulting is for the questions in between: the ones where the first job is figuring out what the question actually is.",
+          "We are structural engineers, which means we don't do soil borings, MEP design, or architectural drawings. We work alongside the people who do, and we'll tell you when a question belongs to a geotechnical engineer or a plumber rather than to us.",
+        ],
+      },
+      {
+        heading: "Stamped designs for the projects that still need a seal",
+        paragraphs: [
+          "The City of Houston and most of the surrounding cities require engineered drawings for a long list of backyard and small-scale projects that homeowners assume are too minor to matter. They're right that the projects are small; they're wrong that the permit office will wave them through. Many of these come to us after a contractor has already been told to \"come back with an engineer's letter.\"",
+        ],
+        bullets: [
+          "Patio covers, pergolas, and outdoor kitchens attached to the house or standing alone, especially anything with a solid roof.",
+          "Decks, elevated porches, and balconies, including replacing a deck that was built without a permit the first time.",
+          "Carports and detached garages, and the header over a garage door that's being widened.",
+          "Attic conversions and storage platforms, where the ceiling joists were never meant to be a floor.",
+          "Pool enclosures, screen rooms, and the posts and footings that hold them up in a Gulf Coast wind.",
+          "Rooftop solar arrays, where the installer needs a letter confirming the roof framing can take the added weight and the racking loads.",
+          "Standby generator pads, hot tubs on existing decks, and the occasional backyard observatory or workshop crane.",
+        ],
+      },
+      {
+        heading: "Wind is the load Houston forgets",
+        paragraphs: [
+          "Most of the small structures on that list fail not from weight but from uplift. A solid patio cover in a design wind of well over a hundred miles per hour is a wing, and it wants to leave, taking its posts and sometimes the fascia of the house with it. The connections at the top and bottom of each post, the fasteners between the rafters and the beam, and the anchor into the slab are what the drawing is really about. The lumber sizes are the easy part.",
+          "Closer to the coast, in Galveston and Brazoria counties and parts of Harris, homes in the designated windstorm zone have a separate inspection requirement for insurability through the state windstorm pool. Anything added to those houses, down to a replacement patio cover, has to be designed and inspected to that standard. We design to it when the address calls for it and we'll tell you up front if your property is in that zone.",
+        ],
+        image: {
+          src: "/images/consulting-1-patio-cover-uplift.jpg",
+          alt: "Structural engineer with a tape measure and clipboard inspecting the post base and anchor bolts of a wood patio cover attached to a Houston brick home while the homeowner watches",
+          caption: "A patio cover consult is mostly about the connections: the post bases, the ledger into the house, and the rafter ties that keep the roof from lifting in a storm.",
+        },
+      },
+      {
+        heading: "Working with your architect, designer, or builder",
+        paragraphs: [
+          "A good share of our consulting is for other professionals. An architect drawing a renovation needs a beam schedule, a foundation plan, and calculations to submit with the set. A custom builder has a plan reviewer asking for a sealed detail. A design-build remodeler wants someone to check a framing plan before the lumber is ordered. We fit into those teams as the structural engineer of record or as a reviewer, depending on what the project needs.",
+          "During construction we stay available for the questions that come up once framing is exposed and the site turns out to differ from the plan. A quick answer to a field question keeps the job moving; a slow one leads to a guess that gets covered up. We'd rather take the call.",
+          "For contractors who send us steady work, we keep a short turnaround on the routine items: header sizes, post and footing checks, a letter confirming an existing condition. Ask us about how that works.",
+        ],
+      },
+      {
+        heading: "Second opinions before you sign",
+        paragraphs: [
+          "The most valuable hour we sell is often the one before a homeowner signs a foundation repair contract. Someone has a proposal for twenty-two piers at a price with a lot of zeros, an elevation drawing they don't know how to read, and a sales deadline. We'll go through the proposal with you, explain what the elevation numbers actually say, tell you whether the scope matches the evidence, and flag what's missing. Sometimes the plan is reasonable and the call is just reassurance. Sometimes the evidence supports eight piers, or none.",
+          "The same applies to any structural bid: a wall removal plan, a contractor's sketch for an addition, a roof framing repair after a storm. We're not evaluating the contractor. We're evaluating whether the work proposed matches the problem, and whether anything important has been left out. You get a short written summary you can take back to the contractor or to another bidder.",
+          "This is a document review and a conversation, not an inspection. If the question can't be answered without seeing the house, we'll say so and quote a visit.",
+        ],
+      },
+      {
+        heading: "The strange loads people bring us",
+        paragraphs: [
+          "A surprising number of calls start with \"this is probably a silly question.\" They're not. Residential floors are designed for about forty pounds per square foot spread out, and a lot of ordinary things concentrate far more than that on a small footprint.",
+        ],
+        bullets: [
+          "Gun safes and heavy furniture: a large safe can put a thousand pounds on four small feet. Location and blocking matter.",
+          "Hot tubs and large aquariums: a filled six-person spa on a deck is the weight of a small car. Most existing decks weren't built for it.",
+          "Home gyms with racks and loaded barbells, especially in second-floor rooms or over a garage.",
+          "Car lifts in garages, where the slab thickness and the anchor embedment decide whether it's safe.",
+          "Pianos, kilns, large stone islands, and water storage tanks.",
+          "Attic storage: joists sized for a drywall ceiling and holiday decorations, not for boxes of books.",
+        ],
+      },
+      {
+        heading: "Older homes and changes of use",
+        paragraphs: [
+          "Houston's pre-1970 housing stock was built for a different kind of living, and consulting questions about those homes tend to be about change: turning a garage into a bedroom, finishing an attic, taking out a chimney, adding a bathroom where the floor framing was never meant to carry tile and a cast iron tub. The framing in these houses is often sound and often undersized by today's standards at the same time, and the answer is rarely as simple as yes or no.",
+          "Pier-and-beam homes bring their own set: how far a floor can be releveled, whether a girder can be replaced piece by piece, what to do about a sill that's rotted where the porch roof drained onto it for forty years. We've spent a lot of time under these houses and we can usually tell you what you're dealing with in a single visit.",
+        ],
+      },
+      {
+        heading: "Forensic work: figuring out what happened",
+        paragraphs: [
+          "When something has gone wrong and the parties don't agree on why, someone has to establish the cause with evidence rather than opinion. That's forensic structural engineering, and it's a meaningful part of our practice. The situations vary: a new pool went in next door and the fence and the slab started cracking; a contractor removed a wall two years ago and the ceiling now sags; a foundation repair company installed piers and the house is worse; a plumbing leak under a slab is being blamed for damage that looks like it predates the leak.",
+          "The method is the same regardless of the story. Document the current condition thoroughly with measurements, elevations, and photographs. Review whatever record exists: permits, prior reports, construction photos, repair invoices, weather and rainfall data, plumbing test results. Separate the damage into what's consistent with each proposed cause and what isn't. Then write down what the evidence supports, how confident we are, and what would change the conclusion.",
+          "We do this work for homeowners, for contractors who are being blamed for something they didn't cause, for HOAs, and for insurers and attorneys on either side. Our opinion is the same regardless of who's paying for it, which is the only reason it's worth anything.",
+        ],
+        image: {
+          src: "/images/consulting-2-forensic-crack-documentation.jpg",
+          alt: "Structural engineer photographing a diagonal crack in the brick veneer of a Houston home with a scale ruler held beside it, a laser level and notebook on the ground",
+          caption: "Forensic documentation: every crack measured against a scale, photographed, and located on a plan, so the conclusion rests on a record rather than a recollection.",
+        },
+      },
+      {
+        heading: "When it's headed toward a lawyer",
+        paragraphs: [
+          "Some disputes don't settle over a kitchen table. When a matter involves counsel, we work as a retained expert: an initial evaluation to tell the attorney candidly whether the engineering supports their client's position, a formal expert report if it does, and testimony at deposition or trial if it gets that far. We've learned that the most useful thing we can do early is tell a lawyer when the case is weak on the structural facts, because that saves everyone money.",
+          "For construction defect matters, we can also serve as the neutral engineer both sides agree to, which is often faster and cheaper than two competing experts. Retention for litigation work runs through the attorney, with a retainer and hourly billing, and our file is kept to the standard that discovery expects.",
+        ],
+      },
+      {
+        heading: "Phone and video consultations",
+        paragraphs: [
+          "Not every question needs a site visit. A thirty- or sixty-minute call with photos sent ahead is enough to answer a lot of them: whether a crack pattern is worth worrying about yet, whether a project will need a permit and a seal, how to read a foundation proposal, what a home inspector's note actually means. We'll tell you what we can and can't conclude remotely, and when the right answer is \"someone needs to look at this in person,\" you'll hear that rather than a guess.",
+          "You get written notes after the call. A remote consult can be credited toward a visit or a design if the question turns into a project.",
+        ],
+      },
+      {
+        heading: "How an engagement runs",
+        paragraphs: [
+          "The steps are similar whether it's a patio cover design or a forensic evaluation; the length of each one changes.",
+        ],
+        bullets: [
+          "A scoping call, usually fifteen minutes, to understand the question and what you need at the end.",
+          "A written scope and fixed fee, or an hourly estimate with a cap for open-ended forensic work.",
+          "Document review, a site visit, or both. For design work, measurements of the existing structure the new work attaches to.",
+          "The deliverable: sealed drawings and calculations, a letter, a marked-up plan, or a formal report, as scoped.",
+          "Follow-up: permit comments answered, a call with your contractor, or a revision if the project changes.",
+        ],
+        image: {
+          src: "/images/consulting-3-plan-review-table.jpg",
+          alt: "Structural engineer and a homeowner couple at a kitchen table reviewing a sealed patio cover drawing beside a laptop showing the framing plan",
+          caption: "The deliverable for most design consults: a sealed drawing the permit office accepts and a contractor can build from, walked through with you before it's submitted.",
+        },
+      },
+      {
+        heading: "What it costs",
+        paragraphs: [
+          "Because the scope varies so much, we price each engagement individually, but the ranges are predictable. A phone or video consultation is a few hundred dollars. A sealed design for a patio cover, deck, or carport is typically in the low four figures, with the price rising for larger spans, windstorm-zone requirements, or unusual site conditions. A bid or plan review with a written summary is usually a few hundred to under a thousand, depending on how much there is to read. Forensic evaluations start in the low four figures for a site visit and written opinion and go up with the complexity of the record and the amount of documentation required. Expert witness work is hourly, with a retainer.",
+          "We'll give you the number before we start. If the scope grows during the work, you hear about it before the invoice does.",
+        ],
+      },
+      {
+        heading: "What you should get in writing",
+        paragraphs: [
+          "Whatever the engagement, the end product should be something you can hand to someone else: a permit reviewer, a contractor, a buyer, an adjuster, an attorney. That means it's signed and sealed when a seal is required, it states clearly what was and wasn't examined, it separates observation from conclusion, and it's written so a non-engineer can follow it. A consultant whose only output is a conversation has left you with nothing to act on. We don't do that.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Do I really need an engineer for a patio cover?",
+        a: "Inside the City of Houston and most nearby cities, yes, if it's attached to the house or has a solid roof. The permit office wants sealed drawings showing the framing, connections, and footings designed for local wind loads. Freestanding open pergolas under a certain size are sometimes exempt, and we'll tell you if yours qualifies before you pay for a design you don't need.",
+      },
+      {
+        q: "Can you review a foundation repair proposal without visiting my house?",
+        a: "Usually, if the proposal includes an elevation survey and you can send photos of the cracks and the exterior. We'll explain what the numbers mean, whether the scope matches the evidence, and what questions to ask. If the proposal has no elevation data, or the photos raise questions we can't resolve remotely, we'll say so and quote a site visit instead.",
+      },
+      {
+        q: "What's the difference between a consultation and an inspection?",
+        a: "An inspection is a defined visit that ends in a full written report on the structural condition of a house, priced as a package. A consultation is scoped around a specific question: a design, a plan review, a second opinion, a forensic cause. It may or may not involve a site visit, and the deliverable is whatever that question needs.",
+      },
+      {
+        q: "Will you testify if my dispute goes to court?",
+        a: "Yes, when we've been retained through counsel and our evaluation supports it. We tell attorneys early and plainly when the engineering doesn't support their client's position, because an expert who says what the client wants is useless once the other side's expert starts asking questions.",
+      },
+      {
+        q: "How fast can you turn around a sealed drawing?",
+        a: "For a routine patio cover, deck, or carport, typically one to two weeks from the site measurements, faster when a permit deadline requires it. Larger designs and anything in the windstorm zone take longer because there's more to detail. Permit review time at the city is separate and outside our control.",
+      },
     ],
   },
   {
