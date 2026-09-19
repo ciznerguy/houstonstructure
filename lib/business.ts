@@ -373,9 +373,11 @@ export type Service = {
   signs: string[];
   image?: string;
   imageAlt?: string;
+  atAGlance?: string[];
   sections?: {
     heading: string;
     paragraphs: string[];
+    bullets?: string[];
     image?: { src: string; alt: string; caption: string };
   }[];
   faqs?: { q: string; a: string }[];
@@ -402,12 +404,19 @@ export const SERVICES: Service[] = [
       "Gaps between walls, ceilings, and floors",
       "Cracks in exterior brick veneer, especially stair-step patterns",
     ],
+    atAGlance: [
+      "Independent engineering evaluation first: elevation survey, crack mapping, drainage and plumbing review, written report.",
+      "We don't sell piers. Sometimes the answer is drainage, a plumbing leak, or watchful waiting.",
+      "Evaluation and report: a few hundred dollars. Repairs range from a handful of piers to whole-house stabilization.",
+      "Report within days of the visit; most pier jobs take days, not weeks.",
+      "Licensed to design the repair and to build it, or to hand a defined scope to your own contractor.",
+    ],
     sections: [
       {
-        heading: "Why Houston foundations move, and why it isn't your fault",
+        heading: "Why Houston foundations move",
         paragraphs: [
           "Most of the Houston metro sits on a thick layer of expansive clay. It's the same stuff that makes the yard turn to soup in March and split open in August. When that clay takes on water it swells, and when it dries out it shrinks, and the difference between the two states can be several inches of vertical movement at the surface. A house doesn't float above that. It rides on it.",
-          "The trouble is that the movement is never even. The soil under the middle of a slab stays damper than the soil around the edges, because the house itself shades it and keeps the rain off. The side of the house with the big oak tree dries out faster than the side without, because the roots are pulling water out of the ground all summer. The corner near the downspout that dumps onto the flowerbed stays wetter than the corner that drains to the street. So one part of the foundation goes up while another goes down, and the house twists slightly to follow it.",
+          "The movement is never even. Soil under the middle of a slab stays damper than soil around the edges, because the house shades it and keeps the rain off. The side of the house with the big oak dries out faster than the side without, because the roots are pulling water all summer. The corner near the downspout that dumps onto the flowerbed stays wetter than the corner that drains to the street. One part of the foundation rises while another drops, and the house twists slightly to follow it.",
           "That twisting is what you see as cracks. Drywall splits at the corners of doors and windows because those are the weak points in a wall. Doors stick because the frame has gone out of square. Brick veneer cracks in a stair-step pattern along the mortar joints because brick can't bend. None of it means the house was built badly. It means the house was built on Houston clay, and the clay has been doing what clay does for a few decades.",
         ],
         image: {
@@ -417,11 +426,17 @@ export const SERVICES: Service[] = [
         },
       },
       {
-        heading: "What an engineer does that a repair company doesn't",
+        heading: "An evaluation from someone who isn't paid by the pier",
         paragraphs: [
-          "Most people who call us have already had at least one foundation repair company out to the house. They got a diagram with a lot of dots on it, a pier count, and a price. Sometimes two companies came out and the dot counts were very different.",
-          "That's the problem with getting a diagnosis from the people who sell the repair. It doesn't mean they're dishonest. It means their tool is piers, and when your tool is piers every foundation problem looks like it needs piers. We don't sell piers. We evaluate the foundation, figure out why it's moving, and tell you what, if anything, should be done about it. Sometimes that's piers. Often it's drainage. Sometimes it's a plumbing leak under the slab that's been softening the soil for years and no amount of piering will fix until the leak is found. And sometimes the honest answer is that the movement is within normal range for a Houston house of that age, and the right thing to do is nothing but watch it.",
-          "The evaluation itself is straightforward. We take elevation readings across the whole floor with a manometer or a laser level, which tells us exactly where the slab is high and where it's low, usually to a tenth of an inch. We map the cracks and note which direction they run, because the direction tells you which way the foundation is moving. We look at the drainage, the grading, the trees, the gutters, and the plumbing. Then we write it up in a report that explains what's happening and what we recommend, and that report is yours to use however you like, including to get competing bids from repair contractors on a defined scope instead of a sales pitch.",
+          "Most people who call us have already had a foundation repair company out. They got a diagram with dots on it, a pier count, and a price. Sometimes two companies came out and the dot counts were very different.",
+          "Repair companies aren't dishonest. Their tool is piers, and when your tool is piers every foundation looks like it needs some. We don't sell piers. We evaluate the foundation, work out why it's moving, and tell you what, if anything, to do about it. Sometimes that's piers. Often it's drainage. Sometimes it's a plumbing leak under the slab that has been softening the soil for years, and no pier job will hold until it's found. And sometimes the movement is within normal range for a Houston house of that age, and the right move is to watch it.",
+          "The evaluation covers four things:",
+        ],
+        bullets: [
+          "Elevation survey across the whole floor with a manometer or laser level, to a tenth of an inch, so we know exactly where the slab is high and low.",
+          "Crack mapping, noting direction and width, because the direction tells you which way the foundation is going.",
+          "Drainage, grading, trees, gutters, and plumbing, which is where the cause usually lives.",
+          "A written report you can use however you like, including to get competing bids from repair contractors on a defined scope.",
         ],
         image: {
           src: "/images/foundation-repair-1-elevation-survey.jpg",
@@ -430,20 +445,25 @@ export const SERVICES: Service[] = [
         },
       },
       {
-        heading: "Slab, pier and beam, and post-tension: three foundations, three different problems",
+        heading: "Which foundation you have changes the repair",
         paragraphs: [
-          "Slab-on-grade is what most Houston houses built since the 1960s sit on. A single pad of concrete with beams formed into the underside, poured directly on the prepared soil. When it moves, the whole slab tilts or bows, and the repair is usually to lift the low side back up on piers driven down to a stable depth and then hold it there.",
-          "Pier and beam is the older system, common inside the Loop and in the pre-war neighborhoods. Wood beams sit on concrete or masonry piers with a crawlspace beneath. These move differently. Individual piers settle or heave, the beams sag between them, and the floor above develops soft spots and slopes. The repair is often to add or reset piers and shim the beams back to level, and because you can get under the house, it's usually less invasive than slab work. Moisture in the crawlspace is the thing that quietly ruins these over time.",
-          "Post-tension slabs started showing up in Houston subdivisions in the 1980s and are standard in most newer construction. Steel cables run through the concrete under tension, which makes the slab stiffer and better at bridging soft spots. They still move, but they tend to move as a unit rather than cracking through. The catch is that you can't cut or core into one without knowing where the cables are, and repairing one takes a specific approach. If your house was built after about 1985 and you don't know which kind of slab you have, that's one of the first things we'll figure out.",
+          "Slab-on-grade is what most Houston houses built since the 1960s sit on. A single pad of concrete with beams formed into the underside, poured directly on the prepared soil. When it moves, the whole slab tilts or bows, and the repair is usually to lift the low side back onto piers driven to a stable depth and hold it there.",
+          "Pier and beam is the older system, common inside the Loop and in the pre-war neighborhoods. Wood beams sit on concrete or masonry piers over a crawlspace. These move differently. Individual piers settle or heave, the beams sag between them, and the floor above develops soft spots and slopes. The repair is often to add or reset piers and shim the beams back to level, and because you can get under the house, it's usually less invasive than slab work. Crawlspace moisture is what quietly ruins these over time.",
+          "Post-tension slabs arrived in Houston subdivisions in the 1980s and are standard in most newer construction. Steel cables run through the concrete under tension, which makes the slab stiffer and better at bridging soft spots. They still move, but as a unit rather than cracking through. You can't cut or core into one without knowing where the cables are, so the repair approach is specific. If your house was built after about 1985 and you don't know which slab you have, that's one of the first things we'll establish.",
         ],
       },
       {
-        heading: "The repair methods, and when each one is right",
+        heading: "The repair methods, and when each one fits",
         paragraphs: [
-          "Pressed concrete pilings are the most common repair in Houston. Concrete cylinders are hydraulically pressed into the ground under the foundation, one on top of the other, until they reach a depth where the soil stops giving. The slab is then lifted onto them. It's relatively inexpensive and it works well in much of the metro, but the depth it reaches depends on the soil, and in some areas it never reaches anything stable.",
-          "Steel piers go deeper. Steel pipe sections are driven down, often thirty feet or more, until they hit load-bearing strata or refusal. They cost more per pier but they're the right answer where the clay layer is thick and pressed pilings would just be sitting in more clay. Drilled bell-bottom piers are the older method: a shaft is drilled, belled out at the bottom, and filled with reinforced concrete. Slower and messier, but very durable, and still the right choice in some situations.",
-          "Then there's everything that isn't piers. Mudjacking or polyurethane foam injection can lift a slab that has settled uniformly without any structural distress. Root barriers between a large tree and the foundation can stop the seasonal drying that's causing the movement. Regrading the yard, extending downspouts, or fixing a leaking sewer line under the slab addresses the cause instead of propping up the symptom. A good chunk of the houses we look at need one of these rather than a pier job, and a repair company that only sells piers won't tell you that.",
-          "Which method fits your house depends on the soil on your lot, how deep the stable layer is, what kind of foundation you have, and what's actually causing the movement. That's the engineering question, and it's the one that determines whether the repair holds for twenty years or needs redoing in five.",
+          "Which method suits your house depends on the soil on your lot, how deep the stable layer is, what kind of foundation you have, and what's causing the movement. That's the engineering question, and it decides whether a repair lasts or needs redoing.",
+        ],
+        bullets: [
+          "Pressed concrete pilings: the most common Houston repair. Concrete cylinders are hydraulically pressed under the foundation, one on top of the next, until the soil stops giving, then the slab is lifted onto them. Cost-effective and effective in much of the metro, but in some areas they never reach anything stable.",
+          "Steel piers: pipe sections driven thirty feet or more to load-bearing strata or refusal. More per pier, and the right answer where the clay is thick enough that pressed pilings would just sit in more clay.",
+          "Drilled bell-bottom piers: a shaft drilled and belled at the bottom, filled with reinforced concrete. Slower and messier, very durable, still right in some situations.",
+          "Mudjacking or polyurethane injection: lifts a slab that settled evenly without structural distress. Not a fix for an active problem.",
+          "Root barriers: stop a large tree from drying the soil under one side of the house each summer.",
+          "Drainage and plumbing: regrading, extending downspouts, or repairing a leaking sewer line under the slab. Addresses the cause instead of propping up the symptom, and a good share of the houses we see need this rather than piers.",
         ],
         image: {
           src: "/images/foundation-repair-2-pressed-pilings.jpg",
@@ -455,7 +475,7 @@ export const SERVICES: Service[] = [
         heading: "What we do on a foundation repair job",
         paragraphs: [
           "It starts with the evaluation described above: elevations, crack mapping, drainage and plumbing review, and a written report. If the report says repair is warranted, we design it. That means specifying the pier type, the locations, the spacing, and the target depth, based on the elevation survey and what we know about the soil on your lot. The design is stamped, which matters for the permit and for your records later.",
-          "Because we're licensed and insured to build as well as engineer, we can perform the repair ourselves. The crew works from our own drawings, we're on site during the lift, and we take elevation readings after to confirm the slab landed where the design said it would. If you'd rather use a repair contractor you already trust, our design becomes the scope they bid on, and we can inspect their work when it's done.",
+          "We hold a general contractor's license alongside the engineering, so we can perform the repair ourselves. The crew works from our own drawings, we're on site during the lift, and we take elevation readings after to confirm the slab landed where the design said it would. If you'd rather use a repair contractor you already trust, our design becomes the scope they bid on, and we can inspect their work when it's done.",
           "After the lift, a foundation repair almost always needs some follow-up: cosmetic repairs to the drywall and brick, sometimes a plumbing test to make sure nothing under the slab was strained by the movement, and a drainage fix if that was part of the cause. We tell you what to expect before the work starts so none of it is a surprise.",
         ],
       },
@@ -483,11 +503,18 @@ export const SERVICES: Service[] = [
         ],
       },
       {
-        heading: "Signs it's time to look, and signs it can wait",
+        heading: "When to call, and when it can wait",
         paragraphs: [
-          "Hairline cracks in drywall that don't grow, a door that sticks in August and closes fine in January, a crack in a garage slab: these are ordinary Houston house behavior and usually don't need anything beyond a note in your memory of when you first saw them.",
-          "Cracks that are getting wider, that you can fit a coin into, that run diagonally from the corners of openings, that show up in several rooms at once, or that come with doors and windows going out of square are worth a look. So is a stair-step crack in the brick that's opened up recently, a floor you can feel slope when you walk it, or a gap opening between the wall and the ceiling or the floor and the baseboard. And any crack that appears suddenly after a plumbing problem, a big tree removal, or a long drought should be looked at sooner rather than later, because the cause is still active.",
-          "If you're not sure which category you're in, that's a reasonable thing to call about. A short conversation usually sorts it out, and we'd rather tell you it can wait than have you pay for a visit you didn't need.",
+          "Ordinary Houston house behavior, usually fine to watch: hairline drywall cracks that don't grow, a door that sticks in August and closes in January, a crack in the garage slab. Note when you first saw them and move on.",
+          "Worth a look:",
+        ],
+        bullets: [
+          "Cracks getting wider, wide enough for a coin, or running diagonally from the corners of doors and windows.",
+          "Cracks in several rooms at once, or paired with doors and windows going out of square.",
+          "A stair-step crack in the brick that opened recently.",
+          "A floor you can feel slope when you walk it.",
+          "A gap opening between wall and ceiling, or floor and baseboard.",
+          "Anything that appeared suddenly after a plumbing problem, a big tree removal, or a long drought. The cause is still active.",
         ],
       },
     ],
@@ -748,13 +775,25 @@ export const SERVICES: Service[] = [
       "Your existing foundation's original design is unknown or unclear",
       "You want one licensed team handling both engineering and construction",
     ],
+    atAGlance: [
+      "Ground-floor additions, second stories, garage conversions, and detached casitas across the Houston metro.",
+      "We engineer the structure and build it under one license, so the drawings and the crew match.",
+      "Construction typically runs $150 to $300 per square foot depending on type and finish; second stories cost more than building out.",
+      "Design takes one to four weeks, permitting about a month, construction six weeks to several months by size.",
+      "Start with a structural evaluation of your existing foundation, before the floor plan and before the contractor quote.",
+    ],
     sections: [
       {
-        heading: "The four kinds of additions we build, and what each one asks of the house",
+        heading: "Four kinds of additions, four different loads on the house",
         paragraphs: [
           "People say \"addition\" and mean four fairly different projects. A ground-floor bump-out pushes a kitchen or a family room out into the yard. A second story stacks new bedrooms on top of a house that was never meant to hold them. A garage conversion turns a slab poured for a car into a slab that has to carry a bedroom, a bathroom, and the plumbing that goes with it. And a detached casita or in-law suite is really a small new house that happens to share a lot with the old one.",
-          "The reason the distinction matters is that each one loads the existing structure in a different place. A bump-out mostly asks a question of the soil and the edge of the existing slab, because you're pouring a new foundation next to an old one and hoping they move together. A second story asks a question of every wall, every footing, and every stud line in the house below it. A garage conversion asks whether a four-inch slab with no vapor barrier and a slope toward the door can be made into a floor you'd want to live on. A casita mostly asks about setbacks, utilities, and drainage.",
-          "We do all four. The engineering approach is the same in spirit, trace the load from the new roof down to the dirt and make sure nothing along that path is being asked to do more than it can, but the practical work is different enough that we don't quote one like the other.",
+          "Each one loads the existing structure in a different place, which is why we don't quote one like the other:",
+        ],
+        bullets: [
+          "Bump-out: a question for the soil and the edge of the existing slab. A new foundation goes in next to an old one, and the two have to move together.",
+          "Second story: a question for every wall, every footing, and every stud line in the house below it.",
+          "Garage conversion: can a four-inch slab with no vapor barrier and a slope toward the door become a floor you'd want to live on?",
+          "Casita: mostly setbacks, utilities, and drainage, plus its own foundation designed for the lot.",
         ],
         image: {
           src: "/images/home-additions-3-garage-conversion.jpg",
@@ -763,20 +802,19 @@ export const SERVICES: Service[] = [
         },
       },
       {
-        heading: "Start with the foundation you already have",
+        heading: "What your existing foundation decides for you",
         paragraphs: [
-          "Almost every Houston house sits on one of three foundation types, and which one you have shapes the whole project before anyone draws a floor plan.",
-          "Slab-on-grade is the most common in the suburbs built from the 1960s onward. It's a single concrete pad with thickened edges and, in most cases, a grid of interior beams underneath. Additions tie into the edge of it. The questions are how deep the existing beams go, whether the slab was post-tensioned, and how much the slab has already moved. Post-tension slabs, which became standard in a lot of Houston subdivisions from the 1980s on, have steel cables under tension running through the concrete. You don't cut into one casually, and tying a new foundation into it takes a specific detail.",
-          "Pier and beam is what you'll find under older homes inside the Loop, in the Heights, in Bellaire, in parts of Meyerland. The house sits on wood beams over concrete or brick piers with a crawlspace beneath. These are often easier to add onto because you can see the structure, but the piers have usually been settling for sixty or seventy years and the new addition can't be allowed to settle at a different rate.",
-          "Then there are the houses that have been repaired. A lot of Houston foundations have had piers pushed under them at some point, and the repair changes how the slab behaves. A slab on twelve steel piers doesn't move like the slab next door. If your house has a foundation repair history, we want to see the paperwork, or if there isn't any, we want to find out what's under there before we put more weight on it.",
+          "Before anyone draws a floor plan, the foundation under your house has already made some decisions. A slab-on-grade addition ties into the edge of the existing slab, and the depth of the old grade beams sets the depth of the new ones. A post-tension slab has steel cables running through it under tension, so the tie-in detail changes and nobody cuts into it casually. A pier-and-beam house, the kind you find in the Heights, Bellaire, and older Meyerland, is often easier to add onto because the structure is visible, but seventy years of pier settlement means the new section can't be allowed to settle at its own pace.",
+          "Repair history matters too. A slab that's already sitting on a dozen steel piers doesn't behave like the slab next door. If your house has had foundation work, bring the paperwork. If there isn't any, we'll find out what's under there before adding weight to it.",
+          "If you want the longer explanation of how each foundation type behaves on Houston soil, it lives on our foundation repair page. For the addition itself, the practical point is this: the existing foundation is measured first, and the new one is designed to match it.",
         ],
       },
       {
-        heading: "Houston soil, and why additions crack at the seam",
+        heading: "The crack along the seam",
         paragraphs: [
-          "The single most common failure we see on additions built without engineering is a crack that runs right along the line where the new foundation meets the old one. It shows up a year or two after the work is done, usually after a wet winter followed by a dry summer, and it keeps growing.",
-          "The cause is almost always the same. Houston sits on expansive clay. The clay swells when it's wet and shrinks when it's dry, and the movement is measured in inches, not fractions of an inch. An existing slab has spent decades finding its equilibrium with that soil. A new slab poured next to it hasn't. If the new footings don't bear at the same depth as the old ones, or if the two sections aren't tied together so they move as one, they move separately. The seam opens up. Doors near the addition start to stick, tile cracks along a straight line, and the homeowner is back to square one with a much more expensive problem.",
-          "The fix is not complicated, but it has to be designed rather than guessed at. We check the bearing depth of the existing foundation, match it, and detail the connection between old and new, usually with doweled rebar epoxied into the existing slab, so the two sections behave as one structure. On lots with particularly active clay we sometimes recommend deeper footings or a different foundation approach for the addition entirely, and we'll tell you that up front rather than after the concrete is poured.",
+          "Additions built without engineering fail in one place more than any other: the line where the new foundation meets the old one. A crack opens there a year or two after the work, usually after a wet winter and a dry summer, and it keeps growing.",
+          "The mechanism is simple. The old slab has spent decades settling into an equilibrium with the clay under it. The new slab hasn't. If the two bear at different depths, or aren't tied together, they move independently and the seam opens. Doors near the addition stick, tile cracks in a straight line, and the homeowner is back at the start with a bigger bill.",
+          "We prevent it by matching the bearing depth of the existing foundation and connecting old to new with rebar dowels epoxied into the existing slab, so the two sections behave as one. On lots with particularly active clay we may recommend deeper footings or a different foundation approach altogether, and we say so before the concrete is ordered.",
         ],
         image: {
           src: "/images/home-additions-1-foundation-tie-in.jpg",
@@ -789,7 +827,7 @@ export const SERVICES: Service[] = [
         paragraphs: [
           "Second-story additions are the projects where the engineering question is most often skipped and where skipping it costs the most.",
           "A house built as a single story was engineered, or more often just built to habit, to carry one roof and nothing else. The exterior walls, the interior bearing walls, and the footings under them were all sized for that. Put a second floor on top and you've roughly doubled the load on every one of those elements. Sometimes the existing structure has enough margin to take it. Often it doesn't, and the difference isn't something you can see from the driveway.",
-          "What we actually do is measure. We look at the footing widths and depths, the stud spacing and species in the bearing walls, the headers over the windows and doors, and the condition of everything after however many decades it's been standing. Then we calculate what the new floor and roof will weigh and where that weight will land. The result is one of three answers: the house can take it as-is, the house can take it with specific reinforcement, or the house can't reasonably take it and building out would be the better path. All three are useful. The third one, delivered before you've spent money on drawings, is the most useful of all.",
+          "We measure. Footing widths and depths, stud spacing and species in the bearing walls, the headers over windows and doors, and the condition of all of it after however many decades it's been standing. Then we calculate what the new floor and roof will weigh and where that weight lands. The answer comes back one of three ways: the house can take it as-is, the house can take it with specific reinforcement, or the house can't reasonably take it and building out is the better path. All three are useful. The third one, delivered before you've paid for drawings, is the most useful of all.",
           "When reinforcement is needed, it usually means widening footings under the bearing walls, adding posts and beams to shorten spans, or sistering new studs onto the old ones. None of it is exotic. It just has to be sized to the actual gap between what's there and what's needed, and it has to happen before the second floor goes on, not after the cracks appear.",
         ],
         image: {
@@ -809,13 +847,16 @@ export const SERVICES: Service[] = [
         ],
       },
       {
-        heading: "What we actually do, step by step",
+        heading: "From first visit to final inspection",
         paragraphs: [
-          "The first visit is an evaluation, and it's worth doing before you've committed to a floor plan. We look at the existing foundation and framing, pull whatever records exist for the house, and check the lot for the rules above. If you already have a design in mind, we'll tell you whether the house can support it. If you don't, we'll tell you what the house can support, which is a better starting point for a design than a wish list.",
-          "From there we produce the structural design: foundation details for the new section and its connection to the old, framing sizes and spans, beam and header schedules, and any reinforcement the existing structure needs. For a second story this includes a full load analysis of the house below. The drawings and calculations are stamped, which is what the permit office requires and what protects you later if a question ever comes up about how the addition was built.",
-          "Then the permit. We prepare the structural portion of the submission and coordinate with the architect or designer if there is one. Because the design already accounts for setbacks, restrictions, and floodplain, this step is usually uneventful.",
-          "Construction is where being a licensed general contractor as well as an engineering firm matters. We excavate and form the new foundation, pour it to the detail we designed, frame the addition, tie the roof into the existing roofline, and carry it through inspections and finish. The crew building the addition is working from calculations written by the people supervising them. There's no gap between what was specified and what gets built, and no second company to call when a detail on site doesn't match the drawing.",
-          "Inspections happen at the points the city requires, typically foundation, framing, and final, and we're on site for each of them.",
+          "The first visit is an evaluation, and it's worth doing before you've committed to a floor plan. If you already have a design in mind, we'll tell you whether the house can support it. If you don't, we'll tell you what the house can support, which is a better starting point than a wish list. From there the project runs in a fixed order:",
+        ],
+        bullets: [
+          "Evaluation: existing foundation and framing, house records, and a check of the lot against setbacks, deed restrictions, and the flood map.",
+          "Structural design: foundation details for the new section and its tie-in, framing sizes and spans, beam and header schedules, and any reinforcement the existing house needs. Second stories get a full load analysis of the floor below. Everything is stamped.",
+          "Permit: we prepare the structural portion and coordinate with your architect or designer if there is one. Since the design already accounts for the rules, this step is usually uneventful.",
+          "Construction: we excavate and form the new foundation, pour to our own detail, frame the addition, tie the roof into the existing roofline, and carry it through finish. The crew is building from calculations written by the people supervising them.",
+          "Inspections: foundation, framing, and final, at the points the city requires. We're on site for each.",
         ],
       },
       {
@@ -829,9 +870,21 @@ export const SERVICES: Service[] = [
       {
         heading: "What it costs, and what moves the number",
         paragraphs: [
-          "Additions are priced per square foot as a starting point, but the per-square-foot number moves a lot depending on what's inside the square footage and what the existing house needs before the addition can go on.",
-          "In the Houston area, a straightforward ground-floor addition at a builder-grade finish tends to land in the range of 150 to 200 dollars per square foot for the construction. Mid-range finishes push that toward 200 to 250. High-end finishes go beyond that. Second stories run higher per square foot than ground-floor additions, typically a quarter more, because of the reinforcement work and the complexity of tying into an occupied house. Bathrooms and kitchens add a fixed chunk on top for plumbing regardless of size. HVAC almost always needs to be extended or upgraded, and older homes often need an electrical panel upgrade to carry the new load.",
-          "The engineering is a small fraction of all this, and it's the part that keeps the rest of the number from changing once construction starts. Our cost estimator on this site walks through the factors above for your specific project and gives you a planning range before you talk to anyone. It's a ballpark, not a quote, but it's a ballpark built from the same logic we use when we price the real thing.",
+          "Additions are priced per square foot as a starting point. The number moves with what's inside the square footage and with what the existing house needs before the addition can go on. Houston-area planning ranges for the construction itself:",
+        ],
+        bullets: [
+          "Ground-floor addition, builder-grade finish: roughly $150 to $200 per square foot.",
+          "Mid-range finish: $200 to $250 per square foot. High-end finishes go beyond that.",
+          "Second story: about a quarter more per square foot than building out, for the reinforcement and the complexity of working over an occupied house.",
+          "Bathroom or kitchen: a fixed plumbing add on top, regardless of size.",
+          "HVAC almost always needs extending or upgrading. Older homes often need an electrical panel upgrade.",
+          "Engineering: a small fraction of the total, and the part that keeps the rest of the number from changing once construction starts.",
+        ],
+      },
+      {
+        heading: "A planning range before you talk to anyone",
+        paragraphs: [
+          "Our cost estimator on this site walks through the factors above for your specific project and gives you a range in about two minutes. It's a ballpark, not a quote, but it's built from the same logic we use when we price the real thing, and it's a better place to start a conversation with a contractor than a blank page.",
         ],
       },
       {
@@ -839,7 +892,7 @@ export const SERVICES: Service[] = [
         paragraphs: [
           "A fair amount of our addition work is on additions someone else already built. The patterns repeat.",
           "The most common is the seam crack described above, a new foundation poured next to an old one with no tie-in and no attention to bearing depth. The second most common is a second story on a house that couldn't carry it, which shows up as sagging floors upstairs, doors that won't close downstairs, and cracks radiating from the corners of windows in the bearing walls. Third is the garage conversion where nobody thought about the slab, so the new bedroom floor slopes toward the old garage door and the bathroom drains run uphill.",
-          "Then there are the paperwork problems. An addition built without a permit, or with a permit but without stamped engineering, is a liability that surfaces at the worst possible time, usually during a sale when the buyer's inspector asks for documentation that doesn't exist. We can often produce an engineering evaluation of existing work after the fact, but it's more expensive and less certain than doing it right the first time, and sometimes the honest answer is that the work needs to be redone.",
+          "Then there are the paperwork problems. An addition built without a permit, or with a permit but without stamped engineering, is a liability that surfaces at the worst possible time, usually during a sale when the buyer's inspector asks for documentation that doesn't exist. We can often produce an engineering evaluation of existing work after the fact, but it's more expensive and less certain than doing it right the first time, and sometimes what we find is that the work needs to be redone.",
           "None of these are exotic failures. They're all the predictable result of building first and asking the structural question later, or never. Asking it first is cheaper in every case we've seen.",
         ],
       },

@@ -119,6 +119,22 @@ export default async function ServicePage({ params }: Props) {
 
       <section className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-3">
         <div className="md:col-span-2 text-slate-700 leading-relaxed">
+          {service.atAGlance?.length ? (
+            <div className="mb-8 rounded-sm border border-slate-200 bg-slate-50 p-5">
+              <div className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
+                At a glance
+              </div>
+              <ul className="mt-3 space-y-2 text-sm text-slate-700">
+                {service.atAGlance.map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <span className="mt-0.5 text-orange-600">▸</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
+
           {service.description.map((p, i) => (
             <p key={i} className="mb-5">
               {p}
@@ -135,6 +151,13 @@ export default async function ServicePage({ params }: Props) {
                   {p}
                 </p>
               ))}
+              {s.bullets?.length ? (
+                <ul className="mb-5 list-disc space-y-2 pl-5">
+                  {s.bullets.map((b) => (
+                    <li key={b}>{b}</li>
+                  ))}
+                </ul>
+              ) : null}
               {s.image && (
                 <>
                   <img
