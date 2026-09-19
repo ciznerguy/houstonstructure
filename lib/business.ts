@@ -402,6 +402,121 @@ export const SERVICES: Service[] = [
       "Gaps between walls, ceilings, and floors",
       "Cracks in exterior brick veneer, especially stair-step patterns",
     ],
+    sections: [
+      {
+        heading: "Why Houston foundations move, and why it isn't your fault",
+        paragraphs: [
+          "Most of the Houston metro sits on a thick layer of expansive clay. It's the same stuff that makes the yard turn to soup in March and split open in August. When that clay takes on water it swells, and when it dries out it shrinks, and the difference between the two states can be several inches of vertical movement at the surface. A house doesn't float above that. It rides on it.",
+          "The trouble is that the movement is never even. The soil under the middle of a slab stays damper than the soil around the edges, because the house itself shades it and keeps the rain off. The side of the house with the big oak tree dries out faster than the side without, because the roots are pulling water out of the ground all summer. The corner near the downspout that dumps onto the flowerbed stays wetter than the corner that drains to the street. So one part of the foundation goes up while another goes down, and the house twists slightly to follow it.",
+          "That twisting is what you see as cracks. Drywall splits at the corners of doors and windows because those are the weak points in a wall. Doors stick because the frame has gone out of square. Brick veneer cracks in a stair-step pattern along the mortar joints because brick can't bend. None of it means the house was built badly. It means the house was built on Houston clay, and the clay has been doing what clay does for a few decades.",
+        ],
+        image: {
+          src: "/images/foundation-repair-3-drainage.jpg",
+          alt: "Downspout discharging against the brick foundation of a Houston home with water pooled in the flowerbed and a stair-step crack in the mortar above",
+          caption: "The usual suspect: a downspout dumping against the foundation, saturated clay on one corner, and the stair-step crack that follows.",
+        },
+      },
+      {
+        heading: "What an engineer does that a repair company doesn't",
+        paragraphs: [
+          "Most people who call us have already had at least one foundation repair company out to the house. They got a diagram with a lot of dots on it, a pier count, and a price. Sometimes two companies came out and the dot counts were very different.",
+          "That's the problem with getting a diagnosis from the people who sell the repair. It doesn't mean they're dishonest. It means their tool is piers, and when your tool is piers every foundation problem looks like it needs piers. We don't sell piers. We evaluate the foundation, figure out why it's moving, and tell you what, if anything, should be done about it. Sometimes that's piers. Often it's drainage. Sometimes it's a plumbing leak under the slab that's been softening the soil for years and no amount of piering will fix until the leak is found. And sometimes the honest answer is that the movement is within normal range for a Houston house of that age, and the right thing to do is nothing but watch it.",
+          "The evaluation itself is straightforward. We take elevation readings across the whole floor with a manometer or a laser level, which tells us exactly where the slab is high and where it's low, usually to a tenth of an inch. We map the cracks and note which direction they run, because the direction tells you which way the foundation is moving. We look at the drainage, the grading, the trees, the gutters, and the plumbing. Then we write it up in a report that explains what's happening and what we recommend, and that report is yours to use however you like, including to get competing bids from repair contractors on a defined scope instead of a sales pitch.",
+        ],
+        image: {
+          src: "/images/foundation-repair-1-elevation-survey.jpg",
+          alt: "Engineer kneeling on the exposed slab of a Houston living room taking a foundation elevation reading with a manometer, clipboard with a floor plan grid beside him",
+          caption: "An elevation survey: readings across the whole floor, plotted on a grid, so the diagnosis is measured rather than eyeballed.",
+        },
+      },
+      {
+        heading: "Slab, pier and beam, and post-tension: three foundations, three different problems",
+        paragraphs: [
+          "Slab-on-grade is what most Houston houses built since the 1960s sit on. A single pad of concrete with beams formed into the underside, poured directly on the prepared soil. When it moves, the whole slab tilts or bows, and the repair is usually to lift the low side back up on piers driven down to a stable depth and then hold it there.",
+          "Pier and beam is the older system, common inside the Loop and in the pre-war neighborhoods. Wood beams sit on concrete or masonry piers with a crawlspace beneath. These move differently. Individual piers settle or heave, the beams sag between them, and the floor above develops soft spots and slopes. The repair is often to add or reset piers and shim the beams back to level, and because you can get under the house, it's usually less invasive than slab work. Moisture in the crawlspace is the thing that quietly ruins these over time.",
+          "Post-tension slabs started showing up in Houston subdivisions in the 1980s and are standard in most newer construction. Steel cables run through the concrete under tension, which makes the slab stiffer and better at bridging soft spots. They still move, but they tend to move as a unit rather than cracking through. The catch is that you can't cut or core into one without knowing where the cables are, and repairing one takes a specific approach. If your house was built after about 1985 and you don't know which kind of slab you have, that's one of the first things we'll figure out.",
+        ],
+      },
+      {
+        heading: "The repair methods, and when each one is right",
+        paragraphs: [
+          "Pressed concrete pilings are the most common repair in Houston. Concrete cylinders are hydraulically pressed into the ground under the foundation, one on top of the other, until they reach a depth where the soil stops giving. The slab is then lifted onto them. It's relatively inexpensive and it works well in much of the metro, but the depth it reaches depends on the soil, and in some areas it never reaches anything stable.",
+          "Steel piers go deeper. Steel pipe sections are driven down, often thirty feet or more, until they hit load-bearing strata or refusal. They cost more per pier but they're the right answer where the clay layer is thick and pressed pilings would just be sitting in more clay. Drilled bell-bottom piers are the older method: a shaft is drilled, belled out at the bottom, and filled with reinforced concrete. Slower and messier, but very durable, and still the right choice in some situations.",
+          "Then there's everything that isn't piers. Mudjacking or polyurethane foam injection can lift a slab that has settled uniformly without any structural distress. Root barriers between a large tree and the foundation can stop the seasonal drying that's causing the movement. Regrading the yard, extending downspouts, or fixing a leaking sewer line under the slab addresses the cause instead of propping up the symptom. A good chunk of the houses we look at need one of these rather than a pier job, and a repair company that only sells piers won't tell you that.",
+          "Which method fits your house depends on the soil on your lot, how deep the stable layer is, what kind of foundation you have, and what's actually causing the movement. That's the engineering question, and it's the one that determines whether the repair holds for twenty years or needs redoing in five.",
+        ],
+        image: {
+          src: "/images/foundation-repair-2-pressed-pilings.jpg",
+          alt: "Pressed concrete piling cylinders being driven beneath the grade beam of a Houston home with a hydraulic ram, excavated clay soil piled beside the hole",
+          caption: "Pressed pilings going in under the grade beam. The depth they reach, not the count, is what decides whether the lift holds.",
+        },
+      },
+      {
+        heading: "What we do on a foundation repair job",
+        paragraphs: [
+          "It starts with the evaluation described above: elevations, crack mapping, drainage and plumbing review, and a written report. If the report says repair is warranted, we design it. That means specifying the pier type, the locations, the spacing, and the target depth, based on the elevation survey and what we know about the soil on your lot. The design is stamped, which matters for the permit and for your records later.",
+          "Because we're licensed and insured to build as well as engineer, we can perform the repair ourselves. The crew works from our own drawings, we're on site during the lift, and we take elevation readings after to confirm the slab landed where the design said it would. If you'd rather use a repair contractor you already trust, our design becomes the scope they bid on, and we can inspect their work when it's done.",
+          "After the lift, a foundation repair almost always needs some follow-up: cosmetic repairs to the drywall and brick, sometimes a plumbing test to make sure nothing under the slab was strained by the movement, and a drainage fix if that was part of the cause. We tell you what to expect before the work starts so none of it is a surprise.",
+        ],
+      },
+      {
+        heading: "Costs, and why the pier count matters more than the price per pier",
+        paragraphs: [
+          "An engineering evaluation with a written report runs a few hundred dollars for a typical house. That's the number to compare against the repair quotes you've been given, because it's usually a small fraction of one of them, and it's the thing that tells you whether the quotes are for the right work.",
+          "Repair costs in the Houston area are mostly a function of pier count and pier type. Pressed pilings are the least expensive per pier; steel piers cost more. A partial lift on one corner of a house might be a handful of piers. A whole-house stabilization can be dozens. The spread between a small job and a large one is wide enough that a per-pier price on its own doesn't tell you much. What matters is whether the count is right, and a pier count from an engineer who isn't selling the piers is the only way to know.",
+          "Drainage and plumbing fixes are usually far cheaper than piering, which is one of the reasons it's worth finding out whether that's the actual problem before committing to a lift.",
+        ],
+      },
+      {
+        heading: "Selling, buying, or filing a claim",
+        paragraphs: [
+          "A lot of foundation evaluations happen because a house is changing hands. A buyer's inspector flagged the foundation, the buyer wants to know if it's a real problem or a Houston problem, and the seller wants to know the same thing before agreeing to a price cut. Our report answers that question for both sides. It says what the elevations are, whether the movement is active or historic, and what, if anything, needs to be done. Realtors on both sides of a deal use it to settle the question and move on.",
+          "Insurance claims are a separate situation. Most Texas homeowner policies exclude foundation movement from soil, but they often cover foundation damage caused by a plumbing leak, and telling those two apart is exactly what an engineering evaluation does. If a claim is on the table, the report needs to be written with that in mind, and we know what adjusters look for.",
+        ],
+      },
+      {
+        heading: "How long it takes",
+        paragraphs: [
+          "The site visit for an evaluation usually takes an hour or two, depending on the size of the house and how much of the floor is accessible for elevation readings. The written report follows within a few days. If a real estate deal is waiting on it, tell us, and we'll work to the closing date.",
+          "The repair itself is faster than most people expect. A typical residential pier job, from mobilization to the lift and cleanup, is a matter of days, not weeks. Larger jobs with a lot of piers or interior work through the slab take longer. Weather matters, because the crew is digging, and a week of heavy rain can push the schedule. Drainage and grading corrections can usually be done alongside the pier work rather than as a separate project.",
+          "Permits for foundation repair are required in most of the metro and are generally quick to obtain, since the engineering is already stamped when the application goes in.",
+        ],
+      },
+      {
+        heading: "Signs it's time to look, and signs it can wait",
+        paragraphs: [
+          "Hairline cracks in drywall that don't grow, a door that sticks in August and closes fine in January, a crack in a garage slab: these are ordinary Houston house behavior and usually don't need anything beyond a note in your memory of when you first saw them.",
+          "Cracks that are getting wider, that you can fit a coin into, that run diagonally from the corners of openings, that show up in several rooms at once, or that come with doors and windows going out of square are worth a look. So is a stair-step crack in the brick that's opened up recently, a floor you can feel slope when you walk it, or a gap opening between the wall and the ceiling or the floor and the baseboard. And any crack that appears suddenly after a plumbing problem, a big tree removal, or a long drought should be looked at sooner rather than later, because the cause is still active.",
+          "If you're not sure which category you're in, that's a reasonable thing to call about. A short conversation usually sorts it out, and we'd rather tell you it can wait than have you pay for a visit you didn't need.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Do you do the repair, or just the inspection?",
+        a: "Both. We evaluate the foundation and write the report, and if repair is warranted we can design and perform it ourselves as a licensed contractor. You can also take our design to another repair contractor and have them bid it. Either way the diagnosis comes from someone who isn't paid by the pier.",
+      },
+      {
+        q: "How do I know if the foundation company's quote is right?",
+        a: "You compare it to an independent evaluation. If two repair companies gave you different pier counts, at least one of them is wrong, and possibly both. An engineering report tells you where the slab actually is and what it actually needs, and then the quotes either match it or they don't.",
+      },
+      {
+        q: "Will foundation repair fix the cracks in my walls?",
+        a: "Lifting the slab closes some cracks and opens others, because the house is being moved back toward where it started. The drywall and brick still need cosmetic repair afterward. What the repair does is stop the movement so the cosmetic fixes stay fixed.",
+      },
+      {
+        q: "Is it normal for a Houston house to have foundation movement?",
+        a: "Yes. Nearly every house in the metro moves seasonally with the clay. The question isn't whether it moves but whether it's moving more than the structure can tolerate, and whether the movement is getting worse. That's what the elevation survey tells us.",
+      },
+      {
+        q: "Should I fix the drainage before or after the foundation repair?",
+        a: "Before, if drainage is part of the cause, and it often is. Piering a slab while water is still pooling against one side of it treats the symptom and leaves the cause running. Sometimes fixing the drainage alone is enough and the piers turn out not to be needed.",
+      },
+      {
+        q: "How long does a foundation repair last?",
+        a: "A repair designed for the actual soil conditions on the lot and carried to the right depth should hold for the life of the house. Repairs that fail early usually failed because the piers didn't reach stable soil, the cause of the movement wasn't addressed, or the pier layout didn't match where the slab was actually moving. All three are engineering problems, not construction problems.",
+      },
+    ],
   },
   {
     slug: "structural-repairs",
