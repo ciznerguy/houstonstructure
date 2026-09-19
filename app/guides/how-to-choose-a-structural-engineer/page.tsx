@@ -50,7 +50,8 @@ export default function HowToChooseAStructuralEngineerPage() {
         eyebrow="Guide"
         title="How to Choose a Structural Engineer"
         subtitle="The engineer you hire is the one whose judgment you're trusting on your home's structure. Here's what actually separates a good choice from a risky one."
-        ctaLabel="Get a Free Home Addition Cost Estimate"
+        ctaLabel="Talk to a Licensed Structural Engineer"
+        ctaHref="/contact"
       />
 
       <section className="mx-auto max-w-6xl px-5 py-14">

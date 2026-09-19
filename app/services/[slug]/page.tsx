@@ -16,13 +16,19 @@ const SERVICE_TO_GUIDE_SLUG: Record<string, string> = {
   "commercial-buildouts": "commercial-wall-removal",
 };
 
-const SERVICE_CTA_LABEL: Record<string, string> = {
-  "home-additions": "Calculate Your Addition Cost in 2 Minutes",
-  "general-contracting": "Planning an Addition? Get a Free Cost Estimate",
-  "load-bearing-wall-removal": "Opening Up the Floor Plan? Estimate Your Addition Cost",
-  "steel-beam-installation": "Planning an Addition? Get a Free Cost Estimate",
+// Addition-related services send people to the estimator; everything else
+// asks for a quote through the contact form, worded for that service.
+const SERVICE_CTA: Record<string, { label: string; href?: string }> = {
+  "home-additions": { label: "Calculate Your Addition Cost in 2 Minutes" },
+  "general-contracting": { label: "Planning an Addition? Get a Free Cost Estimate" },
+  "foundation-repair": { label: "Get a Foundation Repair Quote", href: "/contact" },
+  "structural-repairs": { label: "Get a Structural Repair Quote", href: "/contact" },
+  "inspections-reports": { label: "Request a Structural Inspection", href: "/contact" },
+  consulting: { label: "Request an Engineering Consultation", href: "/contact" },
+  "load-bearing-wall-removal": { label: "Get a Wall Removal Quote", href: "/contact" },
+  "commercial-buildouts": { label: "Get a Commercial Buildout Quote", href: "/contact" },
+  "steel-beam-installation": { label: "Get a Steel Beam Installation Quote", href: "/contact" },
 };
-const DEFAULT_SERVICE_CTA = "Get a Free Home Addition Cost Estimate";
 
 export async function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));
@@ -94,7 +100,8 @@ export default async function ServicePage({ params }: Props) {
         eyebrow="Service"
         title={`${service.name} in Houston, TX`}
         subtitle={service.summary}
-        ctaLabel={SERVICE_CTA_LABEL[service.slug] ?? DEFAULT_SERVICE_CTA}
+        ctaLabel={SERVICE_CTA[service.slug]?.label ?? "Request a Free Quote"}
+        ctaHref={SERVICE_CTA[service.slug]?.href}
       />
 
       {service.image && (

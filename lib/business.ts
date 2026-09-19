@@ -514,7 +514,7 @@ export const SERVICES: Service[] = [
       },
       {
         q: "How long does a foundation repair last?",
-        a: "A repair designed for the actual soil conditions on the lot and carried to the right depth should hold for the life of the house. Repairs that fail early usually failed because the piers didn't reach stable soil, the cause of the movement wasn't addressed, or the pier layout didn't match where the slab was actually moving. All three are engineering problems, not construction problems.",
+        a: "No one can promise a number of years on Houston clay, and you should be wary of anyone who does. What we can say is why repairs fail early: the piers didn't reach stable soil, the cause of the movement wasn't addressed, or the pier layout didn't match where the slab was actually moving. All three are design problems. A repair that gets those three right is the one that stays out of your life.",
       },
     ],
   },
@@ -537,6 +537,116 @@ export const SERVICES: Service[] = [
       "A previous renovation that removed a wall without engineering",
       "Water or termite damage to framing members",
       "Cracking at interior corners after storm events",
+    ],
+    sections: [
+      {
+        heading: "Structural repair is everything above the foundation",
+        paragraphs: [
+          "When people search for structural repair in Houston they usually already know something is wrong, they just aren't sure what to call it. The ceiling in the den has a dip in it. The floor upstairs bounces when the kids run. There's a crack in the corner of the living room that came back after it was patched. A contractor took out a wall five years ago and now a door won't close. None of those are foundation problems, exactly, even though people often call a foundation company first.",
+          "Structural repair covers the parts of the house that carry load once it's left the foundation: the floor joists, the wall studs and headers, the beams, the ceiling joists, the rafters and roof framing, and the connections that tie all of it together. When one of those pieces is undersized, damaged, cut, rotted, or simply missing, the load finds another way down and the house tells you about it.",
+          "Our work on these jobs starts the same way every time. Find the load path. Figure out where it's been interrupted. Design the fix that restores it. Then either build it ourselves or hand the design to your contractor.",
+        ],
+      },
+      {
+        heading: "The five problems we see most",
+        paragraphs: [
+          "Sagging beams and joists come first. A beam that was fine when it was installed can deflect over the years as the wood creeps under constant load, especially if it was sized to the minimum to begin with. In Houston the humidity doesn't help. You'll see it as a ceiling that isn't flat, a floor with a low spot in the middle of the room, or a ridge line on the roof that dips between the walls.",
+          "Second is the wall someone removed without engineering. This is the single most common structural repair we do. A previous owner or a contractor opened up the kitchen, took out a bearing wall, put in a header that looked about right, and moved on. The floor above starts to sag, the drywall cracks, and the doors in the upstairs hallway go out of square. We cover this in more depth on our load-bearing wall page, but the fix is a properly sized beam with proper bearing at each end, installed after the load is temporarily carried elsewhere.",
+          "Third is water damage to framing. Roof leaks that ran down inside a wall for years, a bathroom that leaked into the floor system under the tub, a window that was never flashed properly. Wet wood rots, rotted wood doesn't carry load, and by the time it's discovered the damage is usually more extensive than what's visible.",
+          "Fourth is termite damage, which in Houston is not a question of if. Subterranean termites eat the framing from the inside out, so a stud or a sill plate can look fine and be hollow. Once the pest company has treated the house, someone has to figure out which members are still structural and which need to be sistered or replaced.",
+          "Fifth is storm damage. Wind uplift on the roof, a tree limb through the rafters, or racking from a hard gust that leaves the framing out of plumb. Hurricane season produces a wave of these, and insurance adjusters want an engineer's assessment of what was damaged and what it takes to repair it.",
+        ],
+      },
+      {
+        heading: "How we figure out what's actually wrong",
+        paragraphs: [
+          "The symptom and the cause are often in different rooms. A crack in an upstairs bedroom can trace back to a beam in the garage ceiling. A sloping kitchen floor can be a rotted rim joist on the other side of the house that let everything drift. So the evaluation isn't a look at the crack, it's a look at the structure.",
+          "We start with what you can see: where the cracks are, which direction they run, where the floors slope and by how much, which doors and windows have gone out of square. That pattern usually points at a region of the house. Then we get into the attic, the crawlspace if there is one, and any accessible framing to look at the members directly. We're checking sizes, spans, spacing, connections, and condition. Where framing is hidden behind finishes we sometimes open a small inspection hole rather than guess.",
+          "The output is a written assessment that says what's carrying what, where the load path is compromised, and what the repair should be. If the problem turns out to be foundation movement after all, we'll say so and point you at that instead. If it turns out to be cosmetic, we'll say that too. We're not paid by the repair, so there's no reason to find one that isn't there.",
+        ],
+      },
+      {
+        heading: "Designing the repair",
+        paragraphs: [
+          "Once the problem is understood, the design is usually one of a few things. Sistering means fastening a new member alongside a damaged one so the two act together. It's the standard fix for a cracked or rotted joist or stud where the original is still mostly intact. Replacement means taking the damaged member out entirely and putting in a new one, which is what's needed when rot or termites have gone too far. Reinforcement means adding capacity to a member that's sound but undersized: a steel flitch plate bolted to the side of a wood beam, a new post under a long span, an additional beam to shorten the distance the joists have to cover.",
+          "The design specifies the size and grade of the new material, how it connects to the existing structure, and what has to be temporarily supported while the work happens. That last part matters more than people expect. Cutting into a bearing wall or pulling a damaged beam without shoring the load first is how a repair turns into a much bigger repair.",
+          "For most residential work the design is a stamped letter with a sketch. Bigger jobs, or anything going through permitting, get full drawings. Either way the contractor has something concrete to build from, and you have documentation that the repair was engineered.",
+        ],
+      },
+      {
+        heading: "Doing the work",
+        paragraphs: [
+          "Because we hold a general contractor's license along with the engineering, we can perform the repair ourselves. Our crew works from our own design, we're on site for the parts that matter, and when a hidden condition turns up mid-job, and one usually does, the engineer who has to make the call is already there rather than on the phone.",
+          "If you'd rather use your own contractor, that works too. The design becomes their scope, and we can inspect the completed repair and sign off on it, which is what most permitting offices and insurance companies want anyway.",
+          "Typical sequence on a repair job: shore the load, open up the finishes to expose the framing, confirm the design against what's actually there, make the repair, inspect, close up. The opening and closing of finishes is often the biggest part of the job by hours, and it's worth knowing that going in.",
+        ],
+      },
+      {
+        heading: "After a storm",
+        paragraphs: [
+          "Hurricane and severe storm damage is its own category because of the insurance process. The adjuster needs to know what was damaged by the storm as opposed to what was already there, what it will take to repair, and whether the structure is safe to occupy in the meantime. That's an engineering assessment, and the sooner it's done after the event the cleaner the record is.",
+          "We document the damage, distinguish storm damage from pre-existing conditions, and write the report in the form adjusters are used to reading. If temporary shoring or bracing is needed to make the house safe while the claim works through, we design that too. Then the repair itself follows the same process as any other structural job.",
+          "The Houston area also has a steady stream of roof framing repairs from lesser storms, downed limbs, and wind uplift that lifted a section of decking and cracked a few rafters. These are usually quick to assess and repair, but they still need to be done right or the roof will leak at the repair for years.",
+        ],
+      },
+      {
+        heading: "Repairs that were done wrong the first time",
+        paragraphs: [
+          "A fair share of the framing we look at has already been repaired by someone, and the repair is the problem. A joist that was sistered with a board half its depth. A header made of two 2x6s over a twelve-foot opening. A rotted sill plate that was covered with new siding instead of replaced. A beam that was jacked up level and then left sitting on a stack of shims and a cinder block. These are not rare.",
+          "Bad repairs are worse than no repair in one specific way: they hide the original problem while doing nothing about it. The floor looks level for a while. The crack gets patched and painted. Then the house keeps moving, because the load path was never actually restored, and the second time around the damage is more spread out and the fix is bigger.",
+          "When we find a prior repair, we evaluate it the same as any other framing: does it carry the load or not. Sometimes it does, or close enough that a small addition makes it right. Sometimes it has to come out. Either way we'll tell you what we found and why, in plain language, so you understand what you're paying to fix.",
+        ],
+      },
+      {
+        heading: "Older Houston homes and what their framing looks like",
+        paragraphs: [
+          "The framing in a 1950s house in Oak Forest is not the framing in a 1990s house in Katy, and the repairs are different because of it. Pre-1970s homes were often framed with full-dimension or near-full-dimension lumber that's stronger than what the same nominal size buys today, which can work in your favor when sistering. But they were also framed to looser standards, with wider joist spacing, longer unsupported spans, and connections that relied on nails and gravity rather than hardware.",
+          "Houses from the 1970s and 80s frequently used the minimum sizes the code allowed, and forty years of Houston humidity and load have taken up whatever margin there was. These are the houses where a beam that was technically adequate when new has now deflected enough to show, and the fix is reinforcement rather than replacement.",
+          "Newer construction brings its own issues, mostly in the form of engineered lumber that was cut or notched by a plumber or electrician who didn't know what it was. An I-joist with a hole in the wrong place or a notch in the flange has lost a good portion of its strength, and the repair is specific to the product. We see this most in homes under twenty years old.",
+        ],
+      },
+      {
+        heading: "What it costs",
+        paragraphs: [
+          "The assessment is a few hundred dollars for a typical house, which includes the site visit and the written report. Where the report says what the repair should be, that's the document your contractor bids from.",
+          "Repair costs vary more here than in almost any other kind of work we do, because the range runs from sistering a single joist to reframing a section of roof. A small localized repair, one or two members plus the finish work around them, is typically in the low thousands. A beam replacement with shoring, or a rotted floor system under a bathroom, runs higher. Extensive termite or water damage across multiple rooms can be a significant project. The assessment is what tells you which of these you're facing, and it's a small cost next to the uncertainty of not knowing.",
+          "One thing that reliably makes repairs more expensive is waiting. Deflection gets worse, rot spreads, and a member that could have been sistered ends up needing replacement along with the ones next to it.",
+        ],
+      },
+      {
+        heading: "Repairs, permits, and the record",
+        paragraphs: [
+          "Structural repairs in Houston and the surrounding cities generally require a permit when they involve load-bearing elements, and permitting offices want to see engineering. A stamped repair letter or drawing is usually what gets the permit issued.",
+          "The permit matters beyond the legal box it checks. It puts the repair on the record. When the house sells, a buyer's inspector who sees a sistered beam or a new header will ask what was done and why. A permitted, engineered repair with documentation is a non-issue. An unpermitted one with no paperwork is a negotiation, and it usually goes against the seller.",
+          "We keep copies of everything we produce, and we're happy to walk a future buyer's inspector or engineer through what was done, years later, if it comes up.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "How do I know if it's a structural problem or just cosmetic?",
+        a: "Cosmetic cracks are usually hairline, don't grow, and don't come with anything else. Structural problems tend to arrive in groups: a crack plus a sloping floor plus a door that sticks, all in the same part of the house. Cracks that reopen after being patched, or that are wide enough to slide a coin into, are worth a look. If you're not sure, a short phone conversation usually sorts out whether a visit is warranted.",
+      },
+      {
+        q: "Can you tell what's wrong without opening up walls?",
+        a: "Often, from the attic and crawlspace and the pattern of symptoms. Sometimes we need to open a small inspection hole to confirm what's behind a finish before we commit to a design. We'd rather cut one square foot of drywall on purpose than design around a guess.",
+      },
+      {
+        q: "Someone removed a wall in my house before I bought it. Is that a problem?",
+        a: "It depends on what they put in its place. If there's an adequately sized beam with proper bearing, it's fine. If there's an undersized header or nothing at all, the floor above will eventually tell you. We can evaluate an existing opening and either document that it's adequate or design the fix.",
+      },
+      {
+        q: "Do you handle termite damage repairs?",
+        a: "Yes, after the pest company has treated the house. We assess which framing members are still sound, design the sistering or replacement for the ones that aren't, and can perform the repair. Termite damage is often more extensive than it looks from the outside of the wood.",
+      },
+      {
+        q: "Will my insurance cover a structural repair?",
+        a: "It depends on the cause and your policy. Sudden events like storms and burst pipes are commonly covered. Long-term issues like gradual rot, termites, and settlement usually aren't. Where a claim is possible, an engineering report that clearly identifies the cause is what the adjuster needs, and we write ours with that in mind.",
+      },
+      {
+        q: "How long does a typical structural repair take?",
+        a: "The assessment and design take a week or so. A localized repair is often a day or two of site work plus the finish repairs afterward. Larger jobs, like replacing a beam or reframing a section of floor, take longer, and permitting adds time in front of the work. We'll give you a realistic schedule once we've seen the problem.",
+      },
     ],
   },
   {

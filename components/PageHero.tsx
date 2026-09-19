@@ -5,11 +5,13 @@ export default function PageHero({
   title,
   subtitle,
   ctaLabel,
+  ctaHref,
 }: {
   eyebrow?: string;
   title: string;
   subtitle?: string;
   ctaLabel?: string;
+  ctaHref?: string;
 }) {
   return (
     <section className="border-b border-slate-200 bg-slate-50">
@@ -27,7 +29,7 @@ export default function PageHero({
         )}
         {ctaLabel && (
           <div className="mt-7">
-            <CostEstimatorCTA label={ctaLabel} />
+            <CostEstimatorCTA label={ctaLabel} href={ctaHref} />
           </div>
         )}
       </div>
