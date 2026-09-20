@@ -1609,15 +1609,163 @@ export const SERVICES: Service[] = [
     summary:
       "Structural engineering and licensed construction for tenant improvements and commercial buildouts across the Houston metro.",
     description: [
-      "Commercial buildouts and tenant improvements almost always touch structure somewhere: a wall coming out to open up a retail space, new equipment loads on an existing slab, a mezzanine, or a change of occupancy that triggers a code review.",
+      "Commercial buildouts and tenant improvements almost always touch structure somewhere: a wall coming out to open up a retail space, new equipment loads on an existing slab, a mezzanine, a rooftop unit landing on a roof that wasn't framed for it, or a change of occupancy that triggers a code review nobody budgeted for.",
       "We evaluate the existing structure, engineer whatever the buildout requires, and, being licensed and insured, can build the work ourselves rather than handing it off to a separate contractor.",
-      "We work directly with landlords, property managers, and business owners who need a buildout completed on a lease timeline, with the structural engineering handled by the same firm doing the construction.",
+      "We work directly with landlords, property managers, and business owners who need a buildout completed on a lease timeline, with the structural engineering handled by the same firm doing the construction. This page covers where structure hides in a commercial project, how the Houston commercial permit process treats it, what it costs, and how to keep it from becoming the thing that delays your opening.",
     ],
     signs: [
       "Opening a retail, restaurant, or office space that needs structural changes",
       "A landlord or permitting office is requiring an engineer's review before buildout",
       "Adding equipment, mezzanines, or racking that adds load to an existing structure",
       "You want engineering and construction from a single licensed contractor",
+    ],
+    atAGlance: [
+      "Structural engineering and construction for tenant improvements in retail, restaurant, office, medical, and light industrial space across the Houston metro.",
+      "The usual structural triggers: openings in bearing or demising walls, equipment loads, mezzanines, rooftop units, storefront and dock door changes, racking, and changes of occupancy.",
+      "Commercial permits in Houston go through plan review, and structural sheets need a Texas PE seal. Special inspections are often required for steel and concrete.",
+      "Engineering for a typical TI structural item is a few days to two weeks. Plan review is the long pole, and it runs weeks, not days.",
+      "One firm for the structural drawings and the structural construction, which is the part of a TI most likely to stall between an engineer and a contractor.",
+    ],
+    sections: [
+      {
+        heading: "Where structure hides in a tenant improvement",
+        paragraphs: [
+          "Most tenant improvement budgets are built around finishes, mechanical, electrical, and plumbing. Structure gets a line if someone remembered it. Then the architect's plan calls for an opening in what turns out to be a bearing wall, or the equipment schedule shows a walk-in cooler and a hood that need roof penetrations and a curb, or the city plan reviewer asks for a structural letter on a mezzanine the previous tenant built without one. The structural scope is rarely the largest part of a buildout. It's the part most likely to be discovered late.",
+          "The items that come up most often in Houston TI work:",
+        ],
+        bullets: [
+          "Openings in demising walls, exterior walls, and the occasional interior bearing line, to combine suites, add a storefront, or widen a pass-through.",
+          "Rooftop equipment: HVAC units, kitchen exhaust fans, and condensers set on bar joist or metal deck roofs that need reinforcing or a frame between joists.",
+          "Floor loads: commercial kitchen equipment, walk-in coolers, dental and medical chairs, imaging equipment, fitness racks, compact shelving, and safes on slabs or on elevated floors.",
+          "Mezzanines, new or existing: storage platforms, office mezzanines, and the stairs and guards that go with them.",
+          "Slab cuts and trenches for restaurant plumbing, floor drains, grease interceptors, and underslab electrical, especially in post-tensioned slabs.",
+          "Storefront and dock changes: widening a door, adding an overhead door, or removing a section of tilt-wall or masonry.",
+          "Storage racking and high-piled storage, which the fire code treats as its own permit and which puts point loads on slabs.",
+          "Canopies, awnings, and pylon or wall signs, which are wind-load problems attached to someone else's building.",
+        ],
+      },
+      {
+        heading: "The buildings we work in",
+        paragraphs: [
+          "Houston's commercial stock is dominated by a few structural types, and each one changes how the same TI item gets solved. Single-story strip centers and pad sites are typically steel columns, open-web bar joists, and a metal roof deck, with tilt-wall concrete or CMU exterior walls and non-bearing steel stud partitions inside. Equipment on the roof and openings in the exterior walls are the usual questions there. Older masonry buildings in the Heights, Montrose, EaDo, and the near east and north sides carry the roof on the walls themselves, which turns a simple opening into a beam-and-bearing design and makes every wall a candidate for being structural.",
+          "Multi-story office buildings are steel or concrete frames where the floor system, not the walls, is the constraint: a floor designed for fifty pounds per square foot of office loading has limits on where a file room, a gym, or a server room can go. Warehouses and flex space are the mezzanine and racking territory, with thick slabs that still have limits under a concentrated post. Restaurants and medical suites can be in any of these, and they bring the heaviest equipment and the most slab work.",
+        ],
+        image: {
+          src: "/images/commercial-buildouts-1-bar-joist-survey.jpg",
+          alt: "Structural engineer on a scissor lift in an empty Houston strip-center retail bay with the ceiling grid removed, examining open-web steel bar joists and the metal roof deck above",
+          caption: "The first step in most commercial TI engineering: getting above the ceiling to see what the roof is actually made of, because the lease plan won't say.",
+        },
+      },
+      {
+        heading: "Change of occupancy: the trigger nobody budgets for",
+        paragraphs: [
+          "When a space changes from one use to another, the building code can require the structure to be reviewed for the new use even if nothing structural is being built. A retail bay becoming a restaurant, an office becoming a fitness studio, a warehouse becoming an event venue, a storefront becoming a daycare: each of these moves the space into a different occupancy classification with different floor loads, different fire separation rules, and sometimes different requirements for the roof under new equipment.",
+          "The City of Houston's plan review will flag the change and can ask for a structural evaluation letter stating that the existing structure is adequate for the new loads, or identifying what has to be strengthened. This letter is straightforward when the structure is sound and the loads are similar. It's a design project when a second-floor office is becoming a gym. Either way, it's better to know at the lease negotiation stage than at plan review, and a short structural review before signing is one of the least expensive ways to avoid a bad lease.",
+        ],
+      },
+      {
+        heading: "Equipment loads, and why the cut sheet matters",
+        paragraphs: [
+          "Every piece of heavy equipment comes with a manufacturer's cut sheet showing its operating weight and footprint. That document is the whole structural question. A walk-in cooler is not heavy per square foot, but the compressor and condenser it needs on the roof are, and they vibrate. A commercial kitchen line concentrates weight along one wall where the slab may have a trench under it. A dental chair is modest until you add the patient, the delivery system, and the anchor loads. Compact rolling shelving in a records room is one of the heaviest things that goes into an office building, and it gets specified by a furniture vendor who never talks to an engineer.",
+          "We ask for the equipment schedule and the cut sheets early, check them against the slab or the floor framing, and tell you which items need a pad, a reinforced area, a spreader frame on the roof, or a different location. Moving a piece of equipment ten feet on the plan is free. Reinforcing a floor after the equipment is installed is not.",
+        ],
+      },
+      {
+        heading: "Mezzanines",
+        paragraphs: [
+          "A mezzanine is a small building inside a building, and the code treats it that way. Beyond the steel or wood framing and its connections, there are area limits relative to the room below, stair and guard requirements, egress, and often a sprinkler question. Existing mezzanines that a previous tenant built are a frequent source of plan review comments, because they were rarely permitted and the new tenant inherits the problem when they apply for their own permit.",
+          "For new mezzanines we design the framing, the columns and base plates, and the slab check under each column, and coordinate with the architect on the code items. For existing ones we evaluate what's there, document it, and design the reinforcement if it needs any. A surprising number of them are fine once someone has looked. A few are holding up storage on framing that was never meant for it.",
+        ],
+      },
+      {
+        heading: "Slab work in restaurants and medical suites",
+        paragraphs: [
+          "Restaurant buildouts cut more concrete than any other TI type: trenches for waste lines, floor drains, grease interceptors, and sometimes a lowered floor for a walk-in. Medical suites cut slabs for plumbing at every operatory and for underslab conduit. In a conventional slab this is routine. In a post-tensioned slab, common in Houston commercial construction since the 1980s, cutting without locating the tendons first can sever a cable under tens of thousands of pounds of tension, which is dangerous and expensive to repair.",
+          "The structural scope for slab work is locating the tendons or rebar with scanning, laying out the cuts to avoid them, specifying how the slab is restored, and, where a tendon has to be crossed, designing the detail for it. This is a small engineering fee that protects a very large mistake.",
+        ],
+        image: {
+          src: "/images/commercial-buildouts-2-restaurant-slab-trench.jpg",
+          alt: "Restaurant tenant improvement in a Houston commercial space with a neatly cut concrete slab trench for plumbing running across the future kitchen, steel stud walls framed and a walk-in cooler box in the background",
+          caption: "Restaurant slab work: the trench layout is designed around the slab's reinforcing, which in a post-tensioned slab means scanning before the saw touches the floor.",
+        },
+      },
+      {
+        heading: "How the commercial permit process treats structure",
+        paragraphs: [
+          "Commercial permits in the City of Houston go through a plan review that residential work mostly avoids. The drawing set is reviewed by several disciplines, and anything structural has to appear on sealed structural sheets or in a sealed letter from a Texas professional engineer. Reviewers issue comments, the design team responds, and the cycle repeats until the set is approved. Structural comments are a common reason a set goes back for a second round, usually because a structural item was drawn by the architect without engineering behind it.",
+          "Once the permit is issued, the code requires special inspections for certain structural work: field welding, high-strength bolting, concrete placement, anchors in concrete, and masonry. These are third-party inspections separate from the city's, arranged by the owner or contractor and reported to the city before the certificate of occupancy. They add cost and scheduling, and they're often left out of early budgets. We identify which ones your project will need when we do the design, so they're in the schedule from the start.",
+          "The suburbs each run their own process. Sugar Land, Pearland, Katy, and The Woodlands have their own plan review with their own timelines and their own quirks, and unincorporated Harris County has a lighter process with a stronger emphasis on floodplain and fire. We've worked through all of them.",
+        ],
+      },
+      {
+        heading: "Working with the landlord's team",
+        paragraphs: [
+          "Most commercial leases require landlord approval for structural work, and many landlords have their own architect or engineer who reviews tenant plans. That review goes faster when the structural drawings answer the questions the landlord's engineer will ask: what's being cut, what's carrying the load now, what will carry it afterward, and how the building's existing systems are protected. We produce drawings with that reviewer in mind, and we're available to talk to them directly, which usually resolves comments in a phone call rather than a round of revisions.",
+          "Where the landlord is doing the structural work as part of a delivery condition, and the tenant's contractor is doing the rest, the scope boundary has to be clear on paper. Openings, roof reinforcement for equipment, and slab restoration are the items that most often fall in the gap between the two contracts.",
+        ],
+      },
+      {
+        heading: "Building in an occupied center",
+        paragraphs: [
+          "Most TI work happens with neighbors on both sides who are open for business. Demolition of a shared wall, roof penetrations over an operating restaurant, and concrete cutting next to a medical office all have to be scheduled around the people who are already there. Noise and dust limits, after-hours work, fire watch when sprinklers are shut down, and protection of the neighbor's finishes are part of the plan, and the property manager will expect to see them addressed before approving a start date.",
+          "Structural work is the loudest and dustiest part of most buildouts, so it tends to be the part that gets scheduled for nights and weekends. That affects cost and the timeline, and it's worth knowing when you're building the schedule.",
+        ],
+      },
+      {
+        heading: "Racking, high-piled storage, and warehouse floors",
+        paragraphs: [
+          "Warehouse and flex tenants bring their own structural questions. Storage racking over a certain height needs its own permit under the fire code, and the racks themselves are designed by the rack manufacturer, but the slab under them is the tenant's problem. A loaded pallet rack puts several thousand pounds on each base plate, and the slab's thickness, its reinforcing, and the soil under it determine whether that's fine or whether the slab will crack and settle under the rack legs.",
+          "We review the rack layout against the slab, specify base plate sizes or bearing pads where needed, and provide the structural letter the racking permit requires. The same applies to mezzanine-style pick modules, conveyor systems, and the occasional overhead crane.",
+        ],
+        image: {
+          src: "/images/commercial-buildouts-3-warehouse-mezzanine.jpg",
+          alt: "New steel mezzanine with a guardrail and stair inside a Houston warehouse, office framing going in beneath it and pallet racking along the far wall",
+          caption: "A warehouse mezzanine: the framing, the columns, and the slab under each column designed together, with the stair, guards, and area limits coordinated with the code.",
+        },
+      },
+      {
+        heading: "Storefronts, canopies, and signs",
+        paragraphs: [
+          "Changing the front of a space is usually an architectural decision with a structural consequence. Widening a storefront opening in a tilt-wall panel or a CMU wall means a new header and often a check of the panel's ability to span around the larger hole. Adding a canopy attaches a wind-loaded element to a building that wasn't detailed for it. A wall sign or a pylon sign is a wind and foundation problem the sign company's drawings may not fully address, and the city will ask for engineering on anything over a modest size.",
+          "These are small design items individually. They matter because they're on the critical path to opening: the storefront can't be glazed until the header is in, and the sign permit can't be issued without the structural letter.",
+        ],
+      },
+      {
+        heading: "What it costs",
+        paragraphs: [
+          "Structural engineering for a typical TI item, such as a single opening, an equipment load check, a rooftop unit frame, or a racking letter, is generally in the low four figures, and a full structural sheet set for a buildout with several items is priced by scope. A change of occupancy evaluation letter for a sound building is at the lower end of that range. Mezzanine design depends on size and use.",
+          "Construction costs vary too widely by item to summarize usefully, but the pattern is consistent: the structural construction is a modest share of most TI budgets, and the cost of not engineering it, in plan review delay, a stopped job, or a repair, is much larger. A structural review of the space before the lease is signed, or at least before the architect finishes the plans, is the cheapest money in the project.",
+        ],
+      },
+      {
+        heading: "Timeline, and where the structure fits",
+        paragraphs: [
+          "Engineering for individual TI items takes a few days to two weeks. A full structural set for a larger buildout takes two to four weeks alongside the architect's drawings. Plan review is the long pole: several weeks in the City of Houston for a commercial set, with structural comments adding a cycle if the first submission wasn't complete. Special inspections are scheduled during construction and have to be closed out before the certificate of occupancy.",
+          "The practical advice is to get the structural questions answered before the architectural set is finished, so the structural sheets go in with the first submission rather than as a response to comments. That single decision saves more time than anything that happens during construction.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Do I need a structural engineer for a tenant buildout?",
+        a: "If the buildout includes any opening in a wall, any equipment on the roof, heavy equipment on the floor, a mezzanine, a slab cut in a post-tensioned building, racking, a sign or canopy, or a change of occupancy, yes. The City of Houston's plan review will ask for sealed structural documents on those items. Many buildouts that seem to be all finishes turn out to include at least one of them.",
+      },
+      {
+        q: "Can you tell me if a space will work before I sign the lease?",
+        a: "Usually, with a short review of the space and your equipment list. We look at the roof framing, the slab, the wall types, and the occupancy change if there is one, and tell you what structural work the buildout will likely need. It's a small fee compared to the cost of finding out after the lease is signed.",
+      },
+      {
+        q: "What are special inspections and do I have to pay for them?",
+        a: "Special inspections are third-party inspections the building code requires for certain structural work: welding, high-strength bolting, concrete, anchors, and masonry among them. They're separate from the city inspector's visits and are arranged and paid for by the owner or contractor. Whether your project needs them depends on the structural scope, and we identify them during design so they're in the budget.",
+      },
+      {
+        q: "The previous tenant built a mezzanine. Is it my problem now?",
+        a: "Often, yes. When you apply for your own permit, the plan reviewer will see the mezzanine and ask for documentation. If none exists, an engineer has to evaluate it and either document that it's adequate or design the reinforcement. It's usually better to address this before submitting than to have it come back as a comment.",
+      },
+      {
+        q: "Can the structural work happen while the neighbors are open?",
+        a: "Yes, with planning. Demolition, roof penetrations, and concrete cutting are usually scheduled for nights or weekends in an occupied center, with dust and noise controls and, when sprinklers are shut down, a fire watch. The property manager will typically want to see that plan before approving a start date.",
+      },
     ],
   },
   {
