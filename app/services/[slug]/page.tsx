@@ -30,6 +30,21 @@ const SERVICE_CTA: Record<string, { label: string; href?: string }> = {
   "steel-beam-installation": { label: "Get a Steel Beam Installation Quote", href: "/contact" },
 };
 
+// Service copy in lib/business.ts is plain strings; this lets a paragraph or
+// bullet carry an inline internal link written as [anchor text](/path).
+function renderInline(text: string) {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+  return parts.map((part, i) => {
+    const m = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (!m) return part;
+    return (
+      <Link key={i} href={m[2]} className="text-[#0B1F3A] underline hover:no-underline">
+        {m[1]}
+      </Link>
+    );
+  });
+}
+
 export async function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));
 }
@@ -137,7 +152,7 @@ export default async function ServicePage({ params }: Props) {
 
           {service.description.map((p, i) => (
             <p key={i} className="mb-5">
-              {p}
+              {renderInline(p)}
             </p>
           ))}
 
@@ -148,13 +163,13 @@ export default async function ServicePage({ params }: Props) {
               </h2>
               {s.paragraphs.map((p, i) => (
                 <p key={i} className="mb-5">
-                  {p}
+                  {renderInline(p)}
                 </p>
               ))}
               {s.bullets?.length ? (
                 <ul className="mb-5 list-disc space-y-2 pl-5">
                   {s.bullets.map((b) => (
-                    <li key={b}>{b}</li>
+                    <li key={b}>{renderInline(b)}</li>
                   ))}
                 </ul>
               ) : null}

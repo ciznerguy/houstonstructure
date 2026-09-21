@@ -585,7 +585,7 @@ export const SERVICES: Service[] = [
         heading: "The five problems we see most",
         paragraphs: [
           "Sagging beams and joists come first. A beam that was fine when it was installed can deflect over the years as the wood creeps under constant load, especially if it was sized to the minimum to begin with. In Houston the humidity doesn't help. You'll see it as a ceiling that isn't flat, a floor with a low spot in the middle of the room, or a ridge line on the roof that dips between the walls.",
-          "Second is the wall someone removed without engineering. This is the single most common structural repair we do. A previous owner or a contractor opened up the kitchen, took out a bearing wall, put in a header that looked about right, and moved on. The floor above starts to sag, the drywall cracks, and the doors in the upstairs hallway go out of square. We cover this in more depth on our load-bearing wall page, but the fix is a properly sized beam with proper bearing at each end, installed after the load is temporarily carried elsewhere.",
+          "Second is the wall someone removed without engineering. This is the single most common structural repair we do. A previous owner or a contractor opened up the kitchen, took out a bearing wall, put in a header that looked about right, and moved on. The floor above starts to sag, the drywall cracks, and the doors in the upstairs hallway go out of square. We cover this in more depth on our [load-bearing wall removal page](/services/load-bearing-wall-removal), but the fix is a properly sized beam with proper bearing at each end, installed after the load is temporarily carried elsewhere.",
           "Third is water damage to framing. Roof leaks that ran down inside a wall for years, a bathroom that leaked into the floor system under the tub, a window that was never flashed properly. Wet wood rots, rotted wood doesn't carry load, and by the time it's discovered the damage is usually more extensive than what's visible.",
           "Fourth is termite damage, which in Houston is not a question of if. Subterranean termites eat the framing from the inside out, so a stud or a sill plate can look fine and be hollow. Once the pest company has treated the house, someone has to figure out which members are still structural and which need to be sistered or replaced.",
           "Fifth is storm damage. Wind uplift on the roof, a tree limb through the rafters, or racking from a hard gust that leaves the framing out of plumb. Hurricane season produces a wave of these, and insurance adjusters want an engineer's assessment of what was damaged and what it takes to repair it.",
@@ -816,7 +816,7 @@ export const SERVICES: Service[] = [
       {
         heading: "Structural letters for permits",
         paragraphs: [
-          "Houston and the surrounding cities require a structural letter from a licensed engineer for a range of residential and commercial permits: load-bearing wall removals, additions, foundation repairs, certain change-of-use conversions, and repairs to storm damage. The letter has to state that an engineer has evaluated the existing structure and either finds it adequate for the proposed work or specifies what's required to make it so.",
+          "Houston and the surrounding cities require a structural letter from a licensed engineer for a range of residential and commercial permits: [load-bearing wall removals](/services/load-bearing-wall-removal), additions, foundation repairs, certain change-of-use conversions, and repairs to storm damage. The letter has to state that an engineer has evaluated the existing structure and either finds it adequate for the proposed work or specifies what's required to make it so.",
           "Each permitting office has its own format preferences and its own sticking points. We've submitted enough of these to know what the City of Houston wants versus what Sugar Land or Pearland wants, and we write the letter so it goes through the first time. If the permit is for work we're also designing, the letter is part of that package. If a contractor just needs the letter, that's a quick site visit and a short turnaround.",
         ],
       },
@@ -950,7 +950,7 @@ export const SERVICES: Service[] = [
         heading: "Second opinions before you sign",
         paragraphs: [
           "The most valuable hour we sell is often the one before a homeowner signs a foundation repair contract. Someone has a proposal for twenty-two piers at a price with a lot of zeros, an elevation drawing they don't know how to read, and a sales deadline. We'll go through the proposal with you, explain what the elevation numbers actually say, tell you whether the scope matches the evidence, and flag what's missing. Sometimes the plan is reasonable and the call is just reassurance. Sometimes the evidence supports eight piers, or none.",
-          "The same applies to any structural bid: a wall removal plan, a contractor's sketch for an addition, a roof framing repair after a storm. We're not evaluating the contractor. We're evaluating whether the work proposed matches the problem, and whether anything important has been left out. You get a short written summary you can take back to the contractor or to another bidder.",
+          "The same applies to any structural bid: a [load-bearing wall removal](/services/load-bearing-wall-removal) plan, a contractor's sketch for an addition, a roof framing repair after a storm. We're not evaluating the contractor. We're evaluating whether the work proposed matches the problem, and whether anything important has been left out. You get a short written summary you can take back to the contractor or to another bidder.",
           "This is a document review and a conversation, not an inspection. If the question can't be answered without seeing the house, we'll say so and quote a visit.",
         ],
       },
@@ -1090,7 +1090,7 @@ export const SERVICES: Service[] = [
         paragraphs: [
           "This service has two parts, and you can buy either or both. The first is the engineering: a site visit, a determination of whether the wall carries load, and if it does, a stamped letter that sizes the replacement beam and its supports and specifies the temporary shoring. That letter is what the City of Houston, Sugar Land, Katy, and the rest of the metro want to see before they issue a permit, and it's what a good contractor wants before they touch the wall.",
           "The second part is the construction: shoring the load, taking the wall out, setting the beam and posts, and patching the ceiling, floor, and walls where the old wall was. Because we're also a licensed general contractor, we can do this part too. Plenty of homeowners already have a contractor lined up for the larger remodel, and in that case our letter becomes part of that contractor's scope and we step back.",
-          "If you want the background on how to tell whether a wall is bearing, what beam options exist, and why guessing goes wrong, our load-bearing wall removal guide covers it at length. This page is about what happens when you hire us to do it.",
+          "If you want the background on how to tell whether a wall is bearing, what beam options exist, and why guessing goes wrong, our [load-bearing wall removal guide](/guides/load-bearing-wall-removal) covers it at length. This page is about what happens when you hire us to do it.",
         ],
       },
       {
@@ -1203,7 +1203,7 @@ export const SERVICES: Service[] = [
       {
         heading: "Commercial spaces",
         paragraphs: [
-          "Wall removals in office suites, retail bays, and restaurants follow the same structural logic with a different permitting path, landlord approvals, and fire-rating questions on top. We handle those too. Our commercial wall removal guide walks through what changes when the building isn't a house.",
+          "Wall removals in office suites, retail bays, and restaurants follow the same structural logic with a different permitting path, landlord approvals, and fire-rating questions on top. We handle those too. Our [commercial wall removal guide](/guides/commercial-wall-removal) walks through what changes when the building isn't a house.",
         ],
       },
     ],
@@ -1279,7 +1279,7 @@ export const SERVICES: Service[] = [
         ],
         bullets: [
           "Room additions and second stories, where the foundation, the tie-in to the existing framing, and the roof connection are the whole job.",
-          "Load-bearing wall removals and steel beam installs, from the shoring plan to the patched ceiling.",
+          "[Load-bearing wall removals](/services/load-bearing-wall-removal) and [steel beam installs](/services/steel-beam-installation), from the shoring plan to the patched ceiling.",
           "Foundation repair followed by the interior work that comes after leveling: cracked drywall, doors that need rehanging, tile and flooring that opened up.",
           "Structural repairs to framing, floors, and roofs, including the finish work that closes them back up.",
           "Rebuilds after storm damage, fire, or a vehicle strike, where the insurer needs a scope from an engineer and a contractor's estimate that matches it.",
@@ -1466,7 +1466,7 @@ export const SERVICES: Service[] = [
           "Each one loads the existing structure in a different place, which is why we don't quote one like the other:",
         ],
         bullets: [
-          "Bump-out: a question for the soil and the edge of the existing slab. A new foundation goes in next to an old one, and the two have to move together.",
+          "Bump-out: a question for the soil and the edge of the existing slab. A new foundation goes in next to an old one, and the two have to move together. The exterior wall between the old room and the new one is almost always bearing, so opening it up is a [load-bearing wall removal](/services/load-bearing-wall-removal) inside the addition project.",
           "Second story: a question for every wall, every footing, and every stud line in the house below it.",
           "Garage conversion: can a four-inch slab with no vapor barrier and a slope toward the door become a floor you'd want to live on?",
           "Casita: mostly setbacks, utilities, and drainage, plus its own foundation designed for the lot.",
@@ -1630,7 +1630,7 @@ export const SERVICES: Service[] = [
       {
         heading: "Where structure hides in a tenant improvement",
         paragraphs: [
-          "Most tenant improvement budgets are built around finishes, mechanical, electrical, and plumbing. Structure gets a line if someone remembered it. Then the architect's plan calls for an opening in what turns out to be a bearing wall, or the equipment schedule shows a walk-in cooler and a hood that need roof penetrations and a curb, or the city plan reviewer asks for a structural letter on a mezzanine the previous tenant built without one. The structural scope is rarely the largest part of a buildout. It's the part most likely to be discovered late.",
+          "Most tenant improvement budgets are built around finishes, mechanical, electrical, and plumbing. Structure gets a line if someone remembered it. Then the architect's plan calls for an opening in what turns out to be a [bearing wall](/services/load-bearing-wall-removal), or the equipment schedule shows a walk-in cooler and a hood that need roof penetrations and a curb, or the city plan reviewer asks for a structural letter on a mezzanine the previous tenant built without one. The structural scope is rarely the largest part of a buildout. It's the part most likely to be discovered late.",
           "The items that come up most often in Houston TI work:",
         ],
         bullets: [
@@ -1779,7 +1779,7 @@ export const SERVICES: Service[] = [
     description: [
       "Most of the beams that go into Houston homes are wood or engineered lumber, and that's the right call for most openings. Steel is for the jobs wood can't do: a span too long for lumber at any reasonable depth, a floor and a roof both landing on one line, a beam that has to disappear into a shallow ceiling, or an existing beam that's already sagging and needs to be replaced with something stiffer in the same space.",
       "We engineer the beam, the columns under it, the footings under those, and every connection in between, and then we fabricate and install it ourselves as a licensed contractor. One firm owns the calculation and the result, which matters more with steel than with wood, because a steel beam that's set wrong is expensive to fix and hard to spot once it's covered.",
-      "This page walks through when steel is the right answer, what goes into sizing and installing one, what it costs in the Houston area, and what to look for if you're comparing bids.",
+      "This page walks through when steel is the right answer, what goes into sizing and installing one, what it costs in the Houston area, and what to look for if you're comparing bids. If your question is still whether the wall is bearing at all, start with our [load-bearing wall removal](/services/load-bearing-wall-removal) page; this one picks up where the answer is yes and the beam has to be steel.",
     ],
     signs: [
       "Removing a load-bearing wall and replacing it with a beam",
