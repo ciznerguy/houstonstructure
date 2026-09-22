@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { BUSINESS, SERVICES, SERVICE_AREAS } from "@/lib/business";
 import { GUIDES } from "@/lib/guides";
+import { PROJECTS } from "@/lib/projects";
 
 const NAV = [
   { href: "/services", label: "Services" },
   { href: "/locations", label: "Service Areas" },
+  { href: "/projects", label: "Projects" },
   { href: "/guides", label: "Guides" },
   { href: "/reviews", label: "Reviews" },
   { href: "/about", label: "About" },
@@ -15,6 +17,7 @@ const DROPDOWNS: Record<string, { href: string; label: string }[]> = {
   "/services": SERVICES.map((s) => ({ href: `/services/${s.slug}`, label: s.shortName })),
   "/locations": SERVICE_AREAS.map((c) => ({ href: `/locations/${c.slug}`, label: `${c.name}, TX` })),
   "/guides": GUIDES.map((g) => ({ href: `/guides/${g.slug}`, label: g.title })),
+  "/projects": PROJECTS.map((p) => ({ href: `/projects/${p.slug}`, label: p.title })),
 };
 
 export default function Header() {
