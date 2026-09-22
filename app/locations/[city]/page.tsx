@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
 import { BUSINESS, SERVICE_AREAS, SERVICES } from "@/lib/business";
+import { PROJECTS } from "@/lib/projects";
 
 type Props = {
   params: Promise<{ city: string }>;
@@ -120,6 +121,28 @@ export default async function LocationPage({ params }: Props) {
                 Call {BUSINESS.phone}
               </a>
             </div>
+
+            {PROJECTS.filter((p) => p.citySlug === area.slug).map((p) => (
+              <Link
+                key={p.slug}
+                href={`/projects/${p.slug}`}
+                className="mt-6 block overflow-hidden rounded-sm border border-slate-200 hover:border-[#0B1F3A]"
+              >
+                <img
+                  src={p.image.replace(".jpg", "-800.jpg")}
+                  alt={`${p.title} (illustrative rendering, not a photo of the project)`}
+                  loading="lazy"
+                  className="h-36 w-full object-cover"
+                />
+                <div className="p-5">
+                  <div className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
+                    Recent project in {area.name}
+                  </div>
+                  <div className="mt-2 font-semibold text-[#0B1F3A]">{p.title}</div>
+                  <div className="mt-1 text-sm text-slate-600">{p.summary}</div>
+                </div>
+              </Link>
+            ))}
 
             <div className="mt-6">
               <div className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">

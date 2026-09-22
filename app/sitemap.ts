@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { BUSINESS, SERVICES, SERVICE_AREAS } from "@/lib/business";
 import { GUIDES } from "@/lib/guides";
+import { PROJECTS } from "@/lib/projects";
 
 export const dynamic = "force-static";
 
@@ -77,5 +78,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...(guideImages[g.slug] && { images: guideImages[g.slug].map((img) => `${base}${img}`) }),
   }));
 
-  return [...staticPages, ...servicePages, ...locationPages, ...guidePages];
+  const projectPages: MetadataRoute.Sitemap = PROJECTS.map((p) => ({
+    url: `${base}/projects/${p.slug}`,
+    lastModified: now,
+    changeFrequency: "yearly",
+    priority: 0.6,
+    images: p.images.map((img) => `${base}${img}`),
+  }));
+
+  return [...staticPages, ...servicePages, ...locationPages, ...guidePages, ...projectPages];
 }
