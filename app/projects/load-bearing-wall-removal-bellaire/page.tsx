@@ -4,14 +4,66 @@ import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
 import { BUSINESS } from "@/lib/business";
 
-// Source material: Levi's own project package for this job.
-// Images are pending: see scratchpad/bellaire-image-prompts.md. Beam sizes and
-// connection details are deliberately absent, per that package.
+// Source material: Levi's own project package for this job. Beam sizes and
+// connection details are deliberately absent, per that package. The five
+// images are illustrative renderings, not documentary photos, and every
+// caption says so.
+const IMG_NOTE = "illustrative image, not a documentary photo of this project";
+
+type Photo = { src: string; alt: string; caption: string };
+const photos: Record<"before" | "shoring" | "level" | "correction" | "after", Photo> = {
+  before: {
+    src: "/images/project-bellaire-open-plan-1-before.jpg",
+    alt: "First floor interior before remodeling, chopped into separate rooms by three full-height walls, with a staircase to the second floor and a dated kitchen visible through the openings",
+    caption: "Before: three walls split the first floor into separate rooms while carrying the floor above.",
+  },
+  shoring: {
+    src: "/images/project-bellaire-open-plan-2-shoring.jpg",
+    alt: "Two rows of adjustable steel shoring posts with timber headers running the length of a stripped first floor, ceiling removed and second-floor joists exposed above",
+    caption: "Temporary shoring carried the second-floor loads before any of the bearing walls came out.",
+  },
+  level: {
+    src: "/images/project-bellaire-open-plan-3-level-check.jpg",
+    alt: "Close-up of a spirit level lying flat on rough timber with the bubble sitting well outside the marks, showing the floor is out of level",
+    caption: "With the structure exposed, the level told the story: the floor above was not sitting where it should.",
+  },
+  correction: {
+    src: "/images/project-bellaire-open-plan-4-correction.jpg",
+    alt: "Open first floor with all three walls removed, new beams spanning the ceiling and steel shoring posts still standing beneath them",
+    caption: "New beams in place where each wall used to stand, with the shoring still carrying the load.",
+  },
+  after: {
+    src: "/images/project-bellaire-open-plan-5-after.jpg",
+    alt: "Finished open-plan first floor running from a living area through a dining table to a white kitchen, with a flat continuous ceiling and no visible beam",
+    caption: "After: one connected living, dining and kitchen space, with the new structure hidden above the ceiling.",
+  },
+};
+
+function Figure({ photo }: { photo: Photo }) {
+  return (
+    <>
+      <img
+        src={photo.src}
+        srcSet={`${photo.src.replace(".jpg", "-800.jpg")} 800w, ${photo.src} 1600w`}
+        sizes="(min-width: 768px) 66vw, 100vw"
+        alt={`${photo.alt} (${IMG_NOTE})`}
+        loading="lazy"
+        className="mb-2 h-[300px] w-full rounded-sm object-cover sm:h-[400px]"
+      />
+      <p className="mt-2 mb-8 text-sm text-slate-500">
+        {photo.caption} <span className="text-slate-400">Illustrative image.</span>
+      </p>
+    </>
+  );
+}
 
 export const metadata: Metadata = {
   title: "Load-Bearing Wall Removal in Bellaire, TX: A Project",
   description:
     "Three load-bearing walls in a Bellaire home came out to create one open living space. Temporary shoring, a second floor found out of level during demolition, and the structural correction that followed.",
+  openGraph: {
+    images: [{ url: "/images/project-bellaire-open-plan-5-after.jpg", width: 1600, height: 900 }],
+  },
 };
 
 const faqs = [
@@ -53,6 +105,7 @@ export default function BellaireWallRemovalProjectPage() {
     "@type": "Article",
     headline: "Removing Three Load-Bearing Walls in Bellaire, TX",
     description: metadata.description,
+    image: `${BUSINESS.siteUrl}${photos.after.src}`,
     author: { "@type": "Organization", name: BUSINESS.name, url: BUSINESS.siteUrl },
     publisher: { "@type": "Organization", name: BUSINESS.name, url: BUSINESS.siteUrl },
     about: {
@@ -75,6 +128,19 @@ export default function BellaireWallRemovalProjectPage() {
         ctaHref="/contact"
       />
 
+      <div className="mx-auto max-w-6xl px-5 pt-10">
+        <img
+          src={photos.after.src}
+          srcSet={`${photos.after.src.replace(".jpg", "-800.jpg")} 800w, ${photos.after.src} 1600w`}
+          sizes="100vw"
+          alt={`${photos.after.alt} (${IMG_NOTE})`}
+          fetchPriority="high"
+          className="h-[300px] w-full rounded-sm object-cover sm:h-[440px]"
+        />
+        <p className="mt-2 text-sm text-slate-500">
+          {photos.after.caption} <span className="text-slate-400">Illustrative image.</span>
+        </p>
+      </div>
 
       <section className="mx-auto max-w-6xl px-5 py-14">
         <div className="grid gap-10 md:grid-cols-3">
@@ -110,6 +176,7 @@ export default function BellaireWallRemovalProjectPage() {
               behind it before anything is cut. That part was settled before demolition started. What could not
               be settled in advance was what the framing would look like once it was open.
             </p>
+            <Figure photo={photos.before} />
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">Support the structure before removing it</h2>
             <p className="mb-5">
@@ -122,6 +189,7 @@ export default function BellaireWallRemovalProjectPage() {
               modification, not just at the start and the end of it. Shoring that goes in after the first wall is
               already open is shoring that arrived late.
             </p>
+            <Figure photo={photos.shoring} />
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">The discovery: the second floor was not level</h2>
             <p className="mb-5">
@@ -135,6 +203,7 @@ export default function BellaireWallRemovalProjectPage() {
               sealed inside a newly finished room. Or stop, measure, and fix it. The second option costs more on
               the day and less over the life of the house, and it is the one we took.
             </p>
+            <Figure photo={photos.level} />
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">Correcting the structure instead of hiding it</h2>
             <p className="mb-5">
@@ -147,6 +216,7 @@ export default function BellaireWallRemovalProjectPage() {
               The point of the work was never only that the space should look better. It was that the structure
               behind the finishes should be properly supported and properly aligned before anything was covered.
             </p>
+            <Figure photo={photos.correction} />
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">The result</h2>
             <p className="mb-5">

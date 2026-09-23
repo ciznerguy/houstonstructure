@@ -22,7 +22,14 @@ export const PROJECTS: Project[] = [
       "Three first-floor walls carrying the second floor came out to create one open living space. Demolition exposed a second floor that was already out of level, so it was corrected before the permanent beams went in.",
     citySlug: "bellaire",
     serviceSlug: "load-bearing-wall-removal",
-    // Images pending: see scratchpad/bellaire-image-prompts.md
+    image: "/images/project-bellaire-open-plan-5-after.jpg",
+    images: [
+      "/images/project-bellaire-open-plan-1-before.jpg",
+      "/images/project-bellaire-open-plan-2-shoring.jpg",
+      "/images/project-bellaire-open-plan-3-level-check.jpg",
+      "/images/project-bellaire-open-plan-4-correction.jpg",
+      "/images/project-bellaire-open-plan-5-after.jpg",
+    ],
   },
   {
     slug: "second-story-addition-katy",
