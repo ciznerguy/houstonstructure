@@ -552,6 +552,17 @@ export default function LoadBearingWallGuidePage() {
               it&rsquo;s the one that keeps the rest of the project from
               going sideways.
             </p>
+            <p className="mb-5">
+              To see how that plays out on a real job, we wrote up a{" "}
+              <Link
+                href="/projects/load-bearing-wall-removal-bellaire"
+                className="text-[#0B1F3A] underline hover:no-underline"
+              >
+                load-bearing wall removal in Bellaire
+              </Link>{" "}
+              where three walls came out and the floor above turned out to need
+              correcting once it was open.
+            </p>
           </div>
 
           <div>

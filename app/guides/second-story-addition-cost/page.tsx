@@ -267,6 +267,24 @@ export default function SecondStoryAdditionCostGuidePage() {
               us take an actual look at your foundation before you finalize
               a floor plan.
             </p>
+            <p className="mb-5">
+              For the questions that come up around the cost, permits, deed
+              restrictions, HOAs and living through the build, see our guide to{" "}
+              <Link
+                href="/guides/home-addition-questions"
+                className="text-[#0B1F3A] underline hover:no-underline"
+              >
+                home addition questions
+              </Link>
+              . To see what one looks like finished, we wrote up a{" "}
+              <Link
+                href="/projects/second-story-addition-katy"
+                className="text-[#0B1F3A] underline hover:no-underline"
+              >
+                second story addition in Katy
+              </Link>
+              .
+            </p>
           </div>
 
           <div>

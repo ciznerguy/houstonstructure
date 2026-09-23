@@ -190,6 +190,37 @@ export default async function ServicePage({ params }: Props) {
             </div>
           ))}
 
+          {(() => {
+            const guide = GUIDES.find((g) => g.slug === SERVICE_TO_GUIDE_SLUG[service.slug]);
+            const projects = PROJECTS.filter((p) => p.serviceSlug === service.slug);
+            if (!guide && !projects.length) return null;
+            return (
+              <>
+                <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
+                  Read more on this
+                </h2>
+                <ul className="mb-5 space-y-3">
+                  {projects.map((p) => (
+                    <li key={p.slug}>
+                      <Link href={`/projects/${p.slug}`} className="font-semibold text-[#0B1F3A] underline hover:no-underline">
+                        {p.title}
+                      </Link>
+                      <div className="mt-1 text-sm text-slate-600">{p.summary}</div>
+                    </li>
+                  ))}
+                  {guide && (
+                    <li>
+                      <Link href={`/guides/${guide.slug}`} className="font-semibold text-[#0B1F3A] underline hover:no-underline">
+                        {guide.title}
+                      </Link>
+                      <div className="mt-1 text-sm text-slate-600">{guide.summary}</div>
+                    </li>
+                  )}
+                </ul>
+              </>
+            );
+          })()}
+
           {service.faqs?.length ? (
             <>
               <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">

@@ -292,6 +292,24 @@ export default function HomeAdditionGuidePage() {
               rest of the addition from running into an expensive surprise
               halfway through.
             </p>
+            <p className="mb-5">
+              If you have more questions before you get that far, we answered the
+              twenty-two we hear most in our guide to{" "}
+              <Link
+                href="/guides/home-addition-questions"
+                className="text-[#0B1F3A] underline hover:no-underline"
+              >
+                home addition questions
+              </Link>
+              , and there is a{" "}
+              <Link
+                href="/guides/room-addition-case-study"
+                className="text-[#0B1F3A] underline hover:no-underline"
+              >
+                room addition case study
+              </Link>{" "}
+              that follows one job from the first visit to the final inspection.
+            </p>
           </div>
 
           <div>
