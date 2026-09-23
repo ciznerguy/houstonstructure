@@ -13,7 +13,7 @@ export default function ContactPage() {
     <>
       <PageHero
         eyebrow="Contact"
-        title="Talk to a structural engineer"
+        title="Talk to our professional construction expert"
         subtitle="Call for the fastest response, or send a few details below and we'll get back to you the same business day."
         ctaLabel="Or Get an Instant Addition Cost Estimate"
       />
