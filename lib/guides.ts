@@ -18,6 +18,12 @@ export const GUIDES: Guide[] = [
       "Why the engineering question should come before the floor plan, building out versus building up, Houston-specific permit issues, and answers to the questions homeowners ask most before adding onto their home.",
   },
   {
+    slug: "home-addition-questions",
+    title: "Home Addition Questions Houston Homeowners Ask",
+    summary:
+      "Twenty-two straight answers on permits, deed restrictions, foundations, HOAs, floodplains, timelines, garage conversions and living through construction, in the order the questions actually come up.",
+  },
+  {
     slug: "how-to-choose-a-structural-engineer",
     title: "How to Choose a Structural Engineer",
     summary:
