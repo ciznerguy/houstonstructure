@@ -190,6 +190,14 @@ export const SERVICE_AREAS: ServiceArea[] = [
         ],
       },
       {
+        heading: "Opening up a Bellaire floor plan",
+        paragraphs: [
+          "The most common structural request we get in Bellaire is not a repair. It's a wall. Owners of the original mid-century houses want the kitchen opened to the living room, and owners of the newer rebuilds want the ground floor connected end to end. In both cases the first question is whether the wall is carrying the structure above it, and in Bellaire the answer is yes more often than people expect.",
+          "In an original 1950s house the bearing line usually runs down the middle of the plan under a simple gable roof, and the span is modest enough for an engineered lumber beam. In a two-story rebuild the same wall may be carrying bedrooms, which pushes the beam toward steel and the columns toward new footings under the slab. Either way it needs an engineer's letter before the city will issue a permit.",
+          "We wrote up one of these jobs in detail, including what happened when demolition showed the floor above was not level. It's here: [removing three load-bearing walls in a Bellaire home](/projects/load-bearing-wall-removal-bellaire).",
+        ],
+      },
+      {
         heading: "Permits and the Bellaire building department",
         paragraphs: [
           "Structural alterations in Bellaire need a permit from the city, and the city expects sealed drawings or a stamped letter from a Texas licensed engineer for anything that changes how the house carries load. That includes removing a wall, adding a room, raising the house, and widening an opening in an exterior wall.",
@@ -1311,6 +1319,7 @@ export const SERVICES: Service[] = [
           "The 1960s and 70s ranch homes across Memorial, Spring Branch, Meyerland, and the older parts of the suburbs were built with a kitchen walled off from everything, and opening that wall to the den is the single most common request we get. In most of these houses the wall in question is bearing, because it sits under the ridge line of a simple gable roof, and the span across the new opening is manageable with an LVL beam.",
           "The 1980s and 90s two-story homes in Katy, Sugar Land, Pearland, and Cypress are a different job. The first-floor wall between the kitchen and family room is often carrying a bedroom above it, sometimes a bathroom, and the beam has to be sized for that floor load as well as the roof. These openings are more likely to need steel, and the posts at each end are more likely to need attention at the foundation.",
           "Newer construction, from the 2000s on, tends to have been built with the open plan already in place, so the requests there are usually about widening an existing opening or removing a short wall between a breakfast area and a living room. These are often simpler, but engineered-lumber framing has its own rules and we check before assuming.",
+          "For a worked example of the two-story version, [a Bellaire project where three bearing walls came out](/projects/load-bearing-wall-removal-bellaire) shows how the shoring, the discovery of an out-of-level floor, and the permanent beams fit together on one job.",
         ],
         image: {
           src: "/images/load-bearing-wall-removal-2-two-story-wall.jpg",

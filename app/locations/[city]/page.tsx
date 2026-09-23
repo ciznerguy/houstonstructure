@@ -6,6 +6,20 @@ import CTASection from "@/components/CTASection";
 import { BUSINESS, SERVICE_AREAS, SERVICES } from "@/lib/business";
 import { PROJECTS } from "@/lib/projects";
 
+// Location copy in lib/business.ts is plain strings; this lets a paragraph
+// carry an inline internal link written as [anchor text](/path).
+function renderInline(text: string) {
+  return text.split(/(\[[^\]]+\]\([^)]+\))/g).map((part, i) => {
+    const m = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (!m) return part;
+    return (
+      <Link key={i} href={m[2]} className="text-[#0B1F3A] underline hover:no-underline">
+        {m[1]}
+      </Link>
+    );
+  });
+}
+
 type Props = {
   params: Promise<{ city: string }>;
 };
@@ -71,7 +85,7 @@ export default async function LocationPage({ params }: Props) {
                 </h2>
                 {section.paragraphs.map((p, j) => (
                   <p key={j} className="mb-5 text-slate-700 leading-relaxed">
-                    {p}
+                    {renderInline(p)}
                   </p>
                 ))}
               </div>

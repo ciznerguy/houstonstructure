@@ -14,7 +14,40 @@ export const metadata: Metadata = {
     "Three load-bearing walls in a Bellaire home came out to create one open living space. Temporary shoring, a second floor found out of level during demolition, and the structural correction that followed.",
 };
 
+const faqs = [
+  {
+    q: "Do I need a permit to remove a load-bearing wall in Bellaire?",
+    a: "Yes. Removing a bearing wall is a structural alteration, and in Bellaire it goes through the city's own building department rather than the City of Houston. The city expects sealed drawings or a stamped letter from a Texas licensed engineer showing the replacement beam, its bearing points, and the temporary shoring. The permit is also your record when you sell.",
+  },
+  {
+    q: "How do I know whether a wall in my Bellaire house is load-bearing?",
+    a: "The reliable answer comes from looking above the ceiling and below the floor, not from tapping the drywall. Walls that run perpendicular to the joists, sit under a ridge line, or line up with a wall on the floor above are the usual candidates. In an original 1950s Bellaire house the bearing line is often down the middle of the plan. In a two-story rebuild it can be almost anywhere, which is why it gets traced rather than guessed.",
+  },
+  {
+    q: "What does removing a load-bearing wall in Bellaire cost?",
+    a: "The engineering, meaning the visit and the stamped letter, is a few hundred dollars for most homes and can approach a thousand when full calculations go with the permit. Construction depends on the span, the beam type, whether it sits flush or below the ceiling, and what is inside the wall. A short opening with an engineered lumber beam is typically in the low thousands. A wide opening in steel under a second floor can reach well into five figures.",
+  },
+  {
+    q: "Can a wall be removed in a two-story Bellaire home?",
+    a: "Usually, but it is a bigger job than the same opening in a single-story house. The wall is carrying the floor above as well as the roof, so the beam is often steel, and the columns at each end frequently need a new footing under the slab. That work is designed before demolition, not discovered during it.",
+  },
+  {
+    q: "What happens if something unexpected turns up once the wall is open?",
+    a: "It happens, and this project is an example: the second floor was already out of level. The right response is to stop, measure, and price the correction before continuing, rather than setting the new beam and sealing the problem inside a finished room. You should expect photos, a written change order, and a decision that is yours to make.",
+  },
+];
+
 export default function BellaireWallRemovalProjectPage() {
+  const faqJson = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+
   const articleJson = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -33,6 +66,7 @@ export default function BellaireWallRemovalProjectPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJson) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJson) }} />
       <PageHero
         eyebrow="Project | Bellaire, TX"
         title="Removing Three Load-Bearing Walls in a Bellaire Home"
@@ -150,12 +184,45 @@ export default function BellaireWallRemovalProjectPage() {
               covers how to tell whether a wall is bearing in the first place.
             </p>
 
+            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">Load-bearing walls in Bellaire homes</h2>
+            <p className="mb-5">
+              Bellaire gives us two fairly different versions of this job. The original 1940s and 1950s houses
+              were built with a simple gable roof and a bearing line down the middle, which is usually the wall
+              between the kitchen and the living room, exactly the one people want gone. Spans there are modest
+              and an engineered lumber beam often does the work.
+            </p>
+            <p className="mb-5">
+              The rebuilds that replaced so many of those houses are a different problem. A first-floor wall in a
+              two-story Bellaire home is frequently carrying bedrooms above it, sometimes a bathroom, and the
+              beam has to be sized for that floor load as well as the roof. Those openings are more likely to
+              need steel, and the columns at each end are more likely to need a footing the slab was not built
+              with. This project was the second kind.
+            </p>
+            <p className="mb-5">
+              Either way the sequence is the same, and it starts in the same place: find out what the wall is
+              actually holding up before anyone quotes a price on removing it.
+            </p>
+
+            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">Questions we hear from Bellaire homeowners</h2>
+            <div className="mb-5 space-y-5">
+              {faqs.map((f) => (
+                <div key={f.q}>
+                  <div className="font-semibold text-slate-800">{f.q}</div>
+                  <p className="mt-1.5 text-slate-600 leading-relaxed">{f.a}</p>
+                </div>
+              ))}
+            </div>
+
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">Planning a structural modification?</h2>
             <p className="mb-5">
               If you are considering removing load-bearing walls, creating a large opening, correcting an uneven
               floor, or reconfiguring a house for a more open layout, the first step is a look at what is
-              actually there. Call {BUSINESS.phone} or send a few details and we will tell you what the project
-              involves before anyone prices it.
+              actually there. That visit and the stamped letter that follows are described in full on our{" "}
+              <Link href="/services/load-bearing-wall-removal" className="text-[#0B1F3A] underline hover:no-underline">
+                load-bearing wall removal
+              </Link>{" "}
+              page. Call {BUSINESS.phone} or send a few details and we will tell you what the project involves
+              before anyone prices it.
             </p>
           </div>
 
