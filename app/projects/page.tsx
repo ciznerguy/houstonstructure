@@ -31,13 +31,15 @@ export default function ProjectsPage() {
                 href={`/projects/${p.slug}`}
                 className="group overflow-hidden rounded-sm border border-slate-200 transition-colors hover:border-[#0B1F3A]"
               >
-                <img
-                  src={p.image}
-                  srcSet={`${p.image.replace(".jpg", "-800.jpg")} 800w, ${p.image} 1600w`}
-                  sizes="(min-width: 640px) 50vw, 100vw"
-                  alt={`${p.title} (illustrative rendering, not a photo of the project)`}
-                  className="h-56 w-full object-cover"
-                />
+                {p.image && (
+                  <img
+                    src={p.image}
+                    srcSet={`${p.image.replace(".jpg", "-800.jpg")} 800w, ${p.image} 1600w`}
+                    sizes="(min-width: 640px) 50vw, 100vw"
+                    alt={`${p.title} (illustrative rendering, not a photo of the project)`}
+                    className="h-56 w-full object-cover"
+                  />
+                )}
                 <div className="p-6">
                   <div className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
                     {[city && `${city.name}, TX`, service?.shortName].filter(Boolean).join(" · ")}

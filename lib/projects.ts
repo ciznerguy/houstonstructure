@@ -8,8 +8,10 @@ export type Project = {
   summary: string;
   citySlug: string; // matches SERVICE_AREAS[].slug
   serviceSlug: string; // matches SERVICES[].slug
-  image: string;
-  images: string[];
+  // Omit both until real (or approved illustrative) images exist for the
+  // project. Cards and sidebars render text-only when there is no image.
+  image?: string;
+  images?: string[];
 };
 
 export const PROJECTS: Project[] = [
@@ -20,14 +22,7 @@ export const PROJECTS: Project[] = [
       "Three first-floor walls carrying the second floor came out to create one open living space. Demolition exposed a second floor that was already out of level, so it was corrected before the permanent beams went in.",
     citySlug: "bellaire",
     serviceSlug: "load-bearing-wall-removal",
-    image: "/images/project-bellaire-open-plan-5-after.jpg",
-    images: [
-      "/images/project-bellaire-open-plan-1-before.jpg",
-      "/images/project-bellaire-open-plan-2-shoring.jpg",
-      "/images/project-bellaire-open-plan-3-level-check.jpg",
-      "/images/project-bellaire-open-plan-4-correction.jpg",
-      "/images/project-bellaire-open-plan-5-after.jpg",
-    ],
+    // Images pending: see scratchpad/bellaire-image-prompts.md
   },
   {
     slug: "second-story-addition-katy",

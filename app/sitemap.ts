@@ -84,7 +84,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: now,
     changeFrequency: "yearly",
     priority: 0.6,
-    images: p.images.map((img) => `${base}${img}`),
+    ...(p.images?.length && { images: p.images.map((img) => `${base}${img}`) }),
   }));
 
   return [...staticPages, ...servicePages, ...locationPages, ...guidePages, ...projectPages];

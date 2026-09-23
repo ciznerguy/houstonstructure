@@ -266,12 +266,14 @@ export default async function ServicePage({ params }: Props) {
               href={`/projects/${p.slug}`}
               className="mt-6 block overflow-hidden rounded-sm border border-slate-200 hover:border-[#0B1F3A]"
             >
-              <img
-                src={p.image.replace(".jpg", "-800.jpg")}
-                alt={`${p.title} (illustrative rendering, not a photo of the project)`}
-                loading="lazy"
-                className="h-36 w-full object-cover"
-              />
+              {p.image && (
+                <img
+                  src={p.image.replace(".jpg", "-800.jpg")}
+                  alt={`${p.title} (illustrative rendering, not a photo of the project)`}
+                  loading="lazy"
+                  className="h-36 w-full object-cover"
+                />
+              )}
               <div className="p-5">
                 <div className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
                   Recent project

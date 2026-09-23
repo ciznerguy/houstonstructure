@@ -4,68 +4,15 @@ import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
 import { BUSINESS } from "@/lib/business";
 
-// Source material: Levi's own project package. The five images in that package
-// are concept images, not documentary photographs of this job, and the package
-// says so. Every caption here is labeled accordingly. Beam sizes and connection
-// details are deliberately absent: the package says not to publish them unless
-// they are verified against the approved engineering documents.
-const IMG_NOTE = "illustrative image, not a documentary photo of this project";
+// Source material: Levi's own project package for this job.
+// Images are pending: see scratchpad/bellaire-image-prompts.md. Beam sizes and
+// connection details are deliberately absent, per that package.
 
 export const metadata: Metadata = {
-  title: "Removing Three Load-Bearing Walls in Bellaire, TX",
+  title: "Load-Bearing Wall Removal in Bellaire, TX: A Project",
   description:
-    "A Bellaire first floor divided by three load-bearing walls became one open living space. Temporary shoring, a second floor found out of level during demolition, and the structural correction that followed.",
-  openGraph: {
-    images: [{ url: "/images/project-bellaire-open-plan-5-after.jpg", width: 1600, height: 900 }],
-  },
+    "Three load-bearing walls in a Bellaire home came out to create one open living space. Temporary shoring, a second floor found out of level during demolition, and the structural correction that followed.",
 };
-
-type Photo = { src: string; alt: string; caption: string };
-const photos: Record<"before" | "shoring" | "level" | "correction" | "after", Photo> = {
-  before: {
-    src: "/images/project-bellaire-open-plan-1-before.jpg",
-    alt: "First floor interior before remodeling, divided into separate rooms by walls that carry the second floor above",
-    caption: "Before: three load-bearing walls split the first floor into separate rooms while carrying the floor above.",
-  },
-  shoring: {
-    src: "/images/project-bellaire-open-plan-2-shoring.jpg",
-    alt: "Rows of adjustable steel shoring posts with timber headers supporting exposed ceiling framing after the drywall was removed",
-    caption: "Temporary shoring carried the second-floor loads before any of the bearing walls came out.",
-  },
-  level: {
-    src: "/images/project-bellaire-open-plan-3-level-check.jpg",
-    alt: "Spirit level resting on an exposed wood floor beam during a level check of the second floor framing",
-    caption: "With the structure exposed, level checks showed the second floor was not sitting where it should.",
-  },
-  correction: {
-    src: "/images/project-bellaire-open-plan-4-correction.jpg",
-    alt: "Open first floor with the walls removed, shoring posts still in place and new framing above while the floor system is brought back into alignment",
-    caption: "The floor above was brought back into alignment while the shoring still carried the load.",
-  },
-  after: {
-    src: "/images/project-bellaire-open-plan-5-after.jpg",
-    alt: "Finished open-plan first floor with a continuous living, dining and kitchen space and a flat ceiling where the walls used to be",
-    caption: "After: one connected living, dining and kitchen space, with the new structure hidden above the ceiling.",
-  },
-};
-
-function Figure({ photo }: { photo: Photo }) {
-  return (
-    <>
-      <img
-        src={photo.src}
-        srcSet={`${photo.src.replace(".jpg", "-800.jpg")} 800w, ${photo.src} 1600w`}
-        sizes="(min-width: 768px) 66vw, 100vw"
-        alt={`${photo.alt} (${IMG_NOTE})`}
-        loading="lazy"
-        className="mb-2 h-[300px] w-full rounded-sm object-cover sm:h-[400px]"
-      />
-      <p className="mt-2 mb-8 text-sm text-slate-500">
-        {photo.caption} <span className="text-slate-400">Illustrative image.</span>
-      </p>
-    </>
-  );
-}
 
 export default function BellaireWallRemovalProjectPage() {
   const articleJson = {
@@ -73,7 +20,6 @@ export default function BellaireWallRemovalProjectPage() {
     "@type": "Article",
     headline: "Removing Three Load-Bearing Walls in Bellaire, TX",
     description: metadata.description,
-    image: `${BUSINESS.siteUrl}${photos.after.src}`,
     author: { "@type": "Organization", name: BUSINESS.name, url: BUSINESS.siteUrl },
     publisher: { "@type": "Organization", name: BUSINESS.name, url: BUSINESS.siteUrl },
     about: {
@@ -89,25 +35,12 @@ export default function BellaireWallRemovalProjectPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJson) }} />
       <PageHero
         eyebrow="Project | Bellaire, TX"
-        title="Removing Three Load-Bearing Walls, and Correcting the Floor Above Them"
-        subtitle="Opening a floor plan looks simple in the finished photo. On this Bellaire house, three of the walls in the way were carrying the entire second floor."
+        title="Removing Three Load-Bearing Walls in a Bellaire Home"
+        subtitle="Opening a floor plan looks simple in the finished photo. Here, three of the walls in the way were carrying the entire second floor, and the floor itself turned out to need correcting."
         ctaLabel="Get a Wall Removal Quote"
         ctaHref="/contact"
       />
 
-      <div className="mx-auto max-w-6xl px-5 pt-10">
-        <img
-          src={photos.after.src}
-          srcSet={`${photos.after.src.replace(".jpg", "-800.jpg")} 800w, ${photos.after.src} 1600w`}
-          sizes="100vw"
-          alt={`${photos.after.alt} (${IMG_NOTE})`}
-          fetchPriority="high"
-          className="h-[300px] w-full rounded-sm object-cover sm:h-[440px]"
-        />
-        <p className="mt-2 text-sm text-slate-500">
-          {photos.after.caption} <span className="text-slate-400">Illustrative image.</span>
-        </p>
-      </div>
 
       <section className="mx-auto max-w-6xl px-5 py-14">
         <div className="grid gap-10 md:grid-cols-3">
@@ -133,11 +66,16 @@ export default function BellaireWallRemovalProjectPage() {
             <h2 className="mb-4 text-xl font-bold text-[#0B1F3A]">When opening a floor plan means rebuilding the load path</h2>
             <p className="mb-5">
               An open-concept interior looks effortless in a finished photograph. Removing walls that hold up an
-              entire second floor is not effortless at all. On this Bellaire house the goal was simple to state:
-              turn a divided first floor into one large connected living space. The problem was that three of the
-              walls in the way were load-bearing, and between them they were carrying most of the floor above.
+              entire second floor is not effortless at all. The goal on this project was simple to state: turn a
+              divided first floor into one large connected living space. The problem was that three of the walls
+              in the way were load-bearing, and between them they were carrying most of the floor above.
             </p>
-            <Figure photo={photos.before} />
+            <p className="mb-5">
+              Taking out a load-bearing wall in Bellaire is a permitted structural alteration, reviewed by the
+              city&rsquo;s own building department rather than by the City of Houston, and it needs engineering
+              behind it before anything is cut. That part was settled before demolition started. What could not
+              be settled in advance was what the framing would look like once it was open.
+            </p>
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">Support the structure before removing it</h2>
             <p className="mb-5">
@@ -150,7 +88,6 @@ export default function BellaireWallRemovalProjectPage() {
               modification, not just at the start and the end of it. Shoring that goes in after the first wall is
               already open is shoring that arrived late.
             </p>
-            <Figure photo={photos.shoring} />
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">The discovery: the second floor was not level</h2>
             <p className="mb-5">
@@ -164,7 +101,6 @@ export default function BellaireWallRemovalProjectPage() {
               sealed inside a newly finished room. Or stop, measure, and fix it. The second option costs more on
               the day and less over the life of the house, and it is the one we took.
             </p>
-            <Figure photo={photos.level} />
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">Correcting the structure instead of hiding it</h2>
             <p className="mb-5">
@@ -177,7 +113,6 @@ export default function BellaireWallRemovalProjectPage() {
               The point of the work was never only that the space should look better. It was that the structure
               behind the finishes should be properly supported and properly aligned before anything was covered.
             </p>
-            <Figure photo={photos.correction} />
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">The result</h2>
             <p className="mb-5">
