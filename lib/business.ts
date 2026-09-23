@@ -157,6 +157,139 @@ export const SERVICE_AREAS: ServiceArea[] = [
     ],
   },
   {
+    slug: "bellaire",
+    name: "Bellaire",
+    blurb:
+      "Bellaire is its own city with its own building department, built on gumbo clay, with a housing stock that runs from 1940s bungalows to brand new three-story rebuilds on the same block. Structural questions here usually start with one decision: repair what's there, or start over.",
+    intro: [
+      "Bellaire sits inside Houston but isn't part of it. It has its own city hall, its own building department, and its own rules about what needs a permit and what has to carry an engineer's seal. If you're planning structural work here, that distinction is the first thing that matters, because the process is not the City of Houston process your contractor may be used to.",
+      "The housing stock is the second thing. Bellaire was built out mostly in the 1940s and 1950s as modest single-story homes, and since the 1990s a large share of those have come down and been replaced with much larger houses. The result is a city where a 1950 slab and a 2020 slab can sit thirty feet apart, and where the question we're asked most often is whether an older home is worth repairing and adding to, or whether the money is better spent on a rebuild.",
+    ],
+    sections: [
+      {
+        heading: "Repair or rebuild: the question behind most Bellaire calls",
+        paragraphs: [
+          "A homeowner with an original Bellaire house and a foundation that has moved is usually weighing three numbers at once: what it costs to level and repair, what it costs to renovate and add on afterward, and what the lot alone is worth to a builder. Those numbers interact, and an engineer's evaluation is what turns them from guesses into something you can decide on.",
+          "Our part is narrow and specific. We measure what the foundation is actually doing, we tell you what it would take to stabilize it, and we tell you honestly whether the existing structure can carry the addition or second story you have in mind. What we will not do is tell you the house is fine when the measurements say otherwise, or tell you it needs a rebuild because a rebuild is a bigger job.",
+          "Plenty of original Bellaire homes are sound and worth keeping. Some aren't. The only way to know which one you have is to measure it.",
+        ],
+      },
+      {
+        heading: "Flooding, elevation, and what it did to the structure",
+        paragraphs: [
+          "Bellaire took serious water in the 2015 and 2016 storms and again during Harvey, and that history shows up in the structural work here in two ways. Some homes were raised, either voluntarily or as a condition of rebuilding, and a raised house is a structural project with its own foundation, framing, and connection questions long after the lift itself is finished. Others were repaired at the finish level while the framing underneath stayed wet longer than anyone realized.",
+          "Water that sat in a wall cavity for days and then got covered with new drywall is the source of a real share of the framing damage we find in this area years later. When we evaluate a home that flooded, we look past the finishes at the sill plates, the bottoms of the studs, the floor framing in a pier and beam house, and anything that was cut or removed during the repair and never put back.",
+          "If you're buying a Bellaire home that flooded and was repaired, this is worth a look before the option period closes, not after.",
+        ],
+      },
+      {
+        heading: "Gumbo clay on small lots",
+        paragraphs: [
+          "The soil under Bellaire is the same expansive clay that moves across most of the Houston area, and the lots are small enough that what your neighbor does affects you. A large tree on a property line pulls moisture from under both houses. A teardown next door means heavy equipment, a new slab, and sometimes new drainage patterns within a few feet of your foundation.",
+          "Drainage is the part homeowners can actually control, and in Bellaire it matters more than average because the lots are flat and the space between houses is tight. Where water goes in the first ten feet from your foundation has more effect on long-term movement than most of the expensive things people try.",
+        ],
+      },
+      {
+        heading: "Permits and the Bellaire building department",
+        paragraphs: [
+          "Structural alterations in Bellaire need a permit from the city, and the city expects sealed drawings or a stamped letter from a Texas licensed engineer for anything that changes how the house carries load. That includes removing a wall, adding a room, raising the house, and widening an opening in an exterior wall.",
+          "The practical advice is to get the engineering done before the plans are finished rather than after the reviewer asks for it. A structural item added as a response to a review comment costs a cycle of review time, and in a project with a construction loan or a lease end date, that cycle is the expensive part.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Is a Bellaire permit different from a City of Houston permit?",
+        a: "Yes. Bellaire is a separate incorporated city with its own building department, its own submittal process, and its own review timeline. A contractor who works mostly inside the City of Houston is not automatically familiar with it. The engineering requirements are similar in substance, but the process and the expectations are the city's own.",
+      },
+      {
+        q: "My Bellaire house flooded and was repaired. Should I have it looked at?",
+        a: "It's worth it, especially if the repair was done quickly or by more than one crew. Finish-level repairs can look complete while the framing underneath stayed wet, and rot in a sill plate or the bottom of a stud doesn't announce itself until it has been there a while. An evaluation tells you whether the structure was actually restored or just covered.",
+      },
+      {
+        q: "Should I repair my older Bellaire home's foundation or tear down and rebuild?",
+        a: "That depends on what the measurements show, what you want to do with the house afterward, and what the lot is worth. We can tell you what the foundation is doing, what stabilizing it would involve, and whether the existing structure can carry the addition you have in mind. That gives you the structural side of the decision. The rest is a financial call, and it's yours.",
+      },
+      {
+        q: "Can I add a second story to a 1950s Bellaire house?",
+        a: "Sometimes, and it depends on the foundation and the walls below more than on the plan. A house built as a single story was built to carry one roof, so the footings and the bearing walls have to be checked against the new load and usually reinforced. The evaluation comes first, before an architect draws the upstairs.",
+      },
+      {
+        q: "A builder is tearing down the house next door. Should I be concerned?",
+        a: "It's reasonable to document your own house before the work starts: photograph the existing cracks, and if you want a baseline you can rely on later, have the foundation elevations measured. If something changes during their construction you then have a before to compare against, which is worth far more than a recollection.",
+      },
+    ],
+  },
+  {
+    slug: "west-university-place",
+    name: "West University Place",
+    blurb:
+      "West U is a small incorporated city of mostly rebuilt homes on small lots, with its own building department and some of the strictest review in the area. Most structural work here happens within tight setbacks and next to a neighbor's wall.",
+    intro: [
+      "West University Place is a separate city with its own building department, and it reviews residential construction more closely than most of its neighbors. If you are planning structural work in West U, the permit process is a real part of the schedule, not a formality at the end of it.",
+      "The housing stock has turned over almost completely. What was built in the 1920s through the 1940s as small bungalows and cottages has largely been replaced by much larger two and three story homes on the same small lots. That combination, tall houses on narrow footprints with very little space between them, shapes nearly every structural question we get here.",
+    ],
+    sections: [
+      {
+        heading: "Tall houses on small lots",
+        paragraphs: [
+          "A typical West U lot is small, and the houses built on them go up rather than out. That changes the structure in ways that matter. Loads from the third floor have to travel down through two floors to the foundation, and the walls that carry them are often the same walls an owner later wants to remove to open up the ground floor. On a narrow house there are fewer walls available to carry that load in the first place, so removing one is a bigger question than it would be in a wider home.",
+          "It also changes how the house resists wind. A tall narrow house needs bracing walls in both directions, and the long open plan that people want on the ground floor competes with that requirement. This is solvable, and it is solved all the time, but it has to be designed rather than assumed.",
+        ],
+      },
+      {
+        heading: "Opening up the ground floor",
+        paragraphs: [
+          "The most common request we get in West U is removing a wall on the first floor of a newer home to connect the kitchen to the living space. In a two or three story house, a first-floor wall is frequently carrying bedrooms above it, sometimes a bathroom, and occasionally a point load from a beam higher up. The beam that replaces it is usually steel rather than lumber, because the depth available inside the ceiling is limited and the load is higher than in a single-story house.",
+          "The ends of that beam are where these projects get interesting. The columns have to reach the foundation, which on a narrow house can mean carrying the load down inside a wall on the floor below, and the slab under each column often needs a footing it wasn't built with. None of this is exotic, but it is why a wall removal in West U is rarely the simplest version of the job.",
+        ],
+      },
+      {
+        heading: "The few original homes left",
+        paragraphs: [
+          "Not everything in West U has been rebuilt. The original bungalows that remain are often on pier and beam foundations, with framing that was adequate for a small one-story house and is now expected to carry a renovation, a rear addition, or a converted attic. Those homes bring a different set of questions: whether the existing floor framing can take a modern kitchen and bathroom, what the piers are actually sitting on, and whether the original roof structure allows the attic conversion the owner has in mind.",
+          "Owners of these houses are frequently making the same repair or rebuild decision that comes up in Bellaire, with the added factor that in West U the land value is high enough that the math often pushes toward a rebuild. We give you the structural half of that answer.",
+        ],
+      },
+      {
+        heading: "Building next to a neighbor, ten feet away",
+        paragraphs: [
+          "With small lots, construction in West U happens close to the house next door. Excavation for a new foundation, heavy equipment, and the removal of a mature tree all have effects that don't stop at the property line, particularly on expansive clay that responds to changes in moisture.",
+          "If a teardown or a large addition is starting next to you, documenting your own house first is cheap insurance: photographs of existing cracks, and an elevation survey if you want a baseline you can actually compare against later. If you are the one building, the same documentation protects you from a claim about damage that was already there.",
+        ],
+      },
+      {
+        heading: "Permits in West U",
+        paragraphs: [
+          "The city requires permits for structural alterations and expects sealed engineering for work that changes how the house carries load. Review here is thorough, and the city's own regulations on things like height, coverage, and setbacks interact with the structural design more than they do in most places, because the buildable envelope is tight to begin with.",
+          "The practical advice is the same as in Bellaire and more so: have the structural questions answered before the architectural set is finished, so the sealed drawings go in with the first submission instead of coming back as a response to a comment.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Can I remove a wall on the first floor of my West U house?",
+        a: "Often yes, but in a two or three story house that wall is frequently carrying the floors above it, so the replacement is usually a steel beam with columns that have to reach the foundation. The first step is establishing what the wall actually carries and where that load can go down. That's a single visit, and it tells you what the project really involves before anyone prices it.",
+      },
+      {
+        q: "Is West University Place its own permitting authority?",
+        a: "Yes. West U is a separate incorporated city with its own building department and its own review process, and it is known for reviewing residential work closely. Plan for the permit as a real step in the schedule and submit a complete set the first time.",
+      },
+      {
+        q: "They're tearing down the house next door. Can that affect my foundation?",
+        a: "It can, mainly through changes in soil moisture: excavation close to the property line, the removal of a large tree that was drawing water from under both houses, and new drainage patterns. Whether it will affect yours depends on the specifics. Documenting your house before their work begins, with photos and ideally an elevation survey, is what turns a later argument into a comparison.",
+      },
+      {
+        q: "Can an original West U bungalow take a second story or a large addition?",
+        a: "Sometimes, and the answer lives in the foundation and the existing framing rather than in the floor plan. Pier and beam homes of that era were built for a small single-story house, so the piers, the girders, and the wall framing all have to be checked against the new load. We'll tell you what it would take, and whether it's worth it compared with the alternatives.",
+      },
+      {
+        q: "Do you work in Southside Place and Southampton too?",
+        a: "Yes. Southside Place is its own small city with its own permitting, and Southampton is inside the City of Houston even though it shares the 77005 area. The engineering is the same; the permitting path differs, and we'll tell you which one applies to your address.",
+      },
+    ],
+  },
+  {
     slug: "the-woodlands",
     name: "The Woodlands",
     blurb:
