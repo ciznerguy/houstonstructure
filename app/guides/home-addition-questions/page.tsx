@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import CostEstimatorCTA from "@/components/CostEstimatorCTA";
 import { BUSINESS } from "@/lib/business";
 
@@ -236,6 +237,14 @@ export default function HomeAdditionQuestionsGuidePage() {
         title="Home Addition Questions Houston Homeowners Ask"
         subtitle="The questions we get on the phone, answered the way we answer them on the phone. Permits, foundations, deed restrictions, timelines, and what actually goes wrong."
         ctaLabel="Get a Free Home Addition Cost Estimate"
+      />
+
+      <Breadcrumbs
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Guides", href: "/guides" },
+        ]}
+        current="Home Addition Questions Houston Homeowners Ask"
       />
 
       <section className="mx-auto max-w-6xl px-5 py-14">

@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { BUSINESS } from "@/lib/business";
 
 export const metadata: Metadata = {
@@ -52,6 +53,14 @@ export default function RoomAdditionCaseStudyPage() {
         title="Adding a 380-Square-Foot Room to a 1970s Houston Home"
         subtitle="A start-to-finish look at how we evaluate an existing foundation, design the tie-in for a new addition, and carry the project through permitting and construction."
         ctaLabel="Estimate the Cost of Your Own Room Addition"
+      />
+
+      <Breadcrumbs
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Guides", href: "/guides" },
+        ]}
+        current="Case Study: Adding a 380-Square-Foot Room to a 1970s Houston Home"
       />
 
       <section className="mx-auto max-w-6xl px-5 py-14">

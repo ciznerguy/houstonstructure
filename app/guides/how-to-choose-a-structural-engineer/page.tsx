@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { BUSINESS } from "@/lib/business";
 
 export const metadata: Metadata = {
@@ -52,6 +53,14 @@ export default function HowToChooseAStructuralEngineerPage() {
         subtitle="The engineer you hire is the one whose judgment you're trusting on your home's structure. Here's what actually separates a good choice from a risky one."
         ctaLabel="Talk to Our Professional Construction Expert"
         ctaHref="/contact"
+      />
+
+      <Breadcrumbs
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Guides", href: "/guides" },
+        ]}
+        current="How to Choose a Structural Engineer in Houston"
       />
 
       <section className="mx-auto max-w-6xl px-5 py-14">

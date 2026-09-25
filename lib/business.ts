@@ -7,6 +7,11 @@ export const BUSINESS = {
   rating: 5.0,
   reviewCount: 6,
   googleReviewsUrl: "https://www.google.com/search?q=Levi%27s+Houston+Structural+Repairs+Engineering+%26+Consulting",
+  // Canonical Google Business Profile identifiers, read from the GBP API 2026-09-25.
+  // `sameAs` anchors the business as one verifiable entity for search and AI.
+  googlePlaceId: "ChIJ5SqrAiW_QIYRWUsm5hCHe9I",
+  googleMapsUrl: "https://maps.google.com/maps?cid=15166864676750773081",
+  writeReviewUrl: "https://search.google.com/local/writereview?placeid=ChIJ5SqrAiW_QIYRWUsm5hCHe9I",
   hours: [
     { day: "Monday", hours: "8:00 AM – 5:00 PM" },
     { day: "Tuesday", hours: "8:00 AM – 5:00 PM" },

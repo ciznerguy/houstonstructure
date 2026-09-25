@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import CostEstimatorCTA from "@/components/CostEstimatorCTA";
 import { BUSINESS } from "@/lib/business";
 
@@ -59,6 +60,14 @@ export default function HomeAdditionGuidePage() {
         title="Planning a Home Addition in Houston? Start With the Foundation, Not the Floor Plan"
         subtitle="Most addition projects start with a floor plan and a contractor's quote. The engineering question, whether the existing house can carry the new weight, usually comes up last, if at all. That order is backwards."
         ctaLabel="Calculate Your Addition Cost in 2 Minutes"
+      />
+
+      <Breadcrumbs
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Guides", href: "/guides" },
+        ]}
+        current="Planning a Home Addition in Houston? Start With the Foundation, Not the Floor Plan"
       />
 
       <section className="mx-auto max-w-6xl px-5 py-14">

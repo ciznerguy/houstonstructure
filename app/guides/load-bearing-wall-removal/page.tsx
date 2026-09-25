@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import CostEstimatorCTA from "@/components/CostEstimatorCTA";
 import { BUSINESS } from "@/lib/business";
 
@@ -73,6 +74,14 @@ export default function LoadBearingWallGuidePage() {
         title="Can You Remove a Load-Bearing Wall? Here's How to Tell (and What It Takes)"
         subtitle="Opening up a floor plan is one of the most requested renovations in Houston right now, and it almost always runs into the same question first."
         ctaLabel="Opening Up the Floor Plan? Estimate Your Addition Cost"
+      />
+
+      <Breadcrumbs
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Guides", href: "/guides" },
+        ]}
+        current="Can You Remove a Load-Bearing Wall? Here's How to Tell"
       />
 
       <section className="mx-auto max-w-6xl px-5 py-14">

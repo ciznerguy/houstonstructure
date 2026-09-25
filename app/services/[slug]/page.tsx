@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { BUSINESS, SERVICES, SERVICE_AREAS } from "@/lib/business";
 import { GUIDES } from "@/lib/guides";
 import { PROJECTS } from "@/lib/projects";
@@ -119,6 +120,8 @@ export default async function ServicePage({ params }: Props) {
         ctaLabel={SERVICE_CTA[service.slug]?.label ?? "Request a Free Quote"}
         ctaHref={SERVICE_CTA[service.slug]?.href}
       />
+
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Services", href: "/services" }]} current={service.shortName} />
 
       {service.image && (
         <div className="mx-auto max-w-6xl px-5 pt-10">

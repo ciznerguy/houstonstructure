@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import CostEstimatorCTA from "@/components/CostEstimatorCTA";
 import { BUSINESS } from "@/lib/business";
 
@@ -89,6 +90,14 @@ export default function KatySecondStoryProjectPage() {
         title="A Second Story Addition in Katy: A Farmhouse Primary Suite Over a One-Story Home"
         subtitle="A family that had outgrown the house, didn't want to move, and didn't want to give up the yard. The only direction left was up."
         ctaLabel="Calculate Your Addition Cost in 2 Minutes"
+      />
+
+      <Breadcrumbs
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Projects", href: "/projects" },
+        ]}
+        current="Second Story Addition in Katy, TX: A Farmhouse Primary Suite"
       />
 
       <div className="mx-auto max-w-6xl px-5 pt-10">

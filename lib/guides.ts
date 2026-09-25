@@ -24,6 +24,12 @@ export const GUIDES: Guide[] = [
       "Twenty-two straight answers on permits, deed restrictions, foundations, HOAs, floodplains, timelines, garage conversions and living through construction, in the order the questions actually come up.",
   },
   {
+    slug: "load-bearing-wall-questions",
+    title: "Load-Bearing Wall Questions Houston Homeowners Ask",
+    summary:
+      "Twenty-one answers on telling whether a wall carries load, what beam replaces it, where the posts and footings go, how long the work takes, and what to do about a wall someone already removed without a permit.",
+  },
+  {
     slug: "how-to-choose-a-structural-engineer",
     title: "How to Choose a Structural Engineer",
     summary:

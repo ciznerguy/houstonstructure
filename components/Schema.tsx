@@ -4,10 +4,20 @@ export default function Schema() {
   const json = {
     "@context": "https://schema.org",
     "@type": ["ProfessionalService", "GeneralContractor"],
+    // A stable @id lets every other JSON-LD block on the site point at one
+    // entity instead of describing a new business on each page.
+    "@id": `${BUSINESS.siteUrl}/#business`,
     name: BUSINESS.name,
+    alternateName: BUSINESS.shortName,
     telephone: BUSINESS.phone,
     url: BUSINESS.siteUrl,
+    // sameAs is what ties this site to the verified Google Business Profile.
+    // Add Yelp, Apple Maps, Facebook and LinkedIn here as each one is claimed
+    // and its name matches BUSINESS.name exactly.
+    sameAs: [BUSINESS.googleMapsUrl],
+    hasMap: BUSINESS.googleMapsUrl,
     image: `${BUSINESS.siteUrl}/images/hero-framing.jpg`,
+    priceRange: "$$",
     address: {
       "@type": "PostalAddress",
       addressLocality: BUSINESS.addressLocality,

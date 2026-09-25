@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { BUSINESS } from "@/lib/business";
 
 export const metadata: Metadata = {
@@ -65,6 +66,14 @@ export default function CommercialWallRemovalGuidePage() {
         subtitle="Opening up an office suite, a retail bay, or a restaurant floor is one of the most common buildout requests we see. The structural question is only part of it."
         ctaLabel="Get a Commercial Buildout Quote"
         ctaHref="/contact"
+      />
+
+      <Breadcrumbs
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Guides", href: "/guides" },
+        ]}
+        current="Commercial Wall Removal in Houston: What Tenants and Landlords Should Know"
       />
 
       <section className="mx-auto max-w-6xl px-5 py-14">

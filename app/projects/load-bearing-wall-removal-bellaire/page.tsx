@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { BUSINESS } from "@/lib/business";
 
 // Source material: Levi's own project package for this job. Beam sizes and
@@ -126,6 +127,14 @@ export default function BellaireWallRemovalProjectPage() {
         subtitle="Opening a floor plan looks simple in the finished photo. Here, three of the walls in the way were carrying the entire second floor, and the floor itself turned out to need correcting."
         ctaLabel="Get a Wall Removal Quote"
         ctaHref="/contact"
+      />
+
+      <Breadcrumbs
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Projects", href: "/projects" },
+        ]}
+        current="Load-Bearing Wall Removal in Bellaire, TX: A Project"
       />
 
       <div className="mx-auto max-w-6xl px-5 pt-10">

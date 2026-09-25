@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import CostEstimatorCTA from "@/components/CostEstimatorCTA";
 import { BUSINESS } from "@/lib/business";
 
@@ -63,6 +64,14 @@ export default function SecondStoryAdditionCostGuidePage() {
         title="How Much Does a Second-Story Addition Cost in Houston?"
         subtitle="The honest answer is that it depends more on your existing foundation than on the floor plan you have in mind. Here's what actually drives the number."
         ctaLabel="Calculate Your Second-Story Addition Cost"
+      />
+
+      <Breadcrumbs
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Guides", href: "/guides" },
+        ]}
+        current="How Much Does a Second-Story Addition Cost in Houston?"
       />
 
       <section className="mx-auto max-w-6xl px-5 py-14">
