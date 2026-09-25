@@ -58,7 +58,7 @@ export default function RoomAdditionCaseStudyPage() {
       <Breadcrumbs
         items={[
           { name: "Home", href: "/" },
-          { name: "Guides", href: "/guides" },
+          { name: "Projects", href: "/projects" },
         ]}
         current="Case Study: Adding a 380-Square-Foot Room to a 1970s Houston Home"
       />

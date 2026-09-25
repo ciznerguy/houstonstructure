@@ -312,7 +312,7 @@ export default function HomeAdditionGuidePage() {
               </Link>
               , and there is a{" "}
               <Link
-                href="/guides/room-addition-case-study"
+                href="/projects/room-addition-case-study"
                 className="text-[#0B1F3A] underline hover:no-underline"
               >
                 room addition case study

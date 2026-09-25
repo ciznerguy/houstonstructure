@@ -47,10 +47,4 @@ export const GUIDES: Guide[] = [
     summary:
       "How wall removal works in a Houston office, retail, or restaurant space: which walls can come out, what the landlord and the city will ask for, how the engineering and permitting run, and what it typically costs.",
   },
-  {
-    slug: "room-addition-case-study",
-    title: "Case Study: Adding a 380-Square-Foot Room to a 1970s Houston Home",
-    summary:
-      "A start-to-finish look at how we evaluate an existing foundation, design the tie-in for a new room addition, and carry the project through permitting and construction.",
-  },
 ];

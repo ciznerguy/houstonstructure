@@ -7,3 +7,11 @@
   for = "/*"
   [headers.values]
     Content-Security-Policy-Report-Only = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://*.analytics.google.com; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com https://*.google-analytics.com; frame-src https://www.google.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; font-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'"
+
+# The room addition case study moved from /guides to /projects on 2026-09-25.
+# 301 so the old URL keeps working and hands its signals to the new one.
+[[redirects]]
+  from = "/guides/room-addition-case-study"
+  to = "/projects/room-addition-case-study"
+  status = 301
+  force = true

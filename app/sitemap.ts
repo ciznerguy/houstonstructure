@@ -61,14 +61,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "/images/second-story-addition-cost-3-sheathing.jpg",
       "/images/second-story-addition-cost-4-completed.jpg",
     ],
-    "room-addition-case-study": [
-      "/images/room-addition-case-study-1-site-evaluation.jpg",
-      "/images/room-addition-case-study-2-foundation-forms.jpg",
-      "/images/room-addition-case-study-3-tie-in-detail.jpg",
-      "/images/room-addition-case-study-4-framing.jpg",
-      "/images/room-addition-case-study-5-completed-exterior.jpg",
-      "/images/room-addition-case-study-6-engineering-letter.jpg",
-    ],
   };
 
   const guidePages: MetadataRoute.Sitemap = GUIDES.map((g) => ({

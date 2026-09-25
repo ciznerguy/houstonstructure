@@ -6,7 +6,9 @@ export type Project = {
   slug: string;
   title: string;
   summary: string;
-  citySlug: string; // matches SERVICE_AREAS[].slug
+  // Omit citySlug when the project is not tied to one named city; the page
+  // then just does not appear in any location sidebar.
+  citySlug?: string; // matches SERVICE_AREAS[].slug
   serviceSlug: string; // matches SERVICES[].slug
   // Omit both until real (or approved illustrative) images exist for the
   // project. Cards and sidebars render text-only when there is no image.
@@ -15,6 +17,22 @@ export type Project = {
 };
 
 export const PROJECTS: Project[] = [
+  {
+    slug: "room-addition-case-study",
+    title: "Adding a 380-Square-Foot Room to a 1970s Houston Home",
+    summary:
+      "A start-to-finish look at one ground-floor addition: evaluating the existing foundation, designing the tie-in so the seam does not crack later, and carrying it through permitting and construction.",
+    serviceSlug: "home-additions",
+    image: "/images/room-addition-case-study-5-completed-exterior.jpg",
+    images: [
+      "/images/room-addition-case-study-1-site-evaluation.jpg",
+      "/images/room-addition-case-study-2-foundation-forms.jpg",
+      "/images/room-addition-case-study-3-tie-in-detail.jpg",
+      "/images/room-addition-case-study-4-framing.jpg",
+      "/images/room-addition-case-study-5-completed-exterior.jpg",
+      "/images/room-addition-case-study-6-engineering-letter.jpg",
+    ],
+  },
   {
     slug: "load-bearing-wall-removal-bellaire",
     title: "Removing Three Load-Bearing Walls in Bellaire",
