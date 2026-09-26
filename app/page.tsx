@@ -6,9 +6,9 @@ import { BUSINESS, SERVICES, SERVICE_AREAS } from "@/lib/business";
 import { GUIDES } from "@/lib/guides";
 
 export const metadata: Metadata = {
-  title: "Structural Engineer in Houston, TX | General Contractor",
+  title: "Home Additions & Load-Bearing Wall Removal in Houston, TX",
   description:
-    "Levi's Houston Structural Repairs, Engineering & Consulting is a licensed and insured structural engineer in Houston and general contractor serving the metro: foundation repair, structural repairs, additions, commercial buildouts, and inspection reports. 5.0 stars on Google.",
+    "Additions, second stories, load-bearing wall removal and steel beams in Houston, engineered and built by one licensed firm. The structural work is designed in house, so the plan and the build never disagree. 5.0 stars on Google.",
 };
 
 export default function Home() {
@@ -34,14 +34,14 @@ export default function Home() {
               Structural Engineer in Houston, TX · General Contractor
             </div>
             <h1 className="mt-4 text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
-              Straight answers on your foundation, from a licensed Houston
-              structural engineer and general contractor.
+              Add the space. Open up the floor plan. Engineered and built by
+              one Houston firm.
             </h1>
             <p className="mt-5 max-w-lg text-slate-300">
-              We diagnose foundation and structural issues first, then, as a
-              licensed general contractor, build the fix ourselves. No
-              repair-company sales pitch, no second company to coordinate
-              with, just one licensed team from diagnosis to completion.
+              Room additions, second stories, load-bearing walls and the steel
+              that replaces them. We are the structural engineer and the
+              licensed contractor, so the beam that gets built is the beam that
+              was designed, and there is no second company to coordinate with.
             </p>
             <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2">
               <div className="flex items-center gap-2 text-amber-400">
