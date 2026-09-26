@@ -277,7 +277,15 @@ export default function SecondStoryAdditionCostGuidePage() {
               a floor plan.
             </p>
             <p className="mb-5">
-              For the questions that come up around the cost, permits, deed
+              Our{" "}
+              <Link
+                href="/services/second-story-addition"
+                className="text-[#0B1F3A] underline hover:no-underline"
+              >
+                second story addition
+              </Link>{" "}
+              page explains the feasibility visit and what the reinforcement
+              involves. For the questions that come up around the cost, permits, deed
               restrictions, HOAs and living through the build, see our guide to{" "}
               <Link
                 href="/guides/home-addition-questions"

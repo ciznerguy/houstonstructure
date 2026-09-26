@@ -15,6 +15,7 @@ type Props = {
 const SERVICE_TO_GUIDE_SLUG: Record<string, string> = {
   "load-bearing-wall-removal": "load-bearing-wall-removal",
   "home-additions": "planning-a-home-addition",
+  "second-story-addition": "second-story-addition-cost",
   "commercial-buildouts": "commercial-wall-removal",
 };
 
@@ -22,6 +23,7 @@ const SERVICE_TO_GUIDE_SLUG: Record<string, string> = {
 // asks for a quote through the contact form, worded for that service.
 const SERVICE_CTA: Record<string, { label: string; href?: string }> = {
   "home-additions": { label: "Calculate Your Addition Cost in 2 Minutes" },
+  "second-story-addition": { label: "Calculate Your Second Story Cost in 2 Minutes" },
   "general-contracting": { label: "Planning an Addition? Get a Free Cost Estimate" },
   "foundation-repair": { label: "Get a Foundation Repair Quote", href: "/contact" },
   "structural-repairs": { label: "Get a Structural Repair Quote", href: "/contact" },

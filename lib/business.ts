@@ -540,6 +540,137 @@ export type Service = {
 
 export const SERVICES: Service[] = [
   {
+    slug: "second-story-addition",
+    name: "Second Story Additions",
+    shortName: "Second Story Additions",
+    seoTitle: "Second Story Addition in Houston, TX",
+    summary:
+      "Adding a floor on top of a house that was built for one. We check whether yours can carry it, design the reinforcement if it can't, and build it.",
+    description: [
+      "A second story is the one addition where the answer might be no, and where finding that out late is the expensive version. Every other kind of addition sits on its own new foundation. This one puts a new floor, new walls and a new roof onto walls and footings that were sized for a single story and have been standing for decades.",
+      "So the work starts with a question rather than a drawing: can this house carry it, and if not, what would it take. We measure the footings, the bearing walls, the framing and the condition of all of it, then calculate what the new floor and roof weigh and where that weight lands. You get one of three answers, and the least welcome one is worth more than the others because it arrives before you have paid for plans.",
+      "Where the house can take it, we design the reinforcement, handle the permit, and build it. This page is about what that involves and what decides the price. For a planning number in two minutes, use the [cost estimator](/cost-estimator). For the cost breakdown in detail, our [second story addition cost guide](/guides/second-story-addition-cost) goes through it.",
+    ],
+    signs: [
+      "You have run out of room and do not want to give up yard",
+      "A small or awkward lot rules out building outward",
+      "You want bedrooms away from the living space",
+      "Deed restrictions or setbacks block a ground-floor addition",
+      "You were told your house cannot take a second floor and want a second opinion",
+    ],
+    atAGlance: [
+      "The feasibility answer comes from one site visit: footings, bearing walls, framing, and what they can carry.",
+      "Three possible answers: as-is, with specific reinforcement, or build out instead. We give the third one honestly.",
+      "Reinforcement usually means widened footings, sistered studs, and beams to shorten spans, all before anything goes on top.",
+      "Roughly four months of construction for a typical second story, plus design and permitting ahead of it.",
+      "Most families move out for the roof-off phase. That is the part you plan around.",
+    ],
+    sections: [
+      {
+        heading: "What makes a house a good or bad candidate",
+        paragraphs: [
+          "The honest predictor is not the age of the house or its style. It is what is under the bearing walls and how the framing was put together.",
+        ],
+        bullets: [
+          "Footings: width and depth under the walls that will carry the new floor. Narrow footings on Houston clay are the most common reason a house needs work before it can go up.",
+          "Bearing walls: stud size, spacing and species. A wall of 2x4s at 24 inches is a different proposition from 2x4s at 16 inches, and both are different from 2x6s.",
+          "The existing slab or piers: whether they are moving now. A foundation still settling under one story will move more under two.",
+          "The roof structure: a simple gable is straightforward to remove and rebuild. A complex hip roof with valleys costs more to take off and put back.",
+          "Where the stairs can go, which is a floor-plan question with a structural answer, because the opening cut for them removes framing.",
+          "Height limits in your deed restrictions, which stop more second stories in Houston than structure does.",
+        ],
+      },
+      {
+        heading: "The stairs are the part nobody budgets for",
+        paragraphs: [
+          "A second story needs a staircase, and the staircase has to come out of the floor you already have. A typical run takes something like eighty to a hundred square feet of ground floor, plus landing space at both ends. That is often a chunk of a living room or a bedroom, and it is space you are losing downstairs to gain space upstairs.",
+          "Structurally, the opening for the stairs means cutting joists and framing a header around the hole, which has to carry the load those joists were carrying. Where the stairs land is therefore a structural decision as much as a design one. Put them along a bearing line and the framing gets complicated. Put them parallel to the joists in a clear bay and it stays simple.",
+          "This is worth settling early, because it is the item most likely to send a floor plan back for redesign after everything else was agreed.",
+        ],
+      },
+      {
+        heading: "Taking the roof off",
+        paragraphs: [
+          "At some point the existing roof comes off and the house is open. That is the phase that makes this project different from every other addition, and the whole schedule is built around making it short.",
+          "The sequence is to have everything staged first: the new floor framing ready, the crew sized to move fast, and materials on site. The roof comes off, the new floor deck goes down, the walls go up, the new roof goes on, and the house gets dried in. In Houston that window is planned around the forecast, and during hurricane season it is planned more carefully still. A summer storm on an open house is the single biggest risk in this kind of work.",
+          "Temporary protection is part of the plan, not an improvisation: the opening covered when work stops, and the contents of the rooms below moved or sheeted.",
+        ],
+      },
+      {
+        heading: "Can you live in the house?",
+        paragraphs: [
+          "During design, permitting and the reinforcement work downstairs, yes. During the roof-off phase, most families do not, and we would rather say so than pretend otherwise. There is no ceiling over part of the house, the noise is constant, and the dust reaches everywhere.",
+          "How long that phase lasts depends on the size of the floor and the weather, and it is the number worth asking about before you sign anything. Everything before it and after it is livable with the normal precautions: sealed work zones, protected floors, covered HVAC returns.",
+        ],
+      },
+      {
+        heading: "What the new floor does to the rest of the house",
+        paragraphs: [
+          "Doubling the conditioned square footage changes systems that were sized for the old house. The air conditioning is the one that bites: a system sized for one floor rarely keeps up with two in a Houston August, and hot air rising makes the new floor the worst-performing part of the house if nothing changes. Sometimes the answer is extending ductwork, often it is a second system or dedicated units upstairs.",
+          "Plumbing for an upstairs bathroom has to find a path down through the existing house and a route for a vent. Electrical usually needs a panel review, because the original service may not have capacity for another floor.",
+          "None of these are reasons not to build up. They are reasons to decide them during design, when they cost drawings, rather than during construction, when they cost soffits and rework.",
+        ],
+      },
+      {
+        heading: "Height limits and deed restrictions",
+        paragraphs: [
+          "In much of Houston the thing most likely to stop a second story is not the structure and not the city. It is a private deed restriction recorded against the property, and plenty of them prohibit a second floor outright or cap the height below what a second story needs.",
+          "Check yours before you spend anything. It is a document, it is recorded, and reading it takes an afternoon. We have seen fully designed second stories stopped at that point, and it is the cheapest possible thing to get wrong early and the most expensive to get wrong late.",
+          "Where the property sits in a mapped flood zone, there is a second layer: work above a value threshold can trigger requirements for the whole structure, not just the new part.",
+        ],
+      },
+      {
+        heading: "What drives the price",
+        paragraphs: [
+          "Second stories cost more per square foot than building out, and the reason is not the new floor. It is everything that has to happen to the old house before the new floor can exist. Footing work, wall reinforcement, taking off and rebuilding a roof, and the stair opening are all costs that a ground-floor addition simply does not have.",
+          "The variables that move the number most: how much reinforcement the existing structure needs, whether the roof is simple or complex, whether there is a bathroom or a kitchenette upstairs, whether the HVAC needs a second system, and the finish level. Square footage matters less than people expect once those are settled.",
+          "Our [second story addition cost guide](/guides/second-story-addition-cost) has the planning ranges. A real number comes after the site visit, because the reinforcement is the largest unknown and it is the one nobody can price from a photograph.",
+        ],
+      },
+      {
+        heading: "When building out is the better answer",
+        paragraphs: [
+          "Sometimes the measurements come back and the reinforcement needed to carry a second floor costs more than the space is worth. When that happens we say so. A ground-floor addition on its own new foundation asks nothing of the existing house, and on a lot with room it is frequently the cheaper and faster route to the same square footage.",
+          "The comparison is worth making with real numbers rather than assumptions, and it takes one visit to get them. Our [home additions](/services/home-additions) page covers the ground-floor version, and the [room addition case study](/projects/room-addition-case-study) follows one from first visit to final inspection.",
+        ],
+      },
+      {
+        heading: "How the project runs",
+        paragraphs: [
+          "Site visit and feasibility, usually within the week of your call. Structural design and drawings for the reinforcement and the new framing, a couple of weeks. Permit, which varies from days to a couple of months depending on the city and the flood zone. Reinforcement work downstairs. Then the roof-off and the new floor, then the finish work.",
+          "End to end, plan on roughly four months of construction for a typical second story, with design and permitting ahead of that. Finish materials arriving late is the most common delay, which is why selections get pushed early.",
+          "We wrote one of these up start to finish: a [second story addition in Katy](/projects/second-story-addition-katy) that added about 500 square feet with the family staying in the house.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "How do I know if my house can support a second story?",
+        a: "From measurements, not from the age or style of the house. We look at the footings under the bearing walls, the stud size and spacing in those walls, the condition of the framing, and whether the foundation is moving now. Then we calculate the new load and where it lands. It is one visit, and the answer comes back as yes, yes with specific reinforcement, or build out instead.",
+      },
+      {
+        q: "Is adding a second story worth it?",
+        a: "It is when the lot has no room to build outward, when you want the new space separated from the living areas, or when the alternative is moving. It is less often worth it when the existing structure needs heavy reinforcement before it can carry anything, because a large share of the budget then buys you nothing you can see. The feasibility visit is what turns that from an opinion into a number.",
+      },
+      {
+        q: "Where will the stairs go, and how much room do they take?",
+        a: "A typical staircase takes roughly eighty to a hundred square feet out of the ground floor, plus landing space. Where it goes is both a floor-plan and a structural decision, because the opening means cutting joists and framing a header to carry what they carried. Settling it early avoids the most common late redesign.",
+      },
+      {
+        q: "Do we have to move out during the work?",
+        a: "Not for most of it. During design, permitting and the reinforcement work downstairs you can stay. During the roof-off phase, when part of the house has no ceiling, most families go elsewhere. Ask how long that phase is expected to last; it is the number that decides the answer.",
+      },
+      {
+        q: "Will my air conditioning handle a second floor?",
+        a: "Frequently not. A system sized for one floor rarely keeps up with two through a Houston summer, and the upstairs is the part that suffers. The fix is either extended ductwork, a second system, or dedicated units upstairs, and it belongs in the design rather than in a change order.",
+      },
+      {
+        q: "Can a deed restriction stop a second story?",
+        a: "Yes, and in Houston that is the most common thing that does. Many neighborhoods cap height or prohibit a second floor outright, entirely separately from anything the city requires. Read the recorded restrictions on your property before spending money on design.",
+      },
+    ],
+  },
+  {
     slug: "home-additions",
     seoTitle: "Home Additions in Houston, TX",
     name: "Home Additions & Second-Story Additions",
@@ -612,7 +743,7 @@ export const SERVICES: Service[] = [
           "Second-story additions are the projects where the engineering question is most often skipped and where skipping it costs the most.",
           "A house built as a single story was engineered, or more often just built to habit, to carry one roof and nothing else. The exterior walls, the interior bearing walls, and the footings under them were all sized for that. Put a second floor on top and you've roughly doubled the load on every one of those elements. Sometimes the existing structure has enough margin to take it. Often it doesn't, and the difference isn't something you can see from the driveway.",
           "We measure. Footing widths and depths, stud spacing and species in the bearing walls, the headers over windows and doors, and the condition of all of it after however many decades it's been standing. Then we calculate what the new floor and roof will weigh and where that weight lands. The answer comes back one of three ways: the house can take it as-is, the house can take it with specific reinforcement, or the house can't reasonably take it and building out is the better path. All three are useful. The third one, delivered before you've paid for drawings, is the most useful of all.",
-          "When reinforcement is needed, it usually means widening footings under the bearing walls, adding posts and beams to shorten spans, or sistering new studs onto the old ones. None of it is exotic. It just has to be sized to the actual gap between what's there and what's needed, and it has to happen before the second floor goes on, not after the cracks appear.",
+          "Going up has enough of its own considerations, the stairs, the roof-off phase, the height limits in your deed restrictions, that we gave it a page of its own: [second story additions](/services/second-story-addition). When reinforcement is needed, it usually means widening footings under the bearing walls, adding posts and beams to shorten spans, or sistering new studs onto the old ones. None of it is exotic. It just has to be sized to the actual gap between what's there and what's needed, and it has to happen before the second floor goes on, not after the cracks appear.",
         ],
         image: {
           src: "/images/home-additions-2-wall-reinforcement.jpg",

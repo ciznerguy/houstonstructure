@@ -55,7 +55,7 @@ export const PROJECTS: Project[] = [
     summary:
       "A full second floor over a one-story Katy home: primary bedroom with tall windows, a two-person grey tile shower bath, and a walk-in closet built around the owner's collection. About 500 sq ft, four months, family stayed in the house.",
     citySlug: "katy",
-    serviceSlug: "home-additions",
+    serviceSlug: "second-story-addition",
     image: "/images/project-katy-second-story-1-exterior.jpg",
     images: [
       "/images/project-katy-second-story-1-exterior.jpg",
