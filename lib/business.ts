@@ -517,6 +517,12 @@ export type Service = {
   slug: string;
   name: string;
   shortName: string;
+  // Page <title> when `name` is too long or breaks up the phrase people
+  // actually search. Every page ranking for "home additions houston" leads its
+  // title with that exact phrase; ours put "& Second-Story Additions" in the
+  // middle of it. The H1 still uses `name`. Omit when `name` already leads
+  // with the phrase, which it does for most of them.
+  seoTitle?: string;
   summary: string;
   description: string[];
   signs: string[];
@@ -535,6 +541,7 @@ export type Service = {
 export const SERVICES: Service[] = [
   {
     slug: "home-additions",
+    seoTitle: "Home Additions in Houston, TX",
     name: "Home Additions & Second-Story Additions",
     shortName: "Home Additions",
     image: "/images/home-additions.jpg",
@@ -703,6 +710,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "load-bearing-wall-removal",
+    seoTitle: "Load-Bearing Wall Removal in Houston, TX",
     name: "Load-Bearing Wall Assessment & Removal",
     shortName: "Load-Bearing Walls",
     image: "/images/load-bearing-wall-removal.jpg",

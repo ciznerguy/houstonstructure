@@ -56,7 +56,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = SERVICES.find((s) => s.slug === slug);
   if (!service) return {};
   return {
-    title: `${service.name} in Houston, TX`,
+    title: service.seoTitle ?? `${service.name} in Houston, TX`,
     description: service.summary,
     ...(service.image && {
       openGraph: { images: [{ url: service.image, width: 1600, height: 900 }] },

@@ -6,7 +6,10 @@ import { BUSINESS, SERVICES, SERVICE_AREAS } from "@/lib/business";
 import { GUIDES } from "@/lib/guides";
 
 export const metadata: Metadata = {
-  title: "Home Additions & Load-Bearing Wall Removal in Houston, TX",
+  // Deliberately not "Home Additions in Houston" — that is the service page's
+  // target and the homepage should not compete with it. This keeps our
+  // strongest ranking term, structural engineer, and adds the build intent.
+  title: "Houston Structural Engineer & Home Addition Contractor",
   description:
     "Additions, second stories, load-bearing wall removal and steel beams in Houston, engineered and built by one licensed firm. The structural work is designed in house, so the plan and the build never disagree. 5.0 stars on Google.",
 };
