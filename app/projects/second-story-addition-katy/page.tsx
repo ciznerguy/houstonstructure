@@ -223,8 +223,13 @@ export default function KatySecondStoryProjectPage() {
               <Link href="/guides/second-story-addition-cost" className="text-[#0B1F3A] underline hover:no-underline">
                 second story addition cost guide
               </Link>{" "}
-              walks through what drives the price. For a planning number in two minutes, use the cost estimator. For a
-              real answer about your house, the first step is a structural look at what&rsquo;s there.
+              walks through what drives the price, and our{" "}
+              <Link href="/services/second-story-addition" className="text-[#0B1F3A] underline hover:no-underline">
+                second story addition
+              </Link>{" "}
+              page covers the feasibility visit, the stairs, and the roof-off phase. For a planning number in two
+              minutes, use the cost estimator. For a real answer about your house, the first step is a structural
+              look at what&rsquo;s there.
             </p>
           </div>
 

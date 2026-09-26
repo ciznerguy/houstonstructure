@@ -66,7 +66,7 @@ const groups: Group[] = [
         q: "Can I add a second story to a house on a slab?",
         a: [
           "Often yes. A slab foundation is not a disqualifier by itself. What matters is how thick the slab is, where its grade beams run, what is under them, and whether the bearing walls above them are framed to carry more.",
-          "In Houston the soil under the slab matters as much as the slab. Expansive clay moves with moisture, and a foundation that has been keeping up with one story may behave differently under two. That is exactly what the evaluation is for. Our [second story addition cost guide](/guides/second-story-addition-cost) walks through how this drives the price.",
+          "In Houston the soil under the slab matters as much as the slab. Expansive clay moves with moisture, and a foundation that has been keeping up with one story may behave differently under two. That is exactly what the evaluation is for, and our [second story addition](/services/second-story-addition) page explains what it looks at. The [cost guide](/guides/second-story-addition-cost) walks through how the answer drives the price.",
         ],
       },
       {

@@ -116,7 +116,14 @@ export default function Home() {
             <p className="mt-2 max-w-xl text-slate-600">
               Answer a few questions about the addition you have in mind and
               get a Houston-specific cost range, before you talk to a single
-              contractor.
+              contractor. Building up rather than out? Start with{" "}
+              <Link
+                href="/services/second-story-addition"
+                className="text-[#0B1F3A] underline hover:no-underline"
+              >
+                second story addition
+              </Link>
+              , where the cost depends on what the house below can carry.
             </p>
           </div>
           <CostEstimatorCTA
