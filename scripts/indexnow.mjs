@@ -11,7 +11,10 @@
  * lives in public/ so it ships with every build. Deploy before pinging.
  *
  *   node scripts/indexnow.mjs                 # every URL in the built sitemap
- *   node scripts/indexnow.mjs /guides/foo /x  # only these paths
+ *   node scripts/indexnow.mjs https://houstonstructure.com/guides/foo
+ *
+ * Pass full URLs, not bare paths: Git Bash on Windows rewrites a leading "/"
+ * into a drive path and you end up submitting nonsense.
  */
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
