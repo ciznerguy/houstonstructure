@@ -1282,6 +1282,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "commercial-buildouts",
+    seoTitle: "Commercial Buildouts in Houston, TX",
     name: "Commercial Buildouts & Tenant Improvements",
     shortName: "Commercial & TI",
     image: "/images/commercial-buildouts.jpg",
@@ -1781,6 +1782,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "inspections-reports",
+    seoTitle: "Structural Inspections in Houston, TX",
     name: "Structural Inspections & Engineering Reports",
     shortName: "Inspections & Reports",
     image: "/images/inspections-reports.jpg",

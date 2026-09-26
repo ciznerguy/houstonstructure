@@ -6,7 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { BUSINESS } from "@/lib/business";
 
 export const metadata: Metadata = {
-  title: "Commercial Wall Removal in Houston: What Tenants and Landlords Should Know",
+  title: "Commercial Wall Removal in Houston, TX",
   description:
     "How wall removal works in a Houston office, retail, or restaurant space: which walls can come out, what the landlord and the city will ask for, how the engineering and permitting run, and what it typically costs.",
   openGraph: {

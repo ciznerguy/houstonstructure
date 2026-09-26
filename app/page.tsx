@@ -23,7 +23,7 @@ export default function Home() {
           src="/images/hero-framing.jpg"
           srcSet="/images/hero-framing-800.jpg 800w, /images/hero-framing.jpg 1600w"
           sizes="100vw"
-          alt=""
+          alt="Exposed wood roof framing on a Houston home under construction"
           fetchPriority="high"
           className="absolute inset-0 h-full w-full object-cover"
         />

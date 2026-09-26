@@ -59,7 +59,7 @@ function Figure({ photo }: { photo: Photo }) {
 }
 
 export const metadata: Metadata = {
-  title: "Load-Bearing Wall Removal in Bellaire, TX: A Project",
+  title: "Load-Bearing Wall Removal in Bellaire, TX",
   description:
     "Three load-bearing walls in a Bellaire home came out to create one open living space. Temporary shoring, a second floor found out of level during demolition, and the structural correction that followed.",
   openGraph: {

@@ -6,7 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { BUSINESS } from "@/lib/business";
 
 export const metadata: Metadata = {
-  title: "Case Study: Adding a 380-Square-Foot Room to a 1970s Houston Home",
+  title: "Room Addition Case Study in Houston, TX",
   description:
     "A start-to-finish look at how we evaluate an existing foundation, design the tie-in for a new room addition, and carry the project through permitting and construction.",
   openGraph: {

@@ -7,7 +7,7 @@ import CostEstimatorCTA from "@/components/CostEstimatorCTA";
 import { BUSINESS } from "@/lib/business";
 
 export const metadata: Metadata = {
-  title: "Planning a Home Addition in Houston? Start With the Foundation, Not the Floor Plan",
+  title: "Planning a Home Addition in Houston",
   description:
     "Why the engineering question should come before the floor plan, building out versus building up, Houston-specific permit issues, and answers to the questions homeowners ask most before adding onto their home.",
   openGraph: {
