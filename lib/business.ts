@@ -12,15 +12,18 @@ export const BUSINESS = {
   googlePlaceId: "ChIJ5SqrAiW_QIYRWUsm5hCHe9I",
   googleMapsUrl: "https://maps.google.com/maps?cid=15166864676750773081",
   writeReviewUrl: "https://search.google.com/local/writereview?placeid=ChIJ5SqrAiW_QIYRWUsm5hCHe9I",
+  // Must stay identical to the Google Business Profile and Bing Places, which
+  // both read Mon-Sat 8 AM - 8 PM (aligned 2026-09-26). `opens`/`closes` are the
+  // 24-hour values Schema.tsx publishes; omit them on a closed day.
   hours: [
-    { day: "Monday", hours: "8:00 AM – 5:00 PM" },
-    { day: "Tuesday", hours: "8:00 AM – 5:00 PM" },
-    { day: "Wednesday", hours: "8:00 AM – 5:00 PM" },
-    { day: "Thursday", hours: "8:00 AM – 5:00 PM" },
-    { day: "Friday", hours: "8:00 AM – 5:00 PM" },
-    { day: "Saturday", hours: "By appointment" },
+    { day: "Monday", hours: "8:00 AM – 8:00 PM", opens: "08:00", closes: "20:00" },
+    { day: "Tuesday", hours: "8:00 AM – 8:00 PM", opens: "08:00", closes: "20:00" },
+    { day: "Wednesday", hours: "8:00 AM – 8:00 PM", opens: "08:00", closes: "20:00" },
+    { day: "Thursday", hours: "8:00 AM – 8:00 PM", opens: "08:00", closes: "20:00" },
+    { day: "Friday", hours: "8:00 AM – 8:00 PM", opens: "08:00", closes: "20:00" },
+    { day: "Saturday", hours: "8:00 AM – 8:00 PM", opens: "08:00", closes: "20:00" },
     { day: "Sunday", hours: "Closed" },
-  ],
+  ] as { day: string; hours: string; opens?: string; closes?: string }[],
   addressLocality: "Houston",
   addressRegion: "TX",
   geo: { latitude: 29.7604, longitude: -95.3698 },

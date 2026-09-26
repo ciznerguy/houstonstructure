@@ -34,12 +34,12 @@ export default function Schema() {
       name: `${c.name}, TX`,
     })),
     openingHoursSpecification: BUSINESS.hours
-      .filter((h) => h.hours !== "Closed" && h.hours !== "By appointment")
+      .filter((h) => h.opens && h.closes)
       .map((h) => ({
         "@type": "OpeningHoursSpecification",
         dayOfWeek: h.day,
-        opens: "08:00",
-        closes: "17:00",
+        opens: h.opens,
+        closes: h.closes,
       })),
     hasOfferCatalog: {
       "@type": "OfferCatalog",
