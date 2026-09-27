@@ -288,7 +288,7 @@ export default function HomeAdditionGuidePage() {
             <div className="space-y-5">
               {faqs.map((f) => (
                 <div key={f.q}>
-                  <div className="font-semibold text-slate-800">{f.q}</div>
+                  <h3 className="font-semibold text-slate-800">{f.q}</h3>
                   <p className="mt-1.5 text-slate-600 leading-relaxed">
                     {f.a}
                   </p>

@@ -567,7 +567,7 @@ export const SERVICES: Service[] = [
     ],
     sections: [
       {
-        heading: "What makes a house a good or bad candidate",
+        heading: "What makes a house a good candidate for a second story?",
         paragraphs: [
           "The honest predictor is not the age of the house or its style. It is what is under the bearing walls and how the framing was put together.",
         ],
@@ -589,7 +589,7 @@ export const SERVICES: Service[] = [
         ],
       },
       {
-        heading: "Taking the roof off",
+        heading: "What happens when the roof comes off?",
         paragraphs: [
           "At some point the existing roof comes off and the house is open. That is the phase that makes this project different from every other addition, and the whole schedule is built around making it short.",
           "The sequence is to have everything staged first: the new floor framing ready, the crew sized to move fast, and materials on site. The roof comes off, the new floor deck goes down, the walls go up, the new roof goes on, and the house gets dried in. In Houston that window is planned around the forecast, and during hurricane season it is planned more carefully still. A summer storm on an open house is the single biggest risk in this kind of work.",
@@ -604,7 +604,7 @@ export const SERVICES: Service[] = [
         ],
       },
       {
-        heading: "What the new floor does to the rest of the house",
+        heading: "What does a second floor do to the rest of the house?",
         paragraphs: [
           "Doubling the conditioned square footage changes systems that were sized for the old house. The air conditioning is the one that bites: a system sized for one floor rarely keeps up with two in a Houston August, and hot air rising makes the new floor the worst-performing part of the house if nothing changes. Sometimes the answer is extending ductwork, often it is a second system or dedicated units upstairs.",
           "Plumbing for an upstairs bathroom has to find a path down through the existing house and a route for a vent. Electrical usually needs a panel review, because the original service may not have capacity for another floor.",
@@ -620,7 +620,7 @@ export const SERVICES: Service[] = [
         ],
       },
       {
-        heading: "What drives the price",
+        heading: "Why does going up cost more than building out?",
         paragraphs: [
           "Second stories cost more per square foot than building out, and the reason is not the new floor. It is everything that has to happen to the old house before the new floor can exist. Footing work, wall reinforcement, taking off and rebuilding a roof, and the stair opening are all costs that a ground-floor addition simply does not have.",
           "The variables that move the number most: how much reinforcement the existing structure needs, whether the roof is simple or complex, whether there is a bathroom or a kitchenette upstairs, whether the HVAC needs a second system, and the finish level. Square footage matters less than people expect once those are settled.",
@@ -628,7 +628,7 @@ export const SERVICES: Service[] = [
         ],
       },
       {
-        heading: "When building out is the better answer",
+        heading: "Should you build up or build out?",
         paragraphs: [
           "Sometimes the measurements come back and the reinforcement needed to carry a second floor costs more than the space is worth. When that happens we say so. A ground-floor addition on its own new foundation asks nothing of the existing house, and on a lot with room it is frequently the cheaper and faster route to the same square footage.",
           "The comparison is worth making with real numbers rather than assumptions, and it takes one visit to get them. Our [home additions](/services/home-additions) page covers the ground-floor version, and the [room addition case study](/projects/room-addition-case-study) follows one from first visit to final inspection.",
@@ -717,7 +717,7 @@ export const SERVICES: Service[] = [
         },
       },
       {
-        heading: "What your existing foundation decides for you",
+        heading: "Will my foundation need work before I can add on?",
         paragraphs: [
           "Before anyone draws a floor plan, the foundation under your house has already made some decisions. A slab-on-grade addition ties into the edge of the existing slab, and the depth of the old grade beams sets the depth of the new ones. A post-tension slab has steel cables running through it under tension, so the tie-in detail changes and nobody cuts into it casually. A pier-and-beam house, the kind you find in the Heights, Bellaire, and older Meyerland, is often easier to add onto because the structure is visible, but seventy years of pier settlement means the new section can't be allowed to settle at its own pace.",
           "Repair history matters too. A slab that's already sitting on a dozen steel piers doesn't behave like the slab next door. If your house has had foundation work, bring the paperwork. If there isn't any, we'll find out what's under there before adding weight to it.",
@@ -725,7 +725,7 @@ export const SERVICES: Service[] = [
         ],
       },
       {
-        heading: "The crack along the seam",
+        heading: "Why does a crack appear where the addition meets the house?",
         paragraphs: [
           "Additions built without engineering fail in one place more than any other: the line where the new foundation meets the old one. A crack opens there a year or two after the work, usually after a wet winter and a dry summer, and it keeps growing.",
           "The mechanism is simple. The old slab has spent decades settling into an equilibrium with the clay under it. The new slab hasn't. If the two bear at different depths, or aren't tied together, they move independently and the seam opens. Doors near the addition stick, tile cracks in a straight line, and the homeowner is back at the start with a bigger bill.",
@@ -752,7 +752,7 @@ export const SERVICES: Service[] = [
         },
       },
       {
-        heading: "Permits, deed restrictions, and the floodplain",
+        heading: "Do I need a permit to add on in Houston?",
         paragraphs: [
           "Houston famously has no zoning, and people sometimes take that to mean you can build what you want. In practice three separate sets of rules apply to an addition, and any one of them can stop a project that's already been designed. This comes up so often that we answered it, along with twenty-one others, in our guide to the [home addition questions](/guides/home-addition-questions) we get asked most.",
           "The city's development ordinance sets building lines and setbacks, how close to the property line you can build and how much of the lot you can cover. A bump-out that looks fine on paper can land two feet inside a setback, and the fix at that point is redesigning the addition smaller. We check this before the floor plan is final, not after.",
@@ -775,7 +775,7 @@ export const SERVICES: Service[] = [
         ],
       },
       {
-        heading: "How long it takes",
+        heading: "How long does a home addition take?",
         paragraphs: [
           "The evaluation and structural design for a ground-floor addition usually take a week or two once we've been out to the house. Second stories take longer because there's more to analyze, closer to three or four weeks for design.",
           "Permitting is the variable nobody controls. Inside the City of Houston, a residential addition permit can move quickly or sit for weeks depending on the queue and whether anything in the submission draws a comment. The suburbs vary. We tell people to budget a month for permitting and to be pleasantly surprised if it's faster.",
@@ -783,7 +783,7 @@ export const SERVICES: Service[] = [
         ],
       },
       {
-        heading: "What it costs, and what moves the number",
+        heading: "How much does a home addition cost in Houston?",
         paragraphs: [
           "Additions are priced per square foot as a starting point. The number moves with what's inside the square footage and with what the existing house needs before the addition can go on. Houston-area planning ranges for the construction itself:",
         ],
@@ -927,7 +927,7 @@ export const SERVICES: Service[] = [
         },
       },
       {
-        heading: "What it costs",
+        heading: "How much does it cost to remove a load-bearing wall?",
         paragraphs: [
           "The engineering, meaning the visit and the stamped letter, is a few hundred dollars for most homes and can approach a thousand when full calculations have to accompany a permit submission or the framing takes longer to trace. This is the cheapest step in the project by a wide margin.",
           "Construction depends on the span, the beam type, whether the beam is flush or dropped, and what's inside the wall. A short opening with an LVL beam, a couple of posts, and modest patching is typically in the low thousands in the Houston area. Longer spans, steel beams, flush installs that require hanging the joists, and rerouting mechanicals all push the number up, and a wide opening in steel can reach well into five figures. We quote the construction after the visit, when the scope is known, not before.",
@@ -970,7 +970,7 @@ export const SERVICES: Service[] = [
         },
       },
       {
-        heading: "Permits, and why we don't skip them",
+        heading: "Do I need a permit to remove a load-bearing wall?",
         paragraphs: [
           "Removing a bearing wall is a structural alteration, and it needs a permit inside the City of Houston and in every suburb we work in. The permit office wants the engineer's letter. The contractor pulls the permit, or we do when we're building.",
           "The permit is also your record. When you sell, the buyer's inspector is going to see a new beam and ask what's behind it. A permitted, engineered opening with paperwork is a non-event. An unpermitted one is a negotiation that goes against you. It's a small amount of friction now for a lot less later.",
