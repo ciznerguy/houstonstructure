@@ -22,6 +22,10 @@ export const metadata: Metadata = {
   },
   description:
     "Licensed structural engineering, foundation repair, and structural inspection reports serving Houston, The Woodlands, Sugar Land, and the surrounding metro. 5.0-star rated. Call for a straight engineering opinion.",
+  // "./" resolves per route against metadataBase, so every page declares its
+  // own URL as canonical. Without this, a page reached with a query string or
+  // a different trailing slash can be treated as a separate duplicate.
+  alternates: { canonical: "./" },
   openGraph: {
     type: "website",
     locale: "en_US",
