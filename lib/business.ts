@@ -334,6 +334,48 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "Katy has grown so fast over the past two decades that most of the structural work we do here has nothing to do with old age. It's about newer construction: homes three, five, ten years old that are still settling, sometimes normally and sometimes because the lot grading or compaction wasn't quite right before the slab went down.",
       "Because so much of Katy was built out in phases across large master-planned communities, we also see a fair number of cases where a specific section or phase has more reported issues than its neighbors, usually tied to how that section's soil was prepped during development. Knowing which phase a home is in tells us a lot before we even arrive.",
     ],
+    sections: [
+      {
+        heading: "Which county is your Katy address actually in?",
+        paragraphs: [
+          "Katy is not one jurisdiction. The City of Katy is a small incorporated city at the center, and most of what people call Katy is unincorporated land spread across three counties: Harris, Fort Bend, and Waller. Where your address falls decides who issues the permit for structural work, what has to carry an engineer's seal, and in some cases whether a building permit is required at all.",
+          "This catches people out. A home in the Cinco Ranch area is in Fort Bend County. A home north of I-10 off the Grand Parkway may be in Harris County. The engineering itself does not change with the county line, but the submittal does, and a contractor who works mostly on one side of it will not always know the process on the other.",
+          "We tell clients to settle this before drawings start rather than after. It costs nothing to check and it removes the most common source of schedule surprise on a Katy project.",
+        ],
+      },
+      {
+        heading: "What the 2017 reservoir releases left behind",
+        paragraphs: [
+          "Katy's flood history is specific, and it still shows up in the structural work here. During Harvey, the controlled releases from Barker Reservoir put water into neighborhoods that had never flooded from rainfall alone, and a number of homes on the west side sat in standing water for days rather than hours.",
+          "Duration is what matters structurally. A house that took water for six hours and dried quickly is usually a finishes problem. A house that sat in water for a week has wet sill plates, wet bottom plates, and in a two-story home, wet framing at the first floor ceiling line. Many of those repairs went in fast, which means some of that framing was closed up before it had dried.",
+          "When we evaluate a Katy home that flooded in 2017, we are looking underneath the repair rather than at it: the sill plate where it meets the slab, the bottoms of the studs behind the new drywall, and any framing that was cut during demolition and never properly put back.",
+        ],
+      },
+      {
+        heading: "New construction, and what a report is actually for",
+        paragraphs: [
+          "Most Katy homes we are called to are under fifteen years old, and a good share are under five. Some settlement in a new house is normal. What is not normal is movement concentrated in one corner or one room while the rest of the slab stays where it was, and that pattern usually points back to how the lot was prepared before the pour.",
+          "Builders in fast-growing areas work on compressed schedules, and fill that was placed and compacted in a hurry behaves differently from fill that was given time. When we measure a young slab and find a localized dip, the real questions are whether it is still moving and whether it falls inside the builder's structural warranty.",
+          "Our report documents the elevations, the pattern across the whole slab, and the likely cause. It does not argue your warranty claim for you. It gives you something measured to bring to the builder instead of a description of cracks, and if you are still inside the warranty window, that difference matters.",
+        ],
+      },
+      {
+        heading: "Going up instead of out",
+        paragraphs: [
+          "Lots in Katy's master-planned sections are not large, and the setbacks in most of these communities leave little room to build outward. That pushes homeowners who need more space toward going up, and [adding a second story](/services/second-story-addition) is one of the more common requests we get here.",
+          "The foundation is the first question, not the last. A single-story Katy house was built to carry one floor and one roof, so the slab, the footings, and the bearing walls all have to be checked against the new load before an architect draws anything. Sometimes the existing structure carries it as built. Sometimes it needs reinforcement, and it is far cheaper to learn that at the start than after plans are done.",
+          "We documented one of these from the first evaluation through framing, including what the existing slab turned out to be able to carry: [a second story addition on a Katy farmhouse](/projects/second-story-addition-katy).",
+        ],
+      },
+      {
+        heading: "Opening a wall in a Katy two-story",
+        paragraphs: [
+          "The other request that comes up constantly here is taking out the wall between the kitchen and the living room. In Katy's two-story production homes that wall is often carrying the floor above, and sometimes it is carrying a point load where a roof truss girder lands in an inconvenient place.",
+          "In a single-story house the beam is usually engineered lumber and the job is straightforward. In a two-story, the load from above pushes the beam toward steel, steel needs columns, and columns need something under the slab to land on. That last part is what turns a simple looking wall into a real project, and it is the part that gets missed when the work is priced without an engineer involved.",
+          "We size the beam, specify the columns and the footings under them, and put it in a sealed letter the county will accept. More on how that works: [load-bearing wall removal](/services/load-bearing-wall-removal).",
+        ],
+      },
+    ],
     faqs: [
       {
         q: "My Katy home is only a few years old. Why would it already have foundation issues?",
@@ -342,6 +384,18 @@ export const SERVICE_AREAS: ServiceArea[] = [
       {
         q: "Is this a builder warranty issue or something I need to pay for myself?",
         a: "That depends on your builder's warranty terms and how long ago you closed. We can document the condition and cause, which you can then take to the builder if the timeline supports a claim.",
+      },
+      {
+        q: "Which county issues the permit for structural work in Katy?",
+        a: "It depends on the address. Inside the Katy city limits it is the city. Outside them it is Harris, Fort Bend, or Waller County, and the requirements are not identical. Check this before you commission drawings, because finding out late is what costs a review cycle.",
+      },
+      {
+        q: "My Katy home flooded in 2017 and was repaired. Is it still worth looking at?",
+        a: "Often yes, particularly if the repair was done quickly. Framing that stayed wet for days and then got covered does not announce itself right away, and rot in a sill plate or the bottom of a stud is easier to deal with when it is found rather than when it is discovered during a later renovation.",
+      },
+      {
+        q: "Can I add a second story to a Katy production home?",
+        a: "Sometimes, and the answer comes from the foundation and the walls below rather than from the plan you have in mind. A house built as a single story was built to carry one roof, so the slab and the bearing walls have to be checked against the new load first. That evaluation is the right starting point, before an architect draws the upstairs.",
       },
     ],
   },
@@ -354,6 +408,47 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "Cypress has been one of the fastest-growing parts of the Houston metro for years now, and that kind of pace puts pressure on every part of the construction process, foundations included. Most of what we see here is new-construction related: verifying a builder's work before or after closing, or investigating settlement in a home that's barely old enough to need its first major repair.",
       "A lot of our Cypress clients are buyers in the middle of a purchase, not homeowners already living with a problem. A pre-purchase structural evaluation here is often less about finding damage and more about confirming there isn't any before signing on a newly built or recently resold home.",
     ],
+    sections: [
+      {
+        heading: "Most of Cypress has no city building department",
+        paragraphs: [
+          "Cypress is not an incorporated city. Almost all of it is unincorporated Harris County, and unincorporated Harris County does not run a residential building permit program for single-family homes the way Bellaire or West University Place does. Floodplain rules, septic, and driveway access are still regulated, and your deed restrictions or HOA may have their own review, but there is generally no plan reviewer looking at your beam sizes.",
+          "Homeowners usually hear this as good news. In practice it cuts both ways. A permit review is a slow, annoying safety net, and when it is absent, nothing catches an undersized beam or a column landing on a slab that cannot carry it. The mistake simply gets built, and it shows up later as a sagging floor or a cracking wall above the opening.",
+          "That is the main reason we get called out here for work that would not strictly require us. If no one else is going to check the structure, the engineer's letter stops being a permit formality and becomes the only real check in the process.",
+        ],
+      },
+      {
+        heading: "Buying new, and what an evaluation actually catches",
+        paragraphs: [
+          "A large share of our Cypress clients are buyers rather than owners. Bridgeland, Towne Lake, Fairfield and the newer sections off the Grand Parkway have produced a steady supply of houses that are three to ten years old and changing hands for the first or second time.",
+          "On a house that young, an evaluation is usually not about finding damage. It is about establishing what the slab is doing now so you have a baseline, and about catching the specific things that a general home inspection is not set up to measure. A home inspector will note a crack. We measure the elevations across the whole floor and tell you whether that crack sits in a slab that is level or in one that has dropped three quarters of an inch in one corner.",
+          "Those are different situations with different costs, and the difference is worth knowing before the option period closes rather than after.",
+        ],
+      },
+      {
+        heading: "Fast growth, fill, and uneven settlement",
+        paragraphs: [
+          "Cypress has been among the fastest-growing parts of the Houston metro for well over a decade. Land that was pasture and rice acreage a few years ago is now rooftops, and a lot of that land needed fill and grading before anything was built on it.",
+          "Fill placed and compacted on a tight schedule does not behave like fill that was given time to settle. When we measure a young Cypress slab and find movement, it is more often concentrated in one area than spread evenly across the house, and concentrated movement is the pattern that tends to keep going rather than stabilize.",
+          "The useful question is not whether a new house has moved. Most have, a little. It is whether the movement is even, and whether it has stopped.",
+        ],
+      },
+      {
+        heading: "Cypress Creek and where the water goes",
+        paragraphs: [
+          "The Cypress Creek watershed drains a large, flat area, and parts of Cypress flooded in 2016 and again during Harvey. As with the rest of the region, how long water stood matters more structurally than how deep it got.",
+          "Drainage is also the part of long-term foundation health that a homeowner can actually control. On the flat lots common here, where water goes in the first ten feet from the slab has more effect on movement over twenty years than most of the expensive interventions people consider. We look at grading and downspout discharge on nearly every Cypress call before we look at anything else.",
+        ],
+      },
+      {
+        heading: "Opening up or adding on",
+        paragraphs: [
+          "The two structural projects we are asked about most in Cypress are taking out a wall between the kitchen and living area, and adding space. In a two-story production home the kitchen wall is frequently carrying the floor above, which moves the beam from engineered lumber toward steel and brings columns and footings into the job. More on that here: [load-bearing wall removal](/services/load-bearing-wall-removal).",
+          "For added space, lot sizes in the newer Cypress communities are tight enough that going up often makes more sense than going out. Whether that is possible comes down to what the existing slab and bearing walls can carry, which is a measurement rather than an opinion. We cover the process on the [second story addition](/services/second-story-addition) and [home additions](/services/home-additions) pages.",
+          "Because there is generally no county plan review standing behind this work in unincorporated Cypress, the sealed letter is worth having even where nobody is going to ask you for it. It is what your contractor builds to, and it is what you can show a future buyer.",
+        ],
+      },
+    ],
     faqs: [
       {
         q: "Should I get a structural evaluation before buying a newly built home in Cypress?",
@@ -362,6 +457,18 @@ export const SERVICE_AREAS: ServiceArea[] = [
       {
         q: "How do I know if my new Cypress home is settling normally or has a real problem?",
         a: "Minor settling in the first couple of years is common. What we look for is whether it's even across the home or concentrated in one area, since concentrated movement is the bigger flag.",
+      },
+      {
+        q: "Do I need a permit to remove a load-bearing wall in Cypress?",
+        a: "In most of Cypress you are in unincorporated Harris County, which generally does not require a building permit for that work on a single-family home. Your HOA or deed restrictions might, so check those. The absence of a permit does not make the engineering optional, it just means nobody else is checking it.",
+      },
+      {
+        q: "What does a structural evaluation cover that a home inspection doesn't?",
+        a: "A home inspector documents what is visible and reports it. We measure floor elevations across the house, work out the pattern of movement, and tell you what is causing it and what it means. One tells you a crack exists. The other tells you whether it matters.",
+      },
+      {
+        q: "Can I add a second story to a house in Bridgeland or Towne Lake?",
+        a: "Often yes, subject to what the foundation and the walls below can carry and to your community's own architectural rules, which in the newer master-planned sections can be strict about height and appearance. The structural check comes first, since there is no point clearing a design that the slab cannot support.",
       },
     ],
   },
@@ -374,6 +481,48 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "Pearland sits low and flat, close enough to the Gulf Coast that its water table stays high most of the year. That combination means water has fewer places to go after a heavy rain, and a lot of the foundation movement we see here traces back to standing water sitting against a slab longer than it should.",
       "Drainage is the first thing we check on almost every Pearland call, before we even get to the foundation itself. A slab that's otherwise sound can still show cracking and movement if water has nowhere to drain, so fixing the grading or drainage sometimes solves more of the problem than any structural repair would.",
     ],
+    sections: [
+      {
+        heading: "Pearland is a city, and it straddles two counties",
+        paragraphs: [
+          "Pearland is an incorporated city with its own building department, so unlike much of the unincorporated Houston area, structural work here goes through a real permit process. Removing a bearing wall, adding a room, or adding a second story needs a permit and the city expects a sealed drawing or letter from a Texas licensed engineer for anything that changes how the house carries load.",
+          "The city also sits across a county line. Most of Pearland is in Brazoria County, part of the north side is in Harris County, and a small piece reaches into Fort Bend. That matters less for the building permit itself than for floodplain determinations and drainage district requirements, which is where projects here tend to run into unexpected paperwork.",
+          "The practical advice is the same one we give everywhere: get the structural engineering resolved before the plans are finalized, not after a reviewer asks for it. A structural item added in response to a review comment costs a full cycle of review time.",
+        ],
+      },
+      {
+        heading: "Why drainage comes before structure here",
+        paragraphs: [
+          "Pearland sits low and flat on the coastal plain, and the water table stays high through most of the year. Water that falls here has fewer places to go and takes longer to leave than it does further inland, and a good share of the foundation movement we are called about traces back to water standing against a slab rather than to anything wrong with the slab itself.",
+          "That changes the order of work. On most Pearland calls we look at grading, downspouts, and where the lot actually drains before we form any opinion about the foundation. It is not unusual to find that the structural repair a homeowner was quoted would have fixed the symptom and left the cause running.",
+          "Repairing a slab without addressing the drainage that moved it is a decision to do the same job again in a few years. When our report recommends drainage work first, that is not us avoiding the structural question. It is the structural answer.",
+        ],
+      },
+      {
+        heading: "Built on fill, on former farmland",
+        paragraphs: [
+          "Large parts of modern Pearland went up on land that was farmland and pasture within living memory, and developing flat, poorly draining ground means bringing in fill and engineering the drainage from scratch. Shadow Creek Ranch and the other big developments on the west side are built this way.",
+          "Engineered fill done properly is fine. The issue is that fill behaves according to how carefully it was placed and compacted, and that varies between developments, between phases within a development, and sometimes between adjacent streets. When we see movement in a Pearland house built in the last twenty years, the question is usually about the ground it sits on rather than the construction of the house.",
+          "This is why we ask what section and what year before we arrive. It tells us what pattern to expect and what to rule out.",
+        ],
+      },
+      {
+        heading: "Storm history and what it means for your house",
+        paragraphs: [
+          "Pearland has taken serious water more than once, including during Harvey and in the Tax Day and Memorial Day events before it. Where a home flooded, the structural question is duration rather than depth. Water that stood for days leaves wet sill plates and wet bottom plates, and repairs done quickly in the rush afterward sometimes closed that framing up before it dried.",
+          "Where a home did not flood but sat surrounded by standing water, the effect is different and slower: saturated soil under one part of a slab, dried out soil under another, and movement that shows up over the following seasons rather than immediately.",
+          "Both are worth measuring rather than guessing at, particularly if you are buying.",
+        ],
+      },
+      {
+        heading: "Adding space in Pearland",
+        paragraphs: [
+          "Lot sizes in Pearland are generally more generous than in the older inner-loop neighborhoods, so building outward is more often an option here than it is in Bellaire or West U. A ground-floor addition on a Pearland lot is usually a question of how the new slab ties into the existing one and whether the two will move together, which on this soil is the part that deserves attention. We cover that on the [home additions](/services/home-additions) page.",
+          "Where owners do want to go up, the checks are the same as anywhere: the slab, the footings, and the bearing walls have to be verified against the new load before the design is settled. See [second story additions](/services/second-story-addition).",
+          "And the most common interior request, opening the kitchen to the living area, runs through the same process as everywhere else in the metro. The city will want the beam sized and sealed. More on that here: [load-bearing wall removal](/services/load-bearing-wall-removal).",
+        ],
+      },
+    ],
     faqs: [
       {
         q: "Why does Pearland seem to have more foundation issues after big storms?",
@@ -382,6 +531,18 @@ export const SERVICE_AREAS: ServiceArea[] = [
       {
         q: "Is a foundation repair enough, or do I also need drainage work?",
         a: "Often both. Repairing the foundation without addressing the drainage that caused the problem usually means dealing with the same issue again in a few years.",
+      },
+      {
+        q: "Do I need a permit for structural work in Pearland?",
+        a: "Yes. Pearland is an incorporated city with its own building department, and anything that changes how the house carries load needs a permit and an engineer's seal. This is different from the unincorporated parts of the metro, where no such review exists.",
+      },
+      {
+        q: "My Pearland house is in Brazoria County. Does that change anything?",
+        a: "Not for the building permit, which comes from the city. It can matter for floodplain determination and for drainage district requirements, and those are the items most likely to add time to a project here.",
+      },
+      {
+        q: "Should I be worried that my neighborhood was built on fill?",
+        a: "Not automatically. Engineered fill placed and compacted properly performs well. What matters is whether it was, and the honest way to answer that for your specific house is to measure the floor elevations and look at the pattern rather than to reason from the development's reputation.",
       },
     ],
   },
@@ -508,6 +669,79 @@ export const SERVICE_AREAS: ServiceArea[] = [
       {
         q: "Do you work with both the city and my HOA if my Sugar Land community requires architectural review?",
         a: "Yes. We prepare the stamped engineering documentation in a form that satisfies the City of Sugar Land's permitting requirements and format it so it also works for your HOA's architectural review committee, rather than producing two separate versions.",
+      },
+    ],
+  },
+  {
+    slug: "fort-bend-county",
+    name: "Fort Bend County",
+    blurb:
+      "Fort Bend sits on some of the most expansive clay in Texas, and it has grown faster than almost any county in the country. Most of what we are asked to do here is not a repair. It is the structural engineering behind a large remodel or an addition.",
+    intro: [
+      "Fort Bend County covers Sugar Land, Missouri City, Richmond, Rosenberg, Stafford, Fulshear, Needville, a large share of Katy, and a great deal of unincorporated land in between. It is one of the fastest-growing counties in the United States, and the houses reflect that: 1970s ranch homes a few miles from subdivisions that were pasture five years ago.",
+      "What brings people to us here is different from what brings them to us closer to the city. A large part of our Fort Bend work is the structural side of a serious remodel: taking out most of a ground floor, adding a wing, putting a second story on a house that was built as one. Those projects need an engineer from the beginning, not at the end when a plan reviewer asks for one.",
+    ],
+    sections: [
+      {
+        heading: "One county, a dozen different permit processes",
+        paragraphs: [
+          "There is no single Fort Bend permit process. Sugar Land, Missouri City, Richmond, Rosenberg, Stafford, Fulshear and the other incorporated cities each run their own building department with their own submittal requirements and review timelines. Unincorporated Fort Bend County operates differently again, and does not review single-family structural work the way an incorporated city does.",
+          "For a homeowner this is mostly an administrative nuisance. For a large remodel with a construction loan or a hard move-in date, it is a scheduling risk, because the review cycle in one city is not the review cycle in the next one over.",
+          "We ask what jurisdiction the property is in before we start, and we format the sealed documents for that jurisdiction. It sounds like a small thing. It is the difference between one review cycle and two.",
+        ],
+      },
+      {
+        heading: "Beaumont clay, and why it moves more here",
+        paragraphs: [
+          "The soil across much of Fort Bend is Beaumont clay, and it is among the most expansive soil in Texas. Expansive means it swells when it takes on water and shrinks when it dries, and the range of that movement here is larger than in much of the Houston area. A slab that would sit quietly on sandier ground will move seasonally on this.",
+          "That has a direct consequence for anything you add to a house. When you build an addition onto an existing home on soil like this, you are joining two structures that will want to move at different rates, because the old foundation has reached its own equilibrium with the soil and the new one has not. How that joint is detailed is the single most important decision in a Fort Bend addition, and it is where we spend most of our design attention.",
+          "Get it wrong and the crack shows up at the seam within a couple of years, right where the new work meets the old. Get it right and the two move together or are deliberately allowed to move independently, which is a design choice rather than an accident.",
+        ],
+      },
+      {
+        heading: "Large-scale remodels, which is most of what we do here",
+        paragraphs: [
+          "A large remodel is a structural project whether or not anyone calls it one. Once you are removing several walls, relocating a stair, or opening the back of the house to the yard, the load paths that held the building up have to be replaced with new ones, and those have to be designed rather than assumed.",
+          "Our role on these is narrow and it starts early. We evaluate what the existing structure is doing and what it can carry, we work with your architect while the plan is still changeable, and we produce the sealed drawings the city needs. Bringing us in after the design is frozen usually means either a compromise in the plan or a column in a place nobody wanted one.",
+          "The two most common items in a Fort Bend remodel are beams over newly opened spans and new point loads landing on an existing slab. Both are covered in more detail on the [structural remodels and load-bearing wall removal](/services/load-bearing-wall-removal) and [steel beam installation](/services/steel-beam-installation) pages.",
+        ],
+      },
+      {
+        heading: "Adding on: out, or up",
+        paragraphs: [
+          "Lot sizes vary enormously across the county, and that decides the shape of most additions. In Fulshear, Richmond and the unincorporated areas the lots are often large enough that building outward is straightforward, and the engineering question is the one above: how the new foundation relates to the old one on this soil.",
+          "In the built-out parts of Sugar Land and Missouri City, and in the tighter master-planned sections, going up is frequently the only option. That turns the project into a question about the existing house rather than the new one. A home built as a single story was designed to carry a single story, so the slab, the footings and the bearing walls all have to be verified against the new load before anything is drawn. The process is described on the [second story addition](/services/second-story-addition) and [home additions](/services/home-additions) pages.",
+          "Either way the first deliverable is the same: a measured evaluation of what you already have. Everything else is priced off that.",
+        ],
+      },
+      {
+        heading: "The Brazos, the levee districts, and drainage",
+        paragraphs: [
+          "The Brazos River runs through the middle of the county, and large populated areas sit behind levee improvement districts and inside districts responsible for drainage. During the major river floods of the last decade this infrastructure did most of its job, but it also means that floodplain status, levee district rules and drainage requirements are a genuine part of the approval process for work here in a way that they are not everywhere.",
+          "At the level of an individual house, drainage remains the thing an owner can actually control and the thing that matters most over twenty years. On Beaumont clay, keeping soil moisture steady around the perimeter does more for a foundation than almost any repair, because the damage comes from the swing between wet and dry rather than from either state on its own.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Do I need a permit for a structural remodel in Fort Bend County?",
+        a: "It depends where in the county you are. Sugar Land, Missouri City, Richmond, Rosenberg, Fulshear and the other incorporated cities each require permits and each run their own process. Unincorporated Fort Bend does not review single-family structural work the same way. The engineering is worth having regardless, since in the unincorporated areas nothing else is checking it.",
+      },
+      {
+        q: "Why is the soil in Fort Bend worse than in the rest of the Houston area?",
+        a: "Much of the county sits on Beaumont clay, which is highly expansive. It swells when wet and shrinks when dry, and the range of that movement is larger here than in many surrounding areas. It doesn't make building impossible, it makes the foundation details matter more, particularly where new construction meets old.",
+      },
+      {
+        q: "We're planning a large remodel. When should an engineer get involved?",
+        a: "Before the plan is finalized. Once the design is frozen, our options narrow to whatever the drawing allows, which sometimes means a column in an awkward place or a beam deeper than the ceiling wants. Brought in early, we can usually find a solution that fits the plan you actually want.",
+      },
+      {
+        q: "Will an addition crack away from the original house?",
+        a: "It can, and on this soil that is the risk worth designing against. The old foundation has settled into its own relationship with the soil and the new one has not, so the two want to move at different rates. The joint between them has to be detailed deliberately, either to tie them together or to let them move independently. That decision is the heart of the job.",
+      },
+      {
+        q: "Can you add a second story to a single-story home in Sugar Land or Missouri City?",
+        a: "Often, and the answer comes out of the existing structure rather than the plan. The slab, the footings and the bearing walls below have to be checked against the new load, and on Beaumont clay the foundation check is the one that decides the project. That evaluation is the right first step, ahead of an architect drawing the upstairs.",
       },
     ],
   },
