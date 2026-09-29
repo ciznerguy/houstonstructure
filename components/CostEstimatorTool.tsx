@@ -15,7 +15,16 @@ import {
 
 const FORM_NAME = "cost-estimator-lead";
 
-export default function CostEstimatorTool() {
+type Props = {
+  // Set by /estimate, the second step of the lead flow, where the visitor has
+  // already given their details. The contact fields are skipped when it is
+  // present; leaving it out keeps the standalone /cost-estimator unchanged.
+  knownContact?: { name: string; email: string; phone: string };
+  // A separate form name keeps the two steps apart in Netlify and in GA4.
+  formName?: string;
+};
+
+export default function CostEstimatorTool({ knownContact, formName = FORM_NAME }: Props = {}) {
   const [step, setStep] = useState<1 | 2 | 3>(1);
 
   const [zip, setZip] = useState("");
@@ -29,9 +38,9 @@ export default function CostEstimatorTool() {
   const [hvac, setHvac] = useState<YesNoUnsure | "">("");
   const [electrical, setElectrical] = useState<YesNoUnsure | "">("");
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
+  const [name, setName] = useState(knownContact?.name ?? "");
+  const [email, setEmail] = useState(knownContact?.email ?? "");
+  const [phone, setPhone] = useState(knownContact?.phone ?? "");
   const [leadStatus, setLeadStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [result, setResult] = useState<EstimatorResult | null>(null);
 
@@ -73,7 +82,7 @@ export default function CostEstimatorTool() {
       .join(", ");
 
     try {
-      await submitNetlifyForm(FORM_NAME, {
+      await submitNetlifyForm(formName, {
         name,
         email,
         phone,
@@ -98,12 +107,12 @@ export default function CostEstimatorTool() {
     <div className="mx-auto max-w-2xl px-5 py-12">
       {/* Always rendered in the DOM so Netlify's static form scanner can detect every field */}
       <form
-        name={FORM_NAME}
+        name={formName}
         data-netlify="true"
         netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
       >
-        <input type="hidden" name="form-name" value={FORM_NAME} />
+        <input type="hidden" name="form-name" value={formName} />
         <p hidden>
           <label>
             Don&rsquo;t fill this out: <input name="bot-field" />
@@ -350,47 +359,53 @@ export default function CostEstimatorTool() {
             </div>
           ) : (
             <div>
-              <h2 className="text-xl font-bold text-[#0B1F3A]">Almost there</h2>
+              <h2 className="text-xl font-bold text-[#0B1F3A]">
+                {knownContact ? "Ready when you are" : "Almost there"}
+              </h2>
               <p className="mt-2 text-sm text-slate-600">
-                We&rsquo;ve calculated a preliminary cost range for your project based on
-                Houston-area building costs and what you selected. Enter your details to view it
-                and get a copy by email.
+                {knownContact
+                  ? `We've calculated a preliminary cost range from Houston-area building costs and what you selected. We already have your details, ${knownContact.name.split(" ")[0]}, so go ahead and take a look.`
+                  : "We've calculated a preliminary cost range for your project based on Houston-area building costs and what you selected. Enter your details to view it and get a copy by email."}
               </p>
 
               <div className="mt-6 grid gap-4">
-                <div>
-                  <label className="text-sm font-medium text-slate-700">Full name</label>
-                  <input
-                    required
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    className="mt-1 w-full rounded-sm border border-slate-300 px-3 py-2 text-sm outline-none focus:border-[#0B1F3A]"
-                  />
-                </div>
-                <div>
-                  <label className="text-sm font-medium text-slate-700">Email</label>
-                  <input
-                    required
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="mt-1 w-full rounded-sm border border-slate-300 px-3 py-2 text-sm outline-none focus:border-[#0B1F3A]"
-                  />
-                </div>
-                <div>
-                  <label className="text-sm font-medium text-slate-700">Phone</label>
-                  <input
-                    required
-                    type="tel"
-                    inputMode="numeric"
-                    maxLength={10}
-                    pattern="[0-9]{10}"
-                    title="Enter a 10-digit US phone number"
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value.replace(/[^0-9]/g, "").slice(0, 10))}
-                    className="mt-1 w-full rounded-sm border border-slate-300 px-3 py-2 text-sm outline-none focus:border-[#0B1F3A]"
-                  />
-                </div>
+                {!knownContact && (
+                  <>
+                    <div>
+                      <label className="text-sm font-medium text-slate-700">Full name</label>
+                      <input
+                        required
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        className="mt-1 w-full rounded-sm border border-slate-300 px-3 py-2 text-sm outline-none focus:border-[#0B1F3A]"
+                      />
+                    </div>
+                    <div>
+                      <label className="text-sm font-medium text-slate-700">Email</label>
+                      <input
+                        required
+                        type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        className="mt-1 w-full rounded-sm border border-slate-300 px-3 py-2 text-sm outline-none focus:border-[#0B1F3A]"
+                      />
+                    </div>
+                    <div>
+                      <label className="text-sm font-medium text-slate-700">Phone</label>
+                      <input
+                        required
+                        type="tel"
+                        inputMode="numeric"
+                        maxLength={10}
+                        pattern="[0-9]{10}"
+                        title="Enter a 10-digit US phone number"
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value.replace(/[^0-9]/g, "").slice(0, 10))}
+                        className="mt-1 w-full rounded-sm border border-slate-300 px-3 py-2 text-sm outline-none focus:border-[#0B1F3A]"
+                      />
+                    </div>
+                  </>
+                )}
 
                 {leadStatus === "error" && (
                   <div className="rounded-sm bg-[#F6E2D3] px-3 py-2 text-sm text-[#B8420F]">
@@ -411,7 +426,11 @@ export default function CostEstimatorTool() {
                     disabled={leadStatus === "sending"}
                     className="flex-1 rounded-sm bg-[#EA580C] px-6 py-2.5 text-sm font-semibold text-white hover:bg-[#c94b0a] disabled:opacity-60"
                   >
-                    {leadStatus === "sending" ? "Calculating…" : "Unlock My Estimate"}
+                    {leadStatus === "sending"
+                      ? "Calculating…"
+                      : knownContact
+                        ? "Show My Estimate"
+                        : "Unlock My Estimate"}
                   </button>
                 </div>
               </div>

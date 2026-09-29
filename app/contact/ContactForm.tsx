@@ -1,46 +1,42 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { BUSINESS } from "@/lib/business";
 import { submitNetlifyForm } from "@/lib/netlify-forms";
+import { saveLeadContact } from "@/lib/lead-handoff";
 
+// Step one of a two-step flow. It asks for the least it can and sends the lead
+// the moment it has it, so a visitor who goes no further is still a lead we can
+// call. The project questions come afterwards on /estimate.
 export default function ContactForm() {
+  const router = useRouter();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [address, setAddress] = useState("");
-  const [message, setMessage] = useState("");
-  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [status, setStatus] = useState<"idle" | "sending" | "error">("idle");
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setStatus("sending");
     try {
-      await submitNetlifyForm("contact-page", { name, email, phone, address, message });
-      setStatus("sent");
+      await submitNetlifyForm("contact-page", { name, email, phone });
+      // Only after the email is confirmed sent: the lead is safe either way now.
+      saveLeadContact({ name, email, phone });
+      router.push("/estimate");
     } catch {
       setStatus("error");
     }
   }
 
-  if (status === "sent") {
-    return (
-      <div className="py-6 text-center">
-        <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-[#E4ECD8]">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#4A6B3A" strokeWidth="2.5" width={22} height={22}>
-            <polyline points="20 6 9 17 4 12" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        </div>
-        <div className="font-semibold text-[#0B1F3A]">Message sent!</div>
-        <p className="mt-1 text-sm text-slate-600">
-          We&rsquo;ll get back to you the same business day.
-        </p>
-      </div>
-    );
-  }
-
   return (
-    <form name="contact-page" data-netlify="true" netlify-honeypot="bot-field" className="grid gap-4" onSubmit={handleSubmit}>
+    <form
+      name="contact-page"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      className="grid gap-4"
+      onSubmit={handleSubmit}
+    >
       <input type="hidden" name="form-name" value="contact-page" />
       <p hidden>
         <label>
@@ -54,17 +50,6 @@ export default function ContactForm() {
           name="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="mt-1 w-full rounded-sm border border-slate-300 px-3 py-2 text-sm outline-none focus:border-[#0B1F3A]"
-        />
-      </div>
-      <div>
-        <label className="text-sm font-medium text-slate-700">Email</label>
-        <input
-          required
-          type="email"
-          name="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
           className="mt-1 w-full rounded-sm border border-slate-300 px-3 py-2 text-sm outline-none focus:border-[#0B1F3A]"
         />
       </div>
@@ -84,30 +69,20 @@ export default function ContactForm() {
         />
       </div>
       <div>
-        <label className="text-sm font-medium text-slate-700">Property address</label>
+        <label className="text-sm font-medium text-slate-700">Email</label>
         <input
-          name="address"
-          value={address}
-          onChange={(e) => setAddress(e.target.value)}
-          className="mt-1 w-full rounded-sm border border-slate-300 px-3 py-2 text-sm outline-none focus:border-[#0B1F3A]"
-        />
-      </div>
-      <div>
-        <label className="text-sm font-medium text-slate-700">
-          What&rsquo;s going on?
-        </label>
-        <textarea
-          name="message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          rows={4}
+          required
+          type="email"
+          name="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           className="mt-1 w-full rounded-sm border border-slate-300 px-3 py-2 text-sm outline-none focus:border-[#0B1F3A]"
         />
       </div>
 
       {status === "error" && (
         <div className="rounded-sm bg-[#F6E2D3] px-3 py-2 text-sm text-[#B8420F]">
-          Something went wrong sending that. Please call us instead.
+          Something went wrong sending that. Please call us instead at {BUSINESS.phone}.
         </div>
       )}
 
@@ -118,6 +93,10 @@ export default function ContactForm() {
       >
         {status === "sending" ? "Sending…" : "Send Request"}
       </button>
+      <p className="text-xs text-slate-500">
+        Next we&rsquo;ll ask a few optional questions about the project so you can see a cost
+        range. You can skip that and we&rsquo;ll still call you.
+      </p>
     </form>
   );
 }

@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { BUSINESS } from "@/lib/business";
 import { submitNetlifyForm } from "@/lib/netlify-forms";
+import { saveLeadContact } from "@/lib/lead-handoff";
 
 export default function FloatingContactButton() {
   const [open, setOpen] = useState(false);
@@ -17,6 +19,8 @@ export default function FloatingContactButton() {
     setStatus("sending");
     try {
       await submitNetlifyForm("quick-contact", { name, email, phone, message });
+      // Hand the details to /estimate so the project questions never ask twice.
+      saveLeadContact({ name, email, phone });
       setStatus("sent");
     } catch {
       setStatus("error");
@@ -76,9 +80,19 @@ export default function FloatingContactButton() {
               <p className="mt-1 text-sm text-slate-600">
                 We&rsquo;ll get back to you the same business day.
               </p>
+              <Link
+                href="/estimate"
+                onClick={closeAndReset}
+                className="mt-4 block rounded-sm bg-[#EA580C] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#c94b0a]"
+              >
+                See a cost range for your project
+              </Link>
+              <p className="mt-2 text-xs text-slate-500">
+                Optional, and it takes about a minute.
+              </p>
               <button
                 onClick={closeAndReset}
-                className="mt-4 rounded-sm border border-slate-300 px-5 py-2 text-sm text-slate-600 hover:border-[#0B1F3A]"
+                className="mt-3 rounded-sm border border-slate-300 px-5 py-2 text-sm text-slate-600 hover:border-[#0B1F3A]"
               >
                 Close
               </button>
