@@ -36,11 +36,21 @@ const BASE_RATE_PER_SQFT: Record<FinishLevel, number> = {
 };
 
 // Relative cost of each addition type versus a straightforward ground-floor bump-out.
+//
+// The garage figure was 0.75 until 2026-09-30 and that was wrong by roughly a
+// factor of two. A ground-floor addition pays for a new foundation, new walls
+// and a new roof. A garage conversion already has all three, so the only shell
+// work is infilling the door opening, building up the floor, and insulating.
+// At 0.75 the tool quoted $170-$398 per square foot against a Houston market of
+// $60-$137, which loses the lead rather than qualifying it. 0.45 lands us a
+// little above the homeowner-reported aggregate figures on purpose, because
+// this model also carries permits, engineering and a 12% contingency that those
+// numbers leave out.
 const ADDITION_TYPE_FACTOR: Record<AdditionType, number> = {
   "ground-floor": 1.0,
   "second-story": 1.25,
   adu: 1.15,
-  "garage-conversion": 0.75,
+  "garage-conversion": 0.45,
 };
 
 // Craftsman Book Co.'s 2026 National Building Cost Manual (survey data used industry-wide by

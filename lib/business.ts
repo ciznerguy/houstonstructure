@@ -1490,6 +1490,7 @@ export const SERVICES: Service[] = [
       {
         heading: "What does a garage conversion cost in Houston?",
         paragraphs: [
+          "Roughly $25,000 at the low end for a single-car garage turned into a room with no plumbing, and roughly $110,000 at the high end for a two-car garage turned into an apartment with a kitchen and a bathroom. Most of the jobs we see land between $35,000 and $60,000. Those figures include permits, engineering, and a contingency, which is why they sit a little above the numbers you will find on the national home-services sites. Those sites are reporting what homeowners paid a contractor, not what the whole project cost.",
           "The honest answer is that the range is wide because the words cover very different jobs. A single-car garage turned into an unplumbed office is a different project from a two-car garage turned into a one-bedroom apartment with a kitchen and a bathroom, and the second can cost three or four times the first.",
           "What moves the number most is not the finishes. It is whether you are adding plumbing, whether the slab has to come up or be replaced, whether the electrical service can carry the new load or the panel needs upgrading, and whether the space needs its own heating and cooling or can be tied into the existing system. Four of those five are decided before anyone picks a floor.",
           "Our cost estimator includes garage conversion as a project type and will give you a planning-stage range in about a minute. It is a ballpark rather than a quote, and the thing that turns a ballpark into a number is someone looking at the slab.",
@@ -1552,7 +1553,7 @@ export const SERVICES: Service[] = [
       },
       {
         q: "How much does it cost to convert a garage in Houston?",
-        a: "The range is wide because the job varies so much. What moves the number most is whether you are adding plumbing, whether the slab has to be raised or replaced, whether the electrical panel can carry the new load, and whether the space needs its own heating and cooling. Our cost estimator gives a planning-stage range for a garage conversion in about a minute.",
+        a: "Around $25,000 for a single-car garage turned into a room with no plumbing, up to around $110,000 for a two-car garage turned into an apartment with a kitchen and bathroom. Most land between $35,000 and $60,000. What moves the number most is whether you are adding plumbing, whether the slab has to be raised or replaced, whether the electrical panel can carry the new load, and whether the space needs its own heating and cooling. Our cost estimator gives a planning-stage range in about a minute.",
       },
       {
         q: "Why does the garage floor need work if it looks fine?",
