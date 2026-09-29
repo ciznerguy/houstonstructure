@@ -1452,6 +1452,127 @@ export const SERVICES: Service[] = [
     ],
   },
   {
+    slug: "garage-conversion",
+    name: "Garage Conversions, New Builds & Remodels",
+    shortName: "Garage Conversion",
+    seoTitle: "Garage Conversion in Houston: Permits, Costs & Structure",
+    summary:
+      "Turning a garage into living space is a structural change before it is a finish job. We handle the slab, the header, and the permit, and we build it too.",
+    description: [
+      "A garage is the cheapest square footage you already own. It has a roof, three walls, and a slab, so on paper turning it into a bedroom, an office, a gym, or a rental is the least expensive way to add space to a Houston house. That is true, and it is also where most of the trouble starts, because the parts that make it cheap are the parts that were never built for people to live on.",
+      "The slab under your garage was almost certainly poured lower and thinner than the slab under your house, usually without the same moisture barrier beneath it, and sloped toward the door so water runs out. The wall with the garage door in it is a large opening carrying a header, and what happens to that header when the opening changes is a structural question. None of this is a reason to avoid the project. It is the reason the project needs an engineer before it needs a finish carpenter.",
+      "This page covers the three things people actually search for before they call anyone: whether it is legal in Houston, what it costs, and whether a garage can become a real apartment. It also covers what we find when we open one up, plus new garage builds and straightforward garage remodels where nothing changes use.",
+    ],
+    signs: [
+      "You want an extra bedroom, office, gym, or guest suite without building an addition",
+      "You are considering a garage apartment or ADU to rent or to house family",
+      "A contractor quoted the conversion without mentioning the slab or the header",
+      "Your deed restrictions or HOA may require covered parking and you need to know before you start",
+      "The garage floor is cracked, sloped, or sits several inches below the house floor",
+    ],
+    atAGlance: [
+      "Conversion of an attached or detached garage into habitable space, engineered and built by the same firm.",
+      "The slab is the first thing we look at: its thickness, its elevation relative to the house, and whether it can be built up to a habitable floor without trapping moisture.",
+      "Removing or reducing the garage door opening changes how load travels through that wall, so the header and its bearing points get sized rather than assumed.",
+      "Permit drawings prepared and sealed in house, not subcontracted to an outside engineer partway through the job.",
+      "Also covered here: new attached and detached garage builds, and remodels where the space stays a garage.",
+    ],
+    sections: [
+      {
+        heading: "Is it legal to convert a garage in Houston?",
+        paragraphs: [
+          "Generally yes, and it is done constantly, but two separate things have to clear and people usually only think about one of them.",
+          "The first is the building permit. Converting a garage to habitable space is a change of use, and the new room has to meet the requirements any bedroom or office does: ceiling height, emergency egress, insulation, heating and cooling, smoke alarms, and electrical that was designed for living rather than for a freezer and a door opener. That is a permitted, inspected job, and the drawings generally need an engineer's or architect's seal where the structure changes.",
+          "The second is private, and it is the one that kills more Houston garage projects than the city ever does. Houston has no zoning, so what controls your lot is usually a deed restriction or an HOA rule, and a great many Houston subdivisions require a specific number of covered off-street parking spaces. Convert the garage and you may fall below that number. This is enforceable by your neighbors and your HOA regardless of what permit the city issued you.",
+          "Check the deed restrictions before you spend money on drawings. It takes an afternoon and it is the single cheapest risk you can retire on this project.",
+        ],
+      },
+      {
+        heading: "What does a garage conversion cost in Houston?",
+        paragraphs: [
+          "The honest answer is that the range is wide because the words cover very different jobs. A single-car garage turned into an unplumbed office is a different project from a two-car garage turned into a one-bedroom apartment with a kitchen and a bathroom, and the second can cost three or four times the first.",
+          "What moves the number most is not the finishes. It is whether you are adding plumbing, whether the slab has to come up or be replaced, whether the electrical service can carry the new load or the panel needs upgrading, and whether the space needs its own heating and cooling or can be tied into the existing system. Four of those five are decided before anyone picks a floor.",
+          "Our cost estimator includes garage conversion as a project type and will give you a planning-stage range in about a minute. It is a ballpark rather than a quote, and the thing that turns a ballpark into a number is someone looking at the slab.",
+        ],
+        bullets: [
+          "Adding a bathroom or kitchen means cutting the slab for drains, which is the largest single cost swing in most conversions.",
+          "A garage slab that sits four to six inches below the house floor has to be built up, and how that is done decides whether you get a moisture problem later.",
+          "Older Houston panels often have no spare capacity, so a conversion with its own HVAC can trigger a service upgrade.",
+          "Detached garages need the utilities run to them, which is trenching, and trenching on this soil is its own line item.",
+        ],
+      },
+      {
+        heading: "Why the slab is the real problem",
+        paragraphs: [
+          "Almost every garage conversion we are called into has the same underlying issue, and it has nothing to do with design. The garage slab was poured as a garage slab. It is typically thinner than the house slab, it usually sits lower so water drains out of the door rather than into the house, it is sloped for the same reason, and in a great many Houston homes it was poured without the vapor barrier that goes under living space.",
+          "That last one matters more than anything else on this page. Houston soil holds moisture, and a slab without a vapor barrier lets it move up through the concrete continuously. Under a car that is invisible. Under carpet, wood flooring, or a bed, it becomes a smell, then cupped flooring, then mold behind a baseboard. The homeowner blames a leak. There is no leak. It is the slab doing what it was built to do.",
+          "There are several ways to handle it, and which one is right depends on how far below the house floor the garage sits and what the finished ceiling height leaves you. A raised, vented subfloor solves the moisture and the elevation at once but eats headroom. A sealed and insulated treatment applied directly keeps the height but has to be specified correctly for the conditions. Occasionally the answer is to remove the slab and pour a new one. That is expensive and it is sometimes still the right call.",
+          "What we will not do is let it be skipped. A conversion that ignores the slab looks finished for about two years.",
+        ],
+      },
+      {
+        heading: "What happens when the garage door comes out",
+        paragraphs: [
+          "The garage door opening is the largest opening in the house, and there is a header spanning it that carries whatever sits above: roof framing, and in some houses a second floor. When you fill that opening in with a wall and a window, you are changing how load moves through that face of the building.",
+          "In the simplest case you are adding support where there was none, and the structure is happier than it was. In other cases the new wall lands on a thickened edge of slab that was designed for a door frame and not for a bearing wall, or the existing header has been quietly sagging for twenty years and nobody noticed because a garage door hides a lot. We measure the opening, check what is bearing on the header and where that load goes into the ground, and specify what the new wall needs before it goes up.",
+          "The same applies in reverse when a client wants to keep a wide opening, for example turning the garage into a studio with big glass. Keeping the span means keeping or upsizing the beam, and that is a [steel beam](/services/steel-beam-installation) conversation rather than a framing one.",
+        ],
+      },
+      {
+        heading: "Can a garage become an apartment or an ADU?",
+        paragraphs: [
+          "This is the most common follow-up question we get, usually phrased as a garage apartment, and in Houston it is a recognized and long-standing housing type. Plenty of inner-loop lots have had one for sixty years.",
+          "Everything above still applies, and two more things join it. A separate dwelling unit generally needs its own means of egress, its own smoke and carbon monoxide protection, and depending on how it is metered and served, its own utility arrangements. And if you are converting the ground floor of a detached garage or building living space above one, the structure below has to carry it, which for an existing detached garage is rarely a given. Those were built light.",
+          "If the goal is rental income, the deed restriction question from earlier becomes sharper still, because some restrictions prohibit a separate rentable dwelling outright, independently of the parking rule. Worth reading before anything else.",
+          "Where the plan is to build living space above an existing garage rather than inside it, that is closer to a [second story addition](/services/second-story-addition) than a conversion, and the evaluation starts with the garage foundation.",
+        ],
+      },
+      {
+        heading: "New garage builds and garage remodels",
+        paragraphs: [
+          "Not every garage project is a conversion. Two others come up often enough to mention.",
+          "A new garage, attached or detached, is a foundation job with a building on it. On Houston clay the slab design is the project, and a detached garage built on a slab that was not engineered for this soil will tell you about it within a few years through the door that stops closing squarely. We design the slab for the soil rather than pouring a standard pad and hoping.",
+          "A remodel where the space stays a garage is the simplest of the three: better storage, an epoxy or sealed floor, insulation and a mini split so the space is usable in August, upgraded lighting and outlets, sometimes a new door. No change of use, usually no structural work, and generally a much shorter permit path. It is also the right answer for a fair number of people who came in asking about a conversion and, once they see the deed restriction and the slab, decide what they actually wanted was a garage they could stand to be in.",
+          "We will tell you when that is the case. Talking a client out of the bigger job is not a habit that costs us anything in the long run.",
+        ],
+      },
+      {
+        heading: "Why bring an engineer into a garage conversion",
+        paragraphs: [
+          "Most garage conversions in Houston are sold and built by remodeling contractors, and many of them do good work. The pattern we see is not bad building. It is that the structural questions on this particular job are front-loaded, and a contractor who brings an engineer in after the design is set is asking the wrong question at the wrong time.",
+          "The slab decision, the header decision, and the elevation decision all constrain the floor plan, the ceiling height, and the budget. Settled first, they shape a design that works. Discovered during demolition, they turn into change orders.",
+          "We are a licensed engineering firm that also builds, so the evaluation, the sealed drawings, and the construction come from one company under one contract. There is no point in the job where your engineer and your contractor are two different phone numbers with two different opinions about whose problem the slab is.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Is it legal to convert a garage into a room in Houston?",
+        a: "Usually yes with a permit, but the city is only half the question. Houston has no zoning, so your deed restrictions or HOA rules control the lot, and many Houston subdivisions require a set number of covered parking spaces. Converting the garage can put you below that, and that is enforceable by your HOA no matter what permit you hold. Read the deed restrictions first.",
+      },
+      {
+        q: "How much does it cost to convert a garage in Houston?",
+        a: "The range is wide because the job varies so much. What moves the number most is whether you are adding plumbing, whether the slab has to be raised or replaced, whether the electrical panel can carry the new load, and whether the space needs its own heating and cooling. Our cost estimator gives a planning-stage range for a garage conversion in about a minute.",
+      },
+      {
+        q: "Why does the garage floor need work if it looks fine?",
+        a: "Because it was built to be a garage floor. It is usually thinner than the house slab, sits lower, slopes toward the door, and in many Houston homes was poured with no vapor barrier under it. Moisture that was harmless under a car becomes cupped flooring and mold under a bedroom. The floor looking fine today tells you very little about how it behaves once it is covered.",
+      },
+      {
+        q: "Can I turn my garage into a rentable apartment?",
+        a: "Often, and the garage apartment is a long-standing Houston housing type. A separate dwelling brings its own egress, alarm, and utility requirements on top of everything a conversion already needs, and some deed restrictions prohibit a separate rentable unit outright, separately from any parking rule. That restriction question is worth answering before you spend anything.",
+      },
+      {
+        q: "Will converting my garage hurt the resale value of the house?",
+        a: "It depends on the neighborhood and on the quality of the work. In areas where covered parking is expected, losing it can cost you buyers. A conversion that was permitted, engineered, and shows as legitimate square footage is a very different proposition from one that was not, and the second is the one that causes problems at closing.",
+      },
+      {
+        q: "Do I need a permit to insulate and air condition my garage if it stays a garage?",
+        a: "That depends on the scope, and it is a much lighter path than a conversion because you are not changing the use. Electrical work generally needs a permit. If you are not creating habitable space, you are not triggering the egress, ceiling height, and structural requirements that make a conversion a bigger project.",
+      },
+    ],
+  },
+  {
     slug: "general-contracting",
     name: "General Contracting",
     shortName: "General Contracting",
