@@ -1456,6 +1456,9 @@ export const SERVICES: Service[] = [
     name: "Garage Conversions, New Builds & Remodels",
     shortName: "Garage Conversion",
     seoTitle: "Garage Conversion in Houston: Permits, Costs & Structure",
+    image: "/images/garage-1-before.jpg",
+    imageAlt:
+      "An empty two-car garage with the door open and a bare concrete slab, before conversion (illustrative rendering, not an actual job site)",
     summary:
       "Turning a garage into living space is a structural change before it is a finish job. We handle the slab, the header, and the permit, and we build it too.",
     description: [
@@ -1510,6 +1513,12 @@ export const SERVICES: Service[] = [
           "There are several ways to handle it, and which one is right depends on how far below the house floor the garage sits and what the finished ceiling height leaves you. A raised, vented subfloor solves the moisture and the elevation at once but eats headroom. A sealed and insulated treatment applied directly keeps the height but has to be specified correctly for the conditions. Occasionally the answer is to remove the slab and pour a new one. That is expensive and it is sometimes still the right call.",
           "What we will not do is let it be skipped. A conversion that ignores the slab looks finished for about two years.",
         ],
+        image: {
+          src: "/images/garage-2-framing.jpg",
+          alt: "The same garage mid-conversion, with the door opening framed in and a raised wood subfloor being built over the concrete slab (illustrative rendering, not an actual job site)",
+          caption:
+            "The raised subfloor going in over the original slab. It solves the moisture and the elevation difference at once, and it costs you ceiling height.",
+        },
       },
       {
         heading: "What happens when the garage door comes out",
@@ -1536,6 +1545,12 @@ export const SERVICES: Service[] = [
           "A remodel where the space stays a garage is the simplest of the three: better storage, an epoxy or sealed floor, insulation and a mini split so the space is usable in August, upgraded lighting and outlets, sometimes a new door. No change of use, usually no structural work, and generally a much shorter permit path. It is also the right answer for a fair number of people who came in asking about a conversion and, once they see the deed restriction and the slab, decide what they actually wanted was a garage they could stand to be in.",
           "We will tell you when that is the case. Talking a client out of the bigger job is not a habit that costs us anything in the long run.",
         ],
+        image: {
+          src: "/images/garage-3-finished.jpg",
+          alt: "The same garage finished as a bright home office and guest room, with a window where the garage door used to be (illustrative rendering, not an actual job site)",
+          caption:
+            "The same space finished. The wall where the door was now carries a window, and the floor sits level with the rest of the house.",
+        },
       },
       {
         heading: "Why bring an engineer into a garage conversion",
