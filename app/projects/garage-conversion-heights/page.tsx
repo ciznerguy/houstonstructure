@@ -12,7 +12,7 @@ import { BUSINESS } from "@/lib/business";
 // they are not on the page. Anything general about how this kind of job runs
 // is written as general, not as a claim about this house.
 const FACTS = {
-  area: "about 300 square feet",
+  area: "about 600 square feet",
   program: "Media room and a full bathroom",
 };
 
@@ -22,8 +22,8 @@ type Photo = { src: string; alt: string; caption: string };
 const photos: Record<"before" | "during" | "media" | "bath", Photo> = {
   before: {
     src: "/images/project-heights-garage-1-before.jpg",
-    alt: "A detached white clapboard single-car garage behind a 1920s craftsman bungalow on a narrow Houston Heights lot, shaded by a live oak",
-    caption: "The detached garage at the back of the lot, roofed and enclosed and doing nothing.",
+    alt: "A detached white clapboard two-car garage behind a 1920s craftsman bungalow on a Houston Heights lot, shaded by a live oak",
+    caption: "The detached two-car garage at the back of the lot, roofed and enclosed and doing nothing.",
   },
   during: {
     src: "/images/project-heights-garage-2-during.jpg",
