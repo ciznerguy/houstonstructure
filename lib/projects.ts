@@ -18,6 +18,14 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
+    slug: "garage-conversion-heights",
+    title: "Garage Conversion in Houston Heights: A Media Room and Bath",
+    summary:
+      "A Heights garage of about 300 square feet became a media room with a full bathroom and a built-in entertainment system, finished to match the rest of the house. What a conversion has to deal with on a century-old lot.",
+    citySlug: "houston-heights",
+    serviceSlug: "garage-conversion",
+  },
+  {
     slug: "room-addition-case-study",
     title: "Adding a 380-Square-Foot Room to a 1970s Houston Home",
     summary:
