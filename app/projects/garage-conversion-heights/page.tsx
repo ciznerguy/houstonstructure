@@ -16,10 +16,60 @@ const FACTS = {
   program: "Media room and a full bathroom",
 };
 
+const IMG_NOTE = "illustrative rendering, not a photo of the project";
+
+type Photo = { src: string; alt: string; caption: string };
+const photos: Record<"before" | "during" | "media" | "bath", Photo> = {
+  before: {
+    src: "/images/project-heights-garage-1-before.jpg",
+    alt: "A detached white clapboard single-car garage behind a 1920s craftsman bungalow on a narrow Houston Heights lot, shaded by a live oak",
+    caption: "The detached garage at the back of the lot, roofed and enclosed and doing nothing.",
+  },
+  during: {
+    src: "/images/project-heights-garage-2-during.jpg",
+    alt: "The same garage mid-renovation with exposed studs and insulation, speaker and data cable run to the media wall, and a trench cut through the slab with new drain lines for the bathroom",
+    caption:
+      "Mid-build. The trench through the slab is the bathroom drain, and the cable already stapled to the studs is the media wall. Both are cheap now and expensive later.",
+  },
+  media: {
+    src: "/images/project-heights-garage-2-media-room.jpg",
+    alt: "A converted garage finished as a dark, warmly lit media room with a large wall-mounted screen in built-in cabinetry, integrated speakers, a deep sectional sofa and cove lighting",
+    caption:
+      "The finished media room. The screen wall, the speakers and the cabinetry were designed together, so the wiring went in before the drywall.",
+  },
+  bath: {
+    src: "/images/project-heights-garage-3-bathroom.jpg",
+    alt: "A compact high-end bathroom with large format porcelain tile, a floating stone-topped vanity, matte black fixtures, a backlit mirror and a frameless glass walk-in shower",
+    caption:
+      "The full bathroom. Adding one means cutting the slab and running drain lines to the existing sewer, which is the biggest single item in most conversions.",
+  },
+};
+
+function Figure({ photo }: { photo: Photo }) {
+  return (
+    <>
+      <img
+        src={photo.src}
+        srcSet={`${photo.src.replace(".jpg", "-800.jpg")} 800w, ${photo.src} 1600w`}
+        sizes="(min-width: 768px) 66vw, 100vw"
+        alt={`${photo.alt} (${IMG_NOTE})`}
+        loading="lazy"
+        className="mb-2 h-[320px] w-full rounded-sm object-cover sm:h-[420px]"
+      />
+      <p className="mt-2 mb-8 text-sm text-slate-500">
+        {photo.caption} <span className="text-slate-400">Illustrative rendering.</span>
+      </p>
+    </>
+  );
+}
+
 export const metadata: Metadata = {
   title: "Garage Conversion in Houston Heights: A Media Room",
   description:
     "A Heights garage became a high-end media room with a full bathroom and a built-in entertainment system. What a conversion involves in a neighborhood of century-old houses and historic district review.",
+  openGraph: {
+    images: [{ url: "/images/project-heights-garage-2-media-room.jpg", width: 1024, height: 572 }],
+  },
 };
 
 export default function HeightsGarageConversionPage() {
@@ -56,6 +106,20 @@ export default function HeightsGarageConversionPage() {
         current="Garage Conversion in Houston Heights"
       />
 
+      <div className="mx-auto max-w-6xl px-5 pt-10">
+        <img
+          src={photos.before.src}
+          srcSet={`${photos.before.src.replace(".jpg", "-800.jpg")} 800w, ${photos.before.src} 1600w`}
+          sizes="100vw"
+          alt={`${photos.before.alt} (${IMG_NOTE})`}
+          fetchPriority="high"
+          className="h-[320px] w-full rounded-sm object-cover sm:h-[460px]"
+        />
+        <p className="mt-2 text-sm text-slate-500">
+          {photos.before.caption} <span className="text-slate-400">Illustrative rendering.</span>
+        </p>
+      </div>
+
       <section className="mx-auto max-w-6xl px-5 py-14">
         <div className="grid gap-10 md:grid-cols-3">
           <div className="md:col-span-2 text-slate-700 leading-relaxed">
@@ -87,6 +151,9 @@ export default function HeightsGarageConversionPage() {
               discounts.
             </p>
 
+            <Figure photo={photos.during} />
+            <Figure photo={photos.media} />
+
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">The bathroom is the part that drives the job</h2>
             <p className="mb-5">
               Adding a full bathroom to a garage is the single largest cost and schedule item in most conversions,
@@ -99,6 +166,8 @@ export default function HeightsGarageConversionPage() {
               looking at where the existing plumbing actually runs. The distance from the garage to the nearest tie-in
               point is a number worth establishing before the budget is set, not after.
             </p>
+
+            <Figure photo={photos.bath} />
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">What a Heights conversion has to deal with</h2>
             <p className="mb-5">

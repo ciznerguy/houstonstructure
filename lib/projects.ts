@@ -24,6 +24,13 @@ export const PROJECTS: Project[] = [
       "A Heights garage of about 300 square feet became a media room with a full bathroom and a built-in entertainment system, finished to match the rest of the house. What a conversion has to deal with on a century-old lot.",
     citySlug: "houston-heights",
     serviceSlug: "garage-conversion",
+    image: "/images/project-heights-garage-2-media-room.jpg",
+    images: [
+      "/images/project-heights-garage-1-before.jpg",
+      "/images/project-heights-garage-2-during.jpg",
+      "/images/project-heights-garage-2-media-room.jpg",
+      "/images/project-heights-garage-3-bathroom.jpg",
+    ],
   },
   {
     slug: "room-addition-case-study",
