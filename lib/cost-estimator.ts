@@ -49,7 +49,17 @@ const BASE_RATE_PER_SQFT: Record<FinishLevel, number> = {
 const ADDITION_TYPE_FACTOR: Record<AdditionType, number> = {
   "ground-floor": 1.0,
   "second-story": 1.25,
-  adu: 1.15,
+  // The ADU figure was 1.15 until 2026-09-30, which said a detached unit costs
+  // more per square foot than an attached addition. That is backwards. A
+  // detached ADU is a standalone box: no tie-in to existing framing, no
+  // matching an existing roofline, no working around an occupied house. The
+  // attached addition is the harder of the two. At 1.15 the tool quoted
+  // $360-$378 per square foot against a Houston ADU market of $150-$300, so its
+  // floor sat above the market's ceiling. 0.85 lands the mid finish tier at
+  // about $298, at the top of that range rather than past it, which is where
+  // this model belongs given it also carries permits, engineering and
+  // contingency that the published figures leave out.
+  adu: 0.85,
   "garage-conversion": 0.45,
 };
 
