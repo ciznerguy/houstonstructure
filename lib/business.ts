@@ -306,6 +306,82 @@ export const SERVICE_AREAS: ServiceArea[] = [
     ],
   },
   {
+    slug: "houston-heights",
+    name: "Houston Heights",
+    blurb:
+      "The Heights is bungalows from the 1900s and 1920s on narrow lots, most of them on pier and beam rather than slab, and much of it inside a City of Houston historic district. Almost every structural question here ends up being about going up rather than out.",
+    intro: [
+      "The Heights sits on a genuine ridge, about twenty feet above downtown, which is where the name came from and why it has historically stayed drier than a lot of the city. The houses on it are mostly a century old, they sit on narrow lots, and a large share of them are inside a designated historic district. Those three facts shape every structural project here.",
+      "The single most common thing we are asked in the Heights is whether a bungalow can carry a second story. The lots are too narrow to build out, so people build up, and the answer depends on two separate approvals that have nothing to do with each other: what the existing structure can carry, and what the historic district will allow you to put on top of it.",
+    ],
+    sections: [
+      {
+        heading: "Is your address inside a historic district?",
+        paragraphs: [
+          "This is the first question to answer, before an architect draws anything, because in much of the Heights the answer is yes and it changes what is possible.",
+          "Work on a contributing structure inside a City of Houston historic district needs a Certificate of Appropriateness from the Houston Archaeological and Historical Commission, and that review is separate from and additional to the building permit. It looks at what the change does to the street: height, massing, proportion, and whether the addition reads as part of the original house or as something dropped on top of it.",
+          "For second stories specifically the guidelines get concrete. The commission looks at whether the proportions of the new upper floor relate to the floor below and to the surrounding block, and in a context of entirely single-story contributing houses, a second story faces a much harder road. We have seen designs that were structurally straightforward get sent back on massing, and the fix cost more in schedule than it did in engineering.",
+          "The practical order is: find out your district status, get the structural evaluation, then design to both constraints at once. Designing first and discovering the constraints second is how Heights projects lose a season.",
+        ],
+      },
+      {
+        heading: "Pier and beam, not slab, and why that changes everything",
+        paragraphs: [
+          "Most of Houston is slab on grade. The Heights largely is not. The bungalows here were built on pier and beam, with a crawl space underneath, and that is a completely different structural conversation from the one we have in Katy or Cypress.",
+          "The good news is access. We can get under a pier and beam house and actually look at the floor framing, the sills, the beams and the piers, which on a slab house we can only infer from measurements taken above. When a Heights floor slopes or bounces, we can usually tell you exactly why.",
+          "What we find is usually some combination of the same things: original piers that have settled unevenly or were never founded deep enough for this soil, beams and sill plates with rot where they have sat close to damp ground for ninety years, floor joists that were adequate for 1920 loads and are undersized for a modern kitchen with stone counters and a large island, and previous repairs done with concrete blocks stacked without mortar.",
+          "None of that is unusual and none of it is alarming on its own. It does mean that a Heights renovation almost always includes foundation work, and that budgeting a Heights project without getting under the house first is guessing.",
+        ],
+      },
+      {
+        heading: "Putting a second story on a bungalow",
+        paragraphs: [
+          "A 1920s Heights bungalow was built to carry one floor and a roof, on piers sized for that load. Adding a full second story roughly doubles what the structure below has to carry, and the load has to reach the ground through a path that in many of these houses does not currently exist as a continuous line.",
+          "In practice that means three things get looked at. The piers and their footings, which usually need to be supplemented or replaced with properly founded ones. The floor framing and the beams, which have to carry both the new upper floor and the walls holding it up. And the walls themselves, because a load-bearing wall on the ground floor needs something solid underneath it, not a joist span.",
+          "This is doable and we do it. What we will not do is tell you it is simple. A second story on a Heights bungalow is a foundation and framing project with a new floor on top, and the honest budget reflects that. The process is described in more detail on the [second story addition](/services/second-story-addition) page.",
+        ],
+      },
+      {
+        heading: "Opening up a bungalow floor plan",
+        paragraphs: [
+          "The other constant request here is taking out the wall between the front room and the kitchen. Heights bungalows were built as a series of small separate rooms, and almost nobody wants to live that way now.",
+          "On a pier and beam house this is often more straightforward than the same job on a slab, because the beam bears down onto posts that land on new piers we can actually build properly, rather than onto a slab edge that was never designed for a point load. The catch is what is above: many of these houses have had attic conversions, dormers or roof changes over a century, and the load coming down is not always what the original framing plan suggests.",
+          "We open the ceiling, look at what is actually bearing, size the beam for that rather than for the drawing, and specify the posts and the piers underneath. More on the process here: [load-bearing wall removal](/services/load-bearing-wall-removal).",
+        ],
+      },
+      {
+        heading: "The ridge, drainage, and what it does and does not protect you from",
+        paragraphs: [
+          "Being on higher ground genuinely helps. The Heights came through several of the storms that flooded surrounding neighborhoods in better shape, and the elevation is a real part of why.",
+          "What the ridge does not do is stop the soil from moving. The clay under the Heights swells and shrinks with moisture like clay everywhere else in this region, and on pier and beam that shows up as uneven pier settlement rather than as a cracked slab. A century-old house has been through a hundred wet and dry cycles, and the piers record all of them.",
+          "The thing an owner can control here is the same as everywhere: keep the moisture around the perimeter steady, keep the crawl space ventilated and dry, and keep water moving away from the house rather than pooling against it. On a pier and beam house in particular, a damp crawl space is the start of most of the rot we find.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Can I add a second story to a Heights bungalow?",
+        a: "Often, and it is the most common request we get here because the lots are too narrow to build outward. Two separate approvals decide it. Structurally, the piers, the floor framing and the bearing walls all have to be checked against roughly double the load they were built for. Separately, if your house is a contributing structure in a historic district, the commission reviews the height and proportions of what you want to put on top. Get both answers before an architect draws.",
+      },
+      {
+        q: "Do I need a Certificate of Appropriateness for my project?",
+        a: "If the property is a contributing structure inside a City of Houston historic district and the work changes an exterior feature, yes, and it is separate from the building permit. Interior work that does not change the exterior generally is not reviewed. Check your district status first, because much of the Heights is inside one and the boundaries are not obvious from the street.",
+      },
+      {
+        q: "Is a pier and beam foundation worse than a slab?",
+        a: "Not worse, different, and in some ways easier to deal with. We can get underneath and see the actual condition rather than inferring it from floor measurements, and individual piers can be corrected without touching the rest of the house. What pier and beam does need is attention to the crawl space, because ninety years of damp is what causes most of the rot we find in sills and beams here.",
+      },
+      {
+        q: "My Heights floors slope and bounce. Is that a problem?",
+        a: "It is worth measuring rather than living with. Slope usually points at pier settlement and bounce usually points at floor joists that are undersized or spanning too far for what the room is now being used for. Both are fixable and both are cheaper to address before a renovation than during one, because a kitchen going in over a bouncing floor is a kitchen that will need the floor fixed later.",
+      },
+      {
+        q: "We are planning a full renovation. When should you be involved?",
+        a: "Before the design is settled. In the Heights the structural condition and the historic district rules together decide what the plan can actually be, and both are much cheaper to work with than to work around. Bringing us in after the drawings are done usually means either a compromise in the design or a delay at review.",
+      },
+    ],
+  },
+  {
     slug: "the-woodlands",
     name: "The Woodlands",
     blurb:
