@@ -13,13 +13,13 @@ import { BUSINESS } from "@/lib/business";
 // is written as general, not as a claim about this house.
 const FACTS = {
   area: "about 600 square feet",
-  program: "Media room and a full bathroom",
+  program: "Guest bedroom, media room and a full bathroom",
 };
 
 const IMG_NOTE = "illustrative rendering, not a photo of the project";
 
 type Photo = { src: string; alt: string; caption: string };
-const photos: Record<"before" | "during" | "media" | "bath", Photo> = {
+const photos: Record<"before" | "during" | "bedroom" | "media" | "bath", Photo> = {
   before: {
     src: "/images/project-heights-garage-1-before.jpg",
     alt: "A detached white clapboard two-car garage behind a 1920s craftsman bungalow on a Houston Heights lot, shaded by a live oak",
@@ -30,6 +30,12 @@ const photos: Record<"before" | "during" | "media" | "bath", Photo> = {
     alt: "The same garage mid-renovation with exposed studs and insulation, speaker and data cable run to the media wall, and a trench cut through the slab with new drain lines for the bathroom",
     caption:
       "Mid-build. The trench through the slab is the bathroom drain, and the cable already stapled to the studs is the media wall. Both are cheap now and expensive later.",
+  },
+  bedroom: {
+    src: "/images/project-heights-garage-4-bedroom.jpg",
+    alt: "A guest bedroom in a converted garage, finished in a light rustic farmhouse style with cream walls, pale ceiling beams, a linen-dressed bed, a jute rug and a window with light curtains",
+    caption:
+      "The guest bedroom, kept deliberately light. Nothing about it reads as a garage, which was the point.",
   },
   media: {
     src: "/images/project-heights-garage-2-media-room.jpg",
@@ -64,9 +70,9 @@ function Figure({ photo }: { photo: Photo }) {
 }
 
 export const metadata: Metadata = {
-  title: "Garage Conversion in Houston Heights: A Media Room",
+  title: "Garage Conversion in Houston Heights: A Guest Suite",
   description:
-    "A Heights garage became a high-end media room with a full bathroom and a built-in entertainment system. What a conversion involves in a neighborhood of century-old houses and historic district review.",
+    "A Heights two-car garage became a guest suite: a light rustic bedroom, a high-end media room and a full bathroom. What a conversion involves in a neighborhood of century-old houses and historic district review.",
   openGraph: {
     images: [{ url: "/images/project-heights-garage-2-media-room.jpg", width: 1024, height: 572 }],
   },
@@ -76,7 +82,7 @@ export default function HeightsGarageConversionPage() {
   const articleJson = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Garage Conversion in Houston Heights: A Media Room and Bath",
+    headline: "Garage Conversion in Houston Heights: A Guest Suite with a Media Room",
     description: metadata.description,
     author: { "@type": "Organization", name: BUSINESS.name, url: BUSINESS.siteUrl },
     publisher: { "@type": "Organization", name: BUSINESS.name, url: BUSINESS.siteUrl },
@@ -93,8 +99,8 @@ export default function HeightsGarageConversionPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJson) }} />
       <PageHero
         eyebrow="Project | Houston Heights"
-        title="A Garage Conversion in the Heights: Media Room and Full Bath"
-        subtitle="A garage on a narrow Heights lot became the room the house did not have. Finished to the same standard as the rest of the home, with a full bathroom and a built-in entertainment system."
+        title="A Garage Conversion in the Heights: A Guest Suite with a Media Room"
+        subtitle="A two-car garage on a Heights lot became the space the house did not have: a guest bedroom, a media room and a full bathroom, finished to the same standard as the rest of the home."
         ctaLabel="Estimate a Garage Conversion Cost"
       />
 
@@ -138,10 +144,29 @@ export default function HeightsGarageConversionPage() {
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">What went in</h2>
             <p className="mb-5">
-              The program was a media room and a full bathroom. The media side was built out properly rather than
-              treated as a spare room with a television in it: a high-end entertainment system was installed as part
-              of the build, with the wiring, the power and the wall construction planned around it from the start
-              rather than fished in afterward.
+              Three spaces, not one. A guest bedroom, a media room, and a full bathroom shared between them. That
+              combination is what turns a converted garage into somewhere a visitor can actually stay rather than a
+              bonus room with a sofa bed in it.
+            </p>
+            <p className="mb-5">
+              The split is roughly a third to the bedroom, the larger half to the media room, and the rest to the
+              bathroom and the circulation between them. At {FACTS.area} there is room to do that without any of the
+              three feeling like an afterthought, which is the advantage a two-car garage has over a single.
+            </p>
+
+            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">The guest bedroom</h2>
+            <p className="mb-5">
+              Finished in a light rustic style: soft whites and creams, pale wood, linen, natural textures. The brief
+              was that it should not feel like a converted garage, and the way you achieve that is mostly in the
+              things you cannot see in a photograph. Ceiling height that does not feel low. A floor that is level
+              with itself and warm underfoot rather than sitting on cold slab. Insulation and a dedicated air supply
+              so the room holds temperature like the rest of the house does in a Houston August.
+            </p>
+
+            <p className="mb-5">
+              The media side was built out properly rather than treated as a spare room with a television in it: a
+              high-end entertainment system was installed as part of the build, with the wiring, the power and the
+              wall construction planned around it from the start rather than fished in afterward.
             </p>
             <p className="mb-5">
               That distinction matters more than it sounds. Running the cabling, the outlets and the equipment
@@ -152,6 +177,7 @@ export default function HeightsGarageConversionPage() {
             </p>
 
             <Figure photo={photos.during} />
+            <Figure photo={photos.bedroom} />
             <Figure photo={photos.media} />
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">The bathroom is the part that drives the job</h2>
