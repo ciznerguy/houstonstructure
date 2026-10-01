@@ -12,37 +12,25 @@ import { dirname, join } from "node:path";
 // seven days, so this will need re-running until the app is published.
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-// Reuses the existing Desktop OAuth client. Add http://localhost:51235 to its
-// authorised redirect URIs if Google rejects the callback.
+// Reuses the existing Desktop OAuth client. A Desktop client accepts any
+// loopback port, so nothing has to be registered as a redirect URI.
 const clientPath = join(__dirname, "..", ".secrets", "gbp-oauth-client.json");
 const tokenPath = join(__dirname, "..", ".secrets", "youtube-oauth-token.json");
 
 const { client_id, client_secret } = JSON.parse(readFileSync(clientPath, "utf8"));
 
-const PORT = 51235;
-const REDIRECT_URI = `http://localhost:${PORT}`;
 const SCOPE = [
   "https://www.googleapis.com/auth/youtube.upload",
   "https://www.googleapis.com/auth/youtube",
 ].join(" ");
 
-const authUrl =
-  "https://accounts.google.com/o/oauth2/v2/auth?" +
-  new URLSearchParams({
-    client_id,
-    redirect_uri: REDIRECT_URI,
-    response_type: "code",
-    scope: SCOPE,
-    access_type: "offline",
-    prompt: "consent",
-  }).toString();
-
-console.log("\nOpen this URL signed in as the account that owns the channel:\n");
-console.log(authUrl);
-console.log("\nWaiting for consent...\n");
+// Port 0 asks the OS for a free port. A fixed port fails with EADDRINUSE
+// whenever Windows has already handed that number to some other program as an
+// outbound ephemeral port, which is not something we can predict or clear.
+let redirectUri = "";
 
 const server = http.createServer(async (req, res) => {
-  const url = new URL(req.url, REDIRECT_URI);
+  const url = new URL(req.url, redirectUri);
   const code = url.searchParams.get("code");
   const error = url.searchParams.get("error");
 
@@ -63,7 +51,7 @@ const server = http.createServer(async (req, res) => {
       code,
       client_id,
       client_secret,
-      redirect_uri: REDIRECT_URI,
+      redirect_uri: redirectUri,
       grant_type: "authorization_code",
     }).toString(),
   });
@@ -84,4 +72,21 @@ const server = http.createServer(async (req, res) => {
   process.exit(0);
 });
 
-server.listen(PORT);
+server.listen(0, "127.0.0.1", () => {
+  redirectUri = `http://localhost:${server.address().port}`;
+
+  const authUrl =
+    "https://accounts.google.com/o/oauth2/v2/auth?" +
+    new URLSearchParams({
+      client_id,
+      redirect_uri: redirectUri,
+      response_type: "code",
+      scope: SCOPE,
+      access_type: "offline",
+      prompt: "consent",
+    }).toString();
+
+  console.log("\nOpen this URL signed in as the account that owns the channel:\n");
+  console.log(authUrl);
+  console.log("\nWaiting for consent...\n");
+});
