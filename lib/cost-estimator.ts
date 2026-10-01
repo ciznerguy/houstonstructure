@@ -68,6 +68,29 @@ const ADDITION_TYPE_FACTOR: Record<AdditionType, number> = {
 // externally-sourced regional figure this estimator uses; everything else here is our own.
 const HOUSTON_REGIONAL_FACTOR = 1.08;
 
+// Economy of scale. Until 2026-10-01 this model was purely linear, so it priced
+// a 2,400 square foot second story at the same rate per square foot as a 400
+// square foot one and produced totals that no builder would quote. Two real
+// leads were shown $698k and $1.13M because of it.
+//
+// Fixed costs do not scale with area: mobilization, design, permits, the stair,
+// setting up and weatherproofing a roof-off. Spread over more square feet they
+// cost less per foot. Houston market figures show the same curve, roughly
+// $260-300 per foot at 500-800 sq ft falling to $220-280 at 1000-1500.
+//
+// A mild power law reproduces that. 400 sq ft is the baseline at 1.0; the floor
+// stops it running away on very large entries, which are often a typo anyway.
+const SIZE_BASELINE_SQFT = 400;
+const SIZE_EXPONENT = 0.15;
+const SIZE_FACTOR_FLOOR = 0.72;
+const SIZE_FACTOR_CEILING = 1.08;
+
+function sizeFactor(sqft: number): number {
+  if (!(sqft > 0)) return 1;
+  const raw = Math.pow(SIZE_BASELINE_SQFT / sqft, SIZE_EXPONENT);
+  return Math.min(SIZE_FACTOR_CEILING, Math.max(SIZE_FACTOR_FLOOR, raw));
+}
+
 const BATHROOM_ADDER = 8000;
 const KITCHEN_ADDER = 15000;
 const HVAC_ADDER = 6000;
@@ -88,7 +111,8 @@ export function calculateEstimate(input: EstimatorInput): EstimatorResult {
   const baseRate = BASE_RATE_PER_SQFT[input.finishLevel];
   const typeFactor = ADDITION_TYPE_FACTOR[input.additionType];
 
-  const shellAndFinish = input.sqft * baseRate * typeFactor * HOUSTON_REGIONAL_FACTOR;
+  const shellAndFinish =
+    input.sqft * baseRate * typeFactor * HOUSTON_REGIONAL_FACTOR * sizeFactor(input.sqft);
 
   let wetSpace = 0;
   if (input.hasBathroom) wetSpace += BATHROOM_ADDER * HOUSTON_REGIONAL_FACTOR;
