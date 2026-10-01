@@ -26,12 +26,24 @@ export default function Header() {
       <input id="nav-toggle" type="checkbox" className="hidden" />
 
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
-        <Link href="/" className="flex flex-col leading-tight">
-          <span className="text-[15px] font-bold tracking-tight sm:text-[17px]">
-            Levi&rsquo;s Houston Structural
-          </span>
-          <span className="text-[10.5px] uppercase tracking-[0.16em] text-slate-300">
-            Repairs · Engineering · Consulting
+        <Link href="/" className="flex items-center gap-2.5">
+          {/* Decorative: the wordmark beside it already names the business, so
+              alt stays empty rather than making a screen reader say it twice.
+              No srcset here, the file is a couple of kilobytes. */}
+          <img
+            src="/images/logo-mark.png"
+            alt=""
+            width={36}
+            height={36}
+            className="h-9 w-9 shrink-0"
+          />
+          <span className="flex flex-col leading-tight">
+            <span className="text-[15px] font-bold tracking-tight sm:text-[17px]">
+              Levi&rsquo;s Houston Structural
+            </span>
+            <span className="text-[10.5px] uppercase tracking-[0.16em] text-slate-300">
+              Repairs · Engineering · Consulting
+            </span>
           </span>
         </Link>
 
