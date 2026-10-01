@@ -46,5 +46,8 @@ dev.log
 # secrets
 .secrets/
 
+# throwaway working files: generator scripts, one-off queries, image originals
+scratchpad/
+
 # local Claude Code permissions (machine/session-specific)
 .claude/settings.local.json
