@@ -12,6 +12,11 @@ export const BUSINESS = {
   googlePlaceId: "ChIJ5SqrAiW_QIYRWUsm5hCHe9I",
   googleMapsUrl: "https://maps.google.com/maps?cid=15166864676750773081",
   writeReviewUrl: "https://search.google.com/local/writereview?placeid=ChIJ5SqrAiW_QIYRWUsm5hCHe9I",
+  // Branded channel created 2026-10-01. Listed in Schema.tsx `sameAs`, which is
+  // how a search engine confirms the channel and this site are one business.
+  // The channel name is "Levi's Houston Structural Repairs & Engineering":
+  // YouTube caps names at 50 characters and the full one is 58.
+  youtubeUrl: "https://www.youtube.com/@houstonstructure",
   // Must stay identical to the Google Business Profile and Bing Places, which
   // both read Mon-Sat 8 AM - 8 PM (aligned 2026-09-26). `opens`/`closes` are the
   // 24-hour values Schema.tsx publishes; omit them on a closed day.
