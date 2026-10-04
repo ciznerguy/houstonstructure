@@ -81,14 +81,20 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
-    // Written from the owner's own public account of the work. No images yet:
-    // the homeowner photographed this one himself and posting those needs his
-    // permission, and inventing renderings for a real named job is worse than
-    // running the page text-only until the real photographs arrive.
+    // Written from the owner's own public account of the work. The images are
+    // renderings of what he described, labelled as such on the page, because
+    // the real photographs are his and posting them needs his permission.
     slug: "room-addition-houston-townhome",
     title: "Adding 1,000 Square Feet Inside a Houston Townhome",
     summary:
       "A four-storey townhome that needed more room and had nowhere to expand. The space came from inside: an attic turned into a thousand square feet of living space, an art studio built over the stairs, a bathroom added, and a load-bearing wall replaced with a single beam.",
     serviceSlug: "home-additions",
+    image: "/images/project-houston-townhome-1-attic.jpg",
+    images: [
+      "/images/project-houston-townhome-1-attic.jpg",
+      "/images/project-houston-townhome-2-art-studio.jpg",
+      "/images/project-houston-townhome-3-shower.jpg",
+      "/images/project-houston-townhome-4-beam.jpg",
+    ],
   },
 ];

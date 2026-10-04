@@ -16,10 +16,57 @@ const FACTS = {
   atticSqFt: "1,000",
 };
 
+const IMG_NOTE = "illustrative rendering, not a photo of the project";
+
+type Photo = { src: string; alt: string; caption: string };
+const photos: Record<"attic" | "studio" | "shower" | "beam", Photo> = {
+  attic: {
+    src: "/images/project-houston-townhome-1-attic.jpg",
+    alt: "Finished attic living space with the ceiling following the roof pitch, painted white rafters exposed, pale oak floorboards, black framed dormer windows and a low linen sofa",
+    caption: "The attic, finished: about a thousand square feet of living space where there had been storage.",
+  },
+  studio: {
+    src: "/images/project-houston-townhome-2-art-studio.jpg",
+    alt: "Compact art studio under a sloped ceiling with a black framed window, a long timber work table, jars of brushes, canvases against the wall and an easel, with a stair rail at the near edge",
+    caption: "The art studio, built in the volume above the stairwell that the house was otherwise wasting.",
+  },
+  shower: {
+    src: "/images/project-houston-townhome-3-shower.jpg",
+    alt: "Double height glass enclosed shower in pale stone tile with two rain heads on opposite walls and a tall window high up throwing daylight down the wall",
+    caption: "The two-storey bathroom had height and nothing above head level using it. Now the shower does.",
+  },
+  beam: {
+    src: "/images/project-houston-townhome-4-beam.jpg",
+    alt: "Open living floor in warm white and pale oak with a flush steel beam spanning the ceiling along the line where a load-bearing wall used to stand",
+    caption: "One room where two used to be, with the beam carrying what the wall was carrying.",
+  },
+};
+
+function Figure({ photo }: { photo: Photo }) {
+  return (
+    <>
+      <img
+        src={photo.src}
+        srcSet={`${photo.src.replace(".jpg", "-800.jpg")} 800w, ${photo.src} 1024w`}
+        sizes="(min-width: 768px) 66vw, 100vw"
+        alt={`${photo.alt} (${IMG_NOTE})`}
+        loading="lazy"
+        className="mb-2 h-[280px] w-full rounded-sm object-cover sm:h-[380px]"
+      />
+      <p className="mt-2 mb-8 text-sm text-slate-500">
+        {photo.caption} <span className="text-slate-400">Illustrative rendering.</span>
+      </p>
+    </>
+  );
+}
+
 export const metadata: Metadata = {
   title: "Room Addition in a Houston Townhome: 1,000 Sq Ft Added Inside",
   description:
     "A four-storey Houston townhome with no room to expand gained about 1,000 square feet without the footprint changing. An attic became living space, an art studio went in over the stairs, a bathroom was added, and a load-bearing wall came out for a single beam.",
+  openGraph: {
+    images: [{ url: "/images/project-houston-townhome-1-attic.jpg", width: 1024, height: 559 }],
+  },
 };
 
 const faqs = [
@@ -87,6 +134,20 @@ export default function HoustonTownhomeProjectPage() {
         current="Adding 1,000 Square Feet Inside a Houston Townhome"
       />
 
+      <div className="mx-auto max-w-6xl px-5 pt-10">
+        <img
+          src={photos.attic.src}
+          srcSet={`${photos.attic.src.replace(".jpg", "-800.jpg")} 800w, ${photos.attic.src} 1024w`}
+          sizes="100vw"
+          alt={`${photos.attic.alt} (${IMG_NOTE})`}
+          fetchPriority="high"
+          className="h-[300px] w-full rounded-sm object-cover sm:h-[420px]"
+        />
+        <p className="mt-2 text-sm text-slate-500">
+          {photos.attic.caption} <span className="text-slate-400">Illustrative rendering.</span>
+        </p>
+      </div>
+
       <section className="mx-auto max-w-6xl px-5 py-14">
         <div className="grid gap-10 md:grid-cols-3">
           <div className="md:col-span-2 leading-relaxed text-slate-700">
@@ -116,12 +177,14 @@ export default function HoustonTownhomeProjectPage() {
               The second was the void above the stairwell. In most houses that volume is simply lost. Here it became
               a full art studio, a room that exists entirely in space the building was already wasting.
             </p>
+            <Figure photo={photos.studio} />
             <p className="mb-5">
               The third was vertical. The house had a two-storey bathroom, which sounds impressive and mostly means
               a great deal of air above your head doing nothing. That height was put to work as a two-storey shower
               with two independent showers and rain heads, the kind of thing people expect in a hotel and rarely get
               at home. An extra bathroom was added as part of the same work.
             </p>
+            <Figure photo={photos.shower} />
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">The wall that came out</h2>
             <p className="mb-5">
@@ -143,6 +206,7 @@ export default function HoustonTownhomeProjectPage() {
               </Link>{" "}
               are the same job, not two of them.
             </p>
+            <Figure photo={photos.beam} />
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">The leak that was not where it looked</h2>
             <p className="mb-5">
