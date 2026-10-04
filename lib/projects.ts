@@ -80,4 +80,15 @@ export const PROJECTS: Project[] = [
       "/images/project-katy-second-story-4-closet.jpg",
     ],
   },
+  {
+    // Written from the owner's own public account of the work. No images yet:
+    // the homeowner photographed this one himself and posting those needs his
+    // permission, and inventing renderings for a real named job is worse than
+    // running the page text-only until the real photographs arrive.
+    slug: "room-addition-houston-townhome",
+    title: "Adding 1,000 Square Feet Inside a Houston Townhome",
+    summary:
+      "A four-storey townhome that needed more room and had nowhere to expand. The space came from inside: an attic turned into a thousand square feet of living space, an art studio built over the stairs, a bathroom added, and a load-bearing wall replaced with a single beam.",
+    serviceSlug: "home-additions",
+  },
 ];
