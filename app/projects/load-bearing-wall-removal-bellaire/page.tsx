@@ -35,8 +35,12 @@ const photos: Record<"before" | "shoring" | "level" | "correction" | "after", Ph
   },
   after: {
     src: "/images/project-bellaire-open-plan-5-after.jpg",
-    alt: "Finished open-plan first floor running from a living area through a dining table to a white kitchen, with a flat continuous ceiling and no visible beam",
-    caption: "After: one connected living, dining and kitchen space, with the new structure hidden above the ceiling.",
+    // Reshot 2026-10-04 from the before image, so the floor, the window, the
+    // kitchen and the staircase are the same ones. The previous version showed
+    // a fully remodelled house, which sold a different service and made the
+    // before and after read as two different addresses.
+    alt: "Open first floor after the three walls came out, running from the living area through to the original kitchen, with a painted steel beam spanning the ceiling along the line the wall used to follow",
+    caption: "After: one connected space, with a single steel beam carrying everything the three walls used to carry.",
   },
 };
 
