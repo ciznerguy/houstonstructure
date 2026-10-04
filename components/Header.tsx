@@ -41,8 +41,10 @@ export default function Header() {
             <span className="text-[15px] font-bold tracking-tight sm:text-[17px]">
               Levi&rsquo;s Houston Structural
             </span>
+            {/* The visible strapline, not the legal name. BUSINESS.name stays
+                exactly as it reads on the Google and Bing listings. */}
             <span className="text-[10.5px] uppercase tracking-[0.16em] text-slate-300">
-              Repairs · Engineering · Consulting
+              Additions · Load-Bearing Walls · Engineering
             </span>
           </span>
         </Link>

@@ -34,8 +34,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const area = SERVICE_AREAS.find((c) => c.slug === city);
   if (!area) return {};
   return {
-    title: `Structural Engineer in ${area.name}, TX`,
-    description: `Foundation repair, structural repairs, and engineering inspections in ${area.name}, TX. ${area.blurb}`,
+    // The location pages are the site's biggest source of impressions, and
+    // they were describing foundation repair and inspections, which is not
+    // the work we want. Lead with additions and walls instead.
+    title: `Room Additions & Structural Engineer in ${area.name}, TX`,
+    description: `Room additions, second stories and load-bearing wall removal in ${area.name}, TX, engineered and built by one licensed firm. ${area.blurb}`,
   };
 }
 

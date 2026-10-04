@@ -103,6 +103,95 @@ export default function Home() {
         </div>
       </section>
 
+      {/* The two things the business actually wants to sell. This sits above
+          the full service grid on purpose: every service card below carries
+          the same weight, so without this the work we care about reads as one
+          option out of eight. It is also where most of the internal links to
+          the addition and wall pages come from. */}
+      <section className="mx-auto max-w-6xl px-5 py-16">
+        <div className="text-xs font-semibold uppercase tracking-[0.14em] text-orange-700">
+          What we do most
+        </div>
+        <h2 className="mt-2 max-w-2xl text-2xl font-bold text-[#0B1F3A] sm:text-3xl">
+          Adding space, and taking out the walls in the way
+        </h2>
+
+        <div className="mt-8 grid gap-6 md:grid-cols-2">
+          <div className="rounded-sm border border-slate-200 p-6">
+            <h3 className="text-lg font-bold text-[#0B1F3A]">
+              Room additions and second stories
+            </h3>
+            <p className="mt-3 text-slate-600">
+              Most of what we build is extra space on a house that was never
+              designed to carry it. A room addition needs its own foundation
+              tied into the slab already there, without the two pulling against
+              each other every time the ground moves. A second story puts a
+              whole new floor onto walls and footings that were sized for one.
+              We do the engineering and the construction, so the structure that
+              gets built is the structure that was calculated.
+            </p>
+            <ul className="mt-5 space-y-2 text-sm font-semibold">
+              <li>
+                <Link href="/services/home-additions" className="text-[#0B1F3A] hover:text-orange-700">
+                  Room additions in Houston →
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/second-story-addition" className="text-[#0B1F3A] hover:text-orange-700">
+                  Second story additions →
+                </Link>
+              </li>
+              <li>
+                <Link href="/guides/second-story-addition-cost" className="text-[#0B1F3A] hover:text-orange-700">
+                  What a second story costs here →
+                </Link>
+              </li>
+              <li>
+                <Link href="/projects/second-story-addition-katy" className="text-[#0B1F3A] hover:text-orange-700">
+                  A second story addition we built in Katy →
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div className="rounded-sm border border-slate-200 p-6">
+            <h3 className="text-lg font-bold text-[#0B1F3A]">
+              Load-bearing wall removal
+            </h3>
+            <p className="mt-3 text-slate-600">
+              Opening a kitchen into the living room almost always means taking
+              out a wall that is holding the house up. The wall is the easy
+              part. The beam replacing it has to carry everything the wall
+              carried, and that load has to reach the foundation through posts
+              and footings able to take it. It is a calculation before it is a
+              demolition.
+            </p>
+            <ul className="mt-5 space-y-2 text-sm font-semibold">
+              <li>
+                <Link href="/services/load-bearing-wall-removal" className="text-[#0B1F3A] hover:text-orange-700">
+                  Load-bearing wall removal in Houston →
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/steel-beam-installation" className="text-[#0B1F3A] hover:text-orange-700">
+                  The steel beam that replaces the wall →
+                </Link>
+              </li>
+              <li>
+                <Link href="/guides/load-bearing-wall-removal" className="text-[#0B1F3A] hover:text-orange-700">
+                  How to tell if a wall is load-bearing →
+                </Link>
+              </li>
+              <li>
+                <Link href="/projects/load-bearing-wall-removal-bellaire" className="text-[#0B1F3A] hover:text-orange-700">
+                  An open plan we opened up in Bellaire →
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* Cost estimator */}
       <section className="border-b border-slate-200 bg-slate-50">
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 px-5 py-10 md:flex-row md:items-center">
