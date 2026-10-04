@@ -30,8 +30,8 @@ const photos: Record<"before" | "shoring" | "level" | "correction" | "after", Ph
   },
   correction: {
     src: "/images/project-bellaire-open-plan-4-correction.jpg",
-    alt: "Open first floor with all three walls removed, new beams spanning the ceiling and steel shoring posts still standing beneath them",
-    caption: "New beams in place where each wall used to stand, with the shoring still carrying the load.",
+    alt: "Open first floor with the walls removed, a steel beam spanning the ceiling where they stood, and red adjustable shoring posts still standing beneath it",
+    caption: "The beam in place where the walls used to stand, with the shoring still carrying the load until it is signed off.",
   },
   after: {
     src: "/images/project-bellaire-open-plan-5-after.jpg",
