@@ -97,4 +97,14 @@ export const PROJECTS: Project[] = [
       "/images/project-houston-townhome-4-beam.jpg",
     ],
   },
+  {
+    // The first project on the site documented from real photographs of the
+    // finished work rather than renderings. Images go in as soon as the files
+    // are on disk; the page runs text-only until then.
+    slug: "bedroom-bathroom-addition-houston",
+    title: "A Bedroom and Bathroom Added to a Houston Home",
+    summary:
+      "An addition that put a new bedroom and a full bathroom onto an existing house. The bathroom is where the work shows: a freestanding tub in an arched alcove, a chevron feature wall, and a geometric mosaic floor that only stays tight if the slab under it does not move.",
+    serviceSlug: "home-additions",
+  },
 ];
