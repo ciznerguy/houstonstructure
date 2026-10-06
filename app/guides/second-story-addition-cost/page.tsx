@@ -7,9 +7,14 @@ import CostEstimatorCTA from "@/components/CostEstimatorCTA";
 import { BUSINESS } from "@/lib/business";
 
 export const metadata: Metadata = {
-  title: "How Much Does a Second-Story Addition Cost in Houston?",
+  // Search Console, 28 days to 2026-10-03: this page carries 214 impressions
+  // at position 13.7 while /services/second-story-addition gets under 20. The
+  // queries reaching it are general ("houston second story addition",
+  // "houston room addition second"), not cost questions, so the title was
+  // answering something narrower than what people were actually asking.
+  title: "Second Story Addition in Houston: What It Costs and What It Takes",
   description:
-    "Typical cost ranges for second-story additions in the Houston area, what actually drives the price beyond square footage, and why the number depends on your existing foundation more than your floor plan.",
+    "What a second story or room addition costs in the Houston area, what drives the price beyond square footage, and why the number depends on the foundation under the house more than the floor plan going on top of it.",
   openGraph: {
     images: [{ url: "/images/home-additions.jpg", width: 1600, height: 900 }],
   },
@@ -61,8 +66,8 @@ export default function SecondStoryAdditionCostGuidePage() {
       />
       <PageHero
         eyebrow="Guide"
-        title="How Much Does a Second-Story Addition Cost in Houston?"
-        subtitle="The honest answer is that it depends more on your existing foundation than on the floor plan you have in mind. Here's what actually drives the number."
+        title="Second Story Addition in Houston: What It Costs and What It Takes"
+        subtitle="The honest answer is that it depends more on your existing foundation than on the floor plan you have in mind. Here's what actually drives the number, and what has to happen below before anything goes up."
         ctaLabel="Calculate Your Second-Story Addition Cost"
       />
 
@@ -71,7 +76,7 @@ export default function SecondStoryAdditionCostGuidePage() {
           { name: "Home", href: "/" },
           { name: "Guides", href: "/guides" },
         ]}
-        current="How Much Does a Second-Story Addition Cost in Houston?"
+        current="Second Story Addition in Houston: What It Costs and What It Takes"
       />
 
       <section className="mx-auto max-w-6xl px-5 py-14">
@@ -85,6 +90,28 @@ export default function SecondStoryAdditionCostGuidePage() {
               the cost isn&rsquo;t just about the new square footage. It&rsquo;s
               about what your existing house was built to carry, and what it
               takes to get it ready to carry more.
+            </p>
+            {/* This page outranks the service page for the general query, so
+                the link that hands a ready buyer onward has to sit near the
+                top rather than at the bottom of a long guide. */}
+            <p className="mb-5">
+              If you already know you want to build up and you are looking for
+              someone to do it, start with{" "}
+              <Link
+                href="/services/second-story-addition"
+                className="text-[#0B1F3A] underline hover:no-underline"
+              >
+                second story additions in Houston
+              </Link>
+              . If you want to add a room without going up, the same questions
+              apply to a{" "}
+              <Link
+                href="/services/home-additions"
+                className="text-[#0B1F3A] underline hover:no-underline"
+              >
+                ground floor room addition
+              </Link>
+              , just with a new foundation rather than an existing one.
             </p>
             <p className="mb-5">
               If you&rsquo;ve gotten a few quotes already and noticed they

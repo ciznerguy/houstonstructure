@@ -858,7 +858,12 @@ export const SERVICES: Service[] = [
     slug: "second-story-addition",
     name: "Second Story Additions",
     shortName: "Second Story Additions",
-    seoTitle: "Second Story Addition in Houston, TX",
+    // Deliberately not "Second Story Addition in Houston, TX": that is the
+    // phrase the cost guide already ranks for, and two of our own pages
+    // competing for it left both of them nowhere. This one takes the
+    // "who actually does it" intent instead, which has its own demand
+    // ("second story addition contractors", "second story addition near me").
+    seoTitle: "Second Story Addition Contractors in Houston, TX",
     summary:
       "Adding a floor on top of a house that was built for one. We check whether yours can carry it, design the reinforcement if it can't, and build it.",
     description: [
