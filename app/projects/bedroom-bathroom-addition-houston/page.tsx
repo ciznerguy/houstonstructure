@@ -9,12 +9,67 @@ import { BUSINESS } from "@/lib/business";
 // Written from photographs of the finished work. Nothing here states a size, a
 // neighbourhood or a date, because none of those were given. What is described
 // is what the photographs show and what an addition of this kind requires.
+//
+// These are the first real photographs on the site. Every other project page
+// carries an "Illustrative rendering" note under each image; this one must not,
+// because that note would be false here and the fact that it is absent is the
+// whole value of the page.
 
 export const metadata: Metadata = {
   title: "Bedroom and Bathroom Addition in Houston, TX",
   description:
     "A room addition that put a new bedroom and a full bathroom onto an existing Houston house. The tile work is the visible half. The foundation, the drain layout set before the pour, and the framed arch are the half that makes it last.",
+  openGraph: {
+    images: [{ url: "/images/project-bedroom-bath-addition-1-tub-alcove.jpg", width: 1536, height: 2048 }],
+  },
 };
+
+type Photo = { src: string; alt: string; caption: string };
+const photos: Record<"tubAlcove" | "shower" | "arch" | "floor" | "tubWindow", Photo> = {
+  tubAlcove: {
+    src: "/images/project-bedroom-bath-addition-1-tub-alcove.jpg",
+    alt: "Freestanding white tub standing in an arched alcove lined with chevron-textured tile, marble-look walls either side, an arched window to the right and a geometric mosaic floor running to a wood floor edge",
+    caption: "The tub sits in an arched alcove, with the floor pattern running square to the room rather than to the walls.",
+  },
+  shower: {
+    src: "/images/project-bedroom-bath-addition-2-shower.jpg",
+    alt: "Walk-in shower in large format marble-look tile with a brass rain head, a handheld on a rail, a grab bar, a built-in bench finished in chevron tile and an octagon mosaic floor",
+    caption: "A walk-in shower with a rain head, a handheld, a grab bar and a bench, all on the same mosaic floor.",
+  },
+  arch: {
+    src: "/images/project-bedroom-bath-addition-3-arch.jpg",
+    alt: "Close view of the arched opening, with the marble-look tile cut into tapered voussoirs that follow the curve and meet a chevron-textured panel below",
+    caption: "The arch is turned in cut tile, each piece tapered to the curve. The opening was framed to the arch, not the arch applied to a square opening.",
+  },
+  floor: {
+    src: "/images/project-bedroom-bath-addition-4-floor-drain.jpg",
+    alt: "Linear shower drain set flush into an octagon mosaic floor with brass-toned inserts, running tight against a marble-look wall",
+    caption: "The linear drain sits flush so the floor pattern runs through it instead of stopping at it.",
+  },
+  tubWindow: {
+    src: "/images/project-bedroom-bath-addition-5-tub-window.jpg",
+    alt: "The freestanding tub in evening light with a brass floor-mounted filler, an arched window behind it and the vanity visible beyond",
+    caption: "Evening light through the arched window, with the vanity beyond.",
+  },
+};
+
+// Taller frames than the other project pages: these are phone photographs in
+// portrait, and the usual landscape crop would throw away most of each one.
+function Figure({ photo }: { photo: Photo }) {
+  return (
+    <>
+      <img
+        src={photo.src}
+        srcSet={`${photo.src.replace(".jpg", "-800.jpg")} 800w, ${photo.src} 1536w`}
+        sizes="(min-width: 768px) 66vw, 100vw"
+        alt={photo.alt}
+        loading="lazy"
+        className="mb-2 h-[420px] w-full rounded-sm object-cover sm:h-[560px]"
+      />
+      <p className="mt-2 mb-8 text-sm text-slate-500">{photo.caption}</p>
+    </>
+  );
+}
 
 const faqs = [
   {
@@ -85,6 +140,18 @@ export default function BedroomBathroomAdditionPage() {
         current="A Bedroom and Bathroom Added to a Houston Home"
       />
 
+      <div className="mx-auto max-w-6xl px-5 pt-10">
+        <img
+          src={photos.tubAlcove.src}
+          srcSet={`${photos.tubAlcove.src.replace(".jpg", "-800.jpg")} 800w, ${photos.tubAlcove.src} 1536w`}
+          sizes="100vw"
+          alt={photos.tubAlcove.alt}
+          fetchPriority="high"
+          className="h-[420px] w-full rounded-sm object-cover sm:h-[600px]"
+        />
+        <p className="mt-2 text-sm text-slate-500">{photos.tubAlcove.caption}</p>
+      </div>
+
       <section className="mx-auto max-w-6xl px-5 py-14">
         <div className="grid gap-10 md:grid-cols-3">
           <div className="md:col-span-2 leading-relaxed text-slate-700">
@@ -117,6 +184,8 @@ export default function BedroomBathroomAdditionPage() {
               other end of the room: a rain head, a handheld, a built-in bench finished in the same chevron, and a
               linear drain set flush so the floor pattern runs through it without a break.
             </p>
+            <Figure photo={photos.shower} />
+            <Figure photo={photos.arch} />
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
               The part that decides whether it still looks like that in five years
@@ -126,6 +195,7 @@ export default function BedroomBathroomAdditionPage() {
               line across the room, and a straight line shows movement that a wood floor or a carpet would hide
               completely. Which makes it, by accident, a very good test of the structure underneath.
             </p>
+            <Figure photo={photos.floor} />
             <p className="mb-5">
               Houston sits on clay that swells and shrinks with moisture. A new addition slab has not finished
               settling while the original foundation stopped moving decades ago. Tie the two together without
@@ -151,6 +221,7 @@ export default function BedroomBathroomAdditionPage() {
               That is the difference between an arch that reads as part of the building and one that reads as
               trim stuck on at the end.
             </p>
+            <Figure photo={photos.tubWindow} />
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">Common questions</h2>
             <div className="mt-6 space-y-6">
