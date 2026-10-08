@@ -7,6 +7,15 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { BUSINESS, SERVICE_AREAS, SERVICES } from "@/lib/business";
 import { PROJECTS } from "@/lib/projects";
 
+// The services the business wants to be found for. These get named in prose
+// with the city in the anchor; the rest stay in the grid lower down.
+const FOCUS_SERVICES = [
+  "home-additions",
+  "second-story-addition",
+  "load-bearing-wall-removal",
+  "steel-beam-installation",
+];
+
 // Location copy in lib/business.ts is plain strings; this lets a paragraph
 // carry an inline internal link written as [anchor text](/path).
 function renderInline(text: string) {
@@ -103,11 +112,57 @@ export default async function LocationPage({ params }: Props) {
               </div>
             ))}
 
+            {/* The work we actually want, named in prose with the city in the
+                anchor, above the grid. The grid below gives all eleven
+                services the same weight and the same anchor text on all
+                sixteen location pages, which tells a search engine nothing
+                about which three matter. */}
             <h2 className="mt-10 text-xl font-bold text-[#0B1F3A]">
-              Structural services in {area.name}
+              What we are called for most in {area.name}
+            </h2>
+            <p className="mt-4 mb-5 text-slate-700 leading-relaxed">
+              Two kinds of job make up most of our work here. The first is
+              adding space:{" "}
+              <Link
+                href="/services/home-additions"
+                className="text-[#0B1F3A] underline hover:no-underline"
+              >
+                room additions in {area.name}
+              </Link>{" "}
+              when there is yard to build on, and{" "}
+              <Link
+                href="/services/second-story-addition"
+                className="text-[#0B1F3A] underline hover:no-underline"
+              >
+                second story additions
+              </Link>{" "}
+              when there is not, which turns the question into what the house
+              below can carry.
+            </p>
+            <p className="mb-5 text-slate-700 leading-relaxed">
+              The second is opening up a floor plan that was closed in.{" "}
+              <Link
+                href="/services/load-bearing-wall-removal"
+                className="text-[#0B1F3A] underline hover:no-underline"
+              >
+                Load-bearing wall removal in {area.name}
+              </Link>{" "}
+              is an engineering job before it is a demolition one, because
+              whatever the wall was holding up has to be carried by{" "}
+              <Link
+                href="/services/steel-beam-installation"
+                className="text-[#0B1F3A] underline hover:no-underline"
+              >
+                the beam that replaces it
+              </Link>
+              , and that load still has to reach the foundation.
+            </p>
+
+            <h2 className="mt-10 text-xl font-bold text-[#0B1F3A]">
+              Everything else we handle in {area.name}
             </h2>
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
-              {SERVICES.map((s) => (
+              {SERVICES.filter((s) => !FOCUS_SERVICES.includes(s.slug)).map((s) => (
                 <Link
                   key={s.slug}
                   href={`/services/${s.slug}`}
