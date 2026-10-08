@@ -4,17 +4,18 @@ import { notFound } from "next/navigation";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { BUSINESS, SERVICE_AREAS, SERVICES } from "@/lib/business";
+import { BUSINESS, SERVICE_AREAS } from "@/lib/business";
 import { PROJECTS } from "@/lib/projects";
 
-// The services the business wants to be found for. These get named in prose
-// with the city in the anchor; the rest stay in the grid lower down.
-const FOCUS_SERVICES = [
-  "home-additions",
-  "second-story-addition",
-  "load-bearing-wall-removal",
-  "steel-beam-installation",
-];
+// These pages used to link to all eleven services in a grid, with the same
+// anchor text on all sixteen of them. The grid is gone on purpose: a page
+// divides what it passes between the links it has, so removing the eight we
+// do not want to rank for is the only thing that actually concentrates it.
+// nofollow would not have done this. Since 2009 a nofollowed link still takes
+// its share and discards it instead of passing it on.
+//
+// Nothing is orphaned. Every service is still reachable from the header
+// dropdown and from /services.
 
 // Location copy in lib/business.ts is plain strings; this lets a paragraph
 // carry an inline internal link written as [anchor text](/path).
@@ -158,21 +159,6 @@ export default async function LocationPage({ params }: Props) {
               , and that load still has to reach the foundation.
             </p>
 
-            <h2 className="mt-10 text-xl font-bold text-[#0B1F3A]">
-              Everything else we handle in {area.name}
-            </h2>
-            <div className="mt-6 grid gap-4 sm:grid-cols-2">
-              {SERVICES.filter((s) => !FOCUS_SERVICES.includes(s.slug)).map((s) => (
-                <Link
-                  key={s.slug}
-                  href={`/services/${s.slug}`}
-                  className="rounded-sm border border-slate-200 p-4 text-sm hover:border-[#0B1F3A]"
-                >
-                  <div className="font-semibold text-[#0B1F3A]">{s.shortName}</div>
-                  <div className="mt-1 text-slate-600">{s.summary}</div>
-                </Link>
-              ))}
-            </div>
 
             <h2 className="mt-10 text-xl font-bold text-[#0B1F3A]">
               {area.name} FAQ
