@@ -177,4 +177,32 @@ Only on confirmed success does it push `{ event: "form_submit_success" }` to `wi
   - The one sequence that types reliably: attach the ingredient first, then **type without clicking the prompt box**, then press Start generation. Clicking the box first often loses the keystrokes.
 - **Image sequences must be generated from one another, never independently** (learned the hard way 2026-10-04). The five Bellaire images had been generated separately, so each was a different house: the staircase moved from right to left, the floor went from dark stain to pale oak, and the kitchen went from brown cabinets to new white ones. Fine when a page shows one image at a time, fatal in a video that plays them in sequence. Four of the five were rebuilt by feeding `project-bellaire-open-plan-1-before.jpg` back in as the source and describing only what changes, which holds the window, floor, kitchen and staircase in place. **Check the staircase side before installing any new one.**
   - The Flow asset still named `project-bellaire-open-plan-5-after.jpg` is the **rejected** original: white kitchen, pale oak floor, floating stairs on the left. Never pick it. It also sold the wrong service, a whole-house remodel rather than wall removal. The live file at that path is the rebuilt one.
+### Where the traffic work stands (measured 2026-10-12, read this before changing titles)
+
+The brief from the user, 2026-10-08: **increase relevant traffic, do not work on lead quality.** Levi narrowed the business on 2026-10-04 to three things only, in his words "רק אלה": room additions, additions, and load-bearing wall removal. Kitchens, bathrooms, garage conversions, attic conversions and engineering reports are out, even though three of the seven leads asked for sealed reports.
+
+**Baseline the site has held all autumn**: about 100 impressions a day, 1 to 3 clicks, CTR around 1.6-1.8%, average position 17 to 21. Seven real leads between 27 August and 1 October, then none. **None of the seven became a paying job** (user, 2026-10-08). Asma Khan, the 3,950 sq ft Katy second storey that looked like the ideal lead on paper, wanted a $600k project with a $300k budget.
+
+**The 4 October title rewrite looks like it backfired.** Measured per page, the week before against the week after:
+
+```
+page                                  before 27.9-3.10        after 4.10-10.10
+/guides/second-story-addition-cost     32 imp  pos 11.8        34 imp  pos 14.0
+/services/second-story-addition        13 imp  pos 48.2         2 imp  pos 43.5
+/services/home-additions               35 imp  pos 17.3         4 imp  pos 17.3
+/services/load-bearing-wall-removal    16 imp  pos 38.9        12 imp  pos 52.3
+/locations/katy                        35 imp  pos  8.7        28 imp  pos 16.7
+/locations/sugar-land                  18 imp  pos  7.1        15 imp  pos 12.8
+/locations/cypress                     12 imp  pos  8.2         6 imp  pos 12.7
+/                                     160 imp  pos 14.4       112 imp  pos 11.0
+```
+
+Three location pages slid from position 7-8 to 12-17 in the same week, in the same direction, right after their titles changed from `Structural Engineer in {city}, TX` to `Room Additions & Structural Engineer in {city}, TX` and their descriptions moved off foundation repair and inspections. They had been ranking at 7-8 for queries like "structural remodel fort bend county". The most likely reading is that chasing the phrase we wanted cost us the phrase that was already working. Positions on pages with 6 to 35 impressions are noisy and part of the window predates any recrawl, so another week settles it, but the direction is consistent and it is not encouraging.
+
+**The homepage is the exception and the lesson**: it went from position 14.4 to 11.0. There the change was additive, a new focus section with real copy and links. On the location pages the change was a swap. Adding worked; replacing did not.
+
+Also changed, too recent to have any data by 2026-10-12: on 8 October the grid linking every location page to all eleven services was removed, taking 128 links out of the site, leaving only prose links to the four focus services with the city in the anchor. nofollow was considered and rejected: since 2009 a nofollowed link still takes its share of what a page passes and discards it, so it concentrates nothing.
+
+Everything above is reversible in one commit if the next week of data confirms the slide.
+
 - **On hold, don't re-suggest until told otherwise**: adding `aggregateRating` schema back (would require exposing a review count, which the user wants hidden while it's still low — declined 2026-07-28, 2026-07-29, and again 2026-08-02 when it came up via a Schema-markup tip). Not a permanent no — revisit once the review count has grown enough that the user is comfortable showing it, but only when the user raises it, not proactively.
