@@ -20,6 +20,11 @@ export async function submitNetlifyForm(formName: string, fields: Record<string,
   });
   if (!res.ok) throw new Error(`Email send failed: ${res.status}`);
 
+  // The function flags bot submissions; the visitor still sees success, but
+  // nothing is pushed to GTM so it is never counted as a generate_lead.
+  const { spam } = await res.json().catch(() => ({ spam: false }));
+  if (spam) return;
+
   // Only fires on a confirmed successful send, not on every submit attempt.
   //
   // This resolves only once GTM reports its tags have fired. The two-step lead
