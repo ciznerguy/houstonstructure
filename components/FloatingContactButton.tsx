@@ -5,9 +5,11 @@ import Link from "next/link";
 import { BUSINESS } from "@/lib/business";
 import { submitNetlifyForm } from "@/lib/netlify-forms";
 import { saveLeadContact } from "@/lib/lead-handoff";
+import ServiceSelect from "@/components/ServiceSelect";
 
 export default function FloatingContactButton() {
   const [open, setOpen] = useState(false);
+  const [service, setService] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -18,7 +20,7 @@ export default function FloatingContactButton() {
     e.preventDefault();
     setStatus("sending");
     try {
-      await submitNetlifyForm("quick-contact", { name, email, phone, message });
+      await submitNetlifyForm("quick-contact", { service, name, email, phone, message });
       // Hand the details to /estimate so the project questions never ask twice.
       saveLeadContact({ name, email, phone });
       setStatus("sent");
@@ -30,6 +32,7 @@ export default function FloatingContactButton() {
   function closeAndReset() {
     setOpen(false);
     setStatus("idle");
+    setService("");
     setName("");
     setEmail("");
     setPhone("");
@@ -111,6 +114,7 @@ export default function FloatingContactButton() {
                   Don&rsquo;t fill this out: <input name="bot-field" />
                 </label>
               </p>
+              <ServiceSelect value={service} onChange={setService} />
               <div>
                 <label className="text-sm font-medium text-slate-700">Name</label>
                 <input

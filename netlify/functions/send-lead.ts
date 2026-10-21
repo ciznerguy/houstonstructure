@@ -3,6 +3,7 @@ import nodemailer from "nodemailer";
 import { BUSINESS } from "../../lib/business";
 
 const FIELD_LABELS: Record<string, string> = {
+  service: "Service",
   name: "Name",
   email: "Email",
   phone: "Phone",

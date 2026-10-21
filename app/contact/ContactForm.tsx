@@ -5,12 +5,14 @@ import { useRouter } from "next/navigation";
 import { BUSINESS } from "@/lib/business";
 import { submitNetlifyForm } from "@/lib/netlify-forms";
 import { saveLeadContact } from "@/lib/lead-handoff";
+import ServiceSelect from "@/components/ServiceSelect";
 
 // Step one of a two-step flow. It asks for the least it can and sends the lead
 // the moment it has it, so a visitor who goes no further is still a lead we can
 // call. The project questions come afterwards on /estimate.
 export default function ContactForm() {
   const router = useRouter();
+  const [service, setService] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -20,7 +22,7 @@ export default function ContactForm() {
     e.preventDefault();
     setStatus("sending");
     try {
-      await submitNetlifyForm("contact-page", { name, email, phone });
+      await submitNetlifyForm("contact-page", { service, name, email, phone });
       // Only after the email is confirmed sent: the lead is safe either way now.
       saveLeadContact({ name, email, phone });
       router.push("/estimate");
@@ -43,6 +45,7 @@ export default function ContactForm() {
           Don&rsquo;t fill this out: <input name="bot-field" />
         </label>
       </p>
+      <ServiceSelect value={service} onChange={setService} />
       <div>
         <label className="text-sm font-medium text-slate-700">Name</label>
         <input

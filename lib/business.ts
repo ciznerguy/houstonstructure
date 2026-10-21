@@ -2712,3 +2712,13 @@ export const SERVICES: Service[] = [
     ],
   },
 ];
+
+// The "what do you need" dropdown on the contact forms. Limited to the three
+// jobs Levi takes on (his call, 2026-10-04) plus Other, so the lead email says
+// up front what the call is about.
+export const LEAD_SERVICE_OPTIONS = [
+  "Room Addition",
+  "Second-Story Addition",
+  "Load-Bearing Wall Removal",
+  "Other",
+] as const;
