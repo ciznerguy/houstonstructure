@@ -42,6 +42,18 @@ const faqs = [
     a: "For a straightforward bedroom or living space with no plumbing, we typically see somewhere in the neighborhood of $125,000 to $175,000 for a smaller addition at a builder-grade finish. Add a bathroom, HVAC extension, and a mid-range finish, and that range moves up toward $250,000 to $330,000. A larger second story with a kitchenette can run higher still. Our online tool walks through your specific scope and gives you a range based on those factors."
   },
   {
+    q: "Should I call an engineer or a contractor first?",
+    a: "The engineer, or a firm that has both under one roof. Whether your house can carry a second floor, and what it needs to get there, decides the design and most of the price. A contractor pricing before that question is answered is pricing a guess, and an architect drawing before it is answered may be drawing an upstairs the house can't hold.",
+  },
+  {
+    q: "Can a 1950s or 1960s single-story Houston house take a second story?",
+    a: "Often, but it has to be measured rather than assumed. Those slabs and footings were sized for one roof, and after sixty years on Houston clay some have moved and some haven't. We check the foundation's level, the footings and the bearing walls, then tell you whether it carries the new floor as built, with reinforcement, or not at a reasonable cost.",
+  },
+  {
+    q: "Do I need a permit for a second-story addition around Houston?",
+    a: "Inside the City of Houston and in cities like Pearland, Sugar Land and Katy, yes, and the city will want stamped structural drawings. In unincorporated areas, which covers much of Cypress, there is no city building permit, but floodplain rules, deed restrictions and HOA review still apply, and the structure still has to be engineered to be safe and to pass a buyer's inspection later.",
+  },
+  {
     q: "Is it worth getting a callback if I'm still just exploring the idea?",
     a: "Yes. Most of the homeowners we talk to at this stage haven't committed to anything yet, they're trying to figure out if a second story is realistic for their specific house before they invest time in floor plans or contractor quotes. That's exactly the point where an engineer's perspective is most useful.",
   },
@@ -247,6 +259,72 @@ export default function SecondStoryAdditionCostGuidePage() {
                 </div>
               ))}
             </div>
+
+            {/* Search Console, 2026-09-24 to 2026-10-21: this guide is the page
+                Google shows for "second story addition" searches with a place
+                in them (Pearland, Houston Heights, Sugar Land, Katy), at
+                position 10 to 20. This section gives those searches something
+                specific to each place instead of a general answer. */}
+            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
+              Building up in different parts of the Houston area
+            </h2>
+            <p className="mb-5">
+              The structural questions are the same everywhere. What changes
+              from one part of the metro to the next is the paperwork, the
+              kind of foundation you&rsquo;re likely to find, and who else
+              gets a say in what the house looks like afterward.
+            </p>
+            <p className="mb-5">
+              <strong>Inside the City of Houston.</strong> Houston has no
+              zoning, but most older subdivisions have deed restrictions, and
+              the city enforces them. Some limit building height or the
+              number of stories, so read yours before anyone draws an upstairs.
+              In Spring Branch and the neighborhoods around it, a lot of the
+              houses were built as single-story ranch homes in the 1950s and
+              1960s. Their slabs and footings were sized for one roof, and
+              after sixty years of clay moving under them, the first job is
+              measuring what they carry today.
+            </p>
+            <p className="mb-5">
+              <strong>Houston Heights.</strong> Parts of the Heights are city
+              historic districts. There, an addition that changes how the
+              house looks from the street needs approval from the
+              city&rsquo;s historical commission before the permit, and a
+              second story is usually set back toward the rear so the
+              original front still reads as it did. Many Heights houses sit
+              on pier-and-beam foundations, which changes how the new load
+              reaches the ground: new piers and beams under the floor rather
+              than reinforcement in a slab. More on the area in our page on{" "}
+              <Link href="/locations/houston-heights" className="text-[#0B1F3A] underline hover:no-underline">
+                structural work in Houston Heights
+              </Link>
+              .
+            </p>
+            <p className="mb-5">
+              <strong>Pearland.</strong> Pearland has its own building
+              department, and it expects a sealed drawing from a Texas
+              licensed engineer for anything that changes how the house
+              carries load. A second story does. Much of the city was built
+              on former farmland and fill, so what is under the slab deserves
+              a look before the design is settled. See{" "}
+              <Link href="/locations/pearland" className="text-[#0B1F3A] underline hover:no-underline">
+                structural engineering in Pearland
+              </Link>
+              .
+            </p>
+            <p className="mb-5">
+              <strong>Katy and Sugar Land.</strong> Lots in the master-planned
+              communities are tight and the setbacks leave little room to
+              build out, which is why going up comes up so often here. On top
+              of the city permit, most of these neighborhoods have an HOA
+              architectural review, and the stamped drawings should be
+              prepared so they work for both. We documented one Katy house
+              from the first evaluation through framing:{" "}
+              <Link href="/projects/second-story-addition-katy" className="text-[#0B1F3A] underline hover:no-underline">
+                a second story addition in Katy
+              </Link>
+              .
+            </p>
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
               Why we check the foundation before we give you a real number

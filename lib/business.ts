@@ -599,7 +599,7 @@ export const SERVICE_AREAS: ServiceArea[] = [
         heading: "Adding space in Pearland",
         paragraphs: [
           "Lot sizes in Pearland are generally more generous than in the older inner-loop neighborhoods, so building outward is more often an option here than it is in Bellaire or West U. A ground-floor addition on a Pearland lot is usually a question of how the new slab ties into the existing one and whether the two will move together, which on this soil is the part that deserves attention. We cover that on the [home additions](/services/home-additions) page.",
-          "Where owners do want to go up, the checks are the same as anywhere: the slab, the footings, and the bearing walls have to be verified against the new load before the design is settled. See [second story additions](/services/second-story-addition).",
+          "Where owners do want to go up, the checks are the same as anywhere: the slab, the footings, and the bearing walls have to be verified against the new load before the design is settled. See [second story additions](/services/second-story-addition), and for the price ranges we see, [what a second story costs around Houston](/guides/second-story-addition-cost).",
           "And the most common interior request, opening the kitchen to the living area, runs through the same process as everywhere else in the metro. The city will want the beam sized and sealed. More on that here: [load-bearing wall removal](/services/load-bearing-wall-removal).",
         ],
       },
@@ -1475,7 +1475,24 @@ export const SERVICES: Service[] = [
         heading: "Steel in additions and second stories",
         paragraphs: [
           "Additions bring their own steel. A second-story addition often needs a transfer beam where the new walls above don't line up with the walls below. Wide garage door openings that now have a bedroom over them need a beam that most lumber can't provide at a header depth. A covered patio with a cantilevered roof or a room over a carport is a steel job almost every time.",
-          "In these projects the beam is part of a larger structural design, and we coordinate it with the foundation work, the framing plan, and the addition's permit set so it's engineered once rather than patched in later. If you're at the planning stage of an addition, that conversation belongs in the addition design, and our home additions page covers how that process runs.",
+          "In these projects the beam is part of a larger structural design, and we coordinate it with the foundation work, the framing plan, and the addition's permit set so it's engineered once rather than patched in later. If you're at the planning stage of an addition, that conversation belongs in the addition design, and our [home additions](/services/home-additions) page covers how that process runs.",
+        ],
+      },
+      {
+        // Search Console, 2026-09-24 to 2026-10-21: "beam installation
+        // contractor" went from 5 to 28 impressions and "steel beam
+        // installation" appeared new, both around position 18. These are
+        // people looking for someone to hire in a place, so the page now says
+        // where around Houston the work comes up and why.
+        heading: "Where steel beams come up around Houston",
+        paragraphs: [
+          "The houses differ from one part of the metro to the next, and so does the reason a job ends up in steel.",
+        ],
+        bullets: [
+          "Katy and Cypress two-story production homes: the wall between the kitchen and the living room is often carrying the floor above, and sometimes a girder truss lands on it. That load is what pushes the beam from lumber to steel, with columns and footings under each end. More on the area in [structural work in Katy](/locations/katy) and [structural work in Cypress](/locations/cypress).",
+          "Houston Heights and the older inner-loop neighborhoods: low ceilings and shallow joists leave little room for a deep lumber beam, which is where a shallow steel section or a partly recessed beam earns its cost. Many of these houses are on pier-and-beam foundations, so the columns land on new piers under the floor rather than on a pad cut into a slab. See [Houston Heights](/locations/houston-heights).",
+          "The Memorial Villages and Bellaire: mid-century houses being opened up for a modern floor plan, often with brick veneer, where the beam has to stay very stiff to keep the brick from cracking. See [Spring Valley Village](/locations/spring-valley-village) and [Bellaire](/locations/bellaire).",
+          "Second-story additions anywhere in the metro: transfer beams where the new walls upstairs don't line up with the walls below, and wide openings that now carry a bedroom. Our guide to [what a second story costs around Houston](/guides/second-story-addition-cost) covers how that fits into the larger project.",
         ],
       },
       {
@@ -1534,6 +1551,18 @@ export const SERVICES: Service[] = [
       {
         q: "My existing beam is sagging. Does it have to come out?",
         a: "Not always. If the beam can stay and just needs more capacity, a steel flitch plate bolted to its side or a channel bolted beneath it can add what's missing without removing it. When the sag is large, the beam is badly undersized, or the ceiling has to be recovered to level, replacing it with a steel section is the cleaner fix. We measure the deflection and look at what's above before recommending either.",
+      },
+      {
+        q: "How much does it cost to install a steel beam in Houston?",
+        a: "As a planning range, a typical twenty-foot flush or dropped steel beam under a single story, with new columns and pad footings, usually lands between the high single-digit thousands and the low teens. A short header replacement where the existing bearing works is often in the mid four figures. A two-story load, a splice, a crane or a long flush install can push a residential job into the twenties. We give a fixed price after the site visit.",
+      },
+      {
+        q: "Does a steel beam need an engineer?",
+        a: "Yes. A steel beam carries a structural load, so the permit needs a beam size, columns, footings and connections that someone has calculated and will stand behind. We do the engineering and the installation as one firm, so the person who sized the beam is the one answering the crew's questions on the day it goes in.",
+      },
+      {
+        q: "Can a steel beam go into a pier-and-beam house?",
+        a: "Yes, and it is common in the older Houston neighborhoods. Instead of cutting the slab for a pad footing, the columns at each end land on new piers or spread footings under the floor. The crawlspace has to give enough room to dig and pour them, which we check on the site visit.",
       },
     ],
   },
