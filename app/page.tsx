@@ -143,7 +143,7 @@ export default function Home() {
               </li>
               <li>
                 <Link href="/guides/second-story-addition-cost" className="text-[#0B1F3A] hover:text-orange-700">
-                  What a second story costs here →
+                  What a second story addition in Houston costs →
                 </Link>
               </li>
               <li>

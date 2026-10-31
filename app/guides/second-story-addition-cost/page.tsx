@@ -113,7 +113,7 @@ export default function SecondStoryAdditionCostGuidePage() {
                 href="/services/second-story-addition"
                 className="text-[#0B1F3A] underline hover:no-underline"
               >
-                second story additions in Houston
+                how we build second stories
               </Link>
               . If you want to add a room without going up, the same questions
               apply to a{" "}
@@ -326,6 +326,41 @@ export default function SecondStoryAdditionCostGuidePage() {
               .
             </p>
 
+            {/* 2026-10-31: this guide is the one page meant to rank for
+                "second story addition houston" (position 12.2), so the
+                hiring question that search carries is answered here too,
+                and other pages link here with that phrase. */}
+            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
+              Hiring for a second story addition in Houston
+            </h2>
+            <p className="mb-5">
+              Most people who look into a second story addition in Houston
+              already know they want to build up. What they are trying to
+              find is someone who can tell them whether the house will take
+              it, and then do the work. We do both as one firm: the
+              engineering, the permit drawings and the construction.
+            </p>
+            <p className="mb-5">
+              The first visit is a structural check. We measure the footings,
+              the bearing walls and the framing, work out what the new floor
+              and roof will weigh, and tell you one of three things: the house
+              can carry it as it is, it can carry it with reinforcement we can
+              describe and price, or building up is the wrong answer for this
+              house. The last one is the most useful to hear early, before you
+              have paid for plans.
+            </p>
+            <p className="mb-5">
+              If you want a planning number before anyone comes out, the{" "}
+              <Link href="/cost-estimator" className="text-[#0B1F3A] underline hover:no-underline">
+                cost estimator
+              </Link>{" "}
+              gives you one in two minutes. To talk it through, call{" "}
+              <a href={BUSINESS.phoneHref} className="text-[#0B1F3A] underline hover:no-underline">
+                {BUSINESS.phone}
+              </a>
+              .
+            </p>
+
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
               Why we check the foundation before we give you a real number
             </h2>
@@ -382,14 +417,14 @@ export default function SecondStoryAdditionCostGuidePage() {
               a floor plan.
             </p>
             <p className="mb-5">
-              Our{" "}
+              Our page on{" "}
               <Link
                 href="/services/second-story-addition"
                 className="text-[#0B1F3A] underline hover:no-underline"
               >
-                second story addition
+                building a second story
               </Link>{" "}
-              page explains the feasibility visit and what the reinforcement
+              explains the feasibility visit and what the reinforcement
               involves. For the questions that come up around the cost, permits, deed
               restrictions, HOAs and living through the build, see our guide to{" "}
               <Link

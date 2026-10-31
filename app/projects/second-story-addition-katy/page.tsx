@@ -219,15 +219,15 @@ export default function KatySecondStoryProjectPage() {
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">Thinking about a second story in Katy?</h2>
             <p className="mb-5">
               Not every one-story house can take a second floor economically, and the answer depends on the foundation
-              and the walls you already have. Our{" "}
+              and the walls you already have. Our guide to the cost of a{" "}
               <Link href="/guides/second-story-addition-cost" className="text-[#0B1F3A] underline hover:no-underline">
-                second story addition cost guide
+                second story addition in Houston
               </Link>{" "}
-              walks through what drives the price, and our{" "}
+              walks through what drives the price, and our page on{" "}
               <Link href="/services/second-story-addition" className="text-[#0B1F3A] underline hover:no-underline">
-                second story addition
+                how we build second stories
               </Link>{" "}
-              page covers the feasibility visit, the stairs, and the roof-off phase. For a planning number in two
+              covers the feasibility visit, the stairs, and the roof-off phase. For a planning number in two
               minutes, use the cost estimator. For a real answer about your house, the first step is a structural
               look at what&rsquo;s there.
             </p>
@@ -258,7 +258,7 @@ export default function KatySecondStoryProjectPage() {
               <ul className="mt-3 space-y-2 text-sm">
                 <li><Link href="/services/home-additions" className="font-semibold text-[#0B1F3A] hover:underline">Home Additions in Houston</Link></li>
                 <li><Link href="/locations/katy" className="font-semibold text-[#0B1F3A] hover:underline">Structural Engineer in Katy, TX</Link></li>
-                <li><Link href="/guides/second-story-addition-cost" className="font-semibold text-[#0B1F3A] hover:underline">Second Story Addition Cost Guide</Link></li>
+                <li><Link href="/guides/second-story-addition-cost" className="font-semibold text-[#0B1F3A] hover:underline">Second Story Addition in Houston: Cost Guide</Link></li>
               </ul>
             </div>
           </div>

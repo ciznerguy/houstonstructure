@@ -337,7 +337,7 @@ export default function HomeAdditionQuestionsGuidePage() {
               <ul className="mt-3 space-y-2 text-sm">
                 <li>
                   <Link href="/guides/second-story-addition-cost" className="font-semibold text-[#0B1F3A] hover:underline">
-                    What a Second-Story Addition Costs
+                    What a Second Story Addition in Houston Costs
                   </Link>
                 </li>
                 <li>

@@ -599,7 +599,7 @@ export const SERVICE_AREAS: ServiceArea[] = [
         heading: "Adding space in Pearland",
         paragraphs: [
           "Lot sizes in Pearland are generally more generous than in the older inner-loop neighborhoods, so building outward is more often an option here than it is in Bellaire or West U. A ground-floor addition on a Pearland lot is usually a question of how the new slab ties into the existing one and whether the two will move together, which on this soil is the part that deserves attention. We cover that on the [home additions](/services/home-additions) page.",
-          "Where owners do want to go up, the checks are the same as anywhere: the slab, the footings, and the bearing walls have to be verified against the new load before the design is settled. See [second story additions](/services/second-story-addition), and for the price ranges we see, [what a second story costs around Houston](/guides/second-story-addition-cost).",
+          "Where owners do want to go up, the checks are the same as anywhere: the slab, the footings, and the bearing walls have to be verified against the new load before the design is settled. See [second story additions](/services/second-story-addition), and for the price ranges we see, [what a second story addition costs in Houston](/guides/second-story-addition-cost).",
           "And the most common interior request, opening the kitchen to the living area, runs through the same process as everywhere else in the metro. The city will want the beam sized and sealed. More on that here: [load-bearing wall removal](/services/load-bearing-wall-removal).",
         ],
       },
@@ -869,7 +869,7 @@ export const SERVICES: Service[] = [
     description: [
       "A second story is the one addition where the answer might be no, and where finding that out late is the expensive version. Every other kind of addition sits on its own new foundation. This one puts a new floor, new walls and a new roof onto walls and footings that were sized for a single story and have been standing for decades.",
       "So the work starts with a question rather than a drawing: can this house carry it, and if not, what would it take. We measure the footings, the bearing walls, the framing and the condition of all of it, then calculate what the new floor and roof weigh and where that weight lands. You get one of three answers, and the least welcome one is worth more than the others because it arrives before you have paid for plans.",
-      "Where the house can take it, we design the reinforcement, handle the permit, and build it. This page is about what that involves and what decides the price. For a planning number in two minutes, use the [cost estimator](/cost-estimator). For the cost breakdown in detail, our [second story addition cost guide](/guides/second-story-addition-cost) goes through it.",
+      "Where the house can take it, we design the reinforcement, handle the permit, and build it. This page is about what that involves and what decides the price. For a planning number in two minutes, use the [cost estimator](/cost-estimator). For the cost breakdown in detail, our guide to the cost of a [second story addition in Houston](/guides/second-story-addition-cost) goes through it.",
     ],
     signs: [
       "You have run out of room and do not want to give up yard",
@@ -944,7 +944,7 @@ export const SERVICES: Service[] = [
         paragraphs: [
           "Second stories cost more per square foot than building out, and the reason is not the new floor. It is everything that has to happen to the old house before the new floor can exist. Footing work, wall reinforcement, taking off and rebuilding a roof, and the stair opening are all costs that a ground-floor addition simply does not have.",
           "The variables that move the number most: how much reinforcement the existing structure needs, whether the roof is simple or complex, whether there is a bathroom or a kitchenette upstairs, whether the HVAC needs a second system, and the finish level. Square footage matters less than people expect once those are settled.",
-          "Our [second story addition cost guide](/guides/second-story-addition-cost) has the planning ranges. A real number comes after the site visit, because the reinforcement is the largest unknown and it is the one nobody can price from a photograph.",
+          "Our guide to [second story addition costs in Houston](/guides/second-story-addition-cost) has the planning ranges. A real number comes after the site visit, because the reinforcement is the largest unknown and it is the one nobody can price from a photograph.",
         ],
       },
       {
@@ -1492,7 +1492,7 @@ export const SERVICES: Service[] = [
           "Katy and Cypress two-story production homes: the wall between the kitchen and the living room is often carrying the floor above, and sometimes a girder truss lands on it. That load is what pushes the beam from lumber to steel, with columns and footings under each end. More on the area in [structural work in Katy](/locations/katy) and [structural work in Cypress](/locations/cypress).",
           "Houston Heights and the older inner-loop neighborhoods: low ceilings and shallow joists leave little room for a deep lumber beam, which is where a shallow steel section or a partly recessed beam earns its cost. Many of these houses are on pier-and-beam foundations, so the columns land on new piers under the floor rather than on a pad cut into a slab. See [Houston Heights](/locations/houston-heights).",
           "The Memorial Villages and Bellaire: mid-century houses being opened up for a modern floor plan, often with brick veneer, where the beam has to stay very stiff to keep the brick from cracking. See [Spring Valley Village](/locations/spring-valley-village) and [Bellaire](/locations/bellaire).",
-          "Second-story additions anywhere in the metro: transfer beams where the new walls upstairs don't line up with the walls below, and wide openings that now carry a bedroom. Our guide to [what a second story costs around Houston](/guides/second-story-addition-cost) covers how that fits into the larger project.",
+          "Second-story additions anywhere in the metro: transfer beams where the new walls upstairs don't line up with the walls below, and wide openings that now carry a bedroom. Our guide to the cost of a [second story addition in Houston](/guides/second-story-addition-cost) covers how that fits into the larger project.",
         ],
       },
       {
