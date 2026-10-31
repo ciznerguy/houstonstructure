@@ -185,7 +185,7 @@ export default async function ServicePage({ params }: Props) {
                     src={s.image.src}
                     srcSet={`${s.image.src.replace(".jpg", "-800.jpg")} 800w, ${s.image.src} 1600w`}
                     sizes="(min-width: 768px) 66vw, 100vw"
-                    alt={`${s.image.alt} (illustrative photo, not an actual job site)`}
+                    alt={s.image.real ? s.image.alt : `${s.image.alt} (illustrative photo, not an actual job site)`}
                     loading="lazy"
                     className="mb-2 h-[320px] w-full rounded-sm object-cover sm:h-[420px]"
                   />

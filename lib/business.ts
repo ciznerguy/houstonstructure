@@ -854,7 +854,9 @@ export type Service = {
     heading: string;
     paragraphs: string[];
     bullets?: string[];
-    image?: { src: string; alt: string; caption: string };
+    // real: a photograph from an actual job, so the alt text is not given
+    // the "illustrative photo" suffix the renderings carry.
+    image?: { src: string; alt: string; caption: string; real?: boolean };
   }[];
   faqs?: { q: string; a: string }[];
 };
@@ -1576,6 +1578,131 @@ export const SERVICES: Service[] = [
       {
         q: "Can a steel beam go into a pier-and-beam house?",
         a: "Yes, and it is common in the older Houston neighborhoods. Instead of cutting the slab for a pad footing, the columns at each end land on new piers or spread footings under the floor. The crawlspace has to give enough room to dig and pour them, which we check on the site visit.",
+      },
+    ],
+  },
+  {
+    // Added 2026-10-31 at Levi's request: kitchen leads turned out to be good
+    // ones. The angle is design and build under one roof, high-end finish at a
+    // fair price, and the open kitchen that needs a bearing wall out first.
+    // No photographs of his kitchens yet, so the images are renderings.
+    slug: "kitchen-remodeling",
+    seoTitle: "Kitchen Remodeling in Houston, TX: Design and Build",
+    name: "Kitchen Design & Remodeling",
+    shortName: "Kitchens",
+    seoDescription:
+      "Kitchen design and remodeling in Houston. One team designs and builds your kitchen, with a high-end finish at a fair price, including open kitchens where a wall has to come out.",
+    image: "/images/load-bearing-wall-removal-3-finished-flush-beam.jpg",
+    imageAlt: "Open kitchen and family room in a Houston home with a large island, oak flooring and a flat ceiling where a wall once stood (illustrative rendering, not an actual job site)",
+    summary:
+      "We design your kitchen and build it, with a high-end finish at a price that makes sense, from a cabinet and counter refresh to an open kitchen where a wall comes out.",
+    description: [
+      "Most kitchen remodels in Houston get split between people. A designer draws it, a cabinet shop builds the boxes, a contractor installs them, and when something does not line up, each one points at the next. We do the design and the construction ourselves, so the person who drew the kitchen is the person answering for how it turns out.",
+      "The finish is where we put the effort: cabinetry that is square and tight at every reveal, stone counters with seams you have to look for, tile that lines up with the window and the range hood, lighting planned with the layout rather than added at the end. That level of finish usually comes with a price that only works for a few homeowners. Ours is set to work for more of them, because we run the job ourselves and we are not paying three companies to coordinate with each other.",
+      "Many of the kitchens we are asked about are really a different question underneath: can the wall between the kitchen and the living room come out? That is a structural question, and it is the one we answer every week. When the kitchen needs a wall gone, the engineering, the beam and the kitchen are one design and one permit.",
+    ],
+    signs: [
+      "The kitchen is closed off from the living or family room and you want it open",
+      "Cabinets, counters and layout date from when the house was built",
+      "You want a high-end kitchen without a high-end contractor's markup",
+      "You would rather have one company design and build it than manage several",
+      "You are planning an addition and the kitchen is moving or growing with it",
+    ],
+    atAGlance: [
+      "Design and construction by the same team, from the first sketch to the last cabinet pull.",
+      "High-end finish: custom or semi-custom cabinetry, stone counters, tile and lighting planned together.",
+      "Open kitchens are our specialty, because removing the wall is engineering we already do in house.",
+      "A fixed price after the site visit and the design, not an estimate that grows during the work.",
+      "Kitchen work can be combined with a load-bearing wall removal or an addition under one permit.",
+    ],
+    sections: [
+      {
+        heading: "How the design works",
+        paragraphs: [
+          "It starts at your house, not in a showroom. We measure the kitchen, look at how you actually use it, and check what is behind the walls and above the ceiling before anything is drawn, because the plumbing, the venting and the framing decide what is possible as much as taste does. Then we lay out the kitchen with you: where the sink and range go, whether there is room for an island, how much storage you need and where.",
+          "You pick the materials with the layout in front of you, so you can see what a cabinet color or a counter stone does to the whole room rather than to a sample on a table. Once the design is settled, the price is set from it. Changes are still possible after that, and we tell you what each one costs before we make it.",
+        ],
+      },
+      {
+        heading: "Open kitchens and the wall in the way",
+        paragraphs: [
+          "The most common kitchen request we get is to take down the wall between the kitchen and the living area. In a lot of Houston homes that wall is carrying the roof or the floor above, and it cannot simply be cut out. We check it, size the beam, and plan the shoring, and the island and the ceiling are designed around where the beam will go. A flush beam can keep the ceiling flat from one room to the other, so the finished space reads as one room.",
+          "If you want the structural side in detail, our page on [load-bearing wall removal](/services/load-bearing-wall-removal) explains how the wall is checked and what the engineer's letter covers. The [Bellaire project](/projects/load-bearing-wall-removal-bellaire) shows three bearing walls coming out of a two-story house to make one open living space.",
+        ],
+        image: {
+          src: "/images/project-bellaire-open-plan-5-after.jpg",
+          alt: "Open living area and kitchen in a two-story Bellaire home after three bearing walls were replaced with beams",
+          caption: "An open kitchen and living area after the walls between them came out. Rendering based on the Bellaire project.",
+        },
+      },
+      {
+        heading: "Our most recent kitchen: a wall out and a bigger first floor",
+        paragraphs: [
+          "The last kitchen we finished started as a structural job. A load-bearing wall separated the kitchen from the family room, and the first floor was enlarged to make room for a bigger kitchen. The work came in three parts: take the wall out, enlarge the first floor, and build a high-end kitchen into the space that resulted. All three were designed together and permitted together, so there was never a point where one company finished and another arrived to discover what had been left for them.",
+          "The wall came first. Because it was carrying load, the framing above was shored before the wall came down, and new framing took over the load once it was out. In the photo below the opening is already done: the kitchen at the back and the family room in front are now one room, and the subfloor still shows the lines where walls used to stand. Those gaps get filled and the flooring runs through continuously, which is what makes an opened-up space look like it was always built that way.",
+          "If your kitchen plan also needs more room, our [room addition](/services/home-additions) work is often how the space is found.",
+        ],
+        image: {
+          src: "/images/kitchen-remodeling-2-open-to-family-room.jpg",
+          alt: "Houston home mid-renovation, with the kitchen at the back now open to the family room after a load-bearing wall was removed, wood beams across the family room ceiling and the cabinet layout drawn on the kitchen walls",
+          caption: "Mid-project, before the cabinets: the kitchen at the back is now open to the family room in front.",
+          real: true,
+        },
+      },
+      {
+        heading: "Laying the kitchen out on the walls",
+        paragraphs: [
+          "Before a single cabinet was ordered, the whole kitchen was drawn on the drywall at full size in black marker. Every base cabinet and drawer stack is there, the wall cabinets above them, the tall pantry units along the right-hand wall, and the spots for the dishwasher, the trash pull-out and the lazy Susan in the corner, written right where they will go.",
+          "A drawing on paper is easy to approve and hard to picture. Standing in the empty room with the cabinets outlined around you is different: you can see whether the walkway is wide enough, whether the windows sit where you want them over the counter, and whether the pantry door will open into the path of the fridge. Moving a cabinet at this stage costs a marker line. Moving it after it is built and installed costs a cabinet.",
+        ],
+        image: {
+          src: "/images/kitchen-remodeling-1-layout-on-wall.jpg",
+          alt: "Kitchen walls with every base cabinet, wall cabinet and tall pantry unit outlined at full size in black marker, labelled for the dishwasher, trash pull-out and lazy Susan, during a Houston kitchen remodel",
+          caption: "The kitchen at full size on the drywall, with the dishwasher, trash pull-out and lazy Susan marked where they will go.",
+          real: true,
+        },
+      },
+      {
+        heading: "A vaulted ceiling over the kitchen",
+        paragraphs: [
+          "Over the kitchen the ceiling was not left flat. It was framed as a vault, with curved panels meeting along wood ribs, and covered in cement board bent to the curve. It is the kind of detail that separates a high-end kitchen from a standard one, and it is carpentry before it is decoration: a curve that is off by a little along its length shows the moment light hits it, so the framing underneath has to be right.",
+          "This is where doing the structure and the finish in one company pays off. The same people who took the wall out and framed the enlarged floor built the ceiling, so the vault, the opening to the family room and the cabinet runs below it were all laid out to line up with each other.",
+        ],
+        image: {
+          src: "/images/kitchen-remodeling-3-vaulted-ceiling.jpg",
+          alt: "Vaulted kitchen ceiling framed with wood ribs and sheathed in curved cement board during a Houston kitchen remodel, with the opened family room and scaffolding to the right",
+          caption: "The vaulted ceiling framed and sheathed, before finishing. The family room, opened up by the wall removal, is on the right.",
+          real: true,
+        },
+      },
+      {
+        heading: "What a kitchen remodel costs",
+        paragraphs: [
+          "Kitchen prices vary more than almost anything else in a house, because the same room can be done with stock cabinets and laminate or with custom cabinetry and quartzite. What moves the number most is whether the layout changes. Keeping the sink, range and refrigerator where they are keeps the plumbing, gas and electrical work small. Moving them, or taking out a wall, adds trades and permits.",
+          `We do not publish a single price, because it would be wrong for most kitchens. We give you a fixed price after the visit and the design, with the materials named, so you know what you are paying for. Call ${BUSINESS.phone} or send the form, and we will set up the visit.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Do you only design kitchens, or do you build them too?",
+        a: "Both. We design the kitchen and our crews build it, so the same team is responsible from the drawing to the final walkthrough.",
+      },
+      {
+        q: "How long does a kitchen remodel take?",
+        a: "A kitchen that keeps its layout is usually a matter of weeks once materials are on site. Moving plumbing, removing a wall or enlarging the room adds time for permits and structural work. We give you a schedule with the price.",
+      },
+      {
+        q: "Can you remove the wall between my kitchen and living room?",
+        a: "Usually, yes. If the wall is load-bearing, we size a beam to carry what it was holding and plan the kitchen around it. We check the wall during the first visit.",
+      },
+      {
+        q: "Do I need a permit for a kitchen remodel in Houston?",
+        a: "Replacing cabinets and counters usually does not need one. Moving plumbing or gas, adding circuits, or changing walls does. We pull the permits when the work needs them.",
+      },
+      {
+        q: "Can we live in the house during the remodel?",
+        a: "Most families do. The kitchen is out of use while the work is done, so many set up a temporary kitchen in another room. We keep the work area closed off and cleaned at the end of each day.",
       },
     ],
   },
@@ -2762,5 +2889,6 @@ export const LEAD_SERVICE_OPTIONS = [
   "Room Addition",
   "Second-Story Addition",
   "Load-Bearing Wall Removal",
+  "Kitchen Remodeling",
   "Other",
 ] as const;
