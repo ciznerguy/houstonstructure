@@ -138,7 +138,7 @@ export default function Home() {
               </li>
               <li>
                 <Link href="/services/second-story-addition" className="text-[#0B1F3A] hover:text-orange-700">
-                  Second story additions →
+                  Building a second story →
                 </Link>
               </li>
               <li>
@@ -210,7 +210,7 @@ export default function Home() {
                 href="/services/second-story-addition"
                 className="text-[#0B1F3A] underline hover:no-underline"
               >
-                second story addition
+                building a second story
               </Link>
               , where the cost depends on what the house below can carry.
             </p>

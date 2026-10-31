@@ -343,7 +343,7 @@ export const SERVICE_AREAS: ServiceArea[] = [
         paragraphs: [
           "A 1920s Heights bungalow was built to carry one floor and a roof, on piers sized for that load. Adding a full second story roughly doubles what the structure below has to carry, and the load has to reach the ground through a path that in many of these houses does not currently exist as a continuous line.",
           "In practice that means three things get looked at. The piers and their footings, which usually need to be supplemented or replaced with properly founded ones. The floor framing and the beams, which have to carry both the new upper floor and the walls holding it up. And the walls themselves, because a load-bearing wall on the ground floor needs something solid underneath it, not a joist span.",
-          "This is doable and we do it. What we will not do is tell you it is simple. A second story on a Heights bungalow is a foundation and framing project with a new floor on top, and the honest budget reflects that. The process is described in more detail on the [second story addition](/services/second-story-addition) page.",
+          "This is doable and we do it. What we will not do is tell you it is simple. A second story on a Heights bungalow is a foundation and framing project with a new floor on top, and the honest budget reflects that. The process is described in more detail on our page about [building a second story](/services/second-story-addition).",
         ],
       },
       {
@@ -525,7 +525,7 @@ export const SERVICE_AREAS: ServiceArea[] = [
         heading: "Opening up or adding on",
         paragraphs: [
           "The two structural projects we are asked about most in Cypress are taking out a wall between the kitchen and living area, and adding space. In a two-story production home the kitchen wall is frequently carrying the floor above, which moves the beam from engineered lumber toward steel and brings columns and footings into the job. More on that here: [load-bearing wall removal](/services/load-bearing-wall-removal).",
-          "For added space, lot sizes in the newer Cypress communities are tight enough that going up often makes more sense than going out. Whether that is possible comes down to what the existing slab and bearing walls can carry, which is a measurement rather than an opinion. We cover the process on the [second story addition](/services/second-story-addition) and [home additions](/services/home-additions) pages.",
+          "For added space, lot sizes in the newer Cypress communities are tight enough that going up often makes more sense than going out. Whether that is possible comes down to what the existing slab and bearing walls can carry, which is a measurement rather than an opinion. We cover the process on our pages about [building a second story](/services/second-story-addition) and [home additions](/services/home-additions).",
           "Because there is generally no county plan review standing behind this work in unincorporated Cypress, the sealed letter is worth having even where nobody is going to ask you for it. It is what your contractor builds to, and it is what you can show a future buyer.",
         ],
       },
@@ -599,7 +599,7 @@ export const SERVICE_AREAS: ServiceArea[] = [
         heading: "Adding space in Pearland",
         paragraphs: [
           "Lot sizes in Pearland are generally more generous than in the older inner-loop neighborhoods, so building outward is more often an option here than it is in Bellaire or West U. A ground-floor addition on a Pearland lot is usually a question of how the new slab ties into the existing one and whether the two will move together, which on this soil is the part that deserves attention. We cover that on the [home additions](/services/home-additions) page.",
-          "Where owners do want to go up, the checks are the same as anywhere: the slab, the footings, and the bearing walls have to be verified against the new load before the design is settled. See [second story additions](/services/second-story-addition), and for the price ranges we see, [what a second story addition costs in Houston](/guides/second-story-addition-cost).",
+          "Where owners do want to go up, the checks are the same as anywhere: the slab, the footings, and the bearing walls have to be verified against the new load before the design is settled. See [how we build second stories](/services/second-story-addition), and for the price ranges we see, [what a second story addition costs in Houston](/guides/second-story-addition-cost).",
           "And the most common interior request, opening the kitchen to the living area, runs through the same process as everywhere else in the metro. The city will want the beam sized and sealed. More on that here: [load-bearing wall removal](/services/load-bearing-wall-removal).",
         ],
       },
@@ -791,7 +791,7 @@ export const SERVICE_AREAS: ServiceArea[] = [
         heading: "Adding on: out, or up",
         paragraphs: [
           "Lot sizes vary enormously across the county, and that decides the shape of most additions. In Fulshear, Richmond and the unincorporated areas the lots are often large enough that building outward is straightforward, and the engineering question is the one above: how the new foundation relates to the old one on this soil.",
-          "In the built-out parts of Sugar Land and Missouri City, and in the tighter master-planned sections, going up is frequently the only option. That turns the project into a question about the existing house rather than the new one. A home built as a single story was designed to carry a single story, so the slab, the footings and the bearing walls all have to be verified against the new load before anything is drawn. The process is described on the [second story addition](/services/second-story-addition) and [home additions](/services/home-additions) pages.",
+          "In the built-out parts of Sugar Land and Missouri City, and in the tighter master-planned sections, going up is frequently the only option. That turns the project into a question about the existing house rather than the new one. A home built as a single story was designed to carry a single story, so the slab, the footings and the bearing walls all have to be verified against the new load before anything is drawn. The process is described on our pages about [building a second story](/services/second-story-addition) and [home additions](/services/home-additions).",
           "Either way the first deliverable is the same: a measured evaluation of what you already have. Everything else is priced off that.",
         ],
       },
@@ -838,6 +838,9 @@ export type Service = {
   // middle of it. The H1 still uses `name`. Omit when `name` already leads
   // with the phrase, which it does for most of them.
   seoTitle?: string;
+  // H1 when the default "{name} in Houston, TX" would compete with another
+  // page for the same search. Omit to keep the default.
+  heroTitle?: string;
   summary: string;
   description: string[];
   signs: string[];
@@ -859,11 +862,16 @@ export const SERVICES: Service[] = [
     name: "Second Story Additions",
     shortName: "Second Story Additions",
     // Deliberately not "Second Story Addition in Houston, TX": that is the
+    // phrase the cost guide is meant to own (2026-10-31: Guy wants one page
+    // only on it, so Houston also left this title and H1). Was:
+    // "Second Story Addition Contractors in Houston, TX". Original reason:
+    // that is the
     // phrase the cost guide already ranks for, and two of our own pages
     // competing for it left both of them nowhere. This one takes the
     // "who actually does it" intent instead, which has its own demand
     // ("second story addition contractors", "second story addition near me").
-    seoTitle: "Second Story Addition Contractors in Houston, TX",
+    seoTitle: "Second Story Addition Contractors: Engineering and Construction",
+    heroTitle: "Second Story Addition Contractors",
     summary:
       "Adding a floor on top of a house that was built for one. We check whether yours can carry it, design the reinforcement if it can't, and build it.",
     description: [
@@ -993,14 +1001,14 @@ export const SERVICES: Service[] = [
   {
     slug: "home-additions",
     seoTitle: "Home Additions in Houston, TX",
-    name: "Home Additions & Second-Story Additions",
+    name: "Home Additions",
     shortName: "Home Additions",
     image: "/images/home-additions.jpg",
     imageAlt: "Kitchen mid-renovation during a Houston home addition project, with cabinets installed and surfaces protected in plastic sheeting (illustrative photo, not an actual job site)",
     summary:
-      "Engineering and licensed construction for room additions and second-story additions, sized to what your existing foundation and framing can actually support.",
+      "Engineering and licensed construction for room additions, sized to what your existing foundation and framing can actually support.",
     description: [
-      "Adding a second story or a ground-floor addition changes the load on everything beneath it: the framing, the foundation, sometimes the soil itself. We start by engineering the load path from the new construction down to the foundation, then size the framing and footings to match.",
+      "A ground-floor addition changes the load on the house it joins: the framing, the foundation, sometimes the soil itself. We start by engineering the load path from the new construction down to the foundation, then size the framing and footings to match. If you are thinking of building up instead, our guide to the cost of a [second story addition in Houston](/guides/second-story-addition-cost) covers that.",
       "Because we're licensed and insured to build as well as design, we can carry the addition through construction ourselves, from the structural work through completion, rather than handing our own calculations to a separate contractor.",
       "This is also where a lot of older Houston homes run into trouble. A foundation built for a single-story house wasn't engineered for a second floor, and confirming it can take the new load, or reinforcing it so it can, is the first real step before any addition begins.",
     ],
@@ -1063,7 +1071,7 @@ export const SERVICES: Service[] = [
           "Second-story additions are the projects where the engineering question is most often skipped and where skipping it costs the most.",
           "A house built as a single story was engineered, or more often just built to habit, to carry one roof and nothing else. The exterior walls, the interior bearing walls, and the footings under them were all sized for that. Put a second floor on top and you've roughly doubled the load on every one of those elements. Sometimes the existing structure has enough margin to take it. Often it doesn't, and the difference isn't something you can see from the driveway.",
           "We measure. Footing widths and depths, stud spacing and species in the bearing walls, the headers over windows and doors, and the condition of all of it after however many decades it's been standing. Then we calculate what the new floor and roof will weigh and where that weight lands. The answer comes back one of three ways: the house can take it as-is, the house can take it with specific reinforcement, or the house can't reasonably take it and building out is the better path. All three are useful. The third one, delivered before you've paid for drawings, is the most useful of all.",
-          "Going up has enough of its own considerations, the stairs, the roof-off phase, the height limits in your deed restrictions, that we gave it a page of its own: [second story additions](/services/second-story-addition). When reinforcement is needed, it usually means widening footings under the bearing walls, adding posts and beams to shorten spans, or sistering new studs onto the old ones. None of it is exotic. It just has to be sized to the actual gap between what's there and what's needed, and it has to happen before the second floor goes on, not after the cracks appear.",
+          "Going up has enough of its own considerations, the stairs, the roof-off phase, the height limits in your deed restrictions, that we gave it a page of its own: [building a second story](/services/second-story-addition). When reinforcement is needed, it usually means widening footings under the bearing walls, adding posts and beams to shorten spans, or sistering new studs onto the old ones. None of it is exotic. It just has to be sized to the actual gap between what's there and what's needed, and it has to happen before the second floor goes on, not after the cracks appear.",
         ],
         image: {
           src: "/images/home-additions-2-wall-reinforcement.jpg",
@@ -1649,7 +1657,7 @@ export const SERVICES: Service[] = [
           "This is the most common follow-up question we get, usually phrased as a garage apartment, and in Houston it is a recognized and long-standing housing type. Plenty of inner-loop lots have had one for sixty years.",
           "Everything above still applies, and two more things join it. A separate dwelling unit generally needs its own means of egress, its own smoke and carbon monoxide protection, and depending on how it is metered and served, its own utility arrangements. And if you are converting the ground floor of a detached garage or building living space above one, the structure below has to carry it, which for an existing detached garage is rarely a given. Those were built light.",
           "If the goal is rental income, the deed restriction question from earlier becomes sharper still, because some restrictions prohibit a separate rentable dwelling outright, independently of the parking rule. Worth reading before anything else.",
-          "Where the plan is to build living space above an existing garage rather than inside it, that is closer to a [second story addition](/services/second-story-addition) than a conversion, and the evaluation starts with the garage foundation.",
+          "Where the plan is to build living space above an existing garage rather than inside it, that is closer to [building a second story](/services/second-story-addition) than a conversion, and the evaluation starts with the garage foundation.",
         ],
       },
       {

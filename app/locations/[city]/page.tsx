@@ -135,7 +135,7 @@ export default async function LocationPage({ params }: Props) {
                 href="/services/second-story-addition"
                 className="text-[#0B1F3A] underline hover:no-underline"
               >
-                second story additions
+                building a second story
               </Link>{" "}
               when there is not, which turns the question into what the house
               below can carry.

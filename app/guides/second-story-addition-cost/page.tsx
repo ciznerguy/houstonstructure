@@ -453,7 +453,7 @@ export default function SecondStoryAdditionCostGuidePage() {
                 href="/services/home-additions"
                 className="mt-3 block font-semibold text-[#0B1F3A] hover:underline"
               >
-                Home Additions &amp; Second-Story Additions
+                Home Additions
               </Link>
               <a
                 href={BUSINESS.phoneHref}

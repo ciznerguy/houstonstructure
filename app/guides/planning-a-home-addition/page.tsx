@@ -149,14 +149,14 @@ export default function HomeAdditionGuidePage() {
               of a single story. Adding a second one means recalculating
               what the foundation carries and confirming it can take the
               additional weight, or determining what reinforcement is needed
-              if it can&rsquo;t. Our{" "}
+              if it can&rsquo;t. Our page on{" "}
               <Link
                 href="/services/second-story-addition"
                 className="text-[#0B1F3A] underline hover:no-underline"
               >
-                second story addition
+                building a second story
               </Link>{" "}
-              page goes through that check in detail.
+              goes through that check in detail.
             </p>
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
@@ -337,7 +337,7 @@ export default function HomeAdditionGuidePage() {
                 href="/services/home-additions"
                 className="mt-3 block font-semibold text-[#0B1F3A] hover:underline"
               >
-                Home Additions &amp; Second-Story Additions
+                Home Additions
               </Link>
               <a
                 href={BUSINESS.phoneHref}

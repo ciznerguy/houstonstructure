@@ -117,7 +117,7 @@ export default async function ServicePage({ params }: Props) {
       )}
       <PageHero
         eyebrow="Service"
-        title={`${service.name} in Houston, TX`}
+        title={service.heroTitle ?? `${service.name} in Houston, TX`}
         subtitle={service.summary}
         ctaLabel={SERVICE_CTA[service.slug]?.label ?? "Request a Free Quote"}
         ctaHref={SERVICE_CTA[service.slug]?.href}

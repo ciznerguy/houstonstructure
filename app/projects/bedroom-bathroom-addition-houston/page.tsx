@@ -276,7 +276,7 @@ export default function BedroomBathroomAdditionPage() {
                 </li>
                 <li>
                   <Link href="/services/second-story-addition" className="text-[#0B1F3A] hover:text-orange-700">
-                    Second story additions →
+                    Building a second story →
                   </Link>
                 </li>
                 <li>
