@@ -841,6 +841,9 @@ export type Service = {
   // H1 when the default "{name} in Houston, TX" would compete with another
   // page for the same search. Omit to keep the default.
   heroTitle?: string;
+  // Meta description when `summary`, which also feeds the hero subtitle and
+  // the service cards, leaves out what people search for. Omit to use summary.
+  seoDescription?: string;
   summary: string;
   description: string[];
   signs: string[];
@@ -1358,6 +1361,8 @@ export const SERVICES: Service[] = [
     imageAlt: "Worker installing rebar reinforcement in an exposed ceiling opening with steel props during a steel beam installation in Houston (illustrative photo, not an actual job site)",
     summary:
       "Engineered and installed steel beams for load-bearing wall removals, additions, and structural upgrades.",
+    seoDescription:
+      "Steel beam installation contractor in Houston. We engineer, permit and install steel beams for load-bearing wall removals and additions, with a fixed price after the site visit.",
     description: [
       "Most of the beams that go into Houston homes are wood or engineered lumber, and that's the right call for most openings. Steel is for the jobs wood can't do: a span too long for lumber at any reasonable depth, a floor and a roof both landing on one line, a beam that has to disappear into a shallow ceiling, or an existing beam that's already sagging and needs to be replaced with something stiffer in the same space.",
       "We engineer the beam, the columns under it, the footings under those, and every connection in between, and then we fabricate and install it ourselves as a licensed contractor. One firm owns the calculation and the result, which matters more with steel than with wood, because a steel beam that's set wrong is expensive to fix and hard to spot once it's covered.",

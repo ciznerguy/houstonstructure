@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!service) return {};
   return {
     title: service.seoTitle ?? `${service.name} in Houston, TX`,
-    description: service.summary,
+    description: service.seoDescription ?? service.summary,
     ...(service.image && {
       openGraph: { images: [{ url: service.image, width: 1600, height: 900 }] },
     }),

@@ -202,7 +202,7 @@ export default function HoustonTownhomeProjectPage() {
               </Link>{" "}
               and{" "}
               <Link href="/services/steel-beam-installation" className="text-[#0B1F3A] underline hover:no-underline">
-                the beam that replaces the wall
+                steel beam installation in Houston
               </Link>{" "}
               are the same job, not two of them.
             </p>

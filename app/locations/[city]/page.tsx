@@ -149,14 +149,15 @@ export default async function LocationPage({ params }: Props) {
                 Load-bearing wall removal in {area.name}
               </Link>{" "}
               is an engineering job before it is a demolition one, because
-              whatever the wall was holding up has to be carried by{" "}
+              whatever the wall was holding up has to be carried by the new
+              beam (see{" "}
               <Link
                 href="/services/steel-beam-installation"
                 className="text-[#0B1F3A] underline hover:no-underline"
               >
-                the beam that replaces it
+                steel beam installation in {area.name}
               </Link>
-              , and that load still has to reach the foundation.
+              ), and that load still has to reach the foundation.
             </p>
 
 

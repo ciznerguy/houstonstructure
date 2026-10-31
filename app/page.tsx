@@ -174,7 +174,7 @@ export default function Home() {
               </li>
               <li>
                 <Link href="/services/steel-beam-installation" className="text-[#0B1F3A] hover:text-orange-700">
-                  The steel beam that replaces the wall →
+                  Steel beam installation in Houston →
                 </Link>
               </li>
               <li>
