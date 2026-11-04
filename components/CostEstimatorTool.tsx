@@ -5,9 +5,11 @@ import { BUSINESS } from "@/lib/business";
 import { submitNetlifyForm } from "@/lib/netlify-forms";
 import {
   calculateEstimate,
-  ADDITION_TYPE_LABELS,
+  calculateKitchenEstimate,
+  PROJECT_TYPE_LABELS,
   FINISH_LEVEL_LABELS,
   type AdditionType,
+  type ProjectType,
   type FinishLevel,
   type YesNoUnsure,
   type EstimatorResult,
@@ -28,7 +30,7 @@ export default function CostEstimatorTool({ knownContact, formName = FORM_NAME }
   const [step, setStep] = useState<1 | 2 | 3>(1);
 
   const [zip, setZip] = useState("");
-  const [additionType, setAdditionType] = useState<AdditionType | "">("");
+  const [additionType, setAdditionType] = useState<ProjectType | "">("");
   const [sqft, setSqft] = useState("");
 
   const [hasBedroomLiving, setHasBedroomLiving] = useState(false);
@@ -37,6 +39,8 @@ export default function CostEstimatorTool({ knownContact, formName = FORM_NAME }
   const [finishLevel, setFinishLevel] = useState<FinishLevel | "">("");
   const [hvac, setHvac] = useState<YesNoUnsure | "">("");
   const [electrical, setElectrical] = useState<YesNoUnsure | "">("");
+  const [layoutChange, setLayoutChange] = useState<YesNoUnsure | "">("");
+  const [wallRemoval, setWallRemoval] = useState<YesNoUnsure | "">("");
 
   const [name, setName] = useState(knownContact?.name ?? "");
   const [email, setEmail] = useState(knownContact?.email ?? "");
@@ -45,7 +49,10 @@ export default function CostEstimatorTool({ knownContact, formName = FORM_NAME }
   const [result, setResult] = useState<EstimatorResult | null>(null);
 
   const step1Valid = additionType !== "" && Number(sqft) > 0;
-  const step2Valid = finishLevel !== "" && hvac !== "" && electrical !== "";
+  const isKitchen = additionType === "kitchen-remodel";
+  const step2Valid = isKitchen
+    ? finishLevel !== "" && layoutChange !== "" && wallRemoval !== ""
+    : finishLevel !== "" && hvac !== "" && electrical !== "";
 
   function goToStep2() {
     if (!step1Valid) return;
@@ -55,15 +62,22 @@ export default function CostEstimatorTool({ knownContact, formName = FORM_NAME }
   function goToStep3() {
     if (!step2Valid) return;
     setResult(
-      calculateEstimate({
-        additionType: additionType as AdditionType,
-        sqft: Number(sqft),
-        hasBathroom,
-        hasKitchen,
-        finishLevel: finishLevel as FinishLevel,
-        hvac: hvac as YesNoUnsure,
-        electrical: electrical as YesNoUnsure,
-      })
+      isKitchen
+        ? calculateKitchenEstimate({
+            sqft: Number(sqft),
+            finishLevel: finishLevel as FinishLevel,
+            layoutChange: layoutChange as YesNoUnsure,
+            wallRemoval: wallRemoval as YesNoUnsure,
+          })
+        : calculateEstimate({
+            additionType: additionType as AdditionType,
+            sqft: Number(sqft),
+            hasBathroom,
+            hasKitchen,
+            finishLevel: finishLevel as FinishLevel,
+            hvac: hvac as YesNoUnsure,
+            electrical: electrical as YesNoUnsure,
+          })
     );
     setStep(3);
   }
@@ -87,12 +101,12 @@ export default function CostEstimatorTool({ knownContact, formName = FORM_NAME }
         email,
         phone,
         zip,
-        "addition-type": ADDITION_TYPE_LABELS[additionType as AdditionType],
+        "addition-type": PROJECT_TYPE_LABELS[additionType as ProjectType],
         "square-footage": sqft,
-        "room-functions": rooms || "Not specified",
         "finish-level": FINISH_LEVEL_LABELS[finishLevel as FinishLevel],
-        hvac: hvac,
-        electrical: electrical,
+        ...(isKitchen
+          ? { "layout-change": layoutChange, "wall-removal": wallRemoval }
+          : { "room-functions": rooms || "Not specified", hvac: hvac, electrical: electrical }),
         "estimate-low": `$${result.low.toLocaleString()}`,
         "estimate-high": `$${result.high.toLocaleString()}`,
         "cost-per-sqft": `$${result.costPerSqFt}`,
@@ -125,6 +139,8 @@ export default function CostEstimatorTool({ knownContact, formName = FORM_NAME }
         <input type="hidden" name="finish-level" value={finishLevel} readOnly />
         <input type="hidden" name="hvac" value={hvac} readOnly />
         <input type="hidden" name="electrical" value={electrical} readOnly />
+        <input type="hidden" name="layout-change" value={layoutChange} readOnly />
+        <input type="hidden" name="wall-removal" value={wallRemoval} readOnly />
         <input type="hidden" name="estimate-low" value="" readOnly />
         <input type="hidden" name="estimate-high" value="" readOnly />
         <input type="hidden" name="cost-per-sqft" value="" readOnly />
@@ -143,7 +159,7 @@ export default function CostEstimatorTool({ knownContact, formName = FORM_NAME }
 
         {/* STEP 1 */}
         <div className={step === 1 ? "block" : "hidden"}>
-          <h2 className="text-xl font-bold text-[#0B1F3A]">Tell us about the addition</h2>
+          <h2 className="text-xl font-bold text-[#0B1F3A]">Tell us about the project</h2>
           <div className="mt-6 grid gap-5">
             <div>
               <label className="text-sm font-medium text-slate-700">ZIP Code</label>
@@ -159,9 +175,9 @@ export default function CostEstimatorTool({ knownContact, formName = FORM_NAME }
             </div>
 
             <div>
-              <label className="text-sm font-medium text-slate-700">Addition type</label>
+              <label className="text-sm font-medium text-slate-700">Project type</label>
               <div className="mt-2 grid gap-2">
-                {(Object.keys(ADDITION_TYPE_LABELS) as AdditionType[]).map((key) => (
+                {(Object.keys(PROJECT_TYPE_LABELS) as ProjectType[]).map((key) => (
                   <label
                     key={key}
                     className={`flex cursor-pointer items-center gap-2.5 rounded-sm border px-3 py-2.5 text-sm ${
@@ -174,21 +190,26 @@ export default function CostEstimatorTool({ knownContact, formName = FORM_NAME }
                       checked={additionType === key}
                       onChange={() => setAdditionType(key)}
                     />
-                    {ADDITION_TYPE_LABELS[key]}
+                    {PROJECT_TYPE_LABELS[key]}
                   </label>
                 ))}
               </div>
             </div>
 
             <div>
-              <label className="text-sm font-medium text-slate-700">Approximate square footage</label>
+              <label className="text-sm font-medium text-slate-700">
+                {isKitchen ? "Approximate kitchen size in square feet" : "Approximate square footage"}
+              </label>
               <input
                 value={sqft}
                 onChange={(e) => setSqft(e.target.value.replace(/[^0-9]/g, ""))}
                 inputMode="numeric"
-                placeholder="e.g. 400"
+                placeholder={isKitchen ? "e.g. 150" : "e.g. 400"}
                 className="mt-1 w-full rounded-sm border border-slate-300 px-3 py-2 text-sm outline-none focus:border-[#0B1F3A]"
               />
+              {isKitchen && (
+                <p className="mt-1 text-xs text-slate-500">Not sure? Most kitchens are between 100 and 200 square feet.</p>
+              )}
             </div>
 
             <button
@@ -206,7 +227,7 @@ export default function CostEstimatorTool({ knownContact, formName = FORM_NAME }
         <div className={step === 2 ? "block" : "hidden"}>
           <h2 className="text-xl font-bold text-[#0B1F3A]">A few more details</h2>
           <div className="mt-6 grid gap-5">
-            <div>
+            <div className={isKitchen ? "hidden" : ""}>
               <label className="text-sm font-medium text-slate-700">What rooms will be included?</label>
               <div className="mt-2 grid gap-2">
                 <label className="flex items-center gap-2.5 rounded-sm border border-slate-200 px-3 py-2.5 text-sm">
@@ -246,7 +267,41 @@ export default function CostEstimatorTool({ knownContact, formName = FORM_NAME }
               </div>
             </div>
 
-            <div>
+            <div className={isKitchen ? "" : "hidden"}>
+              <label className="text-sm font-medium text-slate-700">Will the sink, range or refrigerator move?</label>
+              <div className="mt-2 flex gap-2">
+                {(["yes", "no", "unsure"] as YesNoUnsure[]).map((v) => (
+                  <label
+                    key={v}
+                    className={`flex-1 cursor-pointer rounded-sm border px-3 py-2 text-center text-sm capitalize ${
+                      layoutChange === v ? "border-[#0B1F3A] bg-slate-50" : "border-slate-200"
+                    }`}
+                  >
+                    <input type="radio" name="layout-change-choice" className="hidden" checked={layoutChange === v} onChange={() => setLayoutChange(v)} />
+                    {v}
+                  </label>
+                ))}
+              </div>
+            </div>
+
+            <div className={isKitchen ? "" : "hidden"}>
+              <label className="text-sm font-medium text-slate-700">Does a wall need to come out to open up the kitchen?</label>
+              <div className="mt-2 flex gap-2">
+                {(["yes", "no", "unsure"] as YesNoUnsure[]).map((v) => (
+                  <label
+                    key={v}
+                    className={`flex-1 cursor-pointer rounded-sm border px-3 py-2 text-center text-sm capitalize ${
+                      wallRemoval === v ? "border-[#0B1F3A] bg-slate-50" : "border-slate-200"
+                    }`}
+                  >
+                    <input type="radio" name="wall-removal-choice" className="hidden" checked={wallRemoval === v} onChange={() => setWallRemoval(v)} />
+                    {v}
+                  </label>
+                ))}
+              </div>
+            </div>
+
+            <div className={isKitchen ? "hidden" : ""}>
               <label className="text-sm font-medium text-slate-700">Needs new or extended HVAC?</label>
               <div className="mt-2 flex gap-2">
                 {(["yes", "no", "unsure"] as YesNoUnsure[]).map((v) => (
@@ -263,7 +318,7 @@ export default function CostEstimatorTool({ knownContact, formName = FORM_NAME }
               </div>
             </div>
 
-            <div>
+            <div className={isKitchen ? "hidden" : ""}>
               <label className="text-sm font-medium text-slate-700">Needs main electrical panel upgrade?</label>
               <div className="mt-2 flex gap-2">
                 {(["yes", "no", "unsure"] as YesNoUnsure[]).map((v) => (
@@ -314,28 +369,30 @@ export default function CostEstimatorTool({ knownContact, formName = FORM_NAME }
                 ${result.low.toLocaleString()} &ndash; ${result.high.toLocaleString()}
               </p>
               <p className="mt-1 text-sm text-slate-600">
-                About ${result.costPerSqFt} per square foot, adjusted for Houston-area costs.
+                {isKitchen
+                  ? `For a kitchen of about ${sqft} square feet, based on Houston-area costs.`
+                  : `About $${result.costPerSqFt} per square foot, adjusted for Houston-area costs.`}
               </p>
 
               <div className="mt-6 grid gap-2 rounded-sm border border-slate-200 p-4 text-sm text-slate-700">
                 <div className="flex justify-between">
-                  <span>Shell &amp; finishes</span>
+                  <span>{isKitchen ? "Cabinets, counters & finishes" : "Shell & finishes"}</span>
                   <span>${result.breakdown.shellAndFinish.toLocaleString()}</span>
                 </div>
                 {result.breakdown.wetSpace > 0 && (
                   <div className="flex justify-between">
-                    <span>Plumbing (bathroom/kitchen)</span>
+                    <span>{isKitchen ? "Moving plumbing, gas & electrical" : "Plumbing (bathroom/kitchen)"}</span>
                     <span>${result.breakdown.wetSpace.toLocaleString()}</span>
                   </div>
                 )}
                 {result.breakdown.mechanicals > 0 && (
                   <div className="flex justify-between">
-                    <span>HVAC &amp; electrical</span>
+                    <span>{isKitchen ? "Wall removal & beam" : "HVAC & electrical"}</span>
                     <span>${result.breakdown.mechanicals.toLocaleString()}</span>
                   </div>
                 )}
                 <div className="flex justify-between">
-                  <span>Permits &amp; engineering (soft costs)</span>
+                  <span>{isKitchen ? "Design & permits" : "Permits & engineering (soft costs)"}</span>
                   <span>${result.breakdown.softCosts.toLocaleString()}</span>
                 </div>
                 <div className="flex justify-between">
@@ -346,7 +403,10 @@ export default function CostEstimatorTool({ knownContact, formName = FORM_NAME }
 
               <p className="mt-5 text-xs text-slate-500">
                 This is a planning-stage ballpark, not a formal quote. Your exact cost depends on
-                what an on-site structural evaluation finds. We&rsquo;ve sent a copy of these
+                {isKitchen
+                  ? " the materials you choose and what we find on site."
+                  : " what an on-site structural evaluation finds."}{" "}
+                We&rsquo;ve sent a copy of these
                 details to our team &mdash; we&rsquo;ll follow up shortly.
               </p>
 

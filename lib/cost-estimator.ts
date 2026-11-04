@@ -1,4 +1,6 @@
 export type AdditionType = "ground-floor" | "second-story" | "adu" | "garage-conversion";
+// A kitchen remodel is priced by its own model below, not as an addition.
+export type ProjectType = AdditionType | "kitchen-remodel";
 export type FinishLevel = "builder" | "mid" | "high";
 export type YesNoUnsure = "yes" | "no" | "unsure";
 
@@ -142,11 +144,82 @@ export function calculateEstimate(input: EstimatorInput): EstimatorResult {
   };
 }
 
+export type KitchenInput = {
+  sqft: number;
+  finishLevel: FinishLevel;
+  layoutChange: YesNoUnsure;
+  wallRemoval: YesNoUnsure;
+};
+
+// Kitchen $/sqft of kitchen floor area, for a typical 150 sq ft kitchen. Set
+// 2026-11-04 from Houston and Texas published ranges: roughly $20-45k for a
+// refresh, $45-85k for a full mid-range remodel, $70-150k+ for high end, with
+// the 2025 Cost vs Value national figures ($28k / $83k / $159k) run 10-20%
+// lower for the South. These are already local figures, so the Houston factor
+// is not applied on top. Deliberately not at the top of the market: Levi sells
+// a high-end finish at a fair price.
+const KITCHEN_RATE_PER_SQFT: Record<FinishLevel, number> = {
+  builder: 200,
+  mid: 380,
+  high: 650,
+};
+
+// A small kitchen costs more per foot, because it still has the same plumbing,
+// appliances and electrical work as a big one.
+const KITCHEN_BASELINE_SQFT = 150;
+const KITCHEN_SIZE_EXPONENT = 0.25;
+const KITCHEN_SIZE_FACTOR_FLOOR = 0.7;
+const KITCHEN_SIZE_FACTOR_CEILING = 1.2;
+
+const KITCHEN_LAYOUT_ADDER = 8000;
+const KITCHEN_WALL_ADDER = 12000;
+const KITCHEN_SOFT_COST_RATE = 0.08;
+const KITCHEN_CONTINGENCY_RATE = 0.1;
+
+function kitchenSizeFactor(sqft: number): number {
+  if (!(sqft > 0)) return 1;
+  const raw = Math.pow(KITCHEN_BASELINE_SQFT / sqft, KITCHEN_SIZE_EXPONENT);
+  return Math.min(KITCHEN_SIZE_FACTOR_CEILING, Math.max(KITCHEN_SIZE_FACTOR_FLOOR, raw));
+}
+
+// Same result shape as an addition: wetSpace carries the layout change and
+// mechanicals the wall removal, and the tool labels them for a kitchen.
+export function calculateKitchenEstimate(input: KitchenInput): EstimatorResult {
+  const shellAndFinish =
+    input.sqft * KITCHEN_RATE_PER_SQFT[input.finishLevel] * kitchenSizeFactor(input.sqft);
+  const wetSpace = needsItem(input.layoutChange) ? KITCHEN_LAYOUT_ADDER : 0;
+  const mechanicals = needsItem(input.wallRemoval) ? KITCHEN_WALL_ADDER : 0;
+
+  const hardCost = shellAndFinish + wetSpace + mechanicals;
+  const softCosts = hardCost * KITCHEN_SOFT_COST_RATE;
+  const contingency = (hardCost + softCosts) * KITCHEN_CONTINGENCY_RATE;
+
+  const mid = hardCost + softCosts + contingency;
+
+  return {
+    low: Math.round((mid * (1 - RANGE_BAND)) / 100) * 100,
+    high: Math.round((mid * (1 + RANGE_BAND)) / 100) * 100,
+    costPerSqFt: Math.round(mid / input.sqft),
+    breakdown: {
+      shellAndFinish: Math.round(shellAndFinish),
+      wetSpace,
+      mechanicals,
+      softCosts: Math.round(softCosts),
+      contingency: Math.round(contingency),
+    },
+  };
+}
+
 export const ADDITION_TYPE_LABELS: Record<AdditionType, string> = {
   "ground-floor": "Ground-Floor Expansion (Bump-Out / Room Addition)",
   "second-story": "Second-Story Addition (Build-Up)",
   adu: "Accessory Dwelling Unit (ADU / In-Law Suite)",
   "garage-conversion": "Garage Conversion",
+};
+
+export const PROJECT_TYPE_LABELS: Record<ProjectType, string> = {
+  ...ADDITION_TYPE_LABELS,
+  "kitchen-remodel": "Kitchen Remodel",
 };
 
 export const FINISH_LEVEL_LABELS: Record<FinishLevel, string> = {

@@ -1679,7 +1679,7 @@ export const SERVICES: Service[] = [
         heading: "What a kitchen remodel costs",
         paragraphs: [
           "Kitchen prices vary more than almost anything else in a house, because the same room can be done with stock cabinets and laminate or with custom cabinetry and quartzite. What moves the number most is whether the layout changes. Keeping the sink, range and refrigerator where they are keeps the plumbing, gas and electrical work small. Moving them, or taking out a wall, adds trades and permits.",
-          `We do not publish a single price, because it would be wrong for most kitchens. We give you a fixed price after the visit and the design, with the materials named, so you know what you are paying for. Call ${BUSINESS.phone} or send the form, and we will set up the visit.`,
+          `We do not publish a single price, because it would be wrong for most kitchens. We give you a fixed price after the visit and the design, with the materials named, so you know what you are paying for. For a planning number before that, our [cost estimator](/cost-estimator) gives a range from the size, the finish level and whether a wall comes out. Call ${BUSINESS.phone} or send the form, and we will set up the visit.`,
         ],
       },
     ],
