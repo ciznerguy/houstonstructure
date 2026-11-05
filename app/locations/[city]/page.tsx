@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import CostEstimatorCTA from "@/components/CostEstimatorCTA";
 import { BUSINESS, SERVICE_AREAS } from "@/lib/business";
 import { PROJECTS } from "@/lib/projects";
 
@@ -48,7 +49,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // they were describing foundation repair and inspections, which is not
     // the work we want. Lead with additions and walls instead.
     title: `Room Additions & Structural Engineer in ${area.name}, TX`,
-    description: `Room additions, second stories and load-bearing wall removal in ${area.name}, TX, engineered and built by one licensed firm. ${area.blurb}`,
+    // 2026-11-05: searches reaching these pages are "structural engineer
+    // {city}" at position 6 to 10 with no clicks, so the snippet now opens with
+    // what was searched. Only the description changed, not the title.
+    description: `Structural engineer in ${area.name}, TX, for additions, second stories and wall removal, engineered and built by one licensed firm. Call ${BUSINESS.phone}. ${area.blurb}`,
   };
 }
 
@@ -160,6 +164,23 @@ export default async function LocationPage({ params }: Props) {
               ), and that load still has to reach the foundation.
             </p>
 
+            {/* The estimator and /contact bring in most form leads, and on
+                mobile the sidebar sits below the FAQ, so the link goes here. */}
+            <p className="mb-5 text-slate-700 leading-relaxed">
+              Want a planning number before you call? The{" "}
+              <Link
+                href="/cost-estimator"
+                className="text-[#0B1F3A] underline hover:no-underline"
+              >
+                cost estimator
+              </Link>{" "}
+              gives you a range for an addition or a kitchen remodel in about
+              two minutes.
+            </p>
+            <CostEstimatorCTA
+              label={`Estimate Your Project Cost in ${area.name}`}
+              className="mb-8 flex w-full py-4"
+            />
 
             <h2 className="mt-10 text-xl font-bold text-[#0B1F3A]">
               {area.name} FAQ
@@ -188,6 +209,18 @@ export default async function LocationPage({ params }: Props) {
               >
                 Call {BUSINESS.phone}
               </a>
+            </div>
+
+            <div className="mt-6 rounded-sm border border-slate-200 p-5">
+              <div className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
+                Free Tool
+              </div>
+              <Link
+                href="/cost-estimator"
+                className="mt-3 block font-semibold text-[#0B1F3A] hover:underline"
+              >
+                Get Your Project Cost Estimate
+              </Link>
             </div>
 
             {PROJECTS.filter((p) => p.citySlug === area.slug).map((p) => (
