@@ -184,6 +184,7 @@ export const SERVICE_AREAS: ServiceArea[] = [
         paragraphs: [
           "A homeowner with an original Bellaire house and a foundation that has moved is usually weighing three numbers at once: what it costs to level and repair, what it costs to renovate and add on afterward, and what the lot alone is worth to a builder. Those numbers interact, and an engineer's evaluation is what turns them from guesses into something you can decide on.",
           "Our part is narrow and specific. We measure what the foundation is actually doing, we tell you what it would take to stabilize it, and we tell you honestly whether the existing structure can carry the addition or second story you have in mind. What we will not do is tell you the house is fine when the measurements say otherwise, or tell you it needs a rebuild because a rebuild is a bigger job.",
+          "If the answer on a second floor is yes, the planning numbers are in our guide to the cost of a [second story addition in Houston](/guides/second-story-addition-cost). On a 1950s Bellaire house the footings and bearing walls are where that price moves.",
           "Plenty of original Bellaire homes are sound and worth keeping. Some aren't. The only way to know which one you have is to measure it.",
         ],
       },
@@ -269,6 +270,7 @@ export const SERVICE_AREAS: ServiceArea[] = [
         heading: "The few original homes left",
         paragraphs: [
           "Not everything in West U has been rebuilt. The original bungalows that remain are often on pier and beam foundations, with framing that was adequate for a small one-story house and is now expected to carry a renovation, a rear addition, or a converted attic. Those homes bring a different set of questions: whether the existing floor framing can take a modern kitchen and bathroom, what the piers are actually sitting on, and whether the original roof structure allows the attic conversion the owner has in mind.",
+          "Where the plan is to go up rather than back, the piers, the girders and the wall framing all get checked against the new load first. Our guide to a [second story addition in Houston](/guides/second-story-addition-cost) explains what that work does to the price.",
           "Owners of these houses are frequently making the same repair or rebuild decision that comes up in Bellaire, with the added factor that in West U the land value is high enough that the math often pushes toward a rebuild. We give you the structural half of that answer.",
         ],
       },
@@ -343,7 +345,7 @@ export const SERVICE_AREAS: ServiceArea[] = [
         paragraphs: [
           "A 1920s Heights bungalow was built to carry one floor and a roof, on piers sized for that load. Adding a full second story roughly doubles what the structure below has to carry, and the load has to reach the ground through a path that in many of these houses does not currently exist as a continuous line.",
           "In practice that means three things get looked at. The piers and their footings, which usually need to be supplemented or replaced with properly founded ones. The floor framing and the beams, which have to carry both the new upper floor and the walls holding it up. And the walls themselves, because a load-bearing wall on the ground floor needs something solid underneath it, not a joist span.",
-          "This is doable and we do it. What we will not do is tell you it is simple. A second story on a Heights bungalow is a foundation and framing project with a new floor on top, and the honest budget reflects that. The process is described in more detail on our page about [building a second story](/services/second-story-addition).",
+          "This is doable and we do it. What we will not do is tell you it is simple. A second story on a Heights bungalow is a foundation and framing project with a new floor on top, and the honest budget reflects that. The process is described in more detail on our page about [building a second story](/services/second-story-addition). For the price ranges and the historic district review, see our guide to a [second story addition in Houston](/guides/second-story-addition-cost).",
         ],
       },
       {
@@ -445,7 +447,7 @@ export const SERVICE_AREAS: ServiceArea[] = [
         paragraphs: [
           "Lots in Katy's master-planned sections are not large, and the setbacks in most of these communities leave little room to build outward. That pushes homeowners who need more space toward going up, and [adding a second story](/services/second-story-addition) is one of the more common requests we get here.",
           "The foundation is the first question, not the last. A single-story Katy house was built to carry one floor and one roof, so the slab, the footings, and the bearing walls all have to be checked against the new load before an architect draws anything. Sometimes the existing structure carries it as built. Sometimes it needs reinforcement, and it is far cheaper to learn that at the start than after plans are done.",
-          "We documented one of these from the first evaluation through framing, including what the existing slab turned out to be able to carry: [a second story addition on a Katy farmhouse](/projects/second-story-addition-katy).",
+          "We documented one of these from the first evaluation through framing, including what the existing slab turned out to be able to carry: [a second story addition on a Katy farmhouse](/projects/second-story-addition-katy). For the wider numbers, our guide to a [second story addition in Houston](/guides/second-story-addition-cost) lays out the ranges we see across the metro.",
         ],
       },
       {

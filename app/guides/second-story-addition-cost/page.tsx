@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   // answering something narrower than what people were actually asking.
   title: "Second Story Addition in Houston: What It Costs and What It Takes",
   description:
-    "What a second story or room addition costs in the Houston area, what drives the price beyond square footage, and why the number depends on the foundation under the house more than the floor plan going on top of it.",
+    "A second story addition in Houston runs roughly $125,000 to $430,000. See what drives the price, what the foundation must carry, and which permits apply.",
   openGraph: {
     images: [{ url: "/images/home-additions.jpg", width: 1600, height: 900 }],
   },
@@ -94,6 +94,17 @@ export default function SecondStoryAdditionCostGuidePage() {
       <section className="mx-auto max-w-6xl px-5 py-14">
         <div className="grid gap-10 md:grid-cols-3">
           <div className="md:col-span-2 text-slate-700 leading-relaxed">
+            {/* The short answer goes first: this is the page that ranks for
+                "second story addition houston", and that reader wants a number.
+                The range comes from the planning ranges further down this page. */}
+            <p className="mb-5">
+              A second story addition in Houston usually runs from about
+              $125,000 for a small bedroom with no plumbing to around $430,000
+              for a larger floor with a bathroom and kitchenette. Those are
+              planning ranges. The number for your house depends on what the
+              foundation and the walls below need before the new floor can go
+              on.
+            </p>
             <p className="mb-5">
               Building up instead of out is one of the most common ways
               Houston homeowners add space without touching a smaller lot
