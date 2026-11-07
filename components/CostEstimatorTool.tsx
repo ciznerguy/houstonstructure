@@ -407,7 +407,7 @@ export default function CostEstimatorTool({ knownContact, formName = FORM_NAME }
                   ? " the materials you choose and what we find on site."
                   : " what an on-site structural evaluation finds."}{" "}
                 We&rsquo;ve sent a copy of these
-                details to our team &mdash; we&rsquo;ll follow up shortly.
+                details to our team. We&rsquo;ll follow up shortly.
               </p>
 
               <a
