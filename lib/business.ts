@@ -970,6 +970,12 @@ export const SERVICES: Service[] = [
         ],
       },
       {
+        heading: "Adding a floor over part of the house",
+        paragraphs: [
+          "A floor addition does not have to cover the whole house. A common Houston request is a second floor over the garage or over one wing, which keeps the rest of the roof in place and the family living downstairs. The same rule applies as for a full second story: the walls and footings under the new floor are checked first, and reinforced where they fall short. Because the work is concentrated in one area, the stairs and the connection to the existing roof often take more planning than the floor itself.",
+        ],
+      },
+      {
         heading: "How the project runs",
         paragraphs: [
           "Site visit and feasibility, usually within the week of your call. Structural design and drawings for the reinforcement and the new framing, a couple of weeks. Permit, which varies from days to a couple of months depending on the city and the flood zone. Reinforcement work downstairs. Then the roof-off and the new floor, then the finish work.",
@@ -1002,6 +1008,10 @@ export const SERVICES: Service[] = [
       {
         q: "Can a deed restriction stop a second story?",
         a: "Yes, and in Houston that is the most common thing that does. Many neighborhoods cap height or prohibit a second floor outright, entirely separately from anything the city requires. Read the recorded restrictions on your property before spending money on design.",
+      },
+      {
+        q: "Can you add a second floor over just the garage or one part of the house?",
+        a: "Yes, and it is one of the more common second floor additions we see. The walls and slab under that part of the house are checked against the new load, the stairs are placed so they do not take over the room below, and the new roof is tied into the old one.",
       },
     ],
   },

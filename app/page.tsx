@@ -222,6 +222,31 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Structural repairs */}
+      <section className="mx-auto max-w-6xl px-5 pt-16">
+        <div className="text-xs font-semibold uppercase tracking-[0.14em] text-orange-700">
+          Structural repairs
+        </div>
+        <h2 className="mt-2 max-w-2xl text-2xl font-bold text-[#0B1F3A] sm:text-3xl">
+          When something in the house has already moved
+        </h2>
+        <p className="mt-4 max-w-3xl text-slate-600">
+          Not every call is about adding on. Some start with a sagging beam, a
+          ceiling crack that keeps growing, framing that was undersized from
+          the day it was built, or a load path that a past renovation or a
+          storm changed. We find what is actually carrying the load, design
+          the repair and do the work, with the paperwork your insurer or a
+          future buyer will ask for. More on{" "}
+          <Link
+            href="/services/structural-repairs"
+            className="text-[#0B1F3A] underline hover:no-underline"
+          >
+            structural repairs in Houston
+          </Link>
+          .
+        </p>
+      </section>
+
       {/* Services */}
       <section className="mx-auto max-w-6xl px-5 py-16">
         <div className="text-xs font-semibold uppercase tracking-[0.14em] text-orange-700">

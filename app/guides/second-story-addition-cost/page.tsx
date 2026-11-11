@@ -54,6 +54,10 @@ const faqs = [
     a: "Inside the City of Houston and in cities like Pearland, Sugar Land and Katy, yes, and the city will want stamped structural drawings. In unincorporated areas, which covers much of Cypress, there is no city building permit, but floodplain rules, deed restrictions and HOA review still apply, and the structure still has to be engineered to be safe and to pass a buyer's inspection later.",
   },
   {
+    q: "Is a second floor addition the same as a second story addition?",
+    a: "Yes. Both mean building a new floor on top of an existing house, either over the whole footprint or over one part of it, such as a wing or the garage. The cost ranges on this page apply to both, and so does the first step: checking whether the house below can carry the new floor.",
+  },
+  {
     q: "Is it worth getting a callback if I'm still just exploring the idea?",
     a: "Yes. Most of the homeowners we talk to at this stage haven't committed to anything yet, they're trying to figure out if a second story is realistic for their specific house before they invest time in floor plans or contractor quotes. That's exactly the point where an engineer's perspective is most useful.",
   },
@@ -173,6 +177,20 @@ export default function SecondStoryAdditionCostGuidePage() {
             />
             <p className="mt-2 mb-8 text-sm text-slate-500">
               The existing single-story home before any work begins.
+            </p>
+
+            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
+              Second floor addition or second story addition?
+            </h2>
+            <p className="mb-5">
+              They are the same project under two names. Some homeowners call
+              it a second floor addition, some a second story addition, and
+              some only want to add a floor over the garage or one wing of the
+              house. The engineering question does not change: can the
+              foundation, footings and walls below carry the new floor, and
+              what do they need if they cannot. A partial second floor over
+              one wing is smaller, but it still needs the same check of what
+              sits underneath it.
             </p>
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
