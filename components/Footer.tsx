@@ -72,7 +72,10 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-slate-700/60 px-5 py-5 text-center text-xs text-slate-400">
-        © {new Date().getFullYear()} {BUSINESS.name}. Serving {SERVICE_AREAS.map((c) => c.name).join(", ")}, TX.
+        © {new Date().getFullYear()} {BUSINESS.name}. Serving {SERVICE_AREAS.map((c) => c.name).join(", ")}, TX.{" "}
+        <Link href="/privacy" prefetch={false} className="underline hover:text-white">
+          Privacy Policy
+        </Link>
       </div>
     </footer>
   );
