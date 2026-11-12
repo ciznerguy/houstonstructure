@@ -397,7 +397,26 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "The pine forest that gives The Woodlands its name is doing more underground than most homeowners realize. Mature pine root systems pull moisture from a wide radius, and during a dry Houston summer, that competition for water can leave soil directly under a foundation drier and more prone to shrinkage than soil just a little further from the tree line.",
       "This plays out differently depending on which section of The Woodlands you're in. Older growth near the original village centers has decades of established root systems to account for, while newer sections on the community's edges are still settling into their landscaping. We adjust what we're looking for accordingly.",
     ],
+    sections: [
+      {
+        heading: "Room additions and second stories in The Woodlands",
+        paragraphs: [
+          "The Woodlands is not an incorporated city, so there is no city building permit office to go through. What there is instead is the Township's covenant process. Additions, second stories and most exterior changes need approval before construction starts, usually from your village's Residential Design Review Committee, and anything that needs a variance goes to the Development Standards Committee. The standards were rewritten in 2024 as more owners started renovating older homes, so we check the current version for your village before the design is drawn.",
+          "Many homes in the original villages, such as Grogan's Mill, Panther Creek and Cochran's Crossing, were built in the late 1970s and 1980s. When a family needs more room on a wooded lot where building out means losing trees, going up is often the better answer, and the first question is whether the slab and walls below can carry it. Our guide to a [second story addition in Houston](/guides/second-story-addition-cost) covers what that check involves and what it costs.",
+        ],
+      },
+      {
+        heading: "Structural repairs in The Woodlands",
+        paragraphs: [
+          "Pine roots and dry summers move soil, and over decades that movement shows up above the slab as well as in it: doors that bind, a header sagging over a wide opening, cracks that follow a beam line. When something in the house has moved, we work out what is carrying the load now and design the repair. More on [structural repairs in The Woodlands](/services/structural-repairs) and the rest of the Houston area.",
+        ],
+      },
+    ],
     faqs: [
+      {
+        q: "Do I need Township approval for a room addition in The Woodlands?",
+        a: "Yes. An addition changes the outside of the house, so it goes through the Township's covenant process before construction, normally the village Residential Design Review Committee. If the design needs a variance, for example on a setback, it goes to the Development Standards Committee.",
+      },
       {
         q: "Is foundation movement in The Woodlands different from the rest of Houston?",
         a: "The underlying clay soil is similar, but the tree cover adds a moisture-competition factor that's more pronounced here than in less wooded parts of the metro.",
@@ -638,7 +657,26 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "Missouri City covers a lot of ground, and it shows in the range of homes we work on here. Established neighborhoods near the older parts of the city carry decades of soil movement history, while newer sections built out as part of larger master-planned communities are still in their first few years of settling.",
       "That mix means we rarely make assumptions based on the city name alone. A foundation call in an older Missouri City neighborhood gets treated differently from one in a development that broke ground five years ago, even though they're a few miles apart.",
     ],
+    sections: [
+      {
+        heading: "Room additions and second stories in Missouri City",
+        paragraphs: [
+          "Missouri City issues its own building permits, and an addition that adds a room or a second floor goes through plan review there. Expect the city to want structural drawings for anything that adds a story. In the master-planned communities, the homeowners association's architectural review comes on top of the city permit, and it usually has its own rules on where an addition can sit and how it has to look.",
+          "Quail Valley and the older neighborhoods around it were mostly built in the 1970s and 1980s, and many of those homes are one story on a slab that has spent forty years on Fort Bend clay. Before a room goes on the back or a floor goes on top, we measure what the slab is doing now. A ground-floor room gets its own foundation tied into the existing one. A second story puts new weight on the old one. Our guide to [planning a home addition](/guides/planning-a-home-addition) walks through how that choice usually gets made.",
+        ],
+      },
+      {
+        heading: "Structural repairs in Missouri City",
+        paragraphs: [
+          "Some calls here are not about adding anything. A beam that has started to sag, a header that was undersized when the house was built, or framing that a past remodel left carrying more than it should. We find the actual load path, design the repair and do the work. More on [structural repairs in Missouri City](/services/structural-repairs) and what that work involves.",
+        ],
+      },
+    ],
     faqs: [
+      {
+        q: "Do I need a permit for a room addition in Missouri City?",
+        a: "Yes. Missouri City requires a building permit for an addition, and a second story will need structural drawings with the application. If your home is in a community with an HOA, its architectural approval is a separate step.",
+      },
       {
         q: "Does it matter which part of Missouri City my home is in?",
         a: "It matters more than the city name suggests. Older and newer sections have different construction eras and different soil histories, so we look at the specific neighborhood, not just the general area.",
