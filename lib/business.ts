@@ -58,6 +58,29 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "If your Spring Valley Village home went up anywhere from the 1950s through the 1970s, which covers most of the village, there's a decent chance nobody has looked closely at the foundation since it was poured. That's not automatically a problem. It's just a gap in information worth closing before you take on a renovation that adds weight or opens up the floor plan.",
       "Most of our calls here come from one of two places: someone planning an addition who wants to know what the existing foundation can actually carry, or a buyer who got a movement flag on the inspection report and wants an independent read before closing. Both are the same underlying question asked at different points in a home's life.",
     ],
+    sections: [
+      {
+        heading: "Putting a second floor on a Spring Valley Village ranch",
+        paragraphs: [
+          "The typical house here is a long, low ranch from the late 1950s or the 1960s, built for one story and nothing more. When a family outgrows it, the lot is often already taken up by the house, the driveway and a pool, so going up is the only real option. That changes the job. A second floor is not a room sitting on top of the old one. It is a new set of loads looking for a path down to a slab that was poured sixty years ago.",
+          "We start by finding that path. The roof of a mid-century ranch usually bears on the outside walls and one or two interior walls, and those walls were framed with whatever the builder had on the truck. Some of them will carry the new floor as they are. Others will need new posts, a beam, or footings poured under the slab where the new loads land. Our page on [adding a second story](/services/second-story-addition) covers how that design comes together, and the [Katy second story project](/projects/second-story-addition-katy) shows one from start to finish.",
+        ],
+      },
+      {
+        heading: "Permits and plan review in Spring Valley Village",
+        paragraphs: [
+          "Spring Valley Village is its own city with its own building department, so a permit for an addition or a structural repair goes through the village, not through the City of Houston. For a second story the village will want sealed structural drawings with the application, and it is worth asking about height limits and setbacks before anyone draws a floor plan, since those rules decide how big the new floor can be.",
+          "We prepare the structural set, answer the reviewer's comments and adjust the drawings if the village asks for changes. Most delays we see come from drawings submitted without enough detail on the foundation, which is the part a reviewer looks at hardest on a house this age.",
+        ],
+      },
+      {
+        heading: "Repairs we find in houses this age",
+        paragraphs: [
+          "Sixty years is long enough for small framing problems to become visible ones. A ridge that has started to dip, a ceiling that cracks along the same line every summer, a header over a widened doorway that a previous owner never sized properly. None of these mean the house is failing, but each one tells us where load is going that it should not.",
+          "When we find one, we trace it back to the cause and design the fix around that, rather than patching the symptom. Sometimes it is a single sistered rafter. Sometimes it is a new beam and a post down to a proper footing. You can read more about how we approach [structural repairs](/services/structural-repairs) on older homes.",
+        ],
+      },
+    ],
     faqs: [
       {
         q: "Do older Spring Valley Village homes need a different foundation inspection than new construction?",
@@ -66,6 +89,14 @@ export const SERVICE_AREAS: ServiceArea[] = [
       {
         q: "Can a foundation built in the 1960s support a modern second-story addition?",
         a: "Sometimes, but it needs to be checked, not assumed. Original construction here was engineered for a single story, and we size any reinforcement to the load the addition will actually add.",
+      },
+      {
+        q: "Who issues the building permit for an addition in Spring Valley Village?",
+        a: "The village itself. Spring Valley Village runs its own permitting, separate from the City of Houston, and a second story will need structural drawings with the application.",
+      },
+      {
+        q: "Can we keep living in the house while a second floor goes on?",
+        a: "Often yes for most of the job, though there are a few days when the roof is open and the stair is being cut in where it is easier to be elsewhere. We plan the sequence so the house is weathertight again as quickly as possible.",
       },
     ],
   },
@@ -78,6 +109,29 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "The same mature tree canopy that makes Piney Point Village one of the most desirable addresses in Houston is also the reason we get called out here so often. Large, established root systems don't stay put. They go looking for water, and a slab foundation sitting between a big oak and its water source is directly in the way.",
       "The homeowners we talk to here are usually torn between two instincts: protect a tree that took forty years to grow, or protect a foundation that's showing new cracks every season. We don't default to either answer. We look at root proximity, soil moisture patterns, and the actual damage before recommending whether a root barrier, selective pruning, or foundation repair is the right call.",
     ],
+    sections: [
+      {
+        heading: "Adding on in Piney Point Village without losing the trees",
+        paragraphs: [
+          "Lots in Piney Point Village are big enough that most families who want more room can build out rather than up: a guest wing, a primary suite off the back, a game room over a new garage. The catch is that the open part of the lot is usually where the oldest trees are. A new foundation dug through the root zone of a mature oak can hurt the tree, and a tree left too close can work on the new slab for years afterward.",
+          "We design around that from the first site visit. That can mean shifting the footprint a few feet, using drilled piers instead of a continuous grade beam where the roots are heaviest, or putting a root barrier along the new foundation line before it is poured. The goal is an addition that sits still and a tree that is still there in ten years. For a sense of the planning steps, see our guide to [planning a home addition](/guides/planning-a-home-addition).",
+        ],
+      },
+      {
+        heading: "Large rooms and long spans",
+        paragraphs: [
+          "Homes here tend to be large, and so are the rooms people want to add. A family room with a vaulted ceiling, a wide opening onto a covered terrace, a pool house with no posts in the middle. Long spans like these are where an engineer earns the fee, because the framing that looks fine on an architect's sketch is not always what will stay flat under a heavy roof in a Houston summer storm.",
+          "We size the beams, the connections and the footings under them, and we check how the new roof ties into the old one so water and load both end up where they should. If you want a rough budget before talking to anyone, the [addition cost estimator](/cost-estimator) gives a Houston-area range in a couple of minutes.",
+        ],
+      },
+      {
+        heading: "Repairing damage that roots have already done",
+        paragraphs: [
+          "When roots have already lifted or cracked a slab, the repair has two parts that people often merge into one. First we stop whatever is still causing the movement, which may be the tree, the water it is chasing, or both. Then we deal with the damage itself, which can range from sealing and monitoring a crack to underpinning one corner of the house.",
+          "Doing the second part without the first is how a repair ends up being done twice. We put both in writing, with the reason for each, so you can see what you are paying for. More on our approach to [foundation repair](/services/foundation-repair).",
+        ],
+      },
+    ],
     faqs: [
       {
         q: "Will removing a tree near my foundation stop the cracking?",
@@ -86,6 +140,14 @@ export const SERVICE_AREAS: ServiceArea[] = [
       {
         q: "Is a root barrier enough, or does the foundation need repair too?",
         a: "Depends on how much damage has already happened. A root barrier stops future intrusion, it doesn't undo settlement that's already occurred, so we check both separately.",
+      },
+      {
+        q: "Can an addition be built close to a large oak in Piney Point Village?",
+        a: "Usually, with the right foundation. Drilled piers placed between the main roots disturb far less than a trenched grade beam, and a root barrier along the new edge keeps the tree from working on the slab later. Check with the village about any tree rules before the design is final.",
+      },
+      {
+        q: "Is it better to add a wing or a second floor on a big Piney Point lot?",
+        a: "When there is room on the ground, a wing is often simpler, since it does not put new weight on the old house. A second floor makes sense when the yard is already full or the family wants to keep it open. We can look at both before you commit to either.",
       },
     ],
   },
@@ -98,6 +160,29 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "Drive through Bunker Hill Village and you'll see two very different eras of construction sitting on the same street: original 1950s and 60s homes next to recent teardown-rebuilds on the same lots. That mix means the structural questions we get here split about evenly between two very different jobs.",
       "For the older homes, it's usually about whether the original foundation can take a renovation or addition. For the new builds, it's about verifying the builder's foundation design matches the actual soil conditions on that specific lot, since a generic plan doesn't always account for what's really underneath a given piece of Bunker Hill ground.",
     ],
+    sections: [
+      {
+        heading: "Add on or tear down? The Bunker Hill question",
+        paragraphs: [
+          "Almost every owner of an original Bunker Hill Village house hears the same advice sooner or later: the lot is worth more than the house, so knock it down. Sometimes that is right. But a lot of these homes are solid, and a well-planned addition can give a family the space it needs for a fraction of a new build, while keeping a house they already like living in.",
+          "The honest answer depends on what is under the house and what the frame can carry. Before you decide, we can tell you what the existing slab and framing will take, whether a second floor is realistic, and what reinforcement it would need. That turns a gut feeling into a comparison you can actually price. Our [second story cost guide](/guides/second-story-addition-cost) has current Houston numbers to put next to a rebuild quote.",
+        ],
+      },
+      {
+        heading: "When the house next door is rebuilt",
+        paragraphs: [
+          "New houses on this street are often built on a raised pad, higher than the original homes beside them. That extra fill changes where rainwater goes, and an older neighbor can find water standing against a foundation that stayed dry for fifty years. Heavy equipment and deep excavation next door can also shake loose problems that were already there.",
+          "If a rebuild has started beside you, it is worth having your foundation measured before the work begins. A set of elevation readings taken early gives you a baseline, so if something moves later, there is a clear record of what changed and when.",
+        ],
+      },
+      {
+        heading: "Keeping an original house sound",
+        paragraphs: [
+          "For the owners who stay, the work we do most often is a mix of small structural fixes that add up: a sagging beam in the attic, a garage header that was undersized from the start, a patio cover that was attached to the house in a way that pulls on the wall. Each is minor alone. Left together for years, they become the reason a buyer's inspector writes a long report.",
+          "We look at the house as a whole, list what needs attention and in what order, and do the [structural repairs](/services/structural-repairs) that matter most first. That way the money goes to the things that protect the house, not the things that only look worrying.",
+        ],
+      },
+    ],
     faqs: [
       {
         q: "Do I need an engineer if I'm tearing down and building new in Bunker Hill Village?",
@@ -106,6 +191,14 @@ export const SERVICE_AREAS: ServiceArea[] = [
       {
         q: "What's different about renovating an older home here versus new construction?",
         a: "The older homes need an assessment of what's already there and how it's held up. New construction is about verifying the design fits this specific lot, not a standard plan.",
+      },
+      {
+        q: "Is adding on cheaper than rebuilding in Bunker Hill Village?",
+        a: "In most cases, yes, by a wide margin, as long as the existing foundation and frame are in good shape. An engineering evaluation is what tells you whether they are, and it costs far less than either option.",
+      },
+      {
+        q: "My neighbor's new house sits higher than mine. Should I worry about my foundation?",
+        a: "It is worth checking. A raised lot next door can send runoff toward your house. Elevation readings now give you a baseline, and a drainage fix is usually much cheaper than a foundation repair later.",
       },
     ],
   },
@@ -118,6 +211,29 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "Hedwig Village packs its homes closer together than most of its Memorial neighbors, and that changes how water behaves. Runoff from a neighbor's regrade, a new driveway, or even a fence line can quietly redirect water toward your foundation instead of away from it, and it's rarely obvious until the damage shows up.",
       "That's why a foundation call in Hedwig Village usually turns into a small drainage investigation too. We walk the property line, not just the house, because the fix is sometimes a grading change or a French drain rather than anything structural at all.",
     ],
+    sections: [
+      {
+        heading: "On a tight Hedwig Village lot, more room usually means going up",
+        paragraphs: [
+          "With homes this close together, there is rarely enough yard left for a room addition once setbacks are taken off. The space a family needs has to come from above. That puts the old foundation and the walls under it at the center of the project, because they will carry a floor they were never meant to hold.",
+          "We measure the slab, open up the walls where needed to see how they were framed, and design whatever has to change before the new floor goes on. On some houses that is very little. On others it means new footings under a few key points and a beam where an interior wall is not up to the job. Our page on [second floor additions](/services/second-story-addition) explains the sequence in more detail.",
+        ],
+      },
+      {
+        heading: "Building a few feet from the neighbors",
+        paragraphs: [
+          "Close lots make the construction itself harder. There may be only a narrow strip along the side of the house for scaffolding and material, and the neighbor's fence, roof and slab are right there. We plan the work so that excavation does not undermine the house next door and so that runoff during construction does not end up in someone else's yard.",
+          "It also helps to talk to the neighbors before the work starts. When we take elevation readings on your foundation, it can be worth doing the same along the shared side, so everyone has a record of where things stood before the crew arrived.",
+        ],
+      },
+      {
+        heading: "Drainage first, then structure",
+        paragraphs: [
+          "Because water moves so readily between lots here, a lot of the cracks we are called to look at turn out to be a drainage problem that has started to show in the structure. Fixing the crack without fixing the water just resets the clock.",
+          "So the repair plan usually starts outside: grading, gutters, a drain line along the side yard. Then, if the slab or framing has actually moved, we design the [structural repair](/services/structural-repairs) to suit what the house needs once the water is under control.",
+        ],
+      },
+    ],
     faqs: [
       {
         q: "My neighbor's yard drains toward my house. Is that their problem or mine?",
@@ -126,6 +242,14 @@ export const SERVICE_AREAS: ServiceArea[] = [
       {
         q: "How do I know if my foundation issue is drainage-related or something more serious?",
         a: "Drainage-related movement tends to track with the seasons and rain events. We look at the pattern over time, not just a single crack, to tell the difference.",
+      },
+      {
+        q: "Is there room for an addition on a small Hedwig Village lot?",
+        a: "Often not on the ground once setbacks are applied, which is why most families here build a second floor instead. We check whether the existing foundation can take it before any plans are drawn.",
+      },
+      {
+        q: "How do you protect the house next door during construction?",
+        a: "By planning excavation so it does not undermine the neighbor's slab, controlling runoff while the site is open, and recording the condition of both sides before work begins.",
       },
     ],
   },
@@ -138,6 +262,29 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "Hilshire Village is small, and word travels fast here, which might explain why we get so many second-opinion calls from this particular village. A homeowner gets a repair quote from a foundation company, talks to a neighbor who had a similar issue, and decides it's worth a second, independent set of eyes before signing anything.",
       "We're not in the business of selling repairs, so an independent evaluation here often comes back with a smaller scope than the original quote, sometimes none at all. Other times it confirms the diagnosis and gives the homeowner confidence to move forward. Either way, it's a cheap step relative to the size of the decision.",
     ],
+    sections: [
+      {
+        heading: "A second look at addition plans, too",
+        paragraphs: [
+          "The second-opinion habit in Hilshire Village is not limited to foundation repair. We also get asked to review addition plans that someone else drew: a contractor's design for a new bedroom, a second floor sketched by a designer, a quote that seems either too high or too low for what it promises.",
+          "What we check is simple to describe. Does the foundation under the new space match the soil and the load? Does the existing house have what it needs to carry its share? Is anything in the plan going to cause trouble at inspection? Sometimes the answer is that the plan is sound. Sometimes a few changes on paper save a costly change in the field. If you are still early, our [home addition guide](/guides/planning-a-home-addition) lays out the questions to ask before you hire anyone.",
+        ],
+      },
+      {
+        heading: "Permits in one of Houston's smallest cities",
+        paragraphs: [
+          "Hilshire Village covers only a small patch of ground, but it is a city in its own right, with its own permit process for additions and structural work. A small village does not mean a lighter review. Expect to submit full drawings and to answer questions about the foundation and framing.",
+          "We prepare the structural drawings, respond to comments from the reviewer and stay on the job through the inspections. Starting the conversation with the village early, before a design is final, tends to make everything after it go faster.",
+        ],
+      },
+      {
+        heading: "When the right repair is smaller than the quote",
+        paragraphs: [
+          "Many of the repair quotes we review here call for a full set of piers around the house. Sometimes that is exactly what is needed. Other times the movement is limited to one side, or it is coming from a leak or a drainage problem that will keep moving the house no matter how many piers go in.",
+          "We base our recommendation on measurements, not a standard package, and we explain why each part of the fix is there. When the answer is a smaller job, we say so. When it is a bigger one, you will know it is not a sales pitch. More on how we handle [foundation repair](/services/foundation-repair).",
+        ],
+      },
+    ],
     faqs: [
       {
         q: "I already have a foundation repair quote. Why would I pay for another inspection?",
@@ -146,6 +293,14 @@ export const SERVICE_AREAS: ServiceArea[] = [
       {
         q: "How much does a second opinion usually cost compared to a repair?",
         a: "A single-visit evaluation is a small fraction of most repair costs, which is exactly why it's worth doing before committing to a five-figure fix.",
+      },
+      {
+        q: "Can you review an addition plan someone else designed?",
+        a: "Yes. We check the foundation design, how the new space ties into the existing house and whether anything is likely to be flagged at inspection, then tell you what, if anything, should change.",
+      },
+      {
+        q: "Does Hilshire Village handle its own building permits?",
+        a: "Yes. Hilshire Village is an independent city with its own permit process, so applications for additions and structural repairs go to the village rather than to the City of Houston.",
       },
     ],
   },
@@ -158,6 +313,29 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "Hunters Creek Village earned its name honestly. Properties that back up to the creek or sit within its floodplain deal with a moisture profile that's genuinely different from a lot three streets over, and that shows up in how their foundations move through the year.",
       "We don't treat every Hunters Creek Village property the same way for this reason. Distance from the water, elevation relative to the creek bed, and how the lot was graded when the home was built all change what we're looking for and what a reasonable fix looks like.",
     ],
+    sections: [
+      {
+        heading: "Additions on lots in or near the floodplain",
+        paragraphs: [
+          "If part of your Hunters Creek Village lot falls inside a mapped flood zone, an addition is a different kind of project. New construction in a flood zone generally has to be built with its floor above the base flood elevation, and the village's floodplain rules apply on top of the usual building permit. That can mean the new room sits higher than the house it is attached to, with a step or a short ramp between them.",
+          "There is also a rule many owners do not hear about until late: when the cost of improvements reaches half the value of the existing structure, the whole house may have to be brought up to current flood standards. We look at the flood map, the survey and the size of the planned work early, so that rule does not arrive as a surprise halfway through design.",
+        ],
+      },
+      {
+        heading: "Building up instead of out",
+        paragraphs: [
+          "For some creekside homes, the better answer is a second floor. It adds living space above the flood level without enlarging the footprint in the floodplain, and it keeps the lot's open ground for drainage. The trade-off is that the existing foundation now has to carry the new floor, so it has to be checked first, and a house that has spent decades on wet soil needs that check more than most.",
+          "We measure what the slab is doing, look at how the house has moved over time, and design the reinforcement the new floor will need. The [second story cost guide](/guides/second-story-addition-cost) gives current Houston ranges if you are comparing this against a ground-floor addition.",
+        ],
+      },
+      {
+        heading: "Repairs on homes that live with water",
+        paragraphs: [
+          "Near the creek, foundation movement often follows the water table through the year: down in a dry summer, back up after a wet spring. Repairs that ignore that cycle tend not to last. We time our measurements where we can, look at the full pattern and design [structural repairs](/services/structural-repairs) that account for the ground moving under the house rather than assuming it will stay put.",
+          "Wood framing near the floor line is worth a look too. Years of high humidity or past flooding can soften sill plates and the bottoms of studs, and that damage is hidden behind finished walls until a door stops closing or a floor starts to slope.",
+        ],
+      },
+    ],
     faqs: [
       {
         q: "Does living near the creek automatically mean more foundation problems?",
@@ -166,6 +344,14 @@ export const SERVICE_AREAS: ServiceArea[] = [
       {
         q: "Should I be more worried about foundation issues after a heavy rain season?",
         a: "It's worth a look if you're seeing new cracking or doors sticking after a wet stretch, since that timing is a real signal here, more so than in areas further from the water.",
+      },
+      {
+        q: "Can I build a room addition if my lot is in a flood zone?",
+        a: "Usually yes, but the new floor will generally need to sit above the base flood elevation, and the village's floodplain rules apply in addition to the building permit. We check the flood map and survey before design starts.",
+      },
+      {
+        q: "What is the 50 percent rule for homes in a flood zone?",
+        a: "When the cost of improving a house in a flood zone reaches half of the building's value, the whole structure may have to meet current flood standards, not just the new part. It is worth knowing where that line falls before you settle on the size of an addition.",
       },
     ],
   },
