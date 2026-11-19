@@ -1827,7 +1827,7 @@ export const SERVICES: Service[] = [
     name: "Kitchen Design & Remodeling",
     shortName: "Kitchens",
     seoDescription:
-      "Kitchen design and remodeling in Houston. One team designs and builds your kitchen, with a high-end finish at a fair price, including open kitchens where a wall has to come out.",
+      "Kitchen design and remodeling in Houston, designed and built by one team, with a high-end finish at a fair price, including open kitchens where a wall comes out.",
     image: "/images/load-bearing-wall-removal-3-finished-flush-beam.jpg",
     imageAlt: "Open kitchen and family room in a Houston home with a large island, oak flooring and a flat ceiling where a wall once stood (illustrative rendering, not an actual job site)",
     summary:

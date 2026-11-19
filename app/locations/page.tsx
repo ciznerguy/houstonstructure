@@ -7,7 +7,7 @@ import { SERVICE_AREAS } from "@/lib/business";
 export const metadata: Metadata = {
   title: "Service Areas",
   description:
-    "Structural engineering, foundation repair, and inspection services across the Houston metro, including The Woodlands, Spring, Sugar Land, Pasadena, League City, and New Caney.",
+    "Structural engineering, additions and repairs across the Houston metro, from the Memorial Villages, Bellaire and West U to Katy, Sugar Land and The Woodlands.",
 };
 
 export default function LocationsPage() {

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   // strongest ranking term, structural engineer, and adds the build intent.
   title: "Houston Structural Engineer & Home Addition Contractor",
   description:
-    "Additions, second stories, load-bearing wall removal and steel beams in Houston, engineered and built by one licensed firm. The structural work is designed in house, so the plan and the build never disagree. 5.0 stars on Google.",
+    "Additions, second stories, load-bearing wall removal and steel beams in Houston, engineered and built by one licensed firm. 5.0 stars on Google.",
 };
 
 export default function Home() {

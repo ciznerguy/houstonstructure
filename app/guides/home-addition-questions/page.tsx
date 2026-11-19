@@ -9,7 +9,7 @@ import { BUSINESS } from "@/lib/business";
 export const metadata: Metadata = {
   title: "Home Addition Questions Houston Homeowners Ask",
   description:
-    "Straight answers to the questions people actually ask before adding on: permits, foundations, HOAs, floodplains, timelines, garage conversions, living through construction, and why quotes vary so much.",
+    "Straight answers to what people ask before adding on: permits, foundations, HOAs, floodplains, timelines, and why quotes vary so much.",
   openGraph: {
     images: [{ url: "/images/home-additions.jpg", width: 1600, height: 900 }],
   },

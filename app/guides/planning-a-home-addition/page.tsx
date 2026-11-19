@@ -9,7 +9,7 @@ import { BUSINESS } from "@/lib/business";
 export const metadata: Metadata = {
   title: "Planning a Home Addition in Houston",
   description:
-    "Why the engineering question should come before the floor plan, building out versus building up, Houston-specific permit issues, and answers to the questions homeowners ask most before adding onto their home.",
+    "Why the engineering question comes before the floor plan, building out versus up, Houston permit issues, and what homeowners ask before adding on.",
   openGraph: {
     images: [{ url: "/images/home-additions.jpg", width: 1600, height: 900 }],
   },

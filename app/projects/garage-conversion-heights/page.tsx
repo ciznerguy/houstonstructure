@@ -72,7 +72,7 @@ function Figure({ photo }: { photo: Photo }) {
 export const metadata: Metadata = {
   title: "Garage Conversion in Houston Heights: A Guest Suite",
   description:
-    "A Heights two-car garage became a guest suite: a light rustic bedroom, a high-end media room and a full bathroom. What a conversion involves in a neighborhood of century-old houses and historic district review.",
+    "A Heights two-car garage became a guest suite with a bedroom, media room and full bath. What a conversion takes among century-old houses and historic review.",
   openGraph: {
     images: [{ url: "/images/project-heights-garage-2-media-room.jpg", width: 1024, height: 572 }],
   },

@@ -21,7 +21,7 @@ const IMG_NOTE = "illustrative rendering, not a photo of the project";
 export const metadata: Metadata = {
   title: "Second Story Addition in Katy, TX",
   description:
-    "A one-story Katy home gained a full second floor: a farmhouse primary bedroom with tall windows, a grey two-person shower bathroom, and a walk-in closet built around the owner's collection. What it took above and below.",
+    "A one-story Katy home gained a full second floor: a primary bedroom, a two-person shower bathroom and a walk-in closet. What it took above and below.",
   openGraph: {
     images: [{ url: "/images/project-katy-second-story-1-exterior.jpg", width: 1600, height: 900 }],
   },

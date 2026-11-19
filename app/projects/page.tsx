@@ -8,7 +8,7 @@ import { PROJECTS } from "@/lib/projects";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Recent structural engineering and construction projects across the Houston area: additions, second stories, wall removals, and repairs, with what each one involved.",
+    "Recent Houston-area projects: additions, second stories, wall removals and repairs, with what each one involved above and below the floor.",
 };
 
 export default function ProjectsPage() {

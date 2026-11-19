@@ -6,7 +6,7 @@ import { BUSINESS } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: `About ${BUSINESS.name}: a licensed and insured structural engineering and general contracting firm serving the Houston metro.`,
+  description: `About ${BUSINESS.name}: licensed, insured structural engineering and contracting for the Houston metro.`,
   openGraph: {
     images: [{ url: "/images/about-renovation.jpg", width: 1600, height: 900 }],
   },

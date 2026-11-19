@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // 2026-11-05: searches reaching these pages are "structural engineer
     // {city}" at position 6 to 10 with no clicks, so the snippet now opens with
     // what was searched. Only the description changed, not the title.
-    description: `Structural engineer in ${area.name}, TX, for additions, second stories and wall removal, engineered and built by one licensed firm. Call ${BUSINESS.phone}. ${area.blurb}`,
+    description: `Structural engineer in ${area.name}, TX, for additions, second stories and wall removal, engineered and built by one licensed firm. Call ${BUSINESS.phone}.`,
   };
 }
 

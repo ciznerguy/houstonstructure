@@ -8,7 +8,7 @@ import { BUSINESS } from "@/lib/business";
 export const metadata: Metadata = {
   title: "How to Choose a Structural Engineer in Houston",
   description:
-    "What to check before hiring a structural engineer in Houston: independence from repair sales, local soil experience, and the questions worth asking before you sign anything.",
+    "What to check before hiring a structural engineer in Houston: independence from repair sales, local soil experience, and the questions to ask first.",
 };
 
 const faqs = [

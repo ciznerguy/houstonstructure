@@ -18,7 +18,7 @@ import { BUSINESS } from "@/lib/business";
 export const metadata: Metadata = {
   title: "Bedroom and Bathroom Addition in Houston, TX",
   description:
-    "A room addition that put a new bedroom and a full bathroom onto an existing Houston house. The tile work is the visible half. The foundation, the drain layout set before the pour, and the framed arch are the half that makes it last.",
+    "A new bedroom and full bath added to a Houston house. The tile is the visible half. The foundation, drains set before the pour and the framed arch make it last.",
   openGraph: {
     images: [{ url: "/images/project-bedroom-bath-addition-1-tub-alcove.jpg", width: 1536, height: 2048 }],
   },
