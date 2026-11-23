@@ -17,6 +17,8 @@ export const BUSINESS = {
   // The channel name is "Levi's Houston Structural Repairs & Engineering":
   // YouTube caps names at 50 characters and the full one is 58.
   youtubeUrl: "https://www.youtube.com/@houstonstructure",
+  facebookUrl: "https://www.facebook.com/people/Levis-Houston-Structural-Repairs-Engineering-Consulting/100063769545239/",
+  linkedinUrl: "https://www.linkedin.com/company/houstonstructure",
   // Must stay identical to the Google Business Profile and Bing Places, which
   // both read Mon-Sat 8 AM - 8 PM (aligned 2026-09-26). `opens`/`closes` are the
   // 24-hour values Schema.tsx publishes; omit them on a closed day.

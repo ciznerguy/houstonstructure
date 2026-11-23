@@ -10,6 +10,15 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
+# Let browsers keep images for a week instead of re-downloading them on every
+# visit (they were served with max-age=0). Not "immutable": some images are
+# replaced in place under the same file name, so a week is the most a returning
+# visitor could see an old version. The Netlify edge cache resets on every deploy.
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
 # The room addition case study moved from /guides to /projects on 2026-09-25.
 # 301 so the old URL keeps working and hands its signals to the new one.
 [[redirects]]

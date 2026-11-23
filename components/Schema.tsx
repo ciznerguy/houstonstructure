@@ -11,13 +11,12 @@ export default function Schema() {
     alternateName: BUSINESS.shortName,
     telephone: BUSINESS.phone,
     url: BUSINESS.siteUrl,
-    // sameAs is what ties this site to the verified Google Business Profile and
-    // the YouTube channel. Add Yelp, Apple Maps, Facebook and LinkedIn here as
-    // each one is claimed and its name matches BUSINESS.name exactly. Facebook
-    // is deliberately still out: that page reads "Structural Inspection &
-    // Consulting" and carries a different phone number, so linking it now would
-    // tell a search engine these are two businesses rather than one.
-    sameAs: [BUSINESS.googleMapsUrl, BUSINESS.youtubeUrl],
+    // sameAs ties this site to its profiles so search engines read them as one
+    // business. Only profiles whose name and phone match BUSINESS exactly belong
+    // here. Facebook was added 2026-11-23 once its name change to match the
+    // Google profile went through and its phone was corrected; LinkedIn was
+    // created 2026-11-09 with the same name and phone.
+    sameAs: [BUSINESS.googleMapsUrl, BUSINESS.youtubeUrl, BUSINESS.facebookUrl, BUSINESS.linkedinUrl],
     hasMap: BUSINESS.googleMapsUrl,
     image: `${BUSINESS.siteUrl}/images/hero-framing.jpg`,
     priceRange: "$$",

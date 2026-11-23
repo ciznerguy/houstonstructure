@@ -40,6 +40,7 @@ This is a closed list of specific, named actions that can be done end-to-end wit
 npm run dev      # dev server (localhost:3000, unless overridden)
 npm run build    # production build / type-check (static export to /out)
 npm run lint     # eslint
+node scripts/gen-lastmod.mjs   # refresh lib/lastmod.json (per-page sitemap dates from git); run after committing content, then commit the json
 ```
 
 There are no tests in this repo. When invoking Next directly from a non-shell context (e.g. tooling that spawns `node <path>` rather than going through a shell), the `.bin/next` shim is a bash script and fails under `node` directly on Windows — call `node_modules/next/dist/bin/next` instead.
