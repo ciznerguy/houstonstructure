@@ -47,4 +47,16 @@ export const GUIDES: Guide[] = [
     summary:
       "How wall removal works in a Houston office, retail, or restaurant space: which walls can come out, what the landlord and the city will ask for, how the engineering and permitting run, and what it typically costs.",
   },
+  {
+    slug: "houston-addition-permits",
+    title: "Who Approves a Home Addition in the Houston Area?",
+    summary:
+      "City permits, HOA review, historic districts, the Township and the places with no permit at all: who reviews a room addition or second story in each part of the metro, side by side.",
+  },
+  {
+    slug: "kitchen-remodel-cost",
+    title: "How Much Does a Kitchen Remodel Cost in Houston?",
+    summary:
+      "Houston kitchen remodel ranges at three finish levels, what moves the price most, and the slab, drain line and permit issues that come with Houston houses.",
+  },
 ];
