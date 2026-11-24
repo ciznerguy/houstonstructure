@@ -5,15 +5,12 @@ import CTASection from "@/components/CTASection";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { BUSINESS } from "@/lib/business";
 
-// DRAFT FOR LEVI'S REVIEW (2026-11-24). The durations are typical ranges that
-// Levi has to confirm or correct before this goes public. Deliberately an
-// orphan: not in lib/guides.ts (so not in the nav, the /guides index or the
-// sitemap), and noindex. To publish: remove `robots`, add it to GUIDES.
+// Published 2026-11-24 at Guy's request without waiting for Levi's review.
+// The durations are typical ranges; if Levi corrects them, update `steps` and the FAQ.
 export const metadata: Metadata = {
   title: "Second Story Addition Timeline in Houston, Step by Step",
   description:
     "How long a second story addition takes in Houston, from the first structural check to moving upstairs, and when you can stay in the house.",
-  robots: { index: false, follow: false },
 };
 
 const link = "text-[#0B1F3A] underline hover:no-underline";
@@ -77,8 +74,19 @@ const faqs = [
 ];
 
 export default function SecondStoryTimelinePage() {
+  const faqJson = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJson) }} />
       <PageHero
         eyebrow="Guide"
         title="A Second Story Addition, Step by Step"

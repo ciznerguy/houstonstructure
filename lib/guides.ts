@@ -54,6 +54,12 @@ export const GUIDES: Guide[] = [
       "City permits, HOA review, historic districts, the Township and the places with no permit at all: who reviews a room addition or second story in each part of the metro, side by side.",
   },
   {
+    slug: "second-story-addition-timeline",
+    title: "A Second Story Addition in Houston, Step by Step",
+    summary:
+      "How long each step of a second story takes, from the structural check through design, approvals and construction, and when you can keep living in the house.",
+  },
+  {
     slug: "kitchen-remodel-cost",
     title: "How Much Does a Kitchen Remodel Cost in Houston?",
     summary:
