@@ -1,3 +1,4 @@
+import Img from "@/components/Img";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -7,6 +8,9 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { BUSINESS, SERVICES, SERVICE_AREAS } from "@/lib/business";
 import { GUIDES } from "@/lib/guides";
 import { PROJECTS } from "@/lib/projects";
+
+// LBW30 experiment pages (until 2026-12-08): their images stay plain JPG so the pages do not change.
+const LBW30_FROZEN = ["home-additions", "load-bearing-wall-removal", "steel-beam-installation"];
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -127,7 +131,8 @@ export default async function ServicePage({ params }: Props) {
 
       {service.image && (
         <div className="mx-auto max-w-6xl px-5 pt-10">
-          <img
+          <Img
+            plain={LBW30_FROZEN.includes(service.slug)}
             src={service.image}
             srcSet={`${service.image.replace(".jpg", "-800.jpg")} 800w, ${service.image} 1600w`}
             sizes="100vw"
@@ -181,7 +186,8 @@ export default async function ServicePage({ params }: Props) {
               ) : null}
               {s.image && (
                 <>
-                  <img
+                  <Img
+                    plain={LBW30_FROZEN.includes(service.slug)}
                     src={s.image.src}
                     srcSet={`${s.image.src.replace(".jpg", "-800.jpg")} 800w, ${s.image.src} 1600w`}
                     sizes="(min-width: 768px) 66vw, 100vw"
@@ -303,7 +309,8 @@ export default async function ServicePage({ params }: Props) {
               className="mt-6 block overflow-hidden rounded-sm border border-slate-200 hover:border-[#0B1F3A]"
             >
               {p.image && (
-                <img
+                <Img
+                  plain={LBW30_FROZEN.includes(service.slug)}
                   src={p.image.replace(".jpg", "-800.jpg")}
                   alt={`${p.title} (illustrative rendering, not a photo of the project)`}
                   loading="lazy"

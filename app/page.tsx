@@ -1,3 +1,4 @@
+import Img from "@/components/Img";
 import Link from "next/link";
 import type { Metadata } from "next";
 import CTASection from "@/components/CTASection";
@@ -19,7 +20,7 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden bg-[#0B1F3A] text-white">
-        <img
+        <Img
           src="/images/hero-framing.jpg"
           srcSet="/images/hero-framing-800.jpg 800w, /images/hero-framing.jpg 1600w"
           sizes="100vw"

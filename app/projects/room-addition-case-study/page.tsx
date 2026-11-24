@@ -1,3 +1,4 @@
+import Img from "@/components/Img";
 import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
@@ -83,7 +84,7 @@ export default function RoomAdditionCaseStudyPage() {
               haven&rsquo;t actually looked closely.
             </p>
 
-            <img
+            <Img
               src="/images/room-addition-case-study-1-site-evaluation.jpg"
               srcSet="/images/room-addition-case-study-1-site-evaluation-800.jpg 800w, /images/room-addition-case-study-1-site-evaluation.jpg 1600w"
               sizes="(min-width: 768px) 66vw, 100vw"
@@ -132,7 +133,7 @@ export default function RoomAdditionCaseStudyPage() {
 
             <div className="mb-2 grid gap-4 sm:grid-cols-2">
               <div>
-                <img
+                <Img
                   src="/images/room-addition-case-study-2-foundation-forms.jpg"
                   srcSet="/images/room-addition-case-study-2-foundation-forms-800.jpg 800w, /images/room-addition-case-study-2-foundation-forms.jpg 1600w"
                   sizes="(min-width: 640px) 50vw, 100vw"
@@ -144,7 +145,7 @@ export default function RoomAdditionCaseStudyPage() {
                 </p>
               </div>
               <div>
-                <img
+                <Img
                   src="/images/room-addition-case-study-3-tie-in-detail.jpg"
                   srcSet="/images/room-addition-case-study-3-tie-in-detail-800.jpg 800w, /images/room-addition-case-study-3-tie-in-detail.jpg 1600w"
                   sizes="(min-width: 640px) 50vw, 100vw"
@@ -174,7 +175,7 @@ export default function RoomAdditionCaseStudyPage() {
               than triggering changes throughout the existing house.
             </p>
 
-            <img
+            <Img
               src="/images/room-addition-case-study-4-framing.jpg"
               srcSet="/images/room-addition-case-study-4-framing-800.jpg 800w, /images/room-addition-case-study-4-framing.jpg 1600w"
               sizes="(min-width: 768px) 66vw, 100vw"
@@ -203,7 +204,7 @@ export default function RoomAdditionCaseStudyPage() {
               a separate crew to interpret.
             </p>
 
-            <img
+            <Img
               src="/images/room-addition-case-study-5-completed-exterior.jpg"
               srcSet="/images/room-addition-case-study-5-completed-exterior-800.jpg 800w, /images/room-addition-case-study-5-completed-exterior.jpg 1600w"
               sizes="(min-width: 768px) 66vw, 100vw"
@@ -223,7 +224,7 @@ export default function RoomAdditionCaseStudyPage() {
               addition was designed and inspected properly, not just built to a visual match.
             </p>
 
-            <img
+            <Img
               src="/images/room-addition-case-study-6-engineering-letter.jpg"
               srcSet="/images/room-addition-case-study-6-engineering-letter-800.jpg 800w, /images/room-addition-case-study-6-engineering-letter.jpg 1600w"
               sizes="(min-width: 768px) 66vw, 100vw"

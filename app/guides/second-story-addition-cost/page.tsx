@@ -1,3 +1,4 @@
+import Img from "@/components/Img";
 import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
@@ -168,7 +169,7 @@ export default function SecondStoryAdditionCostGuidePage() {
               and how much of that capacity is already used up.
             </p>
 
-            <img
+            <Img
               src="/images/second-story-addition-cost-1-before.jpg"
               srcSet="/images/second-story-addition-cost-1-before-800.jpg 800w, /images/second-story-addition-cost-1-before.jpg 1600w"
               sizes="(min-width: 768px) 66vw, 100vw"
@@ -277,7 +278,7 @@ export default function SecondStoryAdditionCostGuidePage() {
                 },
               ].map((photo) => (
                 <div key={photo.src}>
-                  <img
+                  <Img
                     src={photo.src}
                     srcSet={`${photo.src.replace(".jpg", "-800.jpg")} 800w, ${photo.src} 1600w`}
                     sizes="(min-width: 640px) 50vw, 100vw"
@@ -408,7 +409,7 @@ export default function SecondStoryAdditionCostGuidePage() {
               construction starts.
             </p>
 
-            <img
+            <Img
               src="/images/second-story-addition-cost-4-completed.jpg"
               srcSet="/images/second-story-addition-cost-4-completed-800.jpg 800w, /images/second-story-addition-cost-4-completed.jpg 1600w"
               sizes="(min-width: 768px) 66vw, 100vw"

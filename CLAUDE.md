@@ -40,6 +40,7 @@ This is a closed list of specific, named actions that can be done end-to-end wit
 npm run dev      # dev server (localhost:3000, unless overridden)
 npm run build    # production build / type-check (static export to /out)
 npm run lint     # eslint
+node scripts/webp-convert.mjs  # make WebP copies of new JPGs in public/images; components/Img.tsx serves them automatically (empty its FROZEN list after LBW30 ends 2026-12-08, and drop LBW30_FROZEN in app/services/[slug]/page.tsx)
 node scripts/gen-lastmod.mjs   # refresh lib/lastmod.json (per-page sitemap dates from git); run after committing content, then commit the json
 ```
 

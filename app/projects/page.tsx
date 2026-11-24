@@ -1,3 +1,4 @@
+import Img from "@/components/Img";
 import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
@@ -32,7 +33,7 @@ export default function ProjectsPage() {
                 className="group overflow-hidden rounded-sm border border-slate-200 transition-colors hover:border-[#0B1F3A]"
               >
                 {p.image && (
-                  <img
+                  <Img
                     src={p.image}
                     srcSet={`${p.image.replace(".jpg", "-800.jpg")} 800w, ${p.image} 1600w`}
                     sizes="(min-width: 640px) 50vw, 100vw"

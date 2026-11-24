@@ -1,3 +1,4 @@
+import Img from "@/components/Img";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -230,7 +231,7 @@ export default async function LocationPage({ params }: Props) {
                 className="mt-6 block overflow-hidden rounded-sm border border-slate-200 hover:border-[#0B1F3A]"
               >
                 {p.image && (
-                  <img
+                  <Img
                     src={p.image.replace(".jpg", "-800.jpg")}
                     alt={`${p.title} (illustrative rendering, not a photo of the project)`}
                     loading="lazy"

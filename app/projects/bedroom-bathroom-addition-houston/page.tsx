@@ -1,3 +1,4 @@
+import Img from "@/components/Img";
 import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
@@ -58,7 +59,7 @@ const photos: Record<"tubAlcove" | "shower" | "arch" | "floor" | "tubWindow", Ph
 function Figure({ photo }: { photo: Photo }) {
   return (
     <>
-      <img
+      <Img
         src={photo.src}
         srcSet={`${photo.src.replace(".jpg", "-800.jpg")} 800w, ${photo.src} 1536w`}
         sizes="(min-width: 768px) 66vw, 100vw"
@@ -141,7 +142,7 @@ export default function BedroomBathroomAdditionPage() {
       />
 
       <div className="mx-auto max-w-6xl px-5 pt-10">
-        <img
+        <Img
           src={photos.tubAlcove.src}
           srcSet={`${photos.tubAlcove.src.replace(".jpg", "-800.jpg")} 800w, ${photos.tubAlcove.src} 1536w`}
           sizes="100vw"

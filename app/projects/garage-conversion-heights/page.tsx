@@ -1,3 +1,4 @@
+import Img from "@/components/Img";
 import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
@@ -54,7 +55,7 @@ const photos: Record<"before" | "during" | "bedroom" | "media" | "bath", Photo> 
 function Figure({ photo }: { photo: Photo }) {
   return (
     <>
-      <img
+      <Img
         src={photo.src}
         srcSet={`${photo.src.replace(".jpg", "-800.jpg")} 800w, ${photo.src} 1600w`}
         sizes="(min-width: 768px) 66vw, 100vw"
@@ -113,7 +114,7 @@ export default function HeightsGarageConversionPage() {
       />
 
       <div className="mx-auto max-w-6xl px-5 pt-10">
-        <img
+        <Img
           src={photos.before.src}
           srcSet={`${photos.before.src.replace(".jpg", "-800.jpg")} 800w, ${photos.before.src} 1600w`}
           sizes="100vw"

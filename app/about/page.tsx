@@ -1,3 +1,4 @@
+import Img from "@/components/Img";
 import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
@@ -22,7 +23,7 @@ export default function AboutPage() {
         ctaLabel="Get a Free Home Addition Cost Estimate"
       />
       <section className="mx-auto max-w-3xl px-5 py-14 text-slate-700 leading-relaxed">
-        <img
+        <Img
           src="/images/about-renovation.jpg"
           srcSet="/images/about-renovation-800.jpg 800w, /images/about-renovation.jpg 1600w"
           sizes="100vw"
