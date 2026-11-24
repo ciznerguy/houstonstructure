@@ -6,7 +6,7 @@ import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CostEstimatorCTA from "@/components/CostEstimatorCTA";
-import { BUSINESS, SERVICE_AREAS } from "@/lib/business";
+import { BUSINESS, SERVICE_AREAS, PERMIT_OFFICES } from "@/lib/business";
 import { PROJECTS } from "@/lib/projects";
 
 // These pages used to link to all eleven services in a grid, with the same
@@ -117,6 +117,24 @@ export default async function LocationPage({ params }: Props) {
                 ))}
               </div>
             ))}
+
+            {PERMIT_OFFICES[area.slug] && (
+              <div className="mt-10 rounded-sm border border-slate-200 p-5">
+                <h2 className="text-base font-bold text-[#0B1F3A]">Official permit information for {area.name}</h2>
+                <p className="mt-2 text-sm text-slate-600">
+                  Rules and forms change, so check the current requirements with the office that reviews work at your address.
+                </p>
+                <ul className="mt-3 space-y-1.5 text-sm">
+                  {PERMIT_OFFICES[area.slug].map((o) => (
+                    <li key={o.url}>
+                      <a href={o.url} target="_blank" rel="noopener" className="text-[#0B1F3A] underline hover:no-underline">
+                        {o.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             {/* The work we actually want, named in prose with the city in the
                 anchor, above the grid. The grid below gives all eleven

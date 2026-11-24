@@ -50,6 +50,37 @@ export type ServiceArea = {
   faqs: { q: string; a: string }[];
 };
 
+// Official offices that review additions and structural work in each area,
+// shown on the location page as outside links. Added 2026-11-24 after Google's
+// SEO starter guide (link to sources that support what the page says). Every
+// URL was opened and checked that day; some government sites block automated
+// checks, so re-check by hand in a browser.
+export const PERMIT_OFFICES: Record<string, { name: string; url: string }[]> = {
+  "spring-valley-village": [{ name: "City of Spring Valley Village, Permits", url: "https://springvalleytx.com/220/Permits" }],
+  "piney-point-village": [{ name: "City of Piney Point Village", url: "https://www.cityofpineypoint.com/" }],
+  "bunker-hill-village": [{ name: "City of Bunker Hill Village", url: "https://bunkerhilltx.gov/" }],
+  "hedwig-village": [{ name: "City of Hedwig Village, Building Permits", url: "https://www.thecityofhedwigvillage.com/page/services_bldgpermits" }],
+  "hilshire-village": [{ name: "City of Hilshire Village, Building Permits", url: "https://www.hilshirevillagetexas.com/page/building-permit" }],
+  "hunters-creek-village": [{ name: "City of Hunters Creek Village, Permit Forms and Information", url: "https://cityofhunterscreek.com/permits/" }],
+  bellaire: [{ name: "City of Bellaire, Permits and Inspections", url: "https://bellairetx.gov/1857/Permits-Inspections" }],
+  "west-university-place": [{ name: "City of West University Place, Permits", url: "https://westutx.gov/240/Permits" }],
+  "houston-heights": [
+    { name: "Houston Permitting Center", url: "https://www.houstonpermittingcenter.org/" },
+    { name: "City of Houston Office of Preservation", url: "https://www.houstontx.gov/planning/HistoricPres/" },
+  ],
+  "the-woodlands": [{ name: "The Woodlands Township, Covenant Administration", url: "https://www.thewoodlandstownship-tx.gov/Departments/Covenant-Administration" }],
+  katy: [
+    { name: "City of Katy, Permit and Building Services", url: "https://www.cityofkaty.com/government/city-departments/permits-building" },
+    { name: "Harris County Office of the County Engineer, Permits", url: "https://oce.harriscountytx.gov/Services/Permits/Permits-A-to-Z" },
+    { name: "Fort Bend County Engineering, Development Permits", url: "https://www.fortbendcountytx.gov/government/departments/county-services/engineering/permits/development-permit" },
+  ],
+  cypress: [{ name: "Harris County Office of the County Engineer, Permits", url: "https://oce.harriscountytx.gov/Services/Permits/Permits-A-to-Z" }],
+  pearland: [{ name: "City of Pearland, Residential and Commercial Permits", url: "https://www.pearlandtx.gov/departments/community-development/permits" }],
+  "missouri-city": [{ name: "City of Missouri City", url: "https://www.missouricitytx.gov/" }],
+  "sugar-land": [{ name: "City of Sugar Land, Permits and Inspections", url: "https://sugarlandtx.gov/2362" }],
+  "fort-bend-county": [{ name: "Fort Bend County Engineering, Development Permits", url: "https://www.fortbendcountytx.gov/government/departments/county-services/engineering/permits/development-permit" }],
+};
+
 export const SERVICE_AREAS: ServiceArea[] = [
   {
     slug: "spring-valley-village",

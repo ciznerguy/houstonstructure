@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { BUSINESS } from "@/lib/business";
+import { BUSINESS, PERMIT_OFFICES } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "Home Addition Permits in Houston: Who Approves What, City by City",
@@ -13,7 +13,11 @@ export const metadata: Metadata = {
 
 const link = "text-[#0B1F3A] underline hover:no-underline";
 
-type Row = { place: React.ReactNode; permit: string; structure: string; also: string };
+type Row = { place: React.ReactNode; permit: string; structure: string; also: string; offices: string[] };
+const officesOf = (slugs: string[]) => {
+  const seen = new Set<string>();
+  return slugs.flatMap((s) => PERMIT_OFFICES[s] ?? []).filter((o) => !seen.has(o.url) && !!seen.add(o.url));
+};
 
 const rows: Row[] = [
   {
@@ -21,66 +25,77 @@ const rows: Row[] = [
     permit: "City of Houston",
     structure: "Sealed structural drawings for anything that changes how the house carries load, a second story included",
     also: "Deed restrictions, which the city enforces. A Certificate of Appropriateness in a historic district. City floodplain rules.",
+    offices: ["houston-heights"],
   },
   {
     place: <>The six Memorial Villages: <Link href="/locations/spring-valley-village" className={link}>Spring Valley</Link>, <Link href="/locations/piney-point-village" className={link}>Piney Point</Link>, <Link href="/locations/bunker-hill-village" className={link}>Bunker Hill</Link>, <Link href="/locations/hedwig-village" className={link}>Hedwig</Link>, <Link href="/locations/hilshire-village" className={link}>Hilshire</Link> and <Link href="/locations/hunters-creek-village" className={link}>Hunters Creek</Link></>,
     permit: "Each village's own building department, not the City of Houston",
     structure: "Expect sealed structural drawings with a second-story application",
     also: "The village's own height and setback rules. Floodplain rules on lots near the bayou.",
+    offices: ["spring-valley-village", "piney-point-village", "bunker-hill-village", "hedwig-village", "hilshire-village", "hunters-creek-village"],
   },
   {
     place: <Link href="/locations/bellaire" className={link}>Bellaire</Link>,
     permit: "City of Bellaire",
     structure: "Sealed drawings or a stamped letter for any change to how the house carries load",
     also: "City zoning: setbacks and height.",
+    offices: ["bellaire"],
   },
   {
     place: <Link href="/locations/west-university-place" className={link}>West University Place</Link>,
     permit: "City of West University Place",
     structure: "Sealed structural drawings, reviewed closely",
     also: "Height, lot coverage and setbacks, which on small West U lots shape the design as much as the structure does.",
+    offices: ["west-university-place"],
   },
   {
     place: <Link href="/locations/sugar-land" className={link}>Sugar Land</Link>,
     permit: "City of Sugar Land",
     structure: "A stamped engineering letter or drawings before anything structural is approved",
     also: "HOA architectural review in nearly every master-planned community.",
+    offices: ["sugar-land"],
   },
   {
     place: <Link href="/locations/missouri-city" className={link}>Missouri City</Link>,
     permit: "City of Missouri City",
     structure: "Structural drawings for anything that adds a story",
     also: "HOA architectural review in the master-planned communities.",
+    offices: ["missouri-city"],
   },
   {
     place: <Link href="/locations/pearland" className={link}>Pearland</Link>,
     permit: "City of Pearland",
     structure: "A sealed drawing or letter from a Texas licensed engineer for load-bearing changes",
     also: "Floodplain determination and drainage district requirements, which differ between the Brazoria, Harris and Fort Bend parts of the city.",
+    offices: ["pearland"],
   },
   {
     place: <Link href="/locations/katy" className={link}>Katy</Link>,
     permit: "The City of Katy inside the city limits. Outside them, Harris, Fort Bend or Waller County",
     structure: "Depends on which side of the city line the address falls",
     also: "HOA review in the master-planned sections. Check the jurisdiction before drawings start.",
+    offices: ["katy"],
   },
   {
     place: <>Unincorporated Harris County, which covers most of <Link href="/locations/cypress" className={link}>Cypress</Link></>,
-    permit: "Generally no residential building permit for a single-family home",
-    structure: "Nobody asks for it, which is the reason to have it: the engineer's drawings are the only check on the structure",
-    also: "Floodplain permits, HOA rules and deed restrictions still apply.",
+    permit: "No city building code review for a single-family home. The County Engineer still handles a residential permit for the site and the floodplain",
+    structure: "Not reviewed, which is the reason to have it: the engineer's drawings are the only check on the structure",
+    also: "Floodplain rules, HOA rules and deed restrictions.",
+    offices: ["cypress"],
   },
   {
     place: <>Unincorporated <Link href="/locations/fort-bend-county" className={link}>Fort Bend County</Link></>,
-    permit: "The county does not review single-family structural work the way a city does",
+    permit: "Fort Bend County Engineering issues a development permit for an addition of 100 square feet or more, but does not review the structure the way a city does",
     structure: "Same as unincorporated Harris County: worth having even where it is not required",
     also: "Floodplain and drainage rules, and HOA review in most subdivisions.",
+    offices: ["fort-bend-county"],
   },
   {
     place: <Link href="/locations/the-woodlands" className={link}>The Woodlands</Link>,
     permit: "No city permit office. The Township's covenant process instead",
     structure: "Drawings that show the structure clearly help the review",
     also: "Your village's Residential Design Review Committee, and the Development Standards Committee for a variance. Tree removal is part of the review.",
+    offices: ["the-woodlands"],
   },
 ];
 
@@ -182,7 +197,14 @@ export default function HoustonAdditionPermitsPage() {
                   {rows.map((r) => (
                     <tr key={r.permit + r.also}>
                       <td className="px-3 py-3 font-medium text-slate-800">{r.place}</td>
-                      <td className="px-3 py-3">{r.permit}</td>
+                      <td className="px-3 py-3">
+                        {r.permit}
+                        {officesOf(r.offices).map((o) => (
+                          <a key={o.url} href={o.url} target="_blank" rel="noopener" className={`mt-1.5 block text-xs ${link}`}>
+                            {o.name}
+                          </a>
+                        ))}
+                      </td>
                       <td className="px-3 py-3">{r.structure}</td>
                       <td className="px-3 py-3">{r.also}</td>
                     </tr>
@@ -200,8 +222,11 @@ export default function HoustonAdditionPermitsPage() {
               Houston is famous for having no zoning, and owners sometimes take that to mean anything goes. It does
               not. Many older subdivisions have deed restrictions that limit building height or the number of
               stories, and the city enforces them. In a designated historic district, an addition that changes how
-              the house looks from the street needs a Certificate of Appropriateness from the historical commission
-              before the building permit, and a second story is usually set back so the original front still reads
+              the house looks from the street needs a{" "}
+              <a href="https://www.houstontx.gov/planning/HistoricPres/" target="_blank" rel="noopener" className={link}>
+                Certificate of Appropriateness
+              </a>{" "}
+              from the historical commission before the building permit, and a second story is usually set back so the original front still reads
               as it did. Our guide to a{" "}
               <Link href="/guides/second-story-addition-cost" className={link}>
                 second story addition in Houston
@@ -224,8 +249,16 @@ export default function HoustonAdditionPermitsPage() {
               A good part of the metro sits in mapped flood zones, and that changes the arithmetic of an addition.
               When the cost of the work on a house in a flood zone reaches half of the building&rsquo;s market value,
               the project is treated as a substantial improvement, and the whole house generally has to meet current
-              floodplain requirements, which can mean raising it. The City of Houston tightened its own floodplain
-              rules after Harvey, and the county and city floodplain offices each apply their own version. Check the
+              floodplain requirements, which can mean raising it. You can look up the flood zone for any address on
+              FEMA&rsquo;s{" "}
+              <a href="https://msc.fema.gov/portal/home" target="_blank" rel="noopener" className={link}>
+                Flood Map Service Center
+              </a>
+              . The City of Houston tightened its own floodplain rules after Harvey, and its{" "}
+              <a href="https://www.houstonpermittingcenter.org/office-city-engineer/floodplain-management-office" target="_blank" rel="noopener" className={link}>
+                Floodplain Management Office
+              </a>{" "}
+              applies them. Outside the city, the county floodplain offices apply their own versions. Check the
               flood zone before the scope is fixed, because a slightly smaller project can sometimes stay under the
               threshold.
             </p>
