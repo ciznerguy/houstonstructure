@@ -599,6 +599,27 @@ export const SERVICE_AREAS: ServiceArea[] = [
           "Pine roots and dry summers move soil, and over decades that movement shows up above the slab as well as in it: doors that bind, a header sagging over a wide opening, cracks that follow a beam line. When something in the house has moved, we work out what is carrying the load now and design the repair. More on [structural repairs in The Woodlands](/services/structural-repairs) and the rest of the Houston area.",
         ],
       },
+      {
+        heading: "Adding on without losing the trees",
+        paragraphs: [
+          "On most Woodlands lots the house sits in a clearing that was cut as small as the builder could manage, and the trees start a few feet past the back patio. That is the reason people live here, and it is also what decides where an addition can go. Tree removal is part of the covenant review, so the footprint of a new room is often set by which trees can come out and which have to stay.",
+          "The trees that stay still matter to the structure. A big pine a few feet from a new slab keeps pulling moisture from under one edge of it, and a new room that moves differently from the house it is attached to opens a crack right along the joint. Where a room has to go close to established trees, we design the foundation for it: piers taken down below the depth the roots dry out, and the new slab tied to the old one so the two move together. Our guide to [planning a home addition](/guides/planning-a-home-addition) explains how the choice between building out and building up usually gets made.",
+        ],
+      },
+      {
+        heading: "Vaulted ceilings and building up in the original villages",
+        paragraphs: [
+          "Many of the early houses in Grogan's Mill, Panther Creek and Cochran's Crossing were designed around a big vaulted living room, sometimes with exposed beams, with a flat-ceilinged bedroom wing to one side. That layout matters when a family wants a second floor. A new floor needs a flat structure to sit on and a vaulted room has none, so the upstairs usually goes over the bedroom wing or the garage rather than over the living room.",
+          "Over the bedroom wing, the questions are the usual ones: what the ceiling joists and the walls below can carry, and whether the slab under those walls was thickened when it was poured. Over the garage there is more to it. The garage slab sits lower, the wide door opening needs a header sized for a floor and a roof instead of a roof alone, and code calls for a fire-rated ceiling between a garage and the rooms above it. How a second floor is designed from there is on our [second story addition](/services/second-story-addition) page.",
+        ],
+      },
+      {
+        heading: "Turning a screened porch into a room",
+        paragraphs: [
+          "Screened porches are everywhere in The Woodlands, and closing one in is one of the most common ways owners here try to gain a room. It looks like the easy option because the roof is already there. Structurally it is usually the harder one to get right.",
+          "A porch slab is often poured thinner than the house slab, set a few inches lower so rain runs off it, and built without the thickened edges that carry walls. The porch roof was framed for a porch, often at a low slope, with beams between the posts sized for that roof alone. Closing it in adds a ceiling, insulation and sometimes a raised roofline to get usable headroom. Before a porch becomes a bedroom or an office, we check whether the slab can take walls and a raised floor and whether the roof framing needs new support. Sometimes the porch can be kept. Sometimes it is cheaper to take the slab out and pour a proper one tied into the house.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -612,6 +633,14 @@ export const SERVICE_AREAS: ServiceArea[] = [
       {
         q: "Should I water near my foundation during dry months?",
         a: "Often yes, a consistent watering routine near the foundation can offset some of what the tree roots are pulling away, but the right approach depends on your specific lot and landscaping.",
+      },
+      {
+        q: "Can I enclose my screened porch in The Woodlands and use it as a bedroom?",
+        a: "Often yes, but in the eyes of the Township and of the building code it is a room addition, not a porch repair. It needs covenant approval, and the porch slab and roof framing have to be checked before they are reused, because they were built for a porch.",
+      },
+      {
+        q: "Can I build a room over my garage in The Woodlands?",
+        a: "In many houses that is the simplest place to add a second floor, since the garage usually has a flat ceiling and a plain roof. The door header, the walls and the slab edge have to be checked for the new load, and the garage ceiling needs fire-rated drywall under the new room.",
       },
     ],
   },
@@ -738,6 +767,27 @@ export const SERVICE_AREAS: ServiceArea[] = [
           "Because there is generally no county plan review standing behind this work in unincorporated Cypress, the sealed letter is worth having even where nobody is going to ask you for it. It is what your contractor builds to, and it is what you can show a future buyer.",
         ],
       },
+      {
+        heading: "Copperfield, Lakewood Forest and the older side of Cypress",
+        paragraphs: [
+          "Not all of Cypress is new. Copperfield, Lakewood Forest and the other neighborhoods that went up in the late 1970s and 1980s have houses that are now forty years old, often one story, on lots noticeably larger than anything in the newer master-planned sections. That extra room behind the house is what makes a ground-floor addition realistic here, where in Bridgeland it usually is not.",
+          "A house that age has its own history to read before anything is attached to it. Forty years on Harris County clay is long enough for a slab to have tilted a little toward one corner, and a new room has to be built level against an old floor that may not be. We measure the existing slab first, so the new floor lines up with what the house is doing now rather than with what the original plans say.",
+        ],
+      },
+      {
+        heading: "Tying a new room to the existing slab",
+        paragraphs: [
+          "The part of a ground-floor addition that decides whether it stays sound is the joint between the new foundation and the old one. Done carelessly, the two slabs move on their own schedules, and the first sign is a crack running straight up the wall where they meet, usually within a couple of summers.",
+          "There are two sound ways to handle it. One is to tie the new slab to the old one with steel dowels drilled into the existing beam, so the two act as one. The other is to separate them on purpose with a designed joint and let each move on its own. Which one is right depends on how the existing slab is behaving and on the soil under the new room, which in parts of Cypress is fill. We make that call from measurements, and it goes on the sealed drawings so the crew builds what was designed. The [room addition case study](/projects/room-addition-case-study) follows one of these from the first site visit to the finished exterior.",
+        ],
+      },
+      {
+        heading: "Kitchen remodels in newer Cypress homes",
+        paragraphs: [
+          "Kitchens in the production homes built here in the 2000s and 2010s were laid out by the builder for the widest possible market, and a lot of owners now want something different: a bigger island with a sink, a range moved to an outside wall, a pantry where the desk nook was. Most of that is cabinet and finish work. The part that is not is anything that moves plumbing through the floor.",
+          "Many newer Houston-area houses sit on post-tensioned slabs, with steel cables running through the concrete under high tension. Cutting a trench for a new drain line without knowing where those cables are can cut one, which is dangerous at the moment it happens and a structural problem afterward. Before anyone saws into the slab, we confirm what kind of slab it is and have the cables located, then route the plumbing around them. More on our [kitchen design and remodeling](/services/kitchen-remodeling) work.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -759,6 +809,14 @@ export const SERVICE_AREAS: ServiceArea[] = [
       {
         q: "Can I add a second story to a house in Bridgeland or Towne Lake?",
         a: "Often yes, subject to what the foundation and the walls below can carry and to your community's own architectural rules, which in the newer master-planned sections can be strict about height and appearance. The structural check comes first, since there is no point clearing a design that the slab cannot support.",
+      },
+      {
+        q: "Can you cut a post-tensioned slab to move kitchen plumbing?",
+        a: "Yes, carefully. The cables are located first, usually with a ground-penetrating radar scan, and the trench is laid out to miss them. What should never happen is a saw cut made on the assumption that the slab is plain concrete.",
+      },
+      {
+        q: "Will a new room on the back of my Cypress house crack away from the old one?",
+        a: "Not if the joint between the two foundations is designed rather than improvised. Depending on the existing slab and the soil, the new slab is either doweled into the old one or deliberately separated from it, and that decision belongs on the engineering drawings.",
       },
     ],
   },
@@ -945,6 +1003,27 @@ export const SERVICE_AREAS: ServiceArea[] = [
           "It's also worth asking directly whether the person you're hiring has handled the two-layer approval process Sugar Land often requires, city permit and HOA sign-off, since documentation that satisfies one but not the other just means a second round of paperwork and a longer wait before work can start.",
         ],
       },
+      {
+        heading: "Adding a room or a second story in Sugar Land",
+        paragraphs: [
+          "Lots in Sugar Land's big communities were laid out tight, and in First Colony a good number back onto a lake or a greenbelt, which leaves little room behind the house. That pushes owners who need more space in one of two directions: a modest room on the back where the setback allows it, or a second floor over part of the house.",
+          "The City of Sugar Land will want stamped structural drawings for either one, and the HOA will want to see how the addition looks from the street and from next door. We prepare the structure so it works for both reviews at once. For a second floor, the first job is checking what the existing slab and bearing walls can carry. Our guide to a [second story addition in Houston](/guides/second-story-addition-cost) covers what that check involves and the price ranges we see, and the [Katy second story project](/projects/second-story-addition-katy) follows one a few miles away from the first evaluation through framing.",
+        ],
+      },
+      {
+        heading: "Building over the one-story part of a two-story house",
+        paragraphs: [
+          "Many Sugar Land two-story homes from the 1990s and 2000s are not two stories everywhere. The family room, the primary suite or the garage often sits under its own single-story roof, and that is usually the best place to add a bedroom or a game room upstairs. The rest of the house already has a second floor, so the stair and the upstairs hallway are there to connect to.",
+          "The catch is that the one-story part was built as one story. Its walls, its ceiling joists and the slab under it were designed for a roof, and some family rooms have a vaulted or high ceiling with no floor structure at all. Over a garage, the wide door opening needs a header sized for a floor as well as a roof, and code requires a fire-rated ceiling between the garage and the room above. We check each of these against the new load and design what is needed before the plans go to the city.",
+        ],
+      },
+      {
+        heading: "Kitchen remodels in First Colony and Greatwood",
+        paragraphs: [
+          "Kitchens from the 1980s and 1990s in First Colony, Greatwood and New Territory tend to share a few features owners want gone: soffits over the upper cabinets, a peninsula where an island would fit, and a sink under the window because that is where the builder ran the drain. Soffits often hide ducts or plumbing vents, so taking them out starts with finding what is inside them.",
+          "Moving the sink, or adding one to an island, means a new drain line under the floor, and in a slab house that means cutting a trench in the concrete. In houses from the late 1970s and early 1980s the drain lines under the slab may still be cast iron, and opening the floor is a good time to run a camera through them before tying anything new in. More on our [kitchen design and remodeling](/services/kitchen-remodeling) work in Sugar Land and across the Houston area.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -978,6 +1057,14 @@ export const SERVICE_AREAS: ServiceArea[] = [
       {
         q: "Do you work with both the city and my HOA if my Sugar Land community requires architectural review?",
         a: "Yes. We prepare the stamped engineering documentation in a form that satisfies the City of Sugar Land's permitting requirements and format it so it also works for your HOA's architectural review committee, rather than producing two separate versions.",
+      },
+      {
+        q: "Can I add a game room over the one-story part of my Sugar Land house?",
+        a: "Often yes, and it is one of the most practical ways to add space here, because the stair and the upstairs hallway already exist. The walls, ceiling joists and slab under that part of the house were built for a roof only, so they are checked against the new floor first, and both the city and the HOA review the plans.",
+      },
+      {
+        q: "Does moving my kitchen sink mean cutting the slab?",
+        a: "In a slab house, yes, if the sink moves away from the existing drain. A trench is cut, the new line is tied in and sloped, and the concrete is patched. If the slab is post-tensioned, the cables are located before any cutting starts.",
       },
     ],
   },
