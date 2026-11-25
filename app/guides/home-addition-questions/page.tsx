@@ -1,3 +1,4 @@
+import Img from "@/components/Img";
 import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
@@ -288,6 +289,21 @@ export default function HomeAdditionQuestionsGuidePage() {
                     ))}
                   </div>
                 ))}
+                {gi === 0 && (
+                  <>
+                    <Img
+                      src="/images/room-addition-case-study-2-foundation-forms.jpg"
+                      srcSet="/images/room-addition-case-study-2-foundation-forms-800.jpg 800w, /images/room-addition-case-study-2-foundation-forms.jpg 1600w"
+                      sizes="(min-width: 768px) 66vw, 100vw"
+                      alt="Wooden forms and a rebar grid staked out for a new room addition foundation next to the existing house (illustrative photo, not an actual job site)"
+                      loading="lazy"
+                      className="mt-2 mb-2 h-[280px] w-full rounded-sm object-cover sm:h-[380px]"
+                    />
+                    <p className="mt-2 mb-8 text-sm text-slate-500">
+                      Forms and rebar for a room addition foundation, set against the existing slab.
+                    </p>
+                  </>
+                )}
                 {gi === 2 && (
                   <CostEstimatorCTA
                     label="Get a Free Home Addition Cost Estimate"

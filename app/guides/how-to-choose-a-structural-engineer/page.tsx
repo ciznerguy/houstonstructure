@@ -1,3 +1,4 @@
+import Img from "@/components/Img";
 import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
@@ -99,6 +100,16 @@ export default function HowToChooseAStructuralEngineerPage() {
               that when you&rsquo;re deciding whether to get an independent
               second opinion before committing to a five-figure repair.
             </p>
+
+            <Img
+              src="/images/room-addition-case-study-1-site-evaluation.jpg"
+              srcSet="/images/room-addition-case-study-1-site-evaluation-800.jpg 800w, /images/room-addition-case-study-1-site-evaluation.jpg 1600w"
+              sizes="(min-width: 768px) 66vw, 100vw"
+              alt="Structural engineer checking the soil at the edge of a Houston home's foundation with a probe (illustrative photo, not an actual job site)"
+              loading="lazy"
+              className="mt-8 mb-2 h-[280px] w-full rounded-sm object-cover sm:h-[380px]"
+            />
+            <p className="mt-2 mb-8 text-sm text-slate-500">Checking the soil at the foundation edge before anything is designed.</p>
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
               Ask about local soil and foundation experience

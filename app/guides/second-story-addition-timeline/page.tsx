@@ -1,3 +1,4 @@
+import Img from "@/components/Img";
 import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
@@ -134,6 +135,16 @@ export default function SecondStoryTimelinePage() {
               Typical ranges for a second story of about 600 to 1,000 square feet. Your own schedule comes after the
               structural check.
             </p>
+
+            <Img
+              src="/images/project-katy-second-story-1-exterior.jpg"
+              srcSet="/images/project-katy-second-story-1-exterior-800.jpg 800w, /images/project-katy-second-story-1-exterior.jpg 1600w"
+              sizes="(min-width: 768px) 66vw, 100vw"
+              alt="One-story brick home in Katy, Texas with a new second story in white board-and-batten siding (illustrative rendering, not a photo of the project)"
+              loading="lazy"
+              className="mt-8 mb-2 h-[280px] w-full rounded-sm object-cover sm:h-[380px]"
+            />
+            <p className="mt-2 mb-8 text-sm text-slate-500">A finished second story over a one-story brick house in Katy.</p>
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">Living through it</h2>
             <p className="mb-5">

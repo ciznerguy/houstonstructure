@@ -1,3 +1,4 @@
+import Img from "@/components/Img";
 import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
@@ -104,6 +105,16 @@ export default function KitchenRemodelCostPage() {
               </Link>{" "}
               gives a range in about two minutes.
             </p>
+
+            <Img
+              src="/images/kitchen-remodeling-1-layout-on-wall.jpg"
+              srcSet="/images/kitchen-remodeling-1-layout-on-wall-800.jpg 800w, /images/kitchen-remodeling-1-layout-on-wall.jpg 1600w"
+              sizes="(min-width: 768px) 66vw, 100vw"
+              alt="Kitchen walls with every cabinet outlined at full size in marker during a Houston kitchen remodel"
+              loading="lazy"
+              className="mt-8 mb-2 h-[280px] w-full rounded-sm object-cover sm:h-[380px]"
+            />
+            <p className="mt-2 mb-8 text-sm text-slate-500">The cabinet layout drawn at full size on the wall, so nothing is a surprise when the boxes arrive.</p>
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">What moves the price most</h2>
             <p className="mb-5">

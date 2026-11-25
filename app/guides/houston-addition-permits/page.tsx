@@ -1,3 +1,4 @@
+import Img from "@/components/Img";
 import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
@@ -181,6 +182,16 @@ export default function HoustonAdditionPermitsPage() {
                 can change what the rest of the house has to meet.
               </li>
             </ol>
+
+            <Img
+              src="/images/consulting-3-plan-review-table.jpg"
+              srcSet="/images/consulting-3-plan-review-table-800.jpg 800w, /images/consulting-3-plan-review-table.jpg 1600w"
+              sizes="(min-width: 768px) 66vw, 100vw"
+              alt="Structural engineer and homeowners reviewing a sealed drawing at a kitchen table"
+              loading="lazy"
+              className="mt-8 mb-2 h-[280px] w-full rounded-sm object-cover sm:h-[380px]"
+            />
+            <p className="mt-2 mb-8 text-sm text-slate-500">Going over the sealed drawings with the owners before they are submitted for review.</p>
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">Who approves what, place by place</h2>
             <div className="mb-3 overflow-x-auto rounded-sm border border-slate-200">

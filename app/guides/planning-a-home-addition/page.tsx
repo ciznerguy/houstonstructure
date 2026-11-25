@@ -1,3 +1,4 @@
+import Img from "@/components/Img";
 import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
@@ -124,6 +125,16 @@ export default function HomeAdditionGuidePage() {
               and what a foundation was designed to carry decades ago
               isn&rsquo;t automatically what it can safely carry today.
             </p>
+
+            <Img
+              src="/images/room-addition-case-study-3-tie-in-detail.jpg"
+              srcSet="/images/room-addition-case-study-3-tie-in-detail-800.jpg 800w, /images/room-addition-case-study-3-tie-in-detail.jpg 1600w"
+              sizes="(min-width: 768px) 66vw, 100vw"
+              alt="Steel dowels connecting the existing concrete foundation to the new addition's foundation (illustrative photo, not an actual job site)"
+              loading="lazy"
+              className="mt-8 mb-2 h-[280px] w-full rounded-sm object-cover sm:h-[380px]"
+            />
+            <p className="mt-2 mb-8 text-sm text-slate-500">Steel dowels tie the new foundation to the old one, so the two sections move together.</p>
 
             <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
               The question that actually matters: can your foundation take it
