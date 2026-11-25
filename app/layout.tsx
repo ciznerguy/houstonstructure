@@ -57,6 +57,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','${BUSINESS.gtmId}');`,
           }}
         />
+        {/* OpinOnion: internal feedback tool. Loads nothing until Ctrl/Cmd+Shift+O or ?opinonion=true. */}
+        <Script
+          id="opinonion-loader"
+          src="https://opinonion.netlify.app/loader.js"
+          strategy="lazyOnload"
+          data-site="Houston Structural"
+        />
       </head>
       <body className="flex min-h-full flex-col bg-white text-slate-900">
         <noscript>
