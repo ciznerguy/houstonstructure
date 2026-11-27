@@ -2063,6 +2063,122 @@ export const SERVICES: Service[] = [
     ],
   },
   {
+    // Added 2026-11-27 at Guy's request, with the horizontal shower project as
+    // its first real job. levihomes.com has its own bathroom page: no links
+    // between the sites, and the price ranges must match its ranges (see the
+    // cross-site log). Real photographs only, so every section image is real.
+    slug: "bathroom-remodeling",
+    seoTitle: "Bathroom Remodeling in Houston, TX: Design and Build",
+    name: "Bathroom Remodeling",
+    shortName: "Bathrooms",
+    seoDescription:
+      "Bathroom and shower remodeling in Houston, designed and built by one team: walk-in showers, tub to shower conversions, custom showers and the subfloor and slab work under them.",
+    image: "/images/project-horizontal-shower-10-wide.jpg",
+    imageAlt: "Finished custom shower in a Houston home: frameless glass, dark grey porcelain walls with a white marble band, a curved tiled lounger and a river pebble floor",
+    summary:
+      "We design your bathroom and build it, from a tub turned into a walk-in shower to a custom shower nobody else on the street has, including the floor and the plumbing under it.",
+    description: [
+      "A bathroom is a small room with a lot of trades in it. Plumbing, electrical, ventilation, waterproofing, tile and glass all have to meet within a few square feet, and the order they go in decides whether the room stays dry for twenty years or starts leaking behind the tile in two. We design the bathroom and our own crews build it, so one team answers for all of it.",
+      "Most of what goes wrong in a bathroom is hidden. Waterproofing that stops short of the bench, a shower pan without enough slope, a fan that vents into the attic instead of outside. None of that shows on the day the room is finished. It shows a few years later as loose tile, stained grout, or a soft spot in the floor. We build the layers nobody photographs with the same care as the tile everyone looks at.",
+      "Under the bathroom is a structural question too. On a Houston slab, moving a drain means cutting the concrete. On an older pier and beam house, the floor under a shower that leaked for years is often rotted and needs new framing before anything new goes on top. That is work we do every week, so it is planned into the price rather than discovered halfway through.",
+    ],
+    signs: [
+      "There is a tub nobody uses and you want a walk-in shower instead",
+      "Tile, fixtures and vanity date from when the house was built",
+      "Grout keeps cracking, or the floor near the shower feels soft",
+      "You have an idea for a shower you have not seen anywhere else",
+      "You are adding a bedroom and want a bathroom built with it",
+    ],
+    atAGlance: [
+      "Design and construction by the same team, from layout to the last piece of glass.",
+      "Walk-in and curbless showers, tub to shower conversions, custom showers and full bathroom remodels.",
+      "Waterproofing, slope and ventilation done right, because those decide how long the tile lasts.",
+      "Slab cuts for moved drains and repairs to rotted subfloor and joists handled in house.",
+      "A fixed price after the visit and the design, with the materials named.",
+    ],
+    sections: [
+      {
+        heading: "Showers built around an idea",
+        paragraphs: [
+          "Some of the best bathrooms we build start with the owner's idea rather than ours. A Houston couple came to Levi wanting a shower you lie down in: a curved tiled lounger along the back wall, with five rain heads hanging from a soffit above it so the water falls along the whole body. They expected a luxury price. It came in lower than they had braced for, and they have since sent two more families to design showers of their own.",
+          "The full story, with photographs of every part of it, is in the [horizontal shower project](/projects/horizontal-shower-houston). If you have a picture of a bathroom in your head that you have never seen built, bring it. We will tell you what it takes to build it and what it costs.",
+        ],
+        image: {
+          src: "/images/project-horizontal-shower-1-finished.jpg",
+          alt: "Custom horizontal shower with five square rain heads hanging from a tiled soffit over a curved tiled lounger, behind frameless glass",
+          caption: "The horizontal shower: five rain heads over a curved lounger you lie down on.",
+          real: true,
+        },
+      },
+      {
+        heading: "Tub to shower conversions",
+        paragraphs: [
+          "The most common bathroom request we get is to take out a tub that nobody uses and put in a walk-in shower. The tub space is usually the right size for it, so the room does not need to change. What does change is underneath: a shower drain sits in a different place from a tub drain, and the floor has to slope to it.",
+          "On a slab, that means cutting the concrete to move the drain, then patching it before the shower pan goes in. Done properly, the new floor slopes evenly to the drain and the waterproofing runs up the walls and over the curb or bench without a break. A curbless shower, with the floor running straight in from the bathroom, needs the slab lowered in the shower area, which we plan at the start rather than as an afterthought.",
+        ],
+      },
+      {
+        heading: "The layers behind the tile",
+        paragraphs: [
+          "Tile and grout are not waterproof. What keeps the water out of the wall and the floor is the membrane behind them, and it has to be continuous: across the floor, up the walls, over every bench, niche and curb, and lapped into the drain. Benches and niches are where most leaks start, because their tops are flat and water sits on them. We slope them so water runs off.",
+          "Ventilation is the other half. Houston humidity plus a hot shower is how mould gets started, so the exhaust fan is sized for the room and ducted outside, not into the attic. Hard water is the third thing we plan for, in the choice of glass, fixtures and grout, because it decides how much cleaning the bathroom needs for the rest of its life.",
+        ],
+        image: {
+          src: "/images/project-horizontal-shower-6-curve-and-drain.jpg",
+          alt: "Curved bench face in small grey square mosaic meeting a river pebble shower floor that slopes to a round drain",
+          caption: "Small mosaic follows a curve that larger tile cannot. The pebble floor slopes to a single drain.",
+          real: true,
+        },
+      },
+      {
+        heading: "When the floor under the bathroom is the problem",
+        paragraphs: [
+          "Older Houston houses on pier and beam foundations often have a bathroom floor that has been taking on water for years from a failed shower pan or a slow leak at the toilet. By the time the tile cracks, the subfloor and sometimes the joists under it are rotted. That is structural work, and it has to be repaired before a new bathroom goes on top of it.",
+          "On a slab, the question is usually the drain lines. Cast iron drains in houses from the 1950s to the 1970s are often cracked or scaled inside, and a remodel with the floor already open is the cheapest time to replace them. We check both during the first visit, and our [structural repairs](/services/structural-repairs) team does the work in house.",
+        ],
+      },
+      {
+        heading: "Bathrooms in additions",
+        paragraphs: [
+          "If the bathroom is part of a new bedroom or suite, the plumbing decisions come much earlier. In a slab addition the drains are set in the ground before the concrete is poured, so the position of the shower, toilet and tub is fixed weeks before anyone picks a tile. Our [bedroom and bathroom addition project](/projects/bedroom-bathroom-addition-houston) shows one built that way, with a freestanding tub in an arched alcove and a mosaic floor.",
+        ],
+      },
+      {
+        heading: "What a bathroom remodel costs",
+        paragraphs: [
+          "As a planning range in the Houston area: a hall bathroom with new tile, tub or shower, vanity and fixtures usually lands between $20,000 and $35,000. A primary bathroom with a mid-range finish is usually $35,000 to $60,000. Luxury primary bathrooms with custom showers, stone and frameless glass start around $75,000. Moving drains through a slab, repairing a rotted floor, or changing the size of the room adds to those numbers.",
+          `Those are ranges, not a quote. We give you a fixed price after the visit and the design, with the materials named. Call ${BUSINESS.phone} or send the form, and we will set up the visit.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Do you design bathrooms, or only build them?",
+        a: "Both. We lay out the bathroom with you, help choose the materials, and our crews build it, so one team is responsible from the drawing to the final walkthrough.",
+      },
+      {
+        q: "How long does a bathroom remodel take?",
+        a: "A shower or bathroom that keeps its layout is usually a matter of weeks once materials are on site. Moving drains through a slab, repairing a rotted floor or changing walls adds time. The shower glass is measured after the tile is finished, so it is often the last thing to go in. We give you a schedule with the price.",
+      },
+      {
+        q: "Can you turn my tub into a walk-in shower?",
+        a: "Usually, yes. The tub space is often the right size for a shower. The drain moves and the floor is sloped to it, and on a slab that means cutting and patching the concrete. A curbless shower needs the slab lowered in the shower area.",
+      },
+      {
+        q: "Do I need a permit to remodel a bathroom in Houston?",
+        a: "Replacing tile, a vanity or fixtures in the same place usually does not need one. Moving plumbing, adding circuits, or changing walls does. We pull the permits when the work needs them.",
+      },
+      {
+        q: "Can you build an unusual shower design?",
+        a: "Yes, and some of our favourite jobs started that way. A Houston couple asked for a shower you lie down in, with five rain heads over a curved tiled lounger, and it cost them less than they expected. Bring the idea and we will tell you what it takes.",
+      },
+      {
+        q: "Can we use the house while the bathroom is being remodeled?",
+        a: "Yes. If it is the only bathroom we plan the work so it is out of use for as short a time as possible. We keep the work area closed off and cleaned at the end of each day.",
+      },
+    ],
+  },
+  {
     slug: "garage-conversion",
     name: "Garage Conversions, New Builds & Remodels",
     shortName: "Garage Conversion",

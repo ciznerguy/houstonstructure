@@ -115,4 +115,20 @@ export const PROJECTS: Project[] = [
       "/images/project-bedroom-bath-addition-5-tub-window.jpg",
     ],
   },
+  {
+    // Real photographs. The owners brought the idea; price, short job and two
+    // referrals come from Levi via Guy (2026-11-27). No size, cost or date given.
+    slug: "horizontal-shower-houston",
+    title: "A Horizontal Shower in Houston",
+    summary:
+      "The owners wanted a shower they could lie down in. Five rain heads hang over a curved tiled lounger, with a pebble floor and frameless glass. It cost less than they expected, and they have already sent two more families.",
+    serviceSlug: "bathroom-remodeling",
+    image: "/images/project-horizontal-shower-1-finished.jpg",
+    images: [
+      "/images/project-horizontal-shower-1-finished.jpg",
+      "/images/project-horizontal-shower-4-rain-heads-overhead.jpg",
+      "/images/project-horizontal-shower-3-lounger-from-above.jpg",
+      "/images/project-horizontal-shower-8-niche.jpg",
+    ],
+  },
 ];
