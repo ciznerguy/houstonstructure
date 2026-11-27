@@ -1945,7 +1945,7 @@ export const SERVICES: Service[] = [
     slug: "kitchen-remodeling",
     seoTitle: "Kitchen Remodeling in Houston, TX: Design and Build",
     name: "Kitchen Design & Remodeling",
-    shortName: "Kitchens",
+    shortName: "Kitchen Remodeling",
     seoDescription:
       "Kitchen design and remodeling in Houston, designed and built by one team, with a high-end finish at a fair price, including open kitchens where a wall comes out.",
     image: "/images/load-bearing-wall-removal-3-finished-flush-beam.jpg",
@@ -2070,7 +2070,7 @@ export const SERVICES: Service[] = [
     slug: "bathroom-remodeling",
     seoTitle: "Bathroom Remodeling in Houston, TX: Design and Build",
     name: "Bathroom Remodeling",
-    shortName: "Bathrooms",
+    shortName: "Bathroom Remodeling",
     seoDescription:
       "Bathroom and shower remodeling in Houston, designed and built by one team: walk-in showers, tub to shower conversions, custom showers and the subfloor and slab work under them.",
     image: "/images/project-horizontal-shower-10-wide.jpg",
@@ -3174,7 +3174,7 @@ export const SERVICES: Service[] = [
   {
     slug: "consulting",
     name: "Structural Engineering Consulting",
-    shortName: "Consulting",
+    shortName: "Structural Consulting",
     image: "/images/consulting.jpg",
     imageAlt: "Structural engineer reviewing a structural drawing on a Houston job site while a foundation repair is underway in the background (illustrative photo, not an actual job site)",
     summary:
