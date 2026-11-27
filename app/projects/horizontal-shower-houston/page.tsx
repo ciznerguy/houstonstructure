@@ -12,13 +12,17 @@ import { BUSINESS } from "@/lib/business";
 // duration or neighbourhood was given, so none is stated. Real photographs, so
 // no "Illustrative rendering" note under them.
 //
+// 2026-11-27 rewrite: plainer contractor voice, descriptive H2s, numeric FAQ
+// answers. Where job-site specs (flow ratings, pipe size, water heater, duration)
+// were not given, the copy gives general guidance rather than numbers for this job.
+//
 // The photos arrived at 528 px wide (portrait), so the main file and the -800
-// file are the same width. Frames are tall to keep the portrait shots whole.
+// file are the same width and are shown at that size rather than stretched.
 
 export const metadata: Metadata = {
-  title: "Horizontal Shower in Houston: Rain Heads Over a Tiled Lounger",
+  title: "Horizontal Shower in Houston: A Vichy-Style Tiled Lounger",
   description:
-    "A Houston couple wanted a shower you lie down in. Five rain heads over a curved tiled lounger, built in a short job for less than they expected.",
+    "How we built a horizontal (Vichy-style) shower in a Houston bathroom: a curved tiled lounger under five rain heads, the plumbing and water heater checks, and the waterproofing.",
   openGraph: {
     images: [{ url: "/images/project-horizontal-shower-1-finished.jpg", width: 528, height: 960 }],
   },
@@ -31,53 +35,53 @@ const photos: Record<
 > = {
   finished: {
     src: "/images/project-horizontal-shower-1-finished.jpg",
-    alt: "Finished horizontal shower behind frameless glass: a curved tiled lounger along the back wall, five square rain heads hanging from a tiled soffit above it, dark grey wall tile with a white marble band and a river pebble floor",
-    caption: "The finished shower. Five rain heads hang from the soffit, lined up over the length of the lounger.",
+    alt: "Finished horizontal shower in a Houston bathroom: curved tiled lounger along the back wall, five square rain heads on short arms under a tiled soffit, dark grey porcelain walls with a white marble band, river pebble floor and frameless glass",
+    caption: "Finished shower. Five rain heads hang from the soffit in a line over the full length of the lounger.",
   },
   glass: {
     src: "/images/project-horizontal-shower-2-through-glass.jpg",
-    alt: "The horizontal shower seen through the open glass door, with the curved lounger, pebble floor and a window above the bench",
-    caption: "Through the glass. The lounger takes the whole back wall.",
+    alt: "Horizontal shower seen through the open frameless glass door, showing the curved lounger, pebble floor and a window above the bench",
+    caption: "View through the glass door. The lounger runs the full width of the back wall.",
   },
   fromAbove: {
     src: "/images/project-horizontal-shower-3-lounger-from-above.jpg",
-    alt: "Looking down the length of the shower at the wave-shaped edge of the lounger, finished in small grey square mosaic, with a river pebble floor and the drain below it",
-    caption: "The lounger edge follows the shape of a body lying down: up at the back, down under the knees, up again at the feet.",
+    alt: "Looking down the length of the shower at the wave-shaped face of the lounger in 2x2 grey mosaic, with the river pebble floor and drain below",
+    caption: "The lounger face in 2x2 grey mosaic, following the curve from the back rest down to the knees and up to the feet.",
   },
   overhead: {
     src: "/images/project-horizontal-shower-4-rain-heads-overhead.jpg",
-    alt: "View looking straight up from the lounger at a row of square rain heads set along the underside of a marble-tiled soffit",
-    caption: "The view from the lounger: a row of rain heads directly overhead.",
+    alt: "View straight up from the lounger at a row of square rain heads along the underside of a soffit faced in white marble subway tile",
+    caption: "The view from the lounger, looking up at the row of rain heads.",
   },
   angle: {
     src: "/images/project-horizontal-shower-5-rain-heads-angle.jpg",
-    alt: "Square brushed-nickel rain heads in a row under a soffit faced in white marble subway tile and dark grey porcelain",
-    caption: "Each head sits on a short arm so the water falls straight down onto the person lying below.",
+    alt: "Square brushed-nickel rain heads in a row on short arms under a soffit faced in white marble subway tile and dark grey porcelain",
+    caption: "Each rain head hangs on a short arm so the water drops straight down onto the lounger.",
   },
   drain: {
     src: "/images/project-horizontal-shower-6-curve-and-drain.jpg",
-    alt: "Close view of the curved lounger face in grey square mosaic meeting a river pebble shower floor, with a round drain in the low point",
-    caption: "Small mosaic is the only tile that will bend around a curve like this. The pebble floor drains to one point.",
+    alt: "Curved lounger face in 2x2 grey square mosaic meeting a river pebble shower floor that slopes to a single round drain",
+    caption: "Where the lounger meets the floor. The pebble floor slopes to one point drain at the low spot.",
   },
   top: {
     src: "/images/project-horizontal-shower-7-lounger-top.jpg",
-    alt: "The top of the lounger finished in white marble subway tile, rising and falling along its length, with the grey mosaic face below",
-    caption: "The top of the lounger in marble, laid so it rises and falls with the curve.",
+    alt: "Top of the curved lounger capped in white marble subway tile, rising and falling along its length above the grey mosaic face",
+    caption: "White marble subway tile caps the top of the lounger, cut to follow the curve.",
   },
   niche: {
     src: "/images/project-horizontal-shower-8-niche.jpg",
-    alt: "A recessed tiled niche in the dark grey shower wall above the rounded end of the marble-topped lounger",
-    caption: "A recessed niche at the end of the lounger, within reach when you are lying down.",
+    alt: "Recessed tiled niche in the dark grey porcelain wall above the rounded end of the marble-capped lounger",
+    caption: "Recessed niche at the end of the lounger, within reach while lying down.",
   },
   valve: {
     src: "/images/project-horizontal-shower-9-valve.jpg",
-    alt: "Brushed-nickel shower head and a valve plate with three square handles on dark grey tile, under a white marble accent band",
-    caption: "A regular standing shower head and a three-handle valve on the side wall.",
+    alt: "Brushed-nickel standing shower head and a three-handle valve trim on dark grey porcelain tile below a white marble accent band",
+    caption: "The standing shower head and the three-handle valve on the side wall.",
   },
   wide: {
     src: "/images/project-horizontal-shower-10-wide.jpg",
-    alt: "Wide view of the finished glass-enclosed shower with the curved lounger, pebble floor and rain heads under the soffit",
-    caption: "The whole shower from the bathroom door.",
+    alt: "Wide view of the finished glass-enclosed horizontal shower with the curved lounger, pebble floor and rain heads under the soffit",
+    caption: "The whole shower as seen from the bathroom door.",
   },
 };
 
@@ -119,28 +123,36 @@ function Pair({ a, b }: { a: Photo; b: Photo }) {
 
 const faqs = [
   {
-    q: "What is a horizontal shower?",
-    a: "A shower you lie down in. Instead of one head over a standing person, a row of heads runs along the ceiling over a bench or lounger, so the water falls along the whole length of your body at once. Spas call the same idea a Vichy shower. At home it is usually built as a tiled lounger under a soffit that carries the heads.",
+    q: "What is a horizontal shower, and how is it different from a Vichy shower?",
+    a: "They are the same idea. A Vichy shower is the spa name for a row of shower heads mounted above a table, so water falls along the whole body of someone lying down. A horizontal shower at home is a residential version of it: a tiled lounger built into the shower, with a row of rain heads mounted in the ceiling or a soffit above it. This one has five heads over the length of the lounger.",
   },
   {
-    q: "Is a horizontal shower much more expensive than a regular walk-in shower?",
-    a: "Less than most people assume. The owners here expected a luxury price and were surprised by the number. What adds cost is real but limited: more shower heads, the supply piping to feed them, a soffit to hang them from, and the hand work of tiling a curved lounger. The room itself, the glass and the waterproofing are much the same as for any large walk-in shower.",
+    q: "How much water do five rain heads use at once?",
+    a: "Showerheads sold in the US are rated at no more than 2.5 gallons per minute each, and many rain heads are rated lower, around 1.8 to 2.0 gpm. Five heads at 1.8 to 2.5 gpm add up to roughly 9 to 12.5 gallons per minute while they all run together. That is three to five times what a single standard shower head uses, so the supply line and the water heater have to be sized for it.",
   },
   {
-    q: "Can I still use it as a normal shower?",
-    a: "Yes. This one has a regular head on the side wall for standing showers, and a three-handle valve beside it. The lounger also works as a long bench when you are not lying on it.",
+    q: "Will my water heater keep up with a horizontal shower?",
+    a: "A standard 50-gallon tank gives you roughly 35 gallons of usable hot water before it cools off. At 9 to 12 gallons per minute of mixed water, with about 60 percent of that coming from the heater, a tank that size runs out in five to seven minutes. A whole-house tankless unit typically delivers around 5 to 9 gpm of hot water depending on the model and how cold the incoming water is, so it may need a second unit or a dedicated one for this shower. We check this before the design is final, not after the tile is up.",
   },
   {
-    q: "Does running five heads at once need a bigger water heater?",
-    a: "It can. Several heads running together use more hot water per minute than one, so the water heater, the pipe sizes and the water pressure in the house should be checked before the design is settled. That is a question for the start of the job, not the end.",
+    q: "What size water supply line does a five-head shower need?",
+    a: "A typical 1/2-inch shower branch is sized for one or two heads. Feeding five heads at the same time usually means a 3/4-inch supply to the valve and enough static pressure at the house. Static pressure of roughly 50 to 70 psi at the house is a comfortable range; below that, the heads at the far end of the row run noticeably weaker.",
   },
   {
-    q: "Can a horizontal shower go into an existing bathroom?",
-    a: "Usually, if the room is long enough for a person to lie down, roughly the length of a standard bathtub or more. Replacing a tub with one is a common way to do it. On a slab foundation the drain may need to move, which means cutting the concrete, so the layout should be agreed before any demolition.",
+    q: "How much does a horizontal shower cost in Houston?",
+    a: "It costs more than a standard walk-in shower of the same size, and less than most people expect. The extra cost comes from the additional heads and valve, the larger supply line, the soffit framing, and the hand labor of building and tiling the curved lounger. As a planning range for Houston bathroom remodels, a primary bathroom with a mid-range finish usually runs $35,000 to $60,000 and luxury bathrooms start around $75,000. The owners here expected a luxury price and said the number came in lower than that.",
   },
   {
-    q: "How long does a job like this take?",
-    a: "This one was short and focused. A shower remodel inside an existing bathroom is a much smaller job than an addition, and most of the calendar goes to waterproofing, tile and the glass, which is measured only after the tile is done.",
+    q: "Can a horizontal shower fit in my existing bathroom?",
+    a: "You need a shower area at least as long as an adult lying down, which in practice means about the length of a standard 60-inch bathtub or more, plus room for the lounger to be built up off the floor. Replacing an existing tub is often the easiest way to get that length. The lounger itself is usually built 16 to 20 inches high, close to normal bench height, so it is easy to sit on before lying back.",
+  },
+  {
+    q: "Do I need a permit for a horizontal shower in Houston?",
+    a: "If the drain moves, the supply lines are resized, or a new valve is added, yes. Inside the City of Houston that is a plumbing permit pulled by a licensed plumber, with inspections before the walls and floor are closed. Some smaller cities in the metro, such as Bellaire or West University Place, run their own permit offices with their own forms.",
+  },
+  {
+    q: "How long does it take to build?",
+    a: "This job was short. A shower remodel of this kind inside an existing bathroom typically takes three to five weeks, with the frameless glass ordered last, since it is measured only after the tile is finished and usually takes one to two weeks to arrive.",
   },
 ];
 
@@ -148,14 +160,14 @@ export default function HorizontalShowerPage() {
   const articleJson = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "A Horizontal Shower in Houston: Rain Heads Over a Tiled Lounger",
+    headline: "Horizontal Shower in Houston: A Vichy-Style Tiled Lounger",
     description: metadata.description,
     image: `${BUSINESS.siteUrl}${photos.finished.src}`,
     author: { "@type": "Organization", name: BUSINESS.name, url: BUSINESS.siteUrl },
     publisher: { "@type": "Organization", name: BUSINESS.name, url: BUSINESS.siteUrl },
     about: {
       "@type": "Service",
-      name: "Bathroom and shower remodeling",
+      name: "Bathroom remodeling",
       areaServed: { "@type": "City", name: "Houston, TX" },
     },
     mainEntityOfPage: `${BUSINESS.siteUrl}/projects/horizontal-shower-houston`,
@@ -171,6 +183,8 @@ export default function HorizontalShowerPage() {
     })),
   };
 
+  const link = "text-[#0B1F3A] underline hover:no-underline";
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJson) }} />
@@ -178,8 +192,8 @@ export default function HorizontalShowerPage() {
 
       <PageHero
         eyebrow="Project | Houston, TX"
-        title="A Horizontal Shower in Houston"
-        subtitle="The owners did not want a bigger shower. They wanted one they could lie down in."
+        title="Horizontal Shower in Houston: A Vichy-Style Tiled Lounger"
+        subtitle="A walk-in shower built around a curved tiled lounger, with five rain heads overhead, a standing shower head for everyday use, and a river pebble floor."
         ctaLabel="Talk to Levi About Your Bathroom"
       />
 
@@ -188,7 +202,7 @@ export default function HorizontalShowerPage() {
           { name: "Home", href: "/" },
           { name: "Projects", href: "/projects" },
         ]}
-        current="A Horizontal Shower in Houston"
+        current="Horizontal Shower in Houston"
       />
 
       <section className="mx-auto max-w-6xl px-5 py-14">
@@ -204,82 +218,116 @@ export default function HorizontalShowerPage() {
             />
             <p className="mx-auto mt-2 mb-10 max-w-[460px] text-sm text-slate-500">{photos.finished.caption}</p>
 
-            <h2 className="mb-4 text-xl font-bold text-[#0B1F3A]">The idea came from the owners</h2>
+            <h2 className="mb-4 text-xl font-bold text-[#0B1F3A]">What the homeowners asked for</h2>
             <p className="mb-5">
-              Most bathroom calls start with a problem: a leaking pan, a tub nobody uses, tile that has seen
-              better days. This one started with a picture in the owners&rsquo; heads. They wanted a shower you
-              lie down in, with the water falling along the whole length of your body instead of onto your head
-              and shoulders.
+              The owners came to Levi with a specific request: a shower they could lie down in, with water
+              falling along the length of the body. Spas call this a Vichy shower. They had seen the idea and
+              wanted a version of it in their own bathroom, and they assumed it would be priced as a luxury
+              item. After the design was drawn up and priced, the number came in lower than they had expected,
+              and they went ahead.
             </p>
             <p className="mb-5">
-              Spas have a name for it, a Vichy shower, and a price to match. The owners assumed a home version
-              would be priced like a luxury item too. They brought the idea to Levi anyway, and the first
-              pleasant surprise was the number. It was lower than they had braced for.
+              The finished shower has a built-up tiled lounger along the back wall, five square rain heads on
+              short arms under a tiled soffit directly above it, a regular standing shower head on the side
+              wall, a recessed niche, a river pebble floor and a frameless glass enclosure. The bathroom itself kept its footprint.
             </p>
             <Figure photo={photos.glass} />
 
-            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">How it works</h2>
+            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
+              How a horizontal shower works: five rain heads over a tiled lounger
+            </h2>
             <p className="mb-5">
-              Along the back wall is a tiled lounger, built up from the floor and shaped like a body lying on
-              its back. It rises behind the shoulders, dips under the knees and comes up again at the feet.
-              Above it, a tiled soffit runs the length of the shower and carries five square rain heads, each
-              on a short arm, spaced so the water lands from head to toe.
+              The lounger is shaped to the body of a person lying on their back. It is higher behind the
+              shoulders, dips under the knees and rises again at the feet. The soffit above it runs the full
+              length of the shower and carries the five rain heads, spaced so the water covers the body from
+              head to feet.
             </p>
             <Pair a={photos.overhead} b={photos.angle} />
             <p className="mb-5">
-              Lie down, turn it on, and the water comes straight down on you from five points at once. That is
-              the whole idea, and it is why the owners started calling it therapeutic before the glass was
-              even in.
-            </p>
-            <p className="mb-5">
-              It is still a normal shower when you want one. A standing head on the side wall and a
-              three-handle valve take care of the everyday shower, and the lounger doubles as a long bench.
+              The standing head and the three-handle valve on the side wall let the owners use it as a normal
+              shower day to day. On a three-handle setup like this, one handle typically sets the water temperature and the other two turn on and adjust the flow to each outlet, the standing head and the row of rain heads, so either can run on its own. When nobody is lying on it, the lounger
+              works as a long bench.
             </p>
             <Figure photo={photos.valve} />
 
-            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">The curve is the hard part</h2>
+            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
+              Plumbing and water heater checks for a five-head shower
+            </h2>
             <p className="mb-5">
-              Flat tile does not bend. The face of the lounger is finished in small square mosaic, the only
-              kind of tile that will follow a wave without cracking or leaving wide gaps, and the top is capped
-              in white marble subway tile, cut and laid so it rises and falls with the shape below.
+              Most of the planning on a shower like this goes into the water supply. Showerheads sold in the
+              US are rated at 2.5 gallons per minute or less, and rain heads are often rated around 1.8 to 2.0.
+              Five of them running together draw roughly 9 to 12.5 gallons per minute, which is three to five
+              times what a single shower uses. Before the design was final we looked at three things:
+            </p>
+            <ul className="mb-5 list-disc space-y-2 pl-5">
+              <li>
+                <strong>Supply line size.</strong> A standard 1/2-inch shower branch will not feed five heads at
+                full flow. A five-head shower is normally fed by a 3/4-inch supply line to the valve.
+              </li>
+              <li>
+                <strong>Water pressure.</strong> Measured at a hose bib with a simple gauge before design. Roughly 50 to 70 psi is a comfortable range for a multi-head shower.
+              </li>
+              <li>
+                <strong>Hot water capacity.</strong> A 50-gallon tank gives roughly 35 gallons of usable hot
+                water, which is about five to seven minutes with all five heads open. Depending on what the house already has, the answer can be a larger tank, a tankless unit, or a dedicated heater for the shower.
+              </li>
+            </ul>
+            <p className="mb-5">
+              The drain is a Houston question of its own. Most homes here sit on a concrete slab, and moving a
+              shower drain means cutting that slab. In newer homes the slab is often post-tensioned, with steel
+              cables under high tension running through it, so we confirm the slab type and locate any cables
+              before anything is cut. Keeping the drain where it already is saves both the slab work and the cost. Inside the City of Houston, changing the drain or the supply also means a
+              plumbing permit pulled by a licensed plumber.
+            </p>
+
+            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
+              Building and waterproofing the curved tiled lounger
+            </h2>
+            <p className="mb-5">
+              A lounger like this is built up from the shower floor in masonry or a solid bench form and shaped to the curve before any waterproofing goes on. A wood-framed bench is not a good base inside a shower, because any moisture that gets past the membrane rots it. The face is finished in 2x2 grey square mosaic, because tile that small is
+              the only kind that follows a wave without cracking or leaving wide joints. The top is capped in
+              white marble subway tile, each piece cut so the cap rises and falls with the shape below it.
             </p>
             <Pair a={photos.fromAbove} b={photos.top} />
             <p className="mb-5">
-              Under the tile, every surface of the lounger has to be waterproofed and pitched so water runs off
-              it rather than sitting in the dips. Water on a bench that never dries is how mould starts and how
-              grout fails. The floor is river pebble, which is comfortable underfoot and slopes to a single
-              drain at the low point of the curve.
+              Tile and grout are not waterproof, so the membrane under them does the real work. It has to be
+              continuous across the floor, up the walls, over the whole lounger and into the drain, with no gaps
+              at corners or curves. That can be a sheet membrane bonded to the substrate, a liquid membrane rolled on in coats, or a traditional pan liner under a mortar bed. What matters more than the brand is that it is continuous and that it is flood tested before any tile goes on. The flat top of a bench is where
+              water tends to sit, so the top of the lounger is pitched toward the shower floor rather than laid
+              dead level. In a Houston bathroom with high humidity, a surface that never dries is where mildew
+              and failed grout start.
+            </p>
+            <p className="mb-5">
+              The floor is river pebble set over a mortar bed sloped to a single point drain at the low spot of
+              the curve. Building code calls for a shower floor slope of at least 1/4 inch per foot toward the
+              drain. Pebble is comfortable underfoot and grips well when wet.
             </p>
             <Figure photo={photos.drain} />
 
-            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">The finish</h2>
+            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
+              Tile and fixture choices: porcelain, marble and frameless glass
+            </h2>
             <p className="mb-5">
-              The walls are large dark grey porcelain tile, set in a staggered pattern, with a band of white
-              marble running around the shower at shoulder height and again on the face of the soffit. Frameless
-              glass closes it in, so the lounger and the row of heads are the first thing you see from the
-              bathroom door. A recessed niche sits at the end of the lounger, where you can reach it lying down.
+              The walls are large-format dark grey porcelain laid in a staggered pattern, with a band of white
+              marble subway tile at shoulder height that wraps the shower and repeats on the face of the
+              soffit. The rain heads and the standing head are brushed nickel. Frameless glass encloses the
+              shower so the lounger and the soffit are visible from the bathroom door. A recessed niche at the
+              end of the lounger holds soap and shampoo within reach while lying down. Frameless shower glass is usually 3/8-inch or 1/2-inch tempered glass, heavy enough to stand with only hinges and clips.
             </p>
             <Pair a={photos.niche} b={photos.wide} />
 
-            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">A short job</h2>
+            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">The result and what the owners said</h2>
             <p className="mb-5">
-              The work itself was short and focused. Most of the time on a shower like this goes to the parts nobody
-              sees: the plumbing for five heads, the waterproofing, and the tile on the curve.
+              The job was short and stayed focused on the shower. When it was done,
+              the owners posted:
             </p>
-            <p className="mb-5">When it was finished, the owners put it this way:</p>
             <blockquote className="mb-5 border-l-4 border-orange-600 pl-4 italic text-slate-800">
               &ldquo;Horizontal shower... we are DONE!!!! We are starting to take reservations to use this
               amazing therapeutic shower!&rdquo;
             </blockquote>
             <p className="mb-5">
-              They were only half joking. Since then they have sent two more families to Levi to design a
-              shower of their own.
-            </p>
-
-            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">What the owners said</h2>
-            <p className="mb-5">
-              The same owners had Levi remodel their kitchen as well. They had been through bad experiences with
-              other remodelers before, and said they were nervous about starting again. Afterwards they wrote:
+              The same owners also had Levi remodel their kitchen. They had been through bad experiences with
+              other remodelers and wrote afterwards:
             </p>
             <blockquote className="mb-5 border-l-4 border-orange-600 pl-4 italic text-slate-800">
               &ldquo;From day one, the communication was great. They showed up when they said they would, kept me
@@ -289,23 +337,49 @@ export default function HorizontalShowerPage() {
               &ldquo;It&rsquo;s such a relief to finally find a remodeling company that actually delivers what
               they promise.&rdquo;
             </blockquote>
+            <p className="mb-5">Since then they have sent two more families to Levi to design showers of their own.</p>
 
-            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">Have an idea for your bathroom?</h2>
+            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">
+              How to tell if your bathroom can take a horizontal shower
+            </h2>
+            <p className="mb-5">A few things you can check yourself before calling anyone:</p>
+            <ul className="mb-5 list-disc space-y-2 pl-5">
+              <li>
+                <strong>Length.</strong> Measure the longest wall of your shower or tub. Under about 60 inches
+                there is not enough room for an adult to lie down comfortably.
+              </li>
+              <li>
+                <strong>Water heater.</strong> Read the label on the tank or tankless unit. A 40 or 50-gallon tank
+                will run a five-head shower for only a few minutes at a time.
+              </li>
+              <li>
+                <strong>Ceiling height.</strong> The soffit hangs below the ceiling, so an 8-foot ceiling leaves
+                less clearance than a 9 or 10-foot one. Stand where the lounger would go and look up.
+              </li>
+              <li>
+                <strong>Foundation.</strong> If your house is on a slab, look for a warning stamp in the garage
+                slab or a builder note saying &ldquo;post-tensioned&rdquo;. It does not rule
+                anything out, but it changes how a drain is moved.
+              </li>
+            </ul>
             <p className="mb-5">
-              See our <Link href="/services/bathroom-remodeling" className="text-[#0B1F3A] underline hover:no-underline">bathroom remodeling in Houston</Link>{" "}
-              page for showers, tub conversions and what a remodel costs. Bring the picture you have in your head, even if it sounds unusual. Levi will tell you what it
-              takes to build it, what it will cost, and whether the plumbing and the room can carry it. Call{" "}
-              <a href={BUSINESS.phoneHref} className="text-[#0B1F3A] underline hover:no-underline">
+              If those look workable, the next step is a visit to check the plumbing, the slab and the framing
+              over the shower. Our{" "}
+              <Link href="/services/bathroom-remodeling" className={link}>
+                bathroom remodeling in Houston
+              </Link>{" "}
+              page covers tub-to-shower conversions, waterproofing and typical costs. You can also call{" "}
+              <a href={BUSINESS.phoneHref} className={link}>
                 {BUSINESS.phone}
               </a>{" "}
               or{" "}
-              <Link href="/contact" className="text-[#0B1F3A] underline hover:no-underline">
+              <Link href="/contact" className={link}>
                 send us a message
               </Link>
               .
             </p>
 
-            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">Common questions</h2>
+            <h2 className="mt-10 mb-4 text-xl font-bold text-[#0B1F3A]">Horizontal shower questions</h2>
             <div className="mt-6 space-y-6">
               {faqs.map((f) => (
                 <div key={f.q}>
@@ -323,21 +397,21 @@ export default function HorizontalShowerPage() {
               </div>
               <dl className="mt-4 space-y-3 text-sm">
                 <div>
-                  <dt className="font-semibold text-[#0B1F3A]">The idea</dt>
-                  <dd className="text-slate-600">A shower you lie down in, brought to us by the owners</dd>
+                  <dt className="font-semibold text-[#0B1F3A]">Project</dt>
+                  <dd className="text-slate-600">Horizontal (Vichy-style) shower in a Houston bathroom remodel</dd>
                 </div>
                 <div>
                   <dt className="font-semibold text-[#0B1F3A]">What was built</dt>
                   <dd className="text-slate-600">
-                    Curved tiled lounger, soffit with five rain heads, standing shower head, recessed niche,
-                    frameless glass
+                    Curved built-up tiled lounger, soffit with five rain heads, standing shower head with a
+                    three-handle valve, recessed niche, frameless glass
                   </dd>
                 </div>
                 <div>
-                  <dt className="font-semibold text-[#0B1F3A]">Finish</dt>
+                  <dt className="font-semibold text-[#0B1F3A]">Materials</dt>
                   <dd className="text-slate-600">
-                    Dark grey porcelain walls, white marble band and lounger top, grey square mosaic, river
-                    pebble floor
+                    Large-format dark grey porcelain walls, white marble subway band and lounger cap, 2x2 grey
+                    mosaic lounger face, river pebble floor to a single point drain
                   </dd>
                 </div>
                 <div>
@@ -359,18 +433,18 @@ export default function HorizontalShowerPage() {
               </div>
               <ul className="mt-4 space-y-2 text-sm font-semibold">
                 <li>
-                  <Link href="/projects/bedroom-bathroom-addition-houston" className="text-[#0B1F3A] hover:text-orange-700">
-                    A bedroom and bathroom added to a Houston home →
-                  </Link>
-                </li>
-                <li>
                   <Link href="/services/bathroom-remodeling" className="text-[#0B1F3A] hover:text-orange-700">
                     Bathroom remodeling in Houston →
                   </Link>
                 </li>
                 <li>
+                  <Link href="/projects/bedroom-bathroom-addition-houston" className="text-[#0B1F3A] hover:text-orange-700">
+                    A bedroom and bathroom added to a Houston home →
+                  </Link>
+                </li>
+                <li>
                   <Link href="/services/kitchen-remodeling" className="text-[#0B1F3A] hover:text-orange-700">
-                    Kitchen design and remodeling →
+                    Kitchen remodeling →
                   </Link>
                 </li>
                 <li>
@@ -384,7 +458,10 @@ export default function HorizontalShowerPage() {
         </div>
       </section>
 
-      <CTASection />
+      <CTASection
+        heading="Thinking about a custom shower?"
+        subheading="Call or send a few details. We will tell you what your bathroom, plumbing and water heater can handle before anything is designed."
+      />
     </>
   );
 }
